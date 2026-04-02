@@ -89,10 +89,10 @@ Parameter  |  Description
 
 /Frame:0  |
 
-  * /Frame:0 => the EPLAN main frame is invisible
-  * /Frame:1 => the EPLAN main frame is restored to its original size and position
-  * /Frame:2 => the EPLAN main frame is started minimized
-  * /Frame:3 => the EPLAN main frame is started maximized
+* /Frame:0 => the EPLAN main frame is invisible
+* /Frame:1 => the EPLAN main frame is restored to its original size and position
+* /Frame:2 => the EPLAN main frame is started minimized
+* /Frame:3 => the EPLAN main frame is started maximized
 
  
 

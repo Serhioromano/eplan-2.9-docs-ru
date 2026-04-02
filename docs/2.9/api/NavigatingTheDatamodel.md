@@ -8,14 +8,14 @@ Regardless of the underlying implementation of EPLAN, the entire data model can 
 
 One of the most common requirements of a program is to loop through all of the objects in an array performing some function or other on each element. As an example, the class `Eplan.EplApi.DataModel.Page` has the following navigation properties, with each of which you can loop over a different collection of objects:
 
-  * AllFirstLevelPlacements
-  * AllGraphicalPlacements
-  * AllPlacements
-  * BoxedDevices
-  * Functions
-  * PLCs
-  * PlugStrips
-  * TerminalStrips
+* AllFirstLevelPlacements
+* AllGraphicalPlacements
+* AllPlacements
+* BoxedDevices
+* Functions
+* PLCs
+* PlugStrips
+* TerminalStrips
 
 There are also navigational properties with a one-to-one relationship, like `Page.Project`.
 

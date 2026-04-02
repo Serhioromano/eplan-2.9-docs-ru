@@ -8,10 +8,10 @@ Using API, we can modify the database and also create custom values for usage in
 
 **We can distinguish following settings categories:**
 
-  * Company settings: They should be located on a server and should be the same for the whole company
-  * Workstation settings: These settings apply for one computer and should be saved on a local hard disk.
-  * User settings: for example dimensions and positions of toolbars and dialogs. These settings also need to be saved on a central server to enable a user to use his own settings on another workstation.
-  * Project related settings: These settings are independent on a user nor workstation. They are stored in a project. See ["Project Settings"](DM_ProjectSettings.md) chapter.
+* Company settings: They should be located on a server and should be the same for the whole company
+* Workstation settings: These settings apply for one computer and should be saved on a local hard disk.
+* User settings: for example dimensions and positions of toolbars and dialogs. These settings also need to be saved on a central server to enable a user to use his own settings on another workstation.
+* Project related settings: These settings are independent on a user nor workstation. They are stored in a project. See ["Project Settings"](DM_ProjectSettings.md) chapter.
 
 For more details, please refer to "Settings: Operation" chapter of EPLAN Help.
 
@@ -218,12 +218,12 @@ Using export functionality we can access their values, also these which are not 
 
 **Here is a simplified description of the setting file:**
 
-  * The name of a setting (**name**) must be always unique within a setting node.
-  * The root node is **Settings**
-  * Then there are 0-5 possible **CAT** nodes with "name" attribute one of following: COMPANY, PROJECT, STATION, USER, INSTALL.
-  * Next there is a subnode **MOD** that makes a kind of a namespace for a setting.
-  * Next there are subnodes **LEV1** up to **LEV10** specifying path to a leaf node
-  * Next there is a leaf node **Setting** storing following data:
+* The name of a setting (**name**) must be always unique within a setting node.
+* The root node is **Settings**
+* Then there are 0-5 possible **CAT** nodes with "name" attribute one of following: COMPANY, PROJECT, STATION, USER, INSTALL.
+* Next there is a subnode **MOD** that makes a kind of a namespace for a setting.
+* Next there are subnodes **LEV1** up to **LEV10** specifying path to a leaf node
+* Next there is a leaf node **Setting** storing following data:
 
     * The setting value in **Val** node. There can be more such nodes, each of them is accessible by individual index parameter
     * The type of a setting (**type**) defines expected setting type

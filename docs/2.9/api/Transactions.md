@@ -39,7 +39,7 @@ In this case an inner transaction is treated as one of operations of the outer t
 
 **We distinguish two types of transaction:**
 
-  * API transactions - they are opened explicitly or implicitly from API. Explicit open is done by creating Transaction object from TransactionManager:
+* API transactions - they are opened explicitly or implicitly from API. Explicit open is done by creating Transaction object from TransactionManager:
 
 ```csharp
 Transaction oTransaction = new TransactionManager().CreateTransaction();
@@ -47,11 +47,11 @@ Transaction oTransaction = new TransactionManager().CreateTransaction();
 
 Implicit open is done by creating the same Transaction object by some EPLAN operations, (like creating new objects, changing a property) in a way that is invisible for API user
 
-  * EPLAN internal transactions - they are started inside of EPLAN framework, so are opened and closed implicitly
+* EPLAN internal transactions - they are started inside of EPLAN framework, so are opened and closed implicitly
 
 Using API transactions and internal ones in the same time can bring problems. So please consider following rules to unique them:
 
-  * API transaction within an internal transaction.
+* API transaction within an internal transaction.
 
 ![](images/Transaction_API_in_internal.jpg)
 
@@ -63,7 +63,7 @@ TransactionManager::IsTransactionRunning
 
 A commit of API transaction leads to no change in the database and is saved in the database only with the termination of internal transaction. Abort in API transaction breaks off no internal transaction, but throws an exception, because an internal transaction is running and cannot be broken off.
 
-  * An internal transaction within API transaction
+* An internal transaction within API transaction
 
 ![](images/Transaction_internal_in_API.jpg)
 

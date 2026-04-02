@@ -2,9 +2,9 @@
 
 In EPLAN you have the possibility to switch between different data sources for part selection. You can get parts data via:
 
-  * MS Access
-  * SQL Server
-  * via API
+* MS Access
+* SQL Server
+* via API
 
 Setting data source as API means that an API action will be called in case of operations related to accessing parts , for example:
 
@@ -80,10 +80,10 @@ ctx.AddParameter(sProp00, "44.0");
 
 The parameter "Modus" is used to identify the mode in which parts selection is called. It can have one of the following values:
 
-  * "Selection" - a part is selected.
-  * "Read" - a part is updated
-  * “Create” - a part is created and parts selection action is called as alternative parts data source
-  * “Exist” - check if part exist
+* "Selection" - a part is selected.
+* "Read" - a part is updated
+* “Create” - a part is created and parts selection action is called as alternative parts data source
+* “Exist” - check if part exist
 
 **Here is also a table with other input parameters:**
 

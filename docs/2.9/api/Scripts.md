@@ -10,10 +10,10 @@ After calling the menu point "Run...", a file dialog appears and a script file t
 
 In a script following Microsoft .Net framework assemblies can be used :
 
-  * System
-  * `System.XML`
-  * `System.Drawing`
-  * `System.Windows.Forms`
+* `System`
+* `System.XML`
+* `System.Drawing`
+* `System.Windows.Forms`
 
 **also these EPLAN assemblies are referenced by default:**
 

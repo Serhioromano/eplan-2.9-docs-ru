@@ -6,9 +6,9 @@ These different means to modify the system are implemented in modules, which can
 
 **You can enhance existing functionality for example by:**
 
-  * Adding new GUI items, such as menu points, buttons
-  * Adding new actions, verifications, interactions, messages, XML processors
-  * Handling EPLAN events and raising ones
+* Adding new GUI items, such as menu points, buttons
+* Adding new actions, verifications, interactions, messages, XML processors
+* Handling EPLAN events and raising ones
 
 An add-in is an assembly, written in one of the .Net framework's programming languages. There are different ways to create such an assembly. Basically you just need a simple text editor and the compiler provided by the .Net framework. The rather more convenient way to create an add-in is by using an integrated development environment (IDE), like Visual Studio.
 

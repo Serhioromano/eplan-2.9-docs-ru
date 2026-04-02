@@ -8,9 +8,9 @@ Please take into account that API locking only wraps P8 locking techniques. For 
 
 ### What can be locked 'automatically'?
 
-  * All project data - this can be done by getting Project from SelectionSet (in addins) or when opening it by ProjectManager. This depends on property LockProjectByDefault (by default set on true). Also getting the selected project by method `HeServices.SelectionSet.GetCurrentProject` locks the project completely (and its data). Please take into account that read-only access is still possible from other P8 instances.
-  * Exclusive project locking - this is done by switching `USER.TrDMProject.OperationMode.OpenProjectsExclusive` setting on true before opening it. As mentioned above, some project-wide operations need such an exclusive lock of a project where it can be used by only 1 P8 instance.
-  * Selected elements - this is possible by setting property `SelectionSet.LockSelectionByDefault` on true. By default the option is enabled (set on true), so when getting selected elements of a project, they can be changed in API without setting the property.
+* All project data - this can be done by getting Project from SelectionSet (in addins) or when opening it by ProjectManager. This depends on property LockProjectByDefault (by default set on true). Also getting the selected project by method `HeServices.SelectionSet.GetCurrentProject` locks the project completely (and its data). Please take into account that read-only access is still possible from other P8 instances.
+* Exclusive project locking - this is done by switching `USER.TrDMProject.OperationMode.OpenProjectsExclusive` setting on true before opening it. As mentioned above, some project-wide operations need such an exclusive lock of a project where it can be used by only 1 P8 instance.
+* Selected elements - this is possible by setting property `SelectionSet.LockSelectionByDefault` on true. By default the option is enabled (set on true), so when getting selected elements of a project, they can be changed in API without setting the property.
 
 ### SafetyPoint
 
@@ -42,7 +42,7 @@ Automatic means that they are locked internally before any change and unlocked a
 
 LockingStep is an object for automatically unlocking API resources (as Projects, Functions, etc). There are 2 ways of creating this object:
 
-  * Explicit. Must be done in modeless dialog boxes and in offline API applications:
+* Explicit. Must be done in modeless dialog boxes and in offline API applications:
 
 ```csharp
 using(LockingStep oLockingStep = new LockingStep())
@@ -53,7 +53,7 @@ using(LockingStep oLockingStep = new LockingStep())
 
 When there is necessary access to some resources and the LockingStep is not created, an exception will be thrown (NoLockingStepException)
 
-  * Actions and scripts by the P8 framework
+* Actions and scripts by the P8 framework
 
 There however is no Unlock method in any DataModel class. The LockingStep class remembers all locks set during its lifespan and releases them when the LockingStep is being disposed. This guarantees that objects are released, even if an exception was thrown inside the block.
 
@@ -63,13 +63,13 @@ In rare cases however it may be necessary to switch off creating LockingStep (ma
 
 Apart from automatic locking mechanism there is also possible to call locking methods directly on required objects. This low-level type of locking can be used concurrently with 'automatic' one or as the only locking.
 
-  * Locking single StorableObject. This is done by calling LockObject on required object. Please take into account that only properties directly connected with objects can be locked this way (like internal/ normal properties, sub-Functions or sub-Placements are excluded).
+* Locking single StorableObject. This is done by calling LockObject on required object. Please take into account that only properties directly connected with objects can be locked this way (like internal/ normal properties, sub-Functions or sub-Placements are excluded).
 
-  * Locking all placements of a Page in exclusive mode. This can be done by calling Page::LockAllObjects. Please consider that it is different than calling Page::LockObject, where only properties of a Page are locked.
+* Locking all placements of a Page in exclusive mode. This can be done by calling Page::LockAllObjects. Please consider that it is different than calling Page::LockObject, where only properties of a Page are locked.
 
-  * Locking all objects of a project. This can be done by Project::LockAllObjects.
+* Locking all objects of a project. This can be done by Project::LockAllObjects.
 
-  * Locking all objects of a device. This is done by Function::LockDevice. Calling the method also locks all Functions placed on the same page as Functions of a device.
+* Locking all objects of a device. This is done by Function::LockDevice. Calling the method also locks all Functions placed on the same page as Functions of a device.
 
 
 ### Guideline to Locking of DataModel objects

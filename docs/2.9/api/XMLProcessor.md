@@ -20,15 +20,15 @@ EPLAN carries on exporting / importing its XML format. Additionally, conversion 
 
 **Import:**
 
-  * Starting the import. selecting the import format XYZ
-  * converting XYZ to XML through the conversion module
-  * importing the XML file
+* Starting the import. selecting the import format XYZ
+* converting XYZ to XML through the conversion module
+* importing the XML file
 
 **Export:**
 
-  * Starting the exports. selecting the export format XYZ
-  * exporting the XML file
-  * converting XML to XYZ through the conversion module
+* Starting the exports. selecting the export format XYZ
+* exporting the XML file
+* converting XML to XYZ through the conversion module
 
 ### Interface
 

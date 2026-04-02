@@ -10,12 +10,12 @@ The list of all available properties for a particular object, you can find in th
 
 EPLAN properties are typed. The property values can have one of the following types:
 
-  * bool
-  * int
-  * double
-  * DateTime
-  * PointD
-  * MultiLangString
+* bool
+* int
+* double
+* DateTime
+* PointD
+* MultiLangString
 
 With help of the `PropertyDefinition.PropertyType`, you can determine the type of a property:
 

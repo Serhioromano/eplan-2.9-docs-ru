@@ -110,9 +110,9 @@ In order to make creating a verification easier, the EPLAN API has some base cla
 
 **These base classes are:**
 
-  * FunctionVerification
-  * PotentialVerification
-  * InterruptionPointVerification
+* FunctionVerification
+* PotentialVerification
+* InterruptionPointVerification
 
 In your add-in you just let your verification class inherit from one of these base classes and implement the necessary interface functions. For outputting messages, then different variations of the `AddMessage()` function are available. Additionally, the classes contain some functions to find cross-referenced objects.
 
@@ -126,7 +126,7 @@ Please take into account that in comparison to 1.9 version, verifications that i
 
 **Verifications can be invoked from API or GUI in 3 modes:**
 
-  * Online mode . This is called when a change was done and UndoStep was disposed:
+* Online mode . This is called when a change was done and UndoStep was disposed:
 
 
 ```csharp
