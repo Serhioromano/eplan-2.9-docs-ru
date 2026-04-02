@@ -4,7 +4,7 @@ As API developer, you can add new electrotechnical messages to EPLAN and to writ
 
 In order to create a new message, add a class to your project, which implements the interface IMessage.
 
-The IEplMessage interface declares 3 functions:
+**The IEplMessage interface declares 3 functions:**
 
   1. The parameters of the function `OnRegister()` define the properties of the message and how it is registered in EPLAN.
   2. The function `GetMessageText()` returns -- on request of EPLAN -- the message text, which is displayed in dialogs.

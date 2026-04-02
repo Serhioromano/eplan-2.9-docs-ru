@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed:
+**    Type of task to be performed:**
     PROJECT: Restore project
     MASTERDATA: Restore master data
      
@@ -99,7 +99,7 @@ Remarks
 **Example**
 
 ```
-Restore project:
+**Restore project:**
 
 restore /TYPE:PROJECT /ARCHIVENAME:C:\temp\ESS_Sample_Project.zw1 /PROJECTNAME:C:\temp\ESS_Sample_Project.elk /UNPACKPROJECT:0
 

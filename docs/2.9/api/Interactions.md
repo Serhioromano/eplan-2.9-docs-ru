@@ -118,7 +118,7 @@ API interactions can also override default EPLAN interactions. This way executio
 
 Such interactions has to derive from Interaction class also. Example how to do it is shown above (DerivedSymbolInsertInteraction)
 
-The only change which has to be done is in InteractionAttribute :
+**The only change which has to be done is in InteractionAttribute :**
 
    
 

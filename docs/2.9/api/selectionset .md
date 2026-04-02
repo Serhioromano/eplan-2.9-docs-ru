@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed:
+**    Type of task to be performed:**
     PROJECT: Return current project
     PROJECTS: Return selected projects
     PAGES: Return selected pages
@@ -31,7 +31,7 @@ Remarks
    
 
     The results of the selection are returned in the CallingContext.
-    Current project:
+**    Current project:**
    
 
     Parameter name in calling context = PROJECT;
@@ -42,7 +42,7 @@ Remarks
 
    
 
-    If projects are selected:
+**    If projects are selected:**
    
 
     Parameter name in calling context = PROJECTS;
@@ -53,7 +53,7 @@ Remarks
 
    
 
-    If pages are selected:
+**    If pages are selected:**
    
 
     Parameter name in calling context = PAGES;
@@ -67,7 +67,7 @@ Remarks
 **Example**
 
 ```
-Return current project:
+**Return current project:**
 
 selectionset  /TYPE:PROJECT
 
@@ -75,7 +75,7 @@ Results in calling context: Parameter name = 'PROJECT'
 
 Value = 'C:\Projects\EPLAN\ESS_Sample_Project.elk'
 
-Return currently selected projects:
+**Return currently selected projects:**
 
 selectionset  /TYPE:PROJECTS
 
@@ -83,7 +83,7 @@ Results in calling context: Parameter name = 'PROJECTS'
 
 Value = 'C:\Projects\EPLAN\ESS_Sample_Project.elk;C:\Projects\EPLAN\ESS_Sample_Project2.elk'
 
-Return currently selected pages:
+**Return currently selected pages:**
 
 selectionset  /TYPE:PAGES
 

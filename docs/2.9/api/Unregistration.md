@@ -32,7 +32,7 @@ AllowAutoInstall |  When the value is set to TRUE Remove the marker for auto ins
 
 ![](images/image007.gif)Example:
 
-Registering Add-ons:
+**Registering Add-ons:**
 
 XSettingsUnregisterAction /Path:c:\MyAddOn
 

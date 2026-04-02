@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed:
+**    Type of task to be performed:**
     • READPROJECTINFO: Load project information from an XML file into the project.
     • ToggleSections:If project sections are enabled, temporarily enables/disables whole project for the currently logged-in user. Note: The project must be open.
     • PUBLISHTODISK: Publishes project to disk.
@@ -78,7 +78,7 @@ OVERWRITE |
 
     If the imported property placement schema already exists, this parameter specifies whether it should be overwritten.
 
-    Possible values:
+**    Possible values:**
 
     '0' - No (default),
 
@@ -95,7 +95,7 @@ EXTENDEDMODE |
    
 
     Enables extended mode while reorganizing the project.
-    Possible values:
+**    Possible values:**
 
     '0' - No (default),
 
@@ -123,7 +123,7 @@ SCANSUBDIRECTORIES |
    
 
      Determines whether sub directories are also scanned for projects.
-    Possible values:
+**    Possible values:**
 
     FALSE,
 

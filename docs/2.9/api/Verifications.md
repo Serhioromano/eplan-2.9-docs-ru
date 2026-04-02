@@ -108,7 +108,7 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
 
 In order to make creating a verification easier, the EPLAN API has some base classes, which provide a few service functions.
 
-These base classes are:
+**These base classes are:**
 
   * FunctionVerification
   * PotentialVerification
@@ -124,7 +124,7 @@ Please take into account that in comparison to 1.9 version, verifications that i
 
 ### How to start a verification
 
-Verifications can be invoked from API or GUI in 3 modes:
+**Verifications can be invoked from API or GUI in 3 modes:**
 
   * Online mode . This is called when a change was done and UndoStep was disposed:
 

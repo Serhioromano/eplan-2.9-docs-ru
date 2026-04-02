@@ -37,7 +37,7 @@ In this case an inner transaction is treated as one of operations of the outer t
 
 ### Internal EPLAN and API transactions
 
-We distinguish two types of transaction:
+**We distinguish two types of transaction:**
 
   * API transactions - they are opened explicitly or implicitly from API. Explicit open is done by creating Transaction object from TransactionManager:
 

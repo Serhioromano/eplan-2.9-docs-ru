@@ -29,7 +29,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     RouteConnections: Routes given topology connections.
     CreateFunctions: Creates topology functions that are connected to structure routing fulcrums. REQUIRED
      

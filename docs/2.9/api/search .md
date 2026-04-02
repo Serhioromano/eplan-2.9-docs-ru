@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Describes the search area:
+**    Describes the search area:**
     DEVICETAG: Search for devices
     ALLPROPERTIES: Search through all properties
     TEXTS: Text search

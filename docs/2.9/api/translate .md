@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     TRANSLATEPROJECT: Translate project
     TRANSLATEPAGES: Translate given pages
     REMOVELANGUAGE: Remove language entry
@@ -195,7 +195,7 @@ translate /TYPE:IMPORTTOTRANSDB  /CONVERTER:XTrLanguageDbXmlConverterImpl  /IMPO
 
 
 
-Remove translation from project:
+**Remove translation from project:**
 
 translate /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk  /TYPE:REMOVELANGUAGE /LANGUAGE:en_US
 

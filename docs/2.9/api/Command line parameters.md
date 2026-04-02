@@ -26,7 +26,7 @@ Quiet |
 
    
 
-    Determines if dialogs are shown while a command line is executed:
+**    Determines if dialogs are shown while a command line is executed:**
      * 0: all dialogs will be shown
      * 1: no dialogs will be shown (default)
      * 2: only some special dialogs will be shown, e.g. progress bars
@@ -64,7 +64,7 @@ Frame |
 
    
 
-    Determines how the EPLAN mainframe should be shown:
+**    Determines how the EPLAN mainframe should be shown:**
 
      * 0: Hides this window and passes activation to another window.
      * 1: Activates and displays the window. If the window is minimized or maximized, Windows restores it to its original size and position.
@@ -87,7 +87,7 @@ Setup |
 
    
 
-    Determines if default settings should be used:
+**    Determines if default settings should be used:**
      * 0: USER, STATION, COMPANY settings are restored to their installation default (on file level) and databases are backed (default)
      * 8: the actual adjusted settings will be used (on file level) ONLY FOR INTERNAL USE!
      * category (USER or STATION or COMPANY) is denoted: settings of that category are restored to their installation default (on file level) and the database is backed
@@ -388,7 +388,7 @@ UseLastOpenedProjects |
 
    
 
-    Determines if last opened projects should be opened on start:
+**    Determines if last opened projects should be opened on start:**
      * 0: No projects will be opened.
      * 1: Last used projects will be opened.
      * 2: When there should be action executed no projects will be opened (default).

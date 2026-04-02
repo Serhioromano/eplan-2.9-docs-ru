@@ -6,11 +6,11 @@ This way it is possible to filter or change the order of objects for a report.
 
 Warning: when a report action is used, please don't set a filter or sort setting, because it can be inconsistent with the action.
 
-Following points need to be done to in order to use the interface :
+**Following points need to be done to in order to use the interface :**
 
 ### a) Create report processing action
 
-Any report template now contains a property where you can set a name of an action :
+**Any report template now contains a property where you can set a name of an action :**
 
 ![](images/report_action_field.jpg)
 
@@ -20,29 +20,29 @@ During these steps, you can influence the texts appearing in the report as well 
 
 The steps are distinguished by the "mode" parameter of the called action.
 
-The action from template will be called with following parameters:
+**The action from template will be called with following parameters:**
 
 _Step 1._
 
-Parameters:
+**Parameters:**
 
-[in] "project" value: id of a project
+- [in] "project" value: id of a project
 
-[in] "mode" value: "Start"
+- [in] "mode" value: "Start"
 
-[in] "objects" value: Ids of objects that will be updated (only if you UPDATE a report)
+- [in] "objects" value: Ids of objects that will be updated (only if you UPDATE a report)
 
 Prepare project data for this report if necessary, fill caches etc.
 
 _Step 2._
 
-Parameters:
+**Parameters:**
 
-[in] "project" value: id of a project
+- [in] "project" value: id of a project
 
-[in] "mode" value: "ModifyObjectList"
+- [in] "mode" value: "ModifyObjectList"
 
-[in /out] "objects" value: Ids of objects that will be evaluated separated with semicolon.
+- [in/out] "objects" value: Ids of objects that will be evaluated separated with semicolon.
 
 This list can be modified (not the objects themselves!). You can add or remove object ids from the list or change their order in the list
 
@@ -50,23 +50,23 @@ The parameter "objects" can be set only in mode ModifyObjectList!
 
 _Step 3._
 
-Parameters:
+**Parameters:**
 
-[in] "project" value: id of a project
+- [in] "project" value: id of a project
 
-[in] "mode" value: "ModifyPages"
+- [in] "mode" value: "ModifyPages"
 
-[in] "pages" value: ids of created pages separated with semicolon.
+- [in] "pages" value: ids of created pages separated with semicolon.
 
 The created pages and their properties can be modified.
 
 _Step 4_.
 
-Parameters:
+**Parameters:**
 
-[in] "project" value: id of a project
+- [in] "project" value: id of a project
 
-[in] "mode" value: "Finish"
+- [in] "mode" value: "Finish"
 
 Clean up caches or undo changes from Step 1.
 
@@ -78,7 +78,7 @@ This will ensure that reports could be created either in 'standard' way or in th
 
 The simplest way is to use a copy of existing form.
 
-Such form should be set in Form field of project template:
+**Such form should be set in Form field of project template:**
 
 ![](images/report_form_field.jpg)
 
@@ -92,15 +92,15 @@ Now it is necessary to create the text processing action (see bellow)
 
 This action will be called, when the placeholder text is evaluated during report generation. The action is called with the following parameters:
 
-[in] "objects" value: main object for the line (can be more than one).
+- [in] "objects" value: main object for the line (can be more than one).
 
-[out]: Call `SetStrings()` of the calling context to set the result text. More than one result text will generate new lines.
+- [out]: Call `SetStrings()` of the calling context to set the result text. More than one result text will generate new lines.
 
 [in/out] "color" value: ColorId. Set the color to change color of placeholder texts. It works with one result text only.
 
 Color index (0-255) Please use -16002 as "From layer" value.
 
-Predefined values for line color index are:
+**Predefined values for line color index are:**
 
 0 = black
 
@@ -132,7 +132,7 @@ This can be done using Eplan::EplApi::HEServices::Masterdata class
 
 Example
 
-Here is an example of creating an embedded report with report processing action :
+**Here is an example of creating an embedded report with report processing action :**
 
 ```csharp
 //copy a form with placeholder texts processing action to the master data directory

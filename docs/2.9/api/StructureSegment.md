@@ -8,6 +8,6 @@ StructureSegment oStructureSegment = StructureSegment.Create(m_oTestProject.Segm
 oStructureSegment.Name = "test1b";
 ```
 
-In GUI from they are visible in Pre-planning navigator:
+**In GUI from they are visible in Pre-planning navigator:**
 
 ![](images/structure_segment.jpg)

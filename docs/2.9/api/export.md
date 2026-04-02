@@ -18,7 +18,7 @@ TYPE |
 
    
 
-     Type of task to be performed by the action:
+**     Type of task to be performed by the action:**
     PXFPROJECT: Export project in EPJ format.
     GRAPHICPROJECT: Export project in graphical     format (TIF, GIF, PNG, JPG).
     GRAPHICPAGE: Export pages in graphical format (TIF, GIF, PNG, JPG).
@@ -244,7 +244,7 @@ EXPORTSCHEME |
     This parameter can be the users defined DXF/DWG export scheme settings (myScheme) or the default scheme settings of EPLAN (Standard Settings). 
 
     If this  parameter does not exist or is empty (""), the most recently used DXF/DWG export scheme is taken.
-    This parameter supports only the following values of the TYPE parameter:
+**    This parameter supports only the following values of the TYPE parameter:**
     DXFPAGE, DXFPROJECT, DWGPAGE,DWGPROJECT, PDFPROJECTSCHEME, and PDFPAGESSCHEME.
      
 
@@ -355,7 +355,7 @@ LANGUAGE |
 
     Language identifier. Specifies the language to translate the project into before the export.
     Note: This parameter is case-sensitive. Correct language specifiers are: en_US, de_DE, etc.
-    This parameter is only effective with the following values of the TYPE parameter:
+**    This parameter is only effective with the following values of the TYPE parameter:**
     DXFPROJECT, DXFPAGE, DWGPROJECT, DWGPAGE, PDFPAGE, PDFPAGES, PDFPROJECT, PDFPROJECTSCHEME and PDFPAGESSCHEME.
      
 
@@ -368,7 +368,7 @@ SPLITSIZE |
    
 
     The value to overwrite the 'split size' setting.
-    This parameter is only effective with the following values of the TYPE parameter:
+**    This parameter is only effective with the following values of the TYPE parameter:**
     DXFPROJECT, DXFPAGE, DWGPROJECT, DWGPAGE and the TARGET parameter equal 'MAIL'.
      
 

@@ -4,14 +4,14 @@ InstallationSpace represents a 3-dimensional space where objects can be located.
 
 It is also a root node for other 3d-objects in the 'Layout spaces' navigator.
 
-Example below shows how to create an InstallationSpace:
+**Example below shows how to create an InstallationSpace:**
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();
 oInstallationSpace.Create(oProject, "InstallationSpace test");
 ```
 
-We can retrieve existing InstallationSpaces from a project this way:
+**We can retrieve existing InstallationSpaces from a project this way:**
 
 ```csharp
 InstallationSpace[] arrInstallationSpace = oProject.InstallationSpaces;

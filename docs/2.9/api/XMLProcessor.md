@@ -8,23 +8,23 @@ In general EPLAN uses XML as its interchange format. Furthermore EPLAN is requir
 
 EPLAN carries on exporting / importing its XML format. Additionally, conversion modules can be added to EPLAN, which convert the created XML files into other import / export formats.
 
-Import of different formats:
+**Import of different formats:**
 
 ![](images/to_EPLAN.gif)
 
-Export of different formats:
+**Export of different formats:**
 
 ![](images/from_EPLAN.gif)
 
-The following work flow is used:
+**The following work flow is used:**
 
-Import:
+**Import:**
 
   * Starting the import. selecting the import format XYZ
   * converting XYZ to XML through the conversion module
   * importing the XML file
 
-Export:
+**Export:**
 
   * Starting the exports. selecting the export format XYZ
   * exporting the XML file

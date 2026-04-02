@@ -38,7 +38,7 @@ InstallFile |  The complete path to the `install.xml`
 
 ![](images/image007.gif)Example:
 
-Registering Add-ons:
+**Registering Add-ons:**
 
 XSettingsRegisterAction /Path:c:\MyAddOn
 
@@ -60,7 +60,7 @@ HKEY_LOCAL_MACHINE / SOFTWARE / EPLAN / EPLAN W3
 
 Figure 3: Automatic registration with registry settings
 
-An add-on can be found like this:
+**An add-on can be found like this:**
 
 <Add-on>
 

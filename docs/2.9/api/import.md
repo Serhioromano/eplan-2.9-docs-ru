@@ -286,7 +286,7 @@ VERIFY |
 **Example**
 
 ```
-Import PXF project:
+**Import PXF project:**
 
 import /TYPE:PXFPROJECT /IMPORTFILE:C:\Projects\ESS_Sample_Project.epj /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
 

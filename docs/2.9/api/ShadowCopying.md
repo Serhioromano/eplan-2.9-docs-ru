@@ -6,7 +6,7 @@ This concerns both add-ons and add-ins.
 
 In case of addons, the whole addon's bin directory with subdirectories will be copied to the user application roaming directory (%appdata%\EPLAN\ShadowCopyAssemblies\Process-ID\Addon-Name).
 
-Example:
+**Example:**
 
 ![](images/shadow_copying.png)
 
@@ -26,7 +26,7 @@ At any start of EPLAN, the registry or the path for server add-ons is scanned fo
 
 · Is the version correct?
 
-When everything is done so far EPLAN then:
+**When everything is done so far EPLAN then:**
 
 · registers the new addon:
 

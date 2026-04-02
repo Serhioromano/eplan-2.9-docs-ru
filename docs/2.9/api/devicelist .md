@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     IMPORT: Import device list
     EXPORT: Export device list
     DELETE: Delete device list
@@ -80,15 +80,15 @@ FORMAT |
 **Example**
 
 ```
-import:
+**import:**
 
 devicelist /TYPE:IMPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /IMPORTFILE:C:\EPLAN\deviceListe.xml
 
-export:
+**export:**
 
 devicelist /TYPE:EXPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /EXPORTFILE:C:\EPLAN\deviceListe2.xml
 
-delete:
+**delete:**
 
 devicelist /TYPE:DELETE /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
 ```

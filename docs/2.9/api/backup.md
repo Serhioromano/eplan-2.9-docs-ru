@@ -78,7 +78,7 @@ BACKUPMEDIA |
 
    
 
-    Type of saving:
+**    Type of saving:**
     EMAIL: Project is sent by e-mail.
     DISK: Project is backed up to a hard drive, diskette, etc.
      
@@ -106,7 +106,7 @@ BACKUPAMOUNT |
 
    
 
-    An enum constant that may assume the following values:
+**    An enum constant that may assume the following values:**
     BACKUPAMOUNT_ALL: The contents of the project directory is backed up completely.
     BACKUPAMOUNT_MIN: Only the database files required to restore the project are backed up; redundant database files are ignored.
     Default = BACKUPAMOUNT_ALL.
@@ -183,7 +183,7 @@ MDTYPE |
 
    
 
-    Type of master data to be backed up:
+**    Type of master data to be backed up:**
     SYMBOLS,
     MACROS,
     FORMS,
@@ -237,7 +237,7 @@ Remarks
 **Example**
 
 ```
-Back up project:
+**Back up project:**
 
 backup /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /DESTINATIONPATH:U:\temp /ARCHIVENAME:ESS_Sample_Project.zw1 /COMMENT:Hello /BACKUPMETHOD:BACKUP /BACKUPMEDIA:DISK /SPLITSIZE:0.0 /BACKUPAMOUNT:BACKUPAMOUNT_ALL /COMPRESSPRJ:0 /INCLEXTDOCS:1 /INCLIMAGES:1
 
@@ -245,13 +245,13 @@ backup  /TYPE:PROJECT /COMMENT:Hello /DESTINATIONPATH:U:\temp /ARCHIVENAME:ESS_S
 
 
 
-Back up master data:
+**Back up master data:**
 
-Back up plot frame with full path:
+**Back up plot frame with full path:**
 
 backup /TYPE:MASTERDATA /FILENAME:C:\PlotFrames\EPLAN\ESS_A3DP.fn1 /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /BACKUPMEDIA:DISK /SPLITSIZE:0.0 /MDTYPE:STANDARDSHEET
 
-Back up plot frame without full path:
+**Back up plot frame without full path:**
 
 backup /TYPE:MASTERDATA /FILENAME:ESS_A3DP.fn1 /SOURCEPATH:C:\PlotFrames\EPLAN /DESTINATIONPATH:U:\temp /ARCHIVENAME:my_MasterData /COMMENT:"Hello world" /BACKUPMEDIA:DISK /SPLITSIZE:0.0 /MDTYPE:STANDARDSHEET
 

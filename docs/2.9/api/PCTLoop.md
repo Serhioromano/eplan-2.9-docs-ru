@@ -7,6 +7,6 @@ SegmentDefinition oSegmentDefinition = m_oTestProject.GetSegmentDefinition("Epla
 PCTLoop oPCTLoop  = PCTLoop.Create(oSegmentDefinition) as PCTLoop;
 ```
 
-In GUI they are visible in Pre-planning navigator:
+**In GUI they are visible in Pre-planning navigator:**
 
 ![](images/PCTLoop.jpg)

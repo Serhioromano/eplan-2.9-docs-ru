@@ -16,7 +16,7 @@ TYPE |
    
 
     Type of task to be performed by the action.
-    Possible values are:
+**    Possible values are:**
     PROJECT: Check project
     PAGES: Check pages
     INSTALLATIONSPACE: Check installation space

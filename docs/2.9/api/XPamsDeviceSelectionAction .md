@@ -36,7 +36,7 @@ Mode |
    
 
      Mode (optional)
-     Supported modes are:
+**     Supported modes are:**
      • selectDevice (default value): Selects a new device for the existing objects.
      In the process all device data including the part reference data is deleted and reassigned in accordance with the device selection.
      • updateDevice : updateDevice: Updates only the device data of the parts of the existing objects. The part numbers and part reference data are retained.

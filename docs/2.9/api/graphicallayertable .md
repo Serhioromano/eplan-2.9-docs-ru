@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     IMPORT:Import graphical layer table
     EXPORT:Export graphical layer table
      
@@ -64,11 +64,11 @@ EXPORTFILE |
 **Example**
 
 ```
-import:
+**import:**
 
 graphicallayertable /TYPE:IMPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /IMPORTFILE:C:\EPLAN\ESS_Sample_Project.elc
 
-export:
+**export:**
 
 graphicallayertable /TYPE:EXPORT /PROJECTNAME:C:\Projekte\EPLAN\ESS_Sample_Project.elk /EXPORTFILE:C:\EPLAN\ESS_Sample_Project.elc
 ```

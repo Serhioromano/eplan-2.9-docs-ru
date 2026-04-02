@@ -4,7 +4,7 @@ An EPLAN macro is a piece of schematics, which can be introduced into a project 
 
 For placing macros, the EPLAN API provides the class `Eplan.EplApi.HEServices.Insert`. The class basically contains three overloaded methods for placing each type of macro. A window or symbol macro can either be placed on a page at absolute coordinates or with an offset relatively to its original position.
 
-The following example shows how to place a macro on page at a given position:
+**The following example shows how to place a macro on page at a given position:**
 
 ```csharp
 Insert oInsert = new Insert();

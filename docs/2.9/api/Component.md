@@ -2,7 +2,7 @@
 
 The class represents various pro panel items, such as doors, frame profiles, accessories, etc.
 
-Terminal:
+**Terminal:**
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();
@@ -15,7 +15,7 @@ oTerminal.Parent = oInstallationSpace;
 
 ![](images/Terminal.jpg)
 
-Plug:
+**Plug:**
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();
@@ -28,7 +28,7 @@ oComponent.Parent = oInstallationSpace;
 
 ![](images/Plug.jpg)
 
-Power supply :
+**Power supply :**
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();

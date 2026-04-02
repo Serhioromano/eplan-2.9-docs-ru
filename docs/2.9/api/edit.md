@@ -128,10 +128,10 @@ Remarks
 **Example**
 
 ```
-Open project:
+**Open project:**
 edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
 
-Open page:
+**Open page:**
 
 edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7
 

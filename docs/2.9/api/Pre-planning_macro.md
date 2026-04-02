@@ -2,7 +2,7 @@
 
 For Pre-planning module, there was created a new class which represents macros : PrePlanningMacro
 
-Creating these macros is following:
+**Creating these macros is following:**
 
 ```csharp
 string strMacroPath = m_oDir.FullName + "\\TestMacro.emv";

@@ -36,7 +36,7 @@ b) a file containing the public part of a standard signature key, normally used 
 
 ### How to proceed ?
 
-Take the following steps to get your application EADN-signed:
+**Take the following steps to get your application EADN-signed:**
 
 a) Modify the `AssemblyInfo.cs`
 
@@ -83,7 +83,7 @@ a) How to sign automatically generated serialization dlls
 
 If you use an automatically created serialization dll for your classes, you need to delay-sign them via the `sgen.exe` tool. This tool can be found the SDK directory of your development environment.
 
-Example:
+**Example:**
 
 "C:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin\`sgen.exe`" /compiler:/delaysign+ /assembly:"`MyDllToBeSerialized.dll`" /proxytypes
 

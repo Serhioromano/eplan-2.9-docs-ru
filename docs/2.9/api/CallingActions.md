@@ -69,7 +69,7 @@ A script can also contain and register an action. This means it can also evaluat
 
 It is necessary to pass further general command line parameters **before** the action name.
 
-List of general command line parameters evaluated by EPLAN:
+**List of general command line parameters evaluated by EPLAN:**
 
 Parameter  |  Description  
 

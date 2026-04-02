@@ -143,7 +143,7 @@ IMPORTMATCH |
     The import process tries to match imported objects with those existing in the project.
     Based on the option selected, the matching may be performed by internal object ids or by objects' identifying names.
     If an imported object is matched with an existing function, properties of the existing function will be updated whereas for unmatched imported objects, new functions will be created in the project.
-    The options are:
+**    The options are:**
     0 = Match by internal object ids.
     1 = Match by identifying names. Note: in this case, a comparison dialog may be displayed for the user to individually selecting some function to update.
     2 = Don't match. Create new functions for all imported objects.
@@ -258,7 +258,7 @@ PLCCPU |
 **Example**
 
 ```
-Bus data export:
+**Bus data export:**
 
 plcservice
 
@@ -271,7 +271,7 @@ plcservice
                 /CONVERTERID:PlcDcXMLExchangerSchneider
                 /OVERWRITE:1
 
-Bus data import:
+**Bus data import:**
 
 plcservice
 
@@ -282,7 +282,7 @@ plcservice
                 /LANGUAGE:de_DE
                 /CONVERTERID:PlcDcXMLExchangerUniversal
 
-Schematics generation:
+**Schematics generation:**
 
 plcservice
 
@@ -293,7 +293,7 @@ plcservice
                 /SINGLELINEPAGES:1
                 /MULTILINEPAGES:1
 
-Address overview export:
+**Address overview export:**
 
 plcservice
 

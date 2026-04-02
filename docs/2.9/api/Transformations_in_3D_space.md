@@ -1,12 +1,12 @@
 # Transformations in 3D space
 
-Each Placement3D has 2 read-write properties which describes its transformation :
+**Each Placement3D has 2 read-write properties which describes its transformation :**
 
 Matrix3D Placement3D::AbsoluteTransformation - absolute transformation
 
 Matrix3D Placement3D::RelativeTransformation - transformation relative to a parent object
 
-The properties are represented by 4x4 transformation matrix :
+**The properties are represented by 4x4 transformation matrix :**
 
 M11 M12 M13 M14
 
@@ -16,7 +16,7 @@ M31 M32 M33 M34
 
 OffsetX OffsetY OffsetZ M44
 
-Here is an example of setting transformation matrix to a 3D object:
+**Here is an example of setting transformation matrix to a 3D object:**
 
 ```csharp
 Vector3D oVector3D = new Vector3D();

@@ -50,7 +50,7 @@ Option |
 
    
 
-     option to control import:
+**     option to control import:**
      INSERT ( insert only, if not already exist ),
      OVERWRITE ( overwrite values and definitions ),
      UPDATE ( actualize only the values )
@@ -71,19 +71,19 @@ XSettingsImport /XmlFile:c:\file.xml
 
 
 
-      Imports only the node from given xml-file:
+**      Imports only the node from given xml-file:**
 
 XSettingsImport /XmlFile:c:\file.xml /Node:User.XSbGui.CustomSymbols
 
 
 
-Imports project-settings to target project from given xml-file:
+**Imports project-settings to target project from given xml-file:**
 
 XSettingsImport /XmlFile:c:\my_project.xml /Project:c:\...\ESS_Sample_Project.elk
 
 
 
-Imports only the project-setting-node to target project from given xml-file:
+**Imports only the project-setting-node to target project from given xml-file:**
 
 XSettingsImport /XmlFile:c:\my_project.xml /Project:c:\...\ESS_Sample_Project.elk /Node:XSbGui.CustomSymbols
 ```

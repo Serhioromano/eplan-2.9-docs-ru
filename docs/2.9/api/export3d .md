@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     STEPINSTALLATIONSPACES: Export installation spaces to STEP format.
 
      
@@ -120,7 +120,7 @@ SEPARATEFILES |
    
 
     Relevance of this parameter.
-    For STEPINSTALLATIONSPACES:
+**    For STEPINSTALLATIONSPACES:**
 
     If 1 then each first level child will be exported in separate file.
 

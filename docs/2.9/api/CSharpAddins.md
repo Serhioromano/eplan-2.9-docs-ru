@@ -96,7 +96,7 @@ public class CSharpAction: IEplAction
 }
 ```
 
-Now the compiler call needs to be slightly extended:
+**Now the compiler call needs to be slightly extended:**
 
 csc /target:library /reference:..\\..\\..\\..\bin\`Eplan.EplApi.AFu.dll` /reference:..\\..\\..\\..\bin\`Eplan.EplApi.Baseu.dll` /out:`SimpleCSharpAddIn.dll` `AddinModule.cs` `SimpleCSharpAction.cs`
 
@@ -104,7 +104,7 @@ If you added an action to an already loaded add-in, the add-in needs to be unloa
 
 So you just open the "API modules" dialog again, select the add-in in the list and click the "Unload" button. Then load the add-in again.
 
-Now you can call your new action in EPLAN via a Command line call:
+**Now you can call your new action in EPLAN via a Command line call:**
 
 `W3u.exe` CSharpAction
 

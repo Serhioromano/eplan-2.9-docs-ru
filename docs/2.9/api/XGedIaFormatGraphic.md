@@ -145,7 +145,7 @@ Remarks
 **Example**
 
 ```
-Requirement:
+**Requirement:**
 Set strength of a line to 5,5 mm, cyan color of graphic, and set visibly graphic element to everyone
 
   XGedStartInteractionAction /Name:XGedIaFormatGraphic /width:5,5 /color:4 /type:? /patternlength:? /lineendstyle:? /visible:1 /filled:? /rounded:? /radius:?

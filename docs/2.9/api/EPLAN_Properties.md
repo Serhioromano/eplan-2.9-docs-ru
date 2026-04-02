@@ -43,7 +43,7 @@ Long | `System.Int64`
 
  
 
-The following example gets the type of a page property:
+**The following example gets the type of a page property:**
 
 === "C#"
 
@@ -152,7 +152,7 @@ string strStringValue = oFunction.Properties.FUNC_CODE.ToString();
 
 ```
 
-or implicitly:
+**or implicitly:**
 
 ```csharp
 int nValue = oFunction.Properties.FUNC_CRAFT;
@@ -166,7 +166,7 @@ double dValue = oArticle.Properties.ARTICLE_DEPTH.ToDouble(); //ok
 string strValue2 = oArticle.Properties.ARTICLE_DEPTH.ToDouble().ToString("0.00", CultureInfo.InvariantCulture); //also ok
 ```
 
-Here is a table that shows which conversions are allowed:
+**Here is a table that shows which conversions are allowed:**
 
 | `Eplan.EplApi.Base.Point`  
 
@@ -222,7 +222,7 @@ Properties can have more than one value. In this case, we call it an indexed pro
     strConnDes1 = oFunction.Properties(Properties.Function.FUNC_CONNECTIONDESIGNATION, 1).ToString()
     ```
 
-Alternatively:
+**Alternatively:**
 
 === "C#"
 
@@ -240,9 +240,9 @@ Alternatively:
 
 EPLAN API supports also user-defined properties that were introduced in EPLAN 2.4
 
-Following enhancements were added due to it :
+**Following enhancements were added due to it :**
 
-- access to properties by case-sensitive string identifiers :
+**- access to properties by case-sensitive string identifiers :**
 
 ```csharp
 //setting user-defined property
@@ -264,7 +264,7 @@ var oCategory = oProject.Properties["EPLAN.Project.UserSupplementaryField1"].Cat
 
 - import/export property definitions (ExportPropertyDefinitions, ImportPropertyDefinitions from PrePlanningService class)
 
-- new AnyPropertyId constructor allowing creating ID of user defined property:
+**- new AnyPropertyId constructor allowing creating ID of user defined property:**
 
 ```csharp
 public AnyPropertyId(
@@ -285,7 +285,7 @@ They have the same internal ids as old *_CUSTOM_SUPPLEMENTARYFIELD* properties (
 
 Using old identifiers is still possible for compatibility reasons, however generates warnings and will be removed in future.
 
-So please replace them with new IDs to unique problems in forthcoming EPLAN versions:
+**So please replace them with new IDs to unique problems in forthcoming EPLAN versions:**
 
 ```csharp
 MultiLangString oMLS = oProject.Properties.PROJ_CUSTOM_SUPPLEMENTARYFIELD01;             //old code, generates warning

@@ -72,13 +72,13 @@ Remarks
 **Example**
 
 ```
-Preview of a page:
+**Preview of a page:**
 
 XSDPreviewAction /PROJECTNAME:ESS_Sample_Project /PAGENAME:=CA1+EAA/1
 
 XSDPreviewAction /PROJECTNAME:"C:\\Users\\Public\\EPLAN\\Electric P8\\Projects\\EPLAN\\ESS_Sample_Project" /PAGENAME:=CA1+EAA/2
 
-Preview of a window macro:
+**Preview of a window macro:**
 
 XSDPreviewAction /PROJECTNAME:ESS_Sample_Project /MACRONAME:Macro_0001.ema
 

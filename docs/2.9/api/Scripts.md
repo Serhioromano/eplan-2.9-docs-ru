@@ -15,7 +15,7 @@ In a script following Microsoft .Net framework assemblies can be used :
   * `System.Drawing`
   * `System.Windows.Forms`
 
-also these EPLAN assemblies are referenced by default :
+**also these EPLAN assemblies are referenced by default :**
 
 === "`Eplan.EplApi.Base`"
 

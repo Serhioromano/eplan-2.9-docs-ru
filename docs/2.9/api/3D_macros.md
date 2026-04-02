@@ -2,7 +2,7 @@
 
 The standard class WindowMacro is used to represent both 3D and 2D window macros. It was extended with methods covering 3d functionality
 
-Creating 3d window macros:
+**Creating 3d window macros:**
 
 ```csharp
 MultiLangString oMultiLangString = new MultiLangString();
@@ -13,7 +13,7 @@ WindowMacro oWMacro = new WindowMacro();
 oWMacro.Create(strWindowMacro3DFilePath, 0, new Placement3D[] { oComponent1, oComponent2, oComponent3 },true, oMultiLangString);
 ```
 
-Inserting:
+**Inserting:**
 
 ```csharp
 //preparing transformation

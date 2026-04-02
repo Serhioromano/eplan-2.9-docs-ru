@@ -4,7 +4,7 @@ EPLAN has a modular architecture. It is possible to add functionality to EPLAN a
 
 These different means to modify the system are implemented in modules, which can be loaded by EPLAN, so-called add-ins. So, if you want to add functionality to EPLAN, you first need to create an add-in.
 
-You can enhance existing functionality for example by :
+**You can enhance existing functionality for example by :**
 
   * Adding new GUI items, such as menu points, buttons
   * Adding new actions, verifications, interactions, messages, XML processors

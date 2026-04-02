@@ -14,7 +14,7 @@ TYPE |
 
    
 
-    Type of task to be performed:
+**    Type of task to be performed:**
     GRAPHICPROJECT: Export project in graphical format (TIF, GIF, PNG, JPG).
     GRAPHICPAGE:Export pages in graphical format (TIF, GIF, PNG, JPG)
      

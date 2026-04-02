@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     CONNECTIONS: Connection generation
     CABLES: Cable generation
 

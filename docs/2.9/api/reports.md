@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed by the action:
+**    Type of task to be performed by the action:**
     PROJECT: Generate project reports.
     PAGES: Update all reports of the same type as given pages. Only the particular report, to which the page belongs, will be updated
     UPDATEMODELVIEWPAGES: Update model views on given pages.

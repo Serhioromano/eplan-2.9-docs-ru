@@ -2,14 +2,14 @@
 
 There is also possibility to transform 3D objects by snapping i.e. by means of auxiliary points called "mates".
 
-There are 2 kinds of mates:
+**There are 2 kinds of mates:**
 
   * source mates - points of a source object that we want to transform. In GUI they are grey.
   * target mates - the ones that we snap to. In GUI they are blue.
 
 ![](images/Mates.jpg)
 
-Another division is besed on a purpose and a shape of mates:
+**Another division is besed on a purpose and a shape of mates:**
 
   * point mates (classes [PointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PointMate.html), [HandleMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.HandleMate.html), [BasePointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.BasePointMate.html), [MountingPointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPointMate.html), [PlacementAreaPointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlacementAreaPointMate.html))
   * line mates (classes [LineMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.LineMate.html), [MountingLineMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingLineMate.html))
@@ -20,7 +20,7 @@ Another division is besed on a purpose and a shape of mates:
 
 ### Getting mates
 
-Mates can be retrieved from a Placement3D using methods:
+**Mates can be retrieved from a Placement3D using methods:**
 
 ```csharp
 PointMate[] GetSourceMates(Mate.Enums.PlacementOptions ePlacementOptions)

@@ -130,7 +130,7 @@ ANGLE |
 
     Rotation of the content of model view.
 
-    Possible values are:
+**    Possible values are:**
 
     1 - content is rotated 90° counter-clockwise;
 
@@ -157,7 +157,7 @@ STYLE |
    
 
     Style in which content of model view is displayed.
-    Possible values are:
+**    Possible values are:**
     0 - Wire frame model;
     1 - Hidden lines;
     2 - Shading;
@@ -185,7 +185,7 @@ VIEWPOINT |
    
 
     The direction from which objects are seen in model view.
-    Possible values are:
+**    Possible values are:**
     0 - Default;
     1 - Bottom;
     2 - Top;
@@ -219,7 +219,7 @@ SCALESETTING |
    
 
     Type of scaling used to display objects in the model view.
-    Possible values are:
+**    Possible values are:**
     0 - Automatic;
     1 - Fit;
     2 - Manually defined;
@@ -246,7 +246,7 @@ VIEWTYPE |
 
     Type of view used to display objects.
 
-    Possible values are:
+**    Possible values are:**
     0 - Undefined;
     1 - Cabinet;
     2 - EMI;

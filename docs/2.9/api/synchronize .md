@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of synchronization task to be performed:
+**    Type of synchronization task to be performed:**
     MULTILINE: 'Multi-line' data synchronization.
     SINGLELINE:'Single-line' data synchronization.
     OVERVIEW: 'Overview' data synchronization.

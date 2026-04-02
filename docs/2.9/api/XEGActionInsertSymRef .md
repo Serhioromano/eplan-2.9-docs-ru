@@ -91,7 +91,7 @@ CustomSymbols |
      the parameter is the name of the setting which contains the identifiers of the custom symbol;
      if this parameter is NOT empty, the custom symbol is used and not the symbol
      referenced by "SymbolLibName","SymbolId","VariantId";
-     the setting must contains these values itself and must look like the following:
+**     the setting must contains these values itself and must look like the following:**
      XSbGui.CustomSymbols.CustomSymbols.lib
      XSbGui.CustomSymbols.CustomSymbols.id
      XSbGui.CustomSymbols.CustomSymbols.var

@@ -8,7 +8,7 @@ To create an add-in, just create a project in Visual Studio using the template "
 
 Please mind to select correct .NET Framework version (currently it is 4.5.2) otherwise the wizard won't appear!
 
-The new project already references the essentially needed EPLAN API assemblies and a file with the module class:
+**The new project already references the essentially needed EPLAN API assemblies and a file with the module class:**
 
 ![](images/New_Project2.jpg)
 

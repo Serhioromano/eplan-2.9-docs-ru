@@ -15,7 +15,7 @@ TYPE |
 
    
 
-    Type of task to be performed:
+**    Type of task to be performed:**
     IMPORT: Import parts lists
     EXPORT: Export parts lists
     IMPORTTOSYSTEM: Import to parts management
@@ -180,7 +180,7 @@ MODE |
    
 
     Optional: Import mode.
-    Supported modes are:
+**    Supported modes are:**
     0: append new records only
     1: update existing records only
     2: update existing records and append new ones
@@ -219,11 +219,11 @@ CONFIGSCHEME |
 **Example**
 
 ```
-Export:
+**Export:**
 
 partslist /TYPE:EXPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk    /FORMAT:XPalCSVConverter /EXPORTFILE:C:\temp\PartsList.csv
 
-Import:
+**Import:**
 
 partslist /TYPE:IMPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk    /FORMAT:XPalCSVConverter /IMPORTFILE:C:\temp\PartsList.csv
 

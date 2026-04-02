@@ -6,7 +6,7 @@ In GUI it is visible under menu point Options->Settings
 
 Using API, we can modify the database and also create custom values for usage in API applications.
 
-We can distinguish following settings categories:
+**We can distinguish following settings categories:**
 
   * Company settings: They should be located on a server and should be the same for the whole company
   * Workstation settings: These settings apply for one computer and should be saved on a local hard disk.
@@ -216,7 +216,7 @@ Using export functionality we can access their values, also these which are not 
 </xs:schema>
 ```
 
-Here is a simplified description of the setting file:
+**Here is a simplified description of the setting file:**
 
   * The name of a setting (**name**) must be always unique within a setting node.
   * The root node is **Settings**
@@ -368,7 +368,7 @@ Adding, setting and getting settings:
     End If
     ```
 
-Example of merging nodes by SettingNode:
+**Example of merging nodes by SettingNode:**
 
 === "C#"
 

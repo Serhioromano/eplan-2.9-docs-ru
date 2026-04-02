@@ -211,7 +211,7 @@ SUBPAGES |
 
    
 
-    Values are:
+**    Values are:**
     0 = Retain: Existing subpages are adopted unchanged into the target page.
     1 = ConsecutiveNumbering: Existing subpages are renumbered using the starting value "1" and an increment of "1".
             At every change of the main page, the subpage numbering begins again from "1".
@@ -464,7 +464,7 @@ AVOIDIDENTICALDESIGNATIONS |
 
    
 
-    Values are:
+**    Values are:**
     0 = In entire project
     1 = In the selection
     2 = None
@@ -528,7 +528,7 @@ Numbering connections
 renumber /TYPE:CONNECTIONS /CONFIGSCHEME:Verbindungsorientiert /STARTVALUE_1:1 /STEPVALUE_1:1 /OVERWRITE:1 /AVOIDIDENTICALDESIGNATIONS:1 /VISIBILITY:1 /MARKASMANUAL:0 /USESELECTION:1 /GROUP_1:1
 renumber /TYPE:CONNECTIONS /CONFIGSCHEME: Potenzialorientiert /STARTVALUE_1:13 /STEPVALUE_1:3 /OVERWRITE:0 /AVOIDIDENTICALDESIGNATIONS:0 /VISIBILITY:1 /MARKASMANUAL:1 /USESELECTION:0 /GROUP_1:1
 
-Numbering terminals:
+**Numbering terminals:**
 
 renumber /TYPE:TERMINALS /CONFIGSCHEME:Numerisch /SEQUENCE:1 /POTENTIAL_N:1 /POTENTIAL_PE:2 /POTENTIAL_SH:2 /POSTNUMERATE:0 /ALSONUMERATEDBYPLC:1 /MULTIPLETERMINALS:1 /KEEPALPHA:0 /STARTVALUE:1 /STEPVALUE:1 /PREFIX:p_ /SUFFIX:_s /USESELECTION:1
 ```

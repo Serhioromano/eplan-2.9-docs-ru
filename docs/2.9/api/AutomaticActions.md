@@ -10,7 +10,7 @@ A command line action has either the complete or a subset of the functionality o
 
 ![](images/AutoAction.jpg)
 
-These are some of the available command line actions:
+**These are some of the available command line actions:**
 
 * Backup projects and master data
 * Restore projects and master data

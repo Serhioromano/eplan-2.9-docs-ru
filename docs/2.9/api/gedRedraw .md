@@ -19,7 +19,7 @@ Remarks
 **Example**
 
 ```
-Redraw GED surface:
+**Redraw GED surface:**
 
 gedRedraw
 ```

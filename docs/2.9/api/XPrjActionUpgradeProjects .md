@@ -157,7 +157,7 @@ Remarks
      BaseProjects are only upgraded when a major version change is done. For minor changes the base Project
      will stay unchanged.
      Each project found produces a system message with the upgrade result.
-     handle Folder:
+**     handle Folder:**
      All *.elk and *.ell and *.elp are upgraded
      when FileTypes is set, the params Archive/BaseProject/UpgradeWriteProtectedProjects  are ignored
     
