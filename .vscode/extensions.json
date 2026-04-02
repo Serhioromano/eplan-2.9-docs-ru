@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "DavidAnson.vscode-markdownlint",
+        "bierner.markdown-shiki",
+        "yzhang.markdown-all-in-one",
+        "redhat.vscode-yaml",
+        "pkief.material-icon-theme",
+        "vscode-icons-team.vscode-icons",
+        "yzane.markdown-pdf",
+        "ban.spellright",
+        "anthropic.claude-code"
+    ]
+}

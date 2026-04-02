@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Missing linked pages",
+    "link": "",
+    "children": [
+      {
+        "title": "blockproperties_k_berechnung",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/blockproperties_k_berechnung.htm",
+        "refs": 1
+      },
+      {
+        "title": "cabinetgui_h_navigationswuerfelsteuern",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/cabinetgui_h_navigationswuerfelsteuern.htm",
+        "refs": 1
+      },
+      {
+        "title": "devicetaggui_r_feldsichtbaresbmk",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/devicetaggui_r_feldsichtbaresbmk.htm",
+        "refs": 19
+      },
+      {
+        "title": "devicetaggui_r_gruppenfeldeigenschaften",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/devicetaggui_r_gruppenfeldeigenschaften.htm",
+        "refs": 40
+      },
+      {
+        "title": "eservicesgui_d_eigenschaftsanordnung",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/eservicesgui_d_eigenschaftsanordnung.htm",
+        "refs": 1
+      },
+      {
+        "title": "eservicesgui_d_ersetzungstexte",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/eservicesgui_d_ersetzungstexte.htm",
+        "refs": 1
+      },
+      {
+        "title": "eservicesgui_d_formatberechnung",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/eservicesgui_d_formatberechnung.htm",
+        "refs": 6
+      },
+      {
+        "title": "eservicesgui_d_nummusteranschluesse",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/eservicesgui_d_nummusteranschluesse.htm",
+        "refs": 1
+      },
+      {
+        "title": "gededitgui_r_bezierkurve",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_r_bezierkurve.htm",
+        "refs": 2
+      },
+      {
+        "title": "gededitgui_r_ellipse",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_r_ellipse.htm",
+        "refs": 1
+      },
+      {
+        "title": "gededitgui_r_kreis",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_r_kreis.htm",
+        "refs": 2
+      },
+      {
+        "title": "gededitgui_r_linie",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_r_linie.htm",
+        "refs": 2
+      },
+      {
+        "title": "gededitgui_r_polylinie",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_r_polylinie.htm",
+        "refs": 2
+      },
+      {
+        "title": "gededitgui_r_rechteck",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/gededitgui_r_rechteck.htm",
+        "refs": 5
+      },
+      {
+        "title": "modaldialogsdb_d_bmkauswahl",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/modaldialogsdb_d_bmkauswahl.htm",
+        "refs": 3
+      },
+      {
+        "title": "partsimportbmecatgui_d_eclassanwendungsklassen",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/partsimportbmecatgui_d_eclassanwendungsklassen.htm",
+        "refs": 1
+      },
+      {
+        "title": "userdefproperties_k_prinzip",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/userdefproperties_k_prinzip.htm",
+        "refs": 1
+      },
+      {
+        "title": "xessettingsgui_d_einstellungenprojektkompatibilitaet",
+        "link": "https://www.eplan.help/ru-ru/Infoportal/Content/Plattform/2026/Content/htm/xessettingsgui_d_einstellungenprojektkompatibilitaet.htm",
+        "refs": 2
+      }
+    ]
+  }
+]

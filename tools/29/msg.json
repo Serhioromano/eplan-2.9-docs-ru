@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Сообщения контрольного прогона",
+    "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_start.htm",
+    "children": [
+      {
+        "title": "001 — Клеммы",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_001Terminals.htm"
+      },
+      {
+        "title": "002 — Штекеры",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_002Plugs.htm"
+      },
+      {
+        "title": "003 — Кабели",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_003Cables.htm"
+      },
+      {
+        "title": "004 — ПЛК / шина",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_004PLCbus.htm"
+      },
+      {
+        "title": "005 — Соединения",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_005Connections.htm"
+      },
+      {
+        "title": "007 — Устройства",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_007Devices.htm"
+      },
+      {
+        "title": "008 — Иностранные языки",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_008Foreignlanguages.htm"
+      },
+      {
+        "title": "010 — Перекрестные ссылки",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_010Crossreferences.htm"
+      },
+      {
+        "title": "011 — Точки разрыва",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_011Interruptionpoints.htm"
+      },
+      {
+        "title": "012 — Компоновка электрошкафа 2D",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_0122Dpanellayout.htm"
+      },
+      {
+        "title": "013 — Данные изделия",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_013Partsdata.htm"
+      },
+      {
+        "title": "014 — Макрос",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_014Macro.htm"
+      },
+      {
+        "title": "015 — Отчеты",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_015Reports.htm"
+      },
+      {
+        "title": "016 — Черные ящики",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_016Blackboxes.htm"
+      },
+      {
+        "title": "017 — ОУ",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_017DT.htm"
+      },
+      {
+        "title": "020 — Сравнение проектов",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_020Projectcomparison.htm"
+      },
+      {
+        "title": "021 — Объекты-заполнители",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_021Placeholderobjects.htm"
+      },
+      {
+        "title": "022 — Прочее",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_022Other.htm"
+      },
+      {
+        "title": "024 — Fluid-Техника",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_024Fluidpower.htm"
+      },
+      {
+        "title": "025 — Настройки проекта",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_025Projectsettings.htm"
+      },
+      {
+        "title": "026 — Трехмерный чертеж монтажных поверхностей",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_0263Dmountinglayout.htm"
+      },
+      {
+        "title": "027 — Топология",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_027Topology.htm"
+      },
+      {
+        "title": "028 — Предварительное планирование",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_028Preplanning.htm"
+      },
+      {
+        "title": "029 — Глубина предварительного планирования",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_029Preplanningdepth.htm"
+      },
+      {
+        "title": "030 — Частичные проекты",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_030Subprojects.htm"
+      },
+      {
+        "title": "032 — Схема сверления",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_032Drillingpattern.htm"
+      },
+      {
+        "title": "033 — Проводной монтаж",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_033Wireharness.htm"
+      },
+      {
+        "title": "501 — Основные данные изделия",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_501Partmasterdata.htm"
+      }
+    ]
+  }
+]

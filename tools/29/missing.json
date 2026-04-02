@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Битые ссылки docs/2.9",
+    "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/",
+    "children": [
+      {
+        "title": "devicetaggui_r_feldsichtbaresbmk",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028032.htm"
+      },
+      {
+        "title": "devicetaggui_r_gruppenfeldeigenschaften",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/projectprocessinggui_d_einstellungenbetriebsmittelimport.htm"
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+{
+    "editor.fontSize": 16,
+    "yaml.schemas": {
+        "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml"
+    },
+    "yaml.customTags": [
+        "!ENV scalar",
+        "!ENV sequence",
+        "!relative scalar",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+        "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "cSpell.words": [
+        "fontawesome",
+        "javascripts",
+        "pygments",
+        "pymdownx",
+        "superfences",
+        "каплер",
+        "каплера",
+        "каплеров",
+        "каплером"
+    ],
+    "files.autoSave": "afterDelay",
+    "spellright.language": [
+        "en",
+        "ru"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "makefile.configureOnOpen": false,
+    "spellright.parserByClass": {
+        "dictionary": {
+            "parser": "markdown"
+        }
+    },
+    "accessibility.voice.speechLanguage": "ru-RU",
+}

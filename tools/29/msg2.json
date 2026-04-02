@@ -1,0 +1,2528 @@
+[
+  {
+    "title": "Сообщения контрольного прогона",
+    "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_start.htm",
+    "children": [
+      {
+        "title": "Сообщения контрольного прогона: Клеммы",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_001Terminals.htm",
+        "children": [
+          {
+            "title": "P001001 — Клемма без обозначения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001001.htm"
+          },
+          {
+            "title": "P001005 — Многократно использована клемма с одинаковым обозначением",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001005.htm"
+          },
+          {
+            "title": "P001008 — Вывод клеммы имеет слишком много целей: <x>. Макс. число целей: <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001008.htm"
+          },
+          {
+            "title": "P001010 — Отсутствует определение клеммника",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001010.htm"
+          },
+          {
+            "title": "P001011 — Клеммник без клемм",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001011.htm"
+          },
+          {
+            "title": "P001012 — Неверное образование мостов. перемычки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001012.htm"
+          },
+          {
+            "title": "P001015 — Слишком много уровней проволочной перемычки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001015.htm"
+          },
+          {
+            "title": "P001016 — Клемма без целей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001016.htm"
+          },
+          {
+            "title": "P001021 — Клемма не содержится в определении клеммника",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001021.htm"
+          },
+          {
+            "title": "P001022 — Расположенные одна над другой мостов. перемычки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001022.htm"
+          },
+          {
+            "title": "P001023 — Главная клемма не будет присвоена первому шаблону функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001023.htm"
+          },
+          {
+            "title": "P001024 — Соединить различные клеммные выводы (внутри/снаружи)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001024.htm"
+          },
+          {
+            "title": "P001025 — Обозначение вывода устройства на выводе устройства с перемычкой",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001025.htm"
+          },
+          {
+            "title": "P001026 — Несоединенные распределенные клеммы имеют одинаковые обозначения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001026.htm"
+          },
+          {
+            "title": "P001027 — Отдельная распределенная клемма",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001027.htm"
+          },
+          {
+            "title": "P001028 — Распределенные клеммы имеют другое определение функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001028.htm"
+          },
+          {
+            "title": "P001029 — Точка определения соединения лежит на соединении между двумя распределенными клеммами",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001029.htm"
+          },
+          {
+            "title": "P001030 — Загруженный вывод распределенной клеммы без обозначения вывода устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001030.htm"
+          },
+          {
+            "title": "P001031 — Распределенная клемма не была учтена при оптимизации. <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001031.htm"
+          },
+          {
+            "title": "P001032 — Не удалось правильно замкнуть переключаемую перемычку. <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001032.htm"
+          },
+          {
+            "title": "P001033 — Невозможно генерировать созданную вручную мостовую перемычку. <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001033.htm"
+          },
+          {
+            "title": "P001034 — Старая настройка созданной вручную мостовой перемычки: '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001034.htm"
+          },
+          {
+            "title": "P001035 — Несколько выводов распределенных клемм с одинаковым обозначением: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001035.htm"
+          },
+          {
+            "title": "P001036 — Локальные шаблоны функций несмотря на изделия с шаблонами функций",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001036.htm"
+          },
+          {
+            "title": "P001037 — Наличие нескольких главных клемм",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_001037.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Штекеры",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_002Plugs.htm",
+        "children": [
+          {
+            "title": "P002001 — Вывод контакта штекера имеет слишком много целей: <x>. Макс. число целей: <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002001.htm"
+          },
+          {
+            "title": "P002002 — Контакт штекера без целей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002002.htm"
+          },
+          {
+            "title": "P002003 — Отсутствует определение штекера",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002003.htm"
+          },
+          {
+            "title": "P002004 — Штекер без контактов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002004.htm"
+          },
+          {
+            "title": "P002005 — Имеется только сторона штырей штекеров",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002005.htm"
+          },
+          {
+            "title": "P002006 — Имеется только сторона гнезд штекеров",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002006.htm"
+          },
+          {
+            "title": "P002007 — Имеются несколько определений штекеров, не связанных между собой",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002007.htm"
+          },
+          {
+            "title": "P002008 — В штекере имеется разное число гнезд и штырей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002008.htm"
+          },
+          {
+            "title": "P002009 — Позиция в форме занята дважды",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002009.htm"
+          },
+          {
+            "title": "P002010 — Неверное образование мостов. перемычки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002010.htm"
+          },
+          {
+            "title": "P002012 — Штырь вставлен в штырь или гнездо вставлено в гнездо",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002012.htm"
+          },
+          {
+            "title": "P002013 — Слишком много соединений на странице штекера",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002013.htm"
+          },
+          {
+            "title": "P002014 — Многократно использован контакт штекера с одинаковым обозначением",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002014.htm"
+          },
+          {
+            "title": "P002015 — Локальные шаблоны функций несмотря на изделия с шаблонами функций",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_002015.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Кабели",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_003Cables.htm",
+        "children": [
+          {
+            "title": "P003001 — Автоматический выбор кабеля прерывается, так как кабель не мог быть выбран",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003001.htm"
+          },
+          {
+            "title": "P003002 — Невозможно выполнить автоматический выбор кабеля для этого кабеля, так как соответствующий критерий фильтра не найден",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003002.htm"
+          },
+          {
+            "title": "P003003 — Противоречие между ОУ соединения и ОУ кабеля",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003003.htm"
+          },
+          {
+            "title": "P003005 — Цель кабеля без полного ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003005.htm"
+          },
+          {
+            "title": "P003006 — Кабель между одним и тем же функциональным элементом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003006.htm"
+          },
+          {
+            "title": "P003007 — Несколько целей кабеля",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003007.htm"
+          },
+          {
+            "title": "P003008 — Кабельное соединение без кабеля",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003008.htm"
+          },
+          {
+            "title": "P003009 — Различные данные кабеля: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003009.htm"
+          },
+          {
+            "title": "P003011 — Слишком много кабельных соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003011.htm"
+          },
+          {
+            "title": "P003012 — Цвет / номер указаны дважды (при равных экранированиях / парных индексах)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003012.htm"
+          },
+          {
+            "title": "P003013 — PE-жила указана многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003013.htm"
+          },
+          {
+            "title": "P003014 — N-жила указана дважды",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003014.htm"
+          },
+          {
+            "title": "P003018 — Экранирование прокладывается слишком часто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003018.htm"
+          },
+          {
+            "title": "P003019 — Подкабель сгенерирован",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003019.htm"
+          },
+          {
+            "title": "P003022 — Недействит. длина кабеля",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003022.htm"
+          },
+          {
+            "title": "P003023 — Противоречие между количеством изделий и настройкой для суммирования длины кабелей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003023.htm"
+          },
+          {
+            "title": "P003024 — Кабель и его кабельные соединения имеют разный статус искробезопаности",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003024.htm"
+          },
+          {
+            "title": "P003025 — Число соединений не указано",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003025.htm"
+          },
+          {
+            "title": "P003026 — Не задана длина кабеля",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003026.htm"
+          },
+          {
+            "title": "P003027 — Кабели: 'Функциональный текст (автоматич.)' различается (в языке '<x>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003027.htm"
+          },
+          {
+            "title": "P003028 — Кабель использует не все кабельные соединения изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_003028.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: ПЛК / шина",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_004PLCbus.htm",
+        "children": [
+          {
+            "title": "P004003 — Относящееся к указанному значению конфигурации '<x>' свойство '<y>' блока ПЛК не содержит число",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004003.htm"
+          },
+          {
+            "title": "P004004 — Недостающий вывод шины на обзоре",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004004.htm"
+          },
+          {
+            "title": "P004005 — Недостающий вывод устройства ПЛК на обзоре",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004005.htm"
+          },
+          {
+            "title": "P004006 — Блок ПЛК без вывода устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004006.htm"
+          },
+          {
+            "title": "P004007 — Каркас '<x>' вставлен сам в себя",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004007.htm"
+          },
+          {
+            "title": "P004009 — Многократно заданный разъем '<x>' каркаса '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004009.htm"
+          },
+          {
+            "title": "P004010 — Неизвестный каркас '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004010.htm"
+          },
+          {
+            "title": "P004013 — Каркас '<x>': кольцевое соединение",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004013.htm"
+          },
+          {
+            "title": "P004016 — Многократное вхождение каркаса '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004016.htm"
+          },
+          {
+            "title": "P004018 — Нет исп. элемента на выходе",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004018.htm"
+          },
+          {
+            "title": "P004019 — Нет датчика на входе",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004019.htm"
+          },
+          {
+            "title": "P004020 — Больше одного вывода устройства В/В на один канал",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004020.htm"
+          },
+          {
+            "title": "P004021 — Многократно заданный адрес в одном ЦПУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004021.htm"
+          },
+          {
+            "title": "P004022 — Многократно заданное описание вывода устройства в одном канале (адресе) карты ПЛК",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004022.htm"
+          },
+          {
+            "title": "P004023 — Отсутствующий адрес",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004023.htm"
+          },
+          {
+            "title": "P004024 — Отсутствующее описание вывода устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004024.htm"
+          },
+          {
+            "title": "P004025 — Отсутствующий разъем",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004025.htm"
+          },
+          {
+            "title": "P004027 — Обозначение канала отсутствует или указано неверно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004027.htm"
+          },
+          {
+            "title": "P004028 — Противоречие между входом / выходом устройства ПЛК и соответствующими точками подвода питания в рамках определенного канала",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004028.htm"
+          },
+          {
+            "title": "P004029 — Объект отмечен для удаления",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004029.htm"
+          },
+          {
+            "title": "P004030 — Недостающий символический адрес (автоматич.)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004030.htm"
+          },
+          {
+            "title": "P004031 — Многократно заданный символический адрес в одном ЦПУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004031.htm"
+          },
+          {
+            "title": "P004035 — Многократно заданный адрес шины '<x>' логической сети '<y>' (Вывод шины в системе шин: '<z>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004035.htm"
+          },
+          {
+            "title": "P004036 — Незнакомая логическая сеть '<x>' (Вывод шины в системе шин: '<y>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004036.htm"
+          },
+          {
+            "title": "P004037 — Отсутствует адрес шины (вывод шины '<x>' в шинной системе: '<y>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004037.htm"
+          },
+          {
+            "title": "P004038 — Для подчиненной шины '<x>' в выводе шины в шинной системе '<y>' определена скорость передачи данных",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004038.htm"
+          },
+          {
+            "title": "P004039 — Соединение между разными системами шин ('<x>', '<y>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004039.htm"
+          },
+          {
+            "title": "P004040 — Для вывода шины на '<x>' найдены противоречивые данные на соответствующем выводе шины",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004040.htm"
+          },
+          {
+            "title": "P004045 — Связующее устройство на блоке ПЛК: '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004045.htm"
+          },
+          {
+            "title": "P004046 — При копировании данных ПЛК для '<x>' возник конфликт",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004046.htm"
+          },
+          {
+            "title": "P004050 — Соединение от '<x>' до '<y>' отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004050.htm"
+          },
+          {
+            "title": "P004051 — Соединение отсутствует! '<x>' не соединено с физической сетью '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004051.htm"
+          },
+          {
+            "title": "P004052 — Соединение с неверной физической сетью! '<x>' должно быть соединено с физической сетью '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004052.htm"
+          },
+          {
+            "title": "P004053 — Между структурой сети в файле импорта и в проекте найдено слишком много различий! Пожалуйста, проверьте все структуры сети",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004053.htm"
+          },
+          {
+            "title": "P004054 — Соединение только в проекте! Соединение на '<x>' имеется только в проекте",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004054.htm"
+          },
+          {
+            "title": "P004055 — При импорте было найдено более одного каркаса. Убедитесь, что для соединения используется надлежащее аппаратное обеспечение",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004055.htm"
+          },
+          {
+            "title": "P004056 — Изделие не найдено: Обозначение типа ПЛК '<x>' или файл описания устройства '<y>' / индекс '<z>'! При импорте '<u>', возможно, произошла ошибка",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004056.htm"
+          },
+          {
+            "title": "P004057 — Найдены несколько изделий с одинаковым или подходящим обозначением типа ПЛК '<x>'! Если это возможно, функции '<y>' следует присвоить другое изделие",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004057.htm"
+          },
+          {
+            "title": "P004058 — Предмет оборудования '<x>' в функции '<y>' имеется только в проекте",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004058.htm"
+          },
+          {
+            "title": "P004070 — Для вывода шины (вход) на '<x>' не найден подходящий вывод шины (выход) для адреса процессов '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004070.htm"
+          },
+          {
+            "title": "P004071 — Интерфейс шины '<x>': Свойство 'Интерфейс шины: Главный вывод шины' задано многократно или не активировано ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004071.htm"
+          },
+          {
+            "title": "P004072 — Многократно заданный адрес шины '<x>' физической сети '<y>' ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004072.htm"
+          },
+          {
+            "title": "P004073 — Многократно заданный 'Функциональный текст (автоматич.)' (в языке '<x>') в одном ЦПУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004073.htm"
+          },
+          {
+            "title": "P004080 — Отсутствует проект конфигураций",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004080.htm"
+          },
+          {
+            "title": "P004081 — Отсутствует имя рабочей станции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004081.htm"
+          },
+          {
+            "title": "P004082 — Проект конфигураций '<x>' не содержит ЦПУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004082.htm"
+          },
+          {
+            "title": "P004083 — ЦПУ '<x>', указанное в блоке ПЛК, не существует в проекте",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004083.htm"
+          },
+          {
+            "title": "P004084 — MasterSystemID содержит ошибку",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004084.htm"
+          },
+          {
+            "title": "P004085 — Отсутствует тип данных",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004085.htm"
+          },
+          {
+            "title": "P004086 — Отсутствует обозначение типа ПЛК или файл описания устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004086.htm"
+          },
+          {
+            "title": "P004087 — Отсутствует начальный адрес",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004087.htm"
+          },
+          {
+            "title": "P004088 — Имя карты ПЛК '<x>' уже используется в каркасе или ЦПУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004088.htm"
+          },
+          {
+            "title": "P004089 — Многократно заданное имя карты ПЛК '<x>' в одном каркасе",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004089.htm"
+          },
+          {
+            "title": "P004090 — Тип рабочей станции ПЛК в проекте и в изделии отличается",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004090.htm"
+          },
+          {
+            "title": "P004091 — Обозначение штекера указано неверно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004091.htm"
+          },
+          {
+            "title": "P004092 — Отсутствует имя интерфейса шины",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004092.htm"
+          },
+          {
+            "title": "P004093 — Вывод устройства ПЛК с помощью свойства 'Подустройство ПЛК: Индекс' указывает на несуществующее подустройство",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004093.htm"
+          },
+          {
+            "title": "P004094 — Многократно заданное имя ЦПУ '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004094.htm"
+          },
+          {
+            "title": "P004095 — Недостающий адрес (отказоуст.)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004095.htm"
+          },
+          {
+            "title": "P004096 — Многократно заданный адрес (отказоуст.) '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004096.htm"
+          },
+          {
+            "title": "P004097 — Больше одного вывода устройства В/В на один канал в виде сигнала в подустройстве",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004097.htm"
+          },
+          {
+            "title": "P004098 — Неверный формат ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004098.htm"
+          },
+          {
+            "title": "P004099 — Карта ПЛК с обозначением типа ПЛК '<x>' не вставлена в первичную станцию",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004099.htm"
+          },
+          {
+            "title": "P004100 — В ЦПУ отсутствует присвоение к разъему и / или каркасу",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004100.htm"
+          },
+          {
+            "title": "P004101 — Каркас '<x>' не соединен через удлинительный кабель шины со всеми остальными каркасами рабочей станции '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004101.htm"
+          },
+          {
+            "title": "P004102 — Вывод шины в станции '<x>' не соединен через удлинительный кабель шины с выводом шины в рабочей станции '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004102.htm"
+          },
+          {
+            "title": "P004103 — Подчиненный и главный шины отличаются в свойстве 'Физическая сеть: Имя'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004103.htm"
+          },
+          {
+            "title": "P004104 — Выводы шины физической сети '<x>' не связаны между собой",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004104.htm"
+          },
+          {
+            "title": "P004106 — Адрес ПЛК '<x>' не находится в диапазоне адресов соответствующей карты ПЛК",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004106.htm"
+          },
+          {
+            "title": "P004107 — Диапазон адресов карты ПЛК '<x>' пересекается с диапазоном адресов карты ПЛК '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004107.htm"
+          },
+          {
+            "title": "P004108 — Определенное пользователем свойство '<x>' на карте ПЛК с обозначением типа ПЛК '<y>' неизвестно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004108.htm"
+          },
+          {
+            "title": "P004109 — Разница между однополюсными и многополюсными структурами сети",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004109.htm"
+          },
+          {
+            "title": "P004110 — Физическая сеть без имени",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004110.htm"
+          },
+          {
+            "title": "P004111 — Соединение между выводами шины с другим свойством 'Физическая сеть: имя' ('<x>', '<y>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004111.htm"
+          },
+          {
+            "title": "P004200 — Siemens: Неверное присвоение карты ПЛК: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004200.htm"
+          },
+          {
+            "title": "P004201 — Siemens: Неверное присвоение типа рабочей станции ПЛК: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004201.htm"
+          },
+          {
+            "title": "P004202 — Siemens: Неверный вывод шины: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004202.htm"
+          },
+          {
+            "title": "P004203 — Siemens: карта ПЛК с типом рабочей станции ПЛК '<x>' является недействительным каркасом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_004203.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Соединения",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_005Connections.htm",
+        "children": [
+          {
+            "title": "P005001 — Вывод потенциала или точка определения потенциала без указания потенциала",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005001.htm"
+          },
+          {
+            "title": "P005010 — Соединение без указания потенциала",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005010.htm"
+          },
+          {
+            "title": "P005012 — Несколько точек определения соединения на одном соединении",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005012.htm"
+          },
+          {
+            "title": "P005013 — Разный тип вывода целей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005013.htm"
+          },
+          {
+            "title": "P005014 — Разный тип вывода соединения и вывода устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005014.htm"
+          },
+          {
+            "title": "P005015 — Разные типы потенциала целей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005015.htm"
+          },
+          {
+            "title": "P005016 — Разные типы потенциалов соединения и вывода устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005016.htm"
+          },
+          {
+            "title": "P005017 — Цель отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005017.htm"
+          },
+          {
+            "title": "P005018 — Противоречие между несколькими точками определения соединения на одном соединении",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005018.htm"
+          },
+          {
+            "title": "P005019 — Противоречие между сигналом и потенциалом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005019.htm"
+          },
+          {
+            "title": "P005020 — Противоречие между одинаковыми определениями потенциалов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005020.htm"
+          },
+          {
+            "title": "P005021 — Определение потенциала с неверным потенциалом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005021.htm"
+          },
+          {
+            "title": "P005022 — Точка определения соединения находится на более чем одном соединении",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005022.htm"
+          },
+          {
+            "title": "P005023 — Точка определения соединения находится не на соединении",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005023.htm"
+          },
+          {
+            "title": "P005024 — Точка определения соединения без свойств",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005024.htm"
+          },
+          {
+            "title": "P005025 — Слишком много соединений к одному выводу устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005025.htm"
+          },
+          {
+            "title": "P005026 — Не присоединенный вывод устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005026.htm"
+          },
+          {
+            "title": "P005027 — Кольцевое соединение",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005027.htm"
+          },
+          {
+            "title": "P005028 — Несколько определений потенциала на одном потенциале",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005028.htm"
+          },
+          {
+            "title": "P005031 — На части соединения (<x>) имеющаяся точка определения соединения (<y>) снабжена обозначением соединения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005031.htm"
+          },
+          {
+            "title": "P005033 — Прогон обозначения группы форматов №. <x>: Первое присвоенное обозначение соединений '<y>', последнее присвоенное обозначение соединений '<z>' внутри группы форматов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005033.htm"
+          },
+          {
+            "title": "P005034 — Обозначенная точка определения соединения находится на многократном соединении",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005034.htm"
+          },
+          {
+            "title": "P005035 — Точка определения соединения (<x>) на многократном соединении заново выровнена и отформатирована",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005035.htm"
+          },
+          {
+            "title": "P005036 — Превышено минимальное число разрядов для формата (<x>)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005036.htm"
+          },
+          {
+            "title": "P005037 — Противоречие в искробезопасности выводов устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005037.htm"
+          },
+          {
+            "title": "P005039 — Разный вид представления целей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005039.htm"
+          },
+          {
+            "title": "P005040 — Вывод жгута не встречается попарно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005040.htm"
+          },
+          {
+            "title": "P005042 — Значение свойства 'Цвет/номер' является цветовым кодом или именем цвета, которое отсутствует в меню 'Цвета соединений' в настройках проекта",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005042.htm"
+          },
+          {
+            "title": "P005043 — Поперечное сечение / диаметр не содержится в разделе 'Поперечные сечения / диаметры' в настройках проекта! ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005043.htm"
+          },
+          {
+            "title": "P005044 — Одинаковые обозначения соединений на разных потенциалах или трубопроводах",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005044.htm"
+          },
+          {
+            "title": "P005045 — Одинаковые обозначения соединений на разных сигналах или состояниях трубопроводов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005045.htm"
+          },
+          {
+            "title": "P005046 — Неполная сеть",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005046.htm"
+          },
+          {
+            "title": "P005047 — Точка определения сети содержит неполные соединения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005047.htm"
+          },
+          {
+            "title": "P005048 — Сеть содержит символы соединения со свойством 'Определение целей'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005048.htm"
+          },
+          {
+            "title": "P005049 — Несколько точек определения сети в одной сети",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005049.htm"
+          },
+          {
+            "title": "P005050 — Двойной идентификатор для сетевых соединений в пределах сети (<x>)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005050.htm"
+          },
+          {
+            "title": "P005051 — Символ соединения с несвязанным выводом устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005051.htm"
+          },
+          {
+            "title": "P005052 — Неприсоединенный вывод устройства на контакте штекера",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005052.htm"
+          },
+          {
+            "title": "P005053 — Неприсоединенный вывод устройства на клемме",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005053.htm"
+          },
+          {
+            "title": "P005054 — Разные сети с одинаковым именем сети (<x>)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005054.htm"
+          },
+          {
+            "title": "P005055 — Несколько определений сигнала на один сигнал",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005055.htm"
+          },
+          {
+            "title": "P005056 — Противоречие между сетью и потенциалом или сигналом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005056.htm"
+          },
+          {
+            "title": "P005057 — Точка определения сети с неверным потенциалом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005057.htm"
+          },
+          {
+            "title": "P005058 — Точка определения сети с неверным сигналом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005058.htm"
+          },
+          {
+            "title": "P005060 — Вывод устройства уже имеет одно многополюсное соединение в одно- и многополюсном представлении",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005060.htm"
+          },
+          {
+            "title": "P005061 — Больше одного определения многополюсного соединения для однополюсного соединения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005061.htm"
+          },
+          {
+            "title": "P005062 — Определение многополюсного соединения не соответствует источнику / цели",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005062.htm"
+          },
+          {
+            "title": "P005063 — Вывод устройства не учитывается в определении однополюсного соединения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005063.htm"
+          },
+          {
+            "title": "P005064 — Недопустимое соединение (вывод устройства источника/цели отсутствует)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005064.htm"
+          },
+          {
+            "title": "P005065 — Соединения имеют противоречивые данные в свойстве '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005065.htm"
+          },
+          {
+            "title": "P005066 — Соединение (многополюсное) не имеет эквивалента (трехмерный чертеж монтажных поверхностей)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005066.htm"
+          },
+          {
+            "title": "P005067 — Соединение (трехмерный чертеж монтажных поверхностей) не имеет многополюсного эквивалента",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005067.htm"
+          },
+          {
+            "title": "P005068 — Соединение (трехмерный чертеж монтажных поверхностей) с выводом устройства, которое не определено в схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005068.htm"
+          },
+          {
+            "title": "P005069 — Одинаковые обозначения соединений в разных сетях",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005069.htm"
+          },
+          {
+            "title": "P005070 — Различные обозначения соединений на одном потенциале",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005070.htm"
+          },
+          {
+            "title": "P005071 — Различные обозначения соединений в одном сигнале",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005071.htm"
+          },
+          {
+            "title": "P005072 — Различные обозначения соединений в одной сети",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005072.htm"
+          },
+          {
+            "title": "P005073 — Различные сечения/диаметры выводов целей",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005073.htm"
+          },
+          {
+            "title": "P005074 — Сечение/диаметр соединения отличается от сечения/диаметра точки вывода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005074.htm"
+          },
+          {
+            "title": "P005075 — Разные вещества внутри трубопровода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005075.htm"
+          },
+          {
+            "title": "P005076 — Разные свойства '<x>' внутри трубопровода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005076.htm"
+          },
+          {
+            "title": "P005077 — Соединение трубопровода или точка определения трубопровода без указания вещества",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005077.htm"
+          },
+          {
+            "title": "P005078 — Соединение с указанием вещества без определения трубопровода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005078.htm"
+          },
+          {
+            "title": "P005079 — Разные состояния внутри трубопровода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005079.htm"
+          },
+          {
+            "title": "P005080 — Соединение (топология) не имеет многополюсного / однополюсного эквивалента",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005080.htm"
+          },
+          {
+            "title": "P005081 — Нереалистичное соединение трассы на распределителе",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005081.htm"
+          },
+          {
+            "title": "P005082 — Кабельное соединение без цвета / номера",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005082.htm"
+          },
+          {
+            "title": "P005083 — Соединение группы без цвета / номера",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005083.htm"
+          },
+          {
+            "title": "P005084 — Свойство Вещество '<x>' соединения противоречит определению трубопровода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005084.htm"
+          },
+          {
+            "title": "P005085 — Соединение выделено для удаления",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005085.htm"
+          },
+          {
+            "title": "P005086 — Несоответствующий размер присоединения '<x>' / '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005086.htm"
+          },
+          {
+            "title": "P005087 — Прямое соединение: Несоответствующий размер присоединения '<x>' / '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005087.htm"
+          },
+          {
+            "title": "P005088 — Отдельное соединение с ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005088.htm"
+          },
+          {
+            "title": "P005089 — Точка определения соединения лежит на жгуте",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005089.htm"
+          },
+          {
+            "title": "P005090 — Свойство Класс трубы '<x>' соединения противоречит определению трубопровода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005090.htm"
+          },
+          {
+            "title": "P005091 — Разный класс трубы соединения и функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005091.htm"
+          },
+          {
+            "title": "P005092 — Указанное на соединении изделие '<x>' не содержится в классе трубы '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005092.htm"
+          },
+          {
+            "title": "P005093 — Поперечное сечение соединения '<x>' не находится в пределах допустимого диапазона зажимного изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_005093.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Устройства",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_007Devices.htm",
+        "children": [
+          {
+            "title": "P007001 — Устройство использует больше функций, чем предоставлено соответствующим изделием",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007001.htm"
+          },
+          {
+            "title": "P007002 — Устройство использует меньше функций, чем предоставлено соответствующим изделием",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007002.htm"
+          },
+          {
+            "title": "P007003 — Не удалось присвоить все изделия. Достигнуто макс. число изделий",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007003.htm"
+          },
+          {
+            "title": "P007004 — Двойное обозначение вывода устройства: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007004.htm"
+          },
+          {
+            "title": "P007005 — Устройство без главной функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007005.htm"
+          },
+          {
+            "title": "P007006 — Функция без обозначения вывода устройства ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007006.htm"
+          },
+          {
+            "title": "P007007 — Отсутствует место монтажа (описывающее)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007007.htm"
+          },
+          {
+            "title": "P007008 — Предв. определенное изделие '<x>' в списке устройств используется в проекте в <y> раз чаще допустимого",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007008.htm"
+          },
+          {
+            "title": "P007009 — Катушка без подходящего контакта",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007009.htm"
+          },
+          {
+            "title": "P007010 — Функции имеют противоречивые данные в свойстве '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007010.htm"
+          },
+          {
+            "title": "P007011 — Однополюсная функция не может быть однозначно присвоена однополюсной функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007011.htm"
+          },
+          {
+            "title": "P007012 — Изделие <x>, вариант <y> не сохранен",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007012.htm"
+          },
+          {
+            "title": "P007013 — Изделие <x> сохранено, но не вариант <y>. Имеется вариант <z>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007013.htm"
+          },
+          {
+            "title": "P007014 — 'Функциональный текст (автоматич.)' в разных видах представлений различается (в языке '<x>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007014.htm"
+          },
+          {
+            "title": "P007015 — Находящийся при первом изделии макрос не соответствует макросу, которому принадлежит главная функция",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007015.htm"
+          },
+          {
+            "title": "P007016 — Устройство имеет двойные шаблоны функций",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007016.htm"
+          },
+          {
+            "title": "P007017 — Главная функция / основная клемма без изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007017.htm"
+          },
+          {
+            "title": "P007018 — У изделия <x> отсутствует требуемое изделие принадлежности",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007018.htm"
+          },
+          {
+            "title": "P007019 — Переполнение защищенной главной функции или главной клеммы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007019.htm"
+          },
+          {
+            "title": "P007020 — Данные защищенной главной функции или главной клеммы не совпадают с данными изделия: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007020.htm"
+          },
+          {
+            "title": "P007021 — Устройство содержит как защищенные, так и незащищенные функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007021.htm"
+          },
+          {
+            "title": "P007022 — Символ имеет больше выводов устройства, чем определение функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007022.htm"
+          },
+          {
+            "title": "P007023 — Данные главной функции или главной клеммы не совпадают с данными изделия: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007023.htm"
+          },
+          {
+            "title": "P007024 — Изделие <x> больше нельзя использовать",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007024.htm"
+          },
+          {
+            "title": "P007025 — Идентификатор ОУ '<x>' задан многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007025.htm"
+          },
+          {
+            "title": "P007026 — Логическая модель функции отличается от определения функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007026.htm"
+          },
+          {
+            "title": "P007027 — Логическая модель функции содержит недействительные ссылки выводов устройства на обозначения выводов устройства: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007027.htm"
+          },
+          {
+            "title": "P007028 — Идентификатор ОУ '<x>' отсутствует на вспомогательной функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007028.htm"
+          },
+          {
+            "title": "P007029 — Идентификатор ОУ '<x>' вспомогательной функции отличается от идентификатора ОУ главной функции ('<y>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007029.htm"
+          },
+          {
+            "title": "P007030 — Идентификатор ОУ '<x>' отличается от идентификаторов ОУ на шаблонах изделия '<y>' ('<z>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007030.htm"
+          },
+          {
+            "title": "P007031 — Указанное на функции изделие '<x>' не содержится в классе трубы '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007031.htm"
+          },
+          {
+            "title": "P007032 — Для функции с идентификатором ОУ отсутствует вышестоящая функция с идентификатором ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007032.htm"
+          },
+          {
+            "title": "P007033 — Ручной функциональный текст на функции, у которой есть формат блока для вычисления автоматического функционального текста",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_007033.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Иностранные языки",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_008Foreignlanguages.htm",
+        "children": [
+          {
+            "title": "P008001 — Текст '<x>' не может быть переведен на язык <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_008001.htm"
+          },
+          {
+            "title": "P008002 — Пустое текстовое поле",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_008002.htm"
+          },
+          {
+            "title": "P008003 — Язык словаря '<x>' в словаре отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_008003.htm"
+          },
+          {
+            "title": "P008004 — Невозможно перевести текст '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_008004.htm"
+          },
+          {
+            "title": "P008005 — Текст в проекте не переведен: '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_008005.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Перекрестные ссылки",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_010Crossreferences.htm",
+        "children": [
+          {
+            "title": "P010001 — Размещение находится вне области отчета рамки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_010001.htm"
+          },
+          {
+            "title": "P010002 — Многократное главное размещение одноименных обозначений местоположений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_010002.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Точки разрыва",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_011Interruptionpoints.htm",
+        "children": [
+          {
+            "title": "P011001 — Точка разрыва без обозначения устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011001.htm"
+          },
+          {
+            "title": "P011002 — Точка разрыва без обратного эквивалента",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011002.htm"
+          },
+          {
+            "title": "P011003 — Точка разрыва без цели",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011003.htm"
+          },
+          {
+            "title": "P011004 — Соединение через точки разрыва на той же странице",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011004.htm"
+          },
+          {
+            "title": "P011005 — Острия стрел перекрестных точек разрыва не подходят друг к другу",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011005.htm"
+          },
+          {
+            "title": "P011006 — Кольцевое соединение для точек разрыва",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011006.htm"
+          },
+          {
+            "title": "P011007 — Разветвление перед источником типа “звезда”",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011007.htm"
+          },
+          {
+            "title": "P011008 — Несколько источников типа “звезда” с одинаковым обознач. устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_011008.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Компоновка электрошкафа 2D",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_0122Dpanellayout.htm",
+        "children": [
+          {
+            "title": "P012001 — Размещению изделия не присвоено изделие",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012001.htm"
+          },
+          {
+            "title": "P012002 — Размещение изделия накладывается на заблокированную область",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012002.htm"
+          },
+          {
+            "title": "P012003 — Размещение изделия не полностью находится на монтажной плате",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012003.htm"
+          },
+          {
+            "title": "P012004 — Размеры размещения изделия не соответствуют размерам изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012004.htm"
+          },
+          {
+            "title": "P012005 — Разные места монтажа (описывающие) монтажной платы и главной функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012005.htm"
+          },
+          {
+            "title": "P012008 — Структурный идентификатор не соответствует структурному идентификатору монтажной платы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012008.htm"
+          },
+          {
+            "title": "P012009 — Изделие размещения изделия присутствует на главной функции в недостаточном количестве",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012009.htm"
+          },
+          {
+            "title": "P012010 — Функциональный элемент на монтажной плате без представления в схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012010.htm"
+          },
+          {
+            "title": "P012011 — Клемма и определение клеммника не имеют соответствующего размещения изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_012011.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Данные изделия",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_013Partsdata.htm",
+        "children": [
+          {
+            "title": "P013045 — В импортируемых данных есть недействительное изделие",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013045.htm"
+          },
+          {
+            "title": "P013046 — Незнакомое ОУ '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013046.htm"
+          },
+          {
+            "title": "P013047 — Изделие с индексом '<x>' уже импортировано",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013047.htm"
+          },
+          {
+            "title": "P013048 — Поле с именем '<x>' неизвестно и поэтому игнорируется",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013048.htm"
+          },
+          {
+            "title": "P013050 — Невозможно добавить покупное изделие",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013050.htm"
+          },
+          {
+            "title": "P013051 — Устройству можно присвоить не более 50 изделий",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013051.htm"
+          },
+          {
+            "title": "P013053 — Невозможно изменить изделие",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013053.htm"
+          },
+          {
+            "title": "P013054 — Изделие с индексом '<x>': Перед импортом спецификации нельзя модифицировать свойство '<y>' ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013054.htm"
+          },
+          {
+            "title": "P013055 — На защищенном устройстве изменить изделие нельзя",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_013055.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Макрос",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_014Macro.htm",
+        "children": [
+          {
+            "title": "P014001 — Имя макроса '<x>' имеется многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_014001.htm"
+          },
+          {
+            "title": "P014002 — Имя макроса, определенного на пространстве листа, '<x>' существует многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_014002.htm"
+          },
+          {
+            "title": "P014003 — Версия, указанная на ссылающейся рамке макроса, не совпадает с версией (<x>) в файле макроса",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_014003.htm"
+          },
+          {
+            "title": "P014004 — Имя макроса не определено",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_014004.htm"
+          },
+          {
+            "title": "P014005 — В пространстве листа не определено имя макроса",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_014005.htm"
+          },
+          {
+            "title": "P014006 — Свойство 'Метод использования' неправильно настроено в рамке макроса: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_014006.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Отчеты",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_015Reports.htm",
+        "children": [
+          {
+            "title": "P015001 — Отчет '<x>' на странице '<y>' имеет неизвестный тип отчета и не обновляется",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_015001.htm"
+          },
+          {
+            "title": "P015002 — Размещения изделий монтажной платы '<x>' и соответствующие диаграммы соединений не совпадают",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_015002.htm"
+          },
+          {
+            "title": "P015003 — Не удалось вывести перемычку '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_015003.htm"
+          },
+          {
+            "title": "P015004 — Форма '<x>' используется в форме '<y>', но не сохранена в проекте",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_015004.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Черные ящики",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_016Blackboxes.htm",
+        "children": [
+          {
+            "title": "P016001 — Условное обозначение между двумя невложенными черными ящиками ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_016001.htm"
+          },
+          {
+            "title": "P016002 — Черный ящик без вывода устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_016002.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: ОУ",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_017DT.htm",
+        "children": [
+          {
+            "title": "P017001 — Пустая ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017001.htm"
+          },
+          {
+            "title": "P017002 — Не пронумерованное ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017002.htm"
+          },
+          {
+            "title": "P017003 — Неверное буквенное обозначение",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017003.htm"
+          },
+          {
+            "title": "P017004 — Ошибка в ОУ: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017004.htm"
+          },
+          {
+            "title": "P017005 — Наличие нескольких ОУ, слишком много главных функций",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017005.htm"
+          },
+          {
+            "title": "P017006 — Катушка уже имеется",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017006.htm"
+          },
+          {
+            "title": "P017007 — ОУ не имеет перекрестной ссылки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017007.htm"
+          },
+          {
+            "title": "P017008 — ОУ не соответствует настройкам в поле 'Формат нумерации' под проектом > 'Имя проекта' > Устройство > Нумеровать (online), групповое поле 'При вставке символов'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017008.htm"
+          },
+          {
+            "title": "P017009 — Адаптация ОУ на основе обновленного расчета ОУ, старое ОУ <x>, новое ОУ: <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017009.htm"
+          },
+          {
+            "title": "P017010 — Накладывающиеся обозначения местоположения содержат противоречащие друг другу структурные идентификаторы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017010.htm"
+          },
+          {
+            "title": "P017011 — Видимое ОУ не содержит необходимых структурных идентификаторов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017011.htm"
+          },
+          {
+            "title": "P017012 — У видимого ОУ не хватает предшествующего знака",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017012.htm"
+          },
+          {
+            "title": "P017013 — Устройство встречается в проекте как с вышестоящей структурой обозначений, так и без нее",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_017013.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Сравнение проектов",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_020Projectcomparison.htm",
+        "children": [
+          {
+            "title": "P020001 — Сравнение настроек проекта: Текущая дата и время: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020001.htm"
+          },
+          {
+            "title": "P020003 — Число сравненых настроек: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020003.htm"
+          },
+          {
+            "title": "P020004 — Число различий: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020004.htm"
+          },
+          {
+            "title": "P020010 — <x> различается в настройке представления",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020010.htm"
+          },
+          {
+            "title": "P020011 — <x> различается в описании",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020011.htm"
+          },
+          {
+            "title": "P020012 — <x> различается в типе данных",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020012.htm"
+          },
+          {
+            "title": "P020013 — <x> различается в станд. значениях",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020013.htm"
+          },
+          {
+            "title": "P020014 — <x> различается в диапазонах значений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020014.htm"
+          },
+          {
+            "title": "P020015 — <x> не существует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020015.htm"
+          },
+          {
+            "title": "P020016 — <x> (Количество значений) <y> -> <z> ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020016.htm"
+          },
+          {
+            "title": "P020017 — <x> (значение <y>) <z> -> <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020017.htm"
+          },
+          {
+            "title": "P020018 — <x> различается в <y> Настройки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020018.htm"
+          },
+          {
+            "title": "P020026 — Сравнение свойств проектов: Текущая дата и время: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020026.htm"
+          },
+          {
+            "title": "P020027 — Первый проект:<x> \\- Второй проект:<y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020027.htm"
+          },
+          {
+            "title": "P020028 — Число сравненных свойств: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020028.htm"
+          },
+          {
+            "title": "P020029 — Число различий: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020029.htm"
+          },
+          {
+            "title": "P020030 — Страница <x> : <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020030.htm"
+          },
+          {
+            "title": "P020031 — <x>: <y> -> <z>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020031.htm"
+          },
+          {
+            "title": "P020032 — Соединение от <x> до <y>: <z>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020032.htm"
+          },
+          {
+            "title": "P020033 — Потенциал <x>: <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020033.htm"
+          },
+          {
+            "title": "P020034 — Устройство <x> (поз. x <y> : поз. y <z>): <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020034.htm"
+          },
+          {
+            "title": "P020035 — Клемма <x> (x Поз. <y>: y Поз. <z>): <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020035.htm"
+          },
+          {
+            "title": "P020036 — Для элемента '<x>' структуры проекта значение '<y>' было заменено на '<z>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020036.htm"
+          },
+          {
+            "title": "P020037 — Структура проекта '<x>: <y>' была изменена с '<z>' на '<u>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020037.htm"
+          },
+          {
+            "title": "P020038 — Для свойства 'Обрабатывать ОУ в отдельных полях' значение '<x>' было изменено на '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020038.htm"
+          },
+          {
+            "title": "P020039 — Изменен формат ОУ для '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020039.htm"
+          },
+          {
+            "title": "P020040 — Последовательность структур проекта для страниц заменена с '<x>' на '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020040.htm"
+          },
+          {
+            "title": "P020041 — Различие слоев: символ <x> : размещение свойства <y> : слой <z> \\- <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020041.htm"
+          },
+          {
+            "title": "P020042 — Настройка <x> слоя <y> отличается: старое значение: <z> \\- новое значение: <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020042.htm"
+          },
+          {
+            "title": "P020043 — Найден новый слой: <x>, <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020043.htm"
+          },
+          {
+            "title": "P020044 — Рисунок <x> (x Поз. <y>: y Поз. <z>): <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020044.htm"
+          },
+          {
+            "title": "P020045 — Гиперссылка <x> (x Поз. <y>: y Поз. <z>): <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020045.htm"
+          },
+          {
+            "title": "P020046 — Сравнение структуры проектов: Текущая дата и время: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020046.htm"
+          },
+          {
+            "title": "P020047 — Сравнение слоев: Текущая дата и время: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020047.htm"
+          },
+          {
+            "title": "P020048 — <x> (x Поз. <y>: y Поз. <z>): <u>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020048.htm"
+          },
+          {
+            "title": "P020049 — Сегмент предварительного планирования <x>: <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020049.htm"
+          },
+          {
+            "title": "P020050 — Размещение предварительного планирования <x>: <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_020050.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Объекты-заполнители",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_021Placeholderobjects.htm",
+        "children": [
+          {
+            "title": "P021001 — Объект-заполнитель не содержит переменные",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_021001.htm"
+          },
+          {
+            "title": "P021002 — Объект-заполнитель не содержит ссылки объектов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_021002.htm"
+          },
+          {
+            "title": "P021003 — Объект-заполнитель содержит недействительные ссылки объектов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_021003.htm"
+          },
+          {
+            "title": "P021004 — Объект-заполнитель содержит недействительное присвоение переменных",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_021004.htm"
+          },
+          {
+            "title": "P021005 — Имена объектов-заполнителей и различных переменных совпадают",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_021005.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Прочее",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_022Other.htm",
+        "children": [
+          {
+            "title": "P022001 — Библиотека символов '<x>' на позиции <y> не найдена",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022001.htm"
+          },
+          {
+            "title": "P022002 — Невозможно найти символ <x>, вариант <y> в библиотеке символов <z>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022002.htm"
+          },
+          {
+            "title": "P022003 — Двойной номер страницы: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022003.htm"
+          },
+          {
+            "title": "P022004 — Друг над другом размещены несколько выводов устройства одного направления или идентичные символы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022004.htm"
+          },
+          {
+            "title": "P022011 — <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022011.htm"
+          },
+          {
+            "title": "P022012 — <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022012.htm"
+          },
+          {
+            "title": "P022013 — <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022013.htm"
+          },
+          {
+            "title": "P022014 — Свойство '<x>' для определения 'Число / имена страниц на свойство' на странице '<y>' является пустым",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022014.htm"
+          },
+          {
+            "title": "P022015 — Последовательность страниц в разделе 'Количество страниц / имена страниц в свойстве' нарушена. Значение настройки: '<x>' Страницы: '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022015.htm"
+          },
+          {
+            "title": "P022016 — Имя страницы '<x>' содержит буквы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022016.htm"
+          },
+          {
+            "title": "P022017 — В проекте имеются превышения длины поля в базе данных: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022017.htm"
+          },
+          {
+            "title": "P022018 — Настроенный тип линий не поддерживается для данного объекта",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022018.htm"
+          },
+          {
+            "title": "P022019 — У условного обозначения или символа '<x>' отсутствует действительное определении функции '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022019.htm"
+          },
+          {
+            "title": "P022020 — Символ '<x>/<y>' из библиотеки символов '<z>' возник во время копирования данных проекта EPLAN 5 или EPLAN 21",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022020.htm"
+          },
+          {
+            "title": "P022025 — Угол текста не равен 0° или 90°",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022025.htm"
+          },
+          {
+            "title": "P022026 — Текст представлен фрагментарно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022026.htm"
+          },
+          {
+            "title": "P022027 — Текст слишком мал",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022027.htm"
+          },
+          {
+            "title": "P022050 — GUID (AutomationML) '<x>' неоднозначен",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022050.htm"
+          },
+          {
+            "title": "P022060 — Определенное пользователем свойство '<x>' (помощь ввода '<z>') содержит недействительное значение '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022060.htm"
+          },
+          {
+            "title": "P022061 — Определенное пользователем свойство '<x>' (помощь ввода '<z>') содержит неопределенное значение '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_022061.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Fluid-Техника",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_024Fluidpower.htm",
+        "children": [
+          {
+            "title": "P024001 — Свойство 'Напорная гидролиния / блок управления' не подходит к свойству 'Подвод давления / управляющий вывод устройства' на одном из выводов устройства",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024001.htm"
+          },
+          {
+            "title": "P024002 — Соединение между разными разделами",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024002.htm"
+          },
+          {
+            "title": "P024003 — Электротехническая функция характера Fluid как представление парной перекрестной ссылки отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024003.htm"
+          },
+          {
+            "title": "P024004 — Соединение между разными подразделами",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024004.htm"
+          },
+          {
+            "title": "P024005 — Связать неопределенный вывод устройства (напорная линия / блок управления) с определенным выводом устройства (напорная гидролиния / блок управления)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024005.htm"
+          },
+          {
+            "title": "P024006 — Ключ среды не подходит к разделу",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024006.htm"
+          },
+          {
+            "title": "P024007 — Главная функция с неопределенным разделом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024007.htm"
+          },
+          {
+            "title": "P024008 — Различные данные группы соединений: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024008.htm"
+          },
+          {
+            "title": "P024009 — Соединение группы без группы соединений / провода",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024009.htm"
+          },
+          {
+            "title": "P024010 — Недействительная длина группы соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024010.htm"
+          },
+          {
+            "title": "P024011 — Цель группы соединений без полного ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024011.htm"
+          },
+          {
+            "title": "P024012 — Слишком соединений группы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024012.htm"
+          },
+          {
+            "title": "P024013 — Группа соединений: 'Функциональный текст (автоматически)' различается (в языке '<x>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024013.htm"
+          },
+          {
+            "title": "P024014 — Длина группы соединений не указана",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024014.htm"
+          },
+          {
+            "title": "P024015 — Группа соединений использует не все соединения изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024015.htm"
+          },
+          {
+            "title": "P024016 — Расхождение между ОУ соединения и ОУ группы соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024016.htm"
+          },
+          {
+            "title": "P024017 — У функции вида представления 'Обзор функций (Fluid-Техника)' нет соответствия на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024017.htm"
+          },
+          {
+            "title": "P024018 — У соединения вида представления 'Обзор функций (Fluid-Техника)' нет соответствия на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_024018.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Настройки проекта",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_025Projectsettings.htm",
+        "children": [
+          {
+            "title": "P025001 — Значение свойства страницы 'Сетка' страницы <x> отличается от настройки проекта 'Сетка для типа страницы'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_025001.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Трехмерный чертеж монтажных поверхностей",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_0263Dmountinglayout.htm",
+        "children": [
+          {
+            "title": "P026010 — Размещение изделия полностью находится за пределами монтажной поверхности",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026010.htm"
+          },
+          {
+            "title": "P026011 — 3D-графика размещения изделий совпадает с <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026011.htm"
+          },
+          {
+            "title": "P026012 — Размещение изделия накладывается на заблокированную для размещения зону",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026012.htm"
+          },
+          {
+            "title": "P026013 — Размещение изделия накладывается на заблокированную для сверления зону",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026013.htm"
+          },
+          {
+            "title": "P026014 — Интервалы установки не соблюдаются",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026014.htm"
+          },
+          {
+            "title": "P026015 — Размещению изделия не присвоено изделие",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026015.htm"
+          },
+          {
+            "title": "P026016 — Устройство на монтажной поверхности без представления в схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026016.htm"
+          },
+          {
+            "title": "P026017 — Структурный идентификатор не соответствует структурному идентификатору монтажной поверхности",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026017.htm"
+          },
+          {
+            "title": "P026018 — Размеры размещения изделия не соответствуют размерам изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026018.htm"
+          },
+          {
+            "title": "P026019 — Изделие размещения изделия присутствует на главной функции / главной клемме в недостаточном количестве",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026019.htm"
+          },
+          {
+            "title": "P026020 — Определение функций размещения изделия не подходит изделию",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026020.htm"
+          },
+          {
+            "title": "P026021 — Разные места монтажа (описывающие) монтажной поверхности и главной функции / главной клеммы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026021.htm"
+          },
+          {
+            "title": "P026023 — Длина размещения изделия больше, чем поставляемая длина изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026023.htm"
+          },
+          {
+            "title": "P026024 — Имя пространства листа: <x> имеется многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026024.htm"
+          },
+          {
+            "title": "P026025 — Размещение изделия находится не на несущей шине",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026025.htm"
+          },
+          {
+            "title": "P026026 — Точка измерения отсутствует в таком же обзоре модели/развертки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026026.htm"
+          },
+          {
+            "title": "P026027 — Монтажное отверстие не полностью находится на монтажной поверхности",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026027.htm"
+          },
+          {
+            "title": "P026028 — Размещение изделия находится полностью внутри монтажного отверстия.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026028.htm"
+          },
+          {
+            "title": "P026029 — Размещение изделия не имеет действительной схемы сверления",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026029.htm"
+          },
+          {
+            "title": "P026030 — Отсутствует запись данных ЧУ для контура, определенного пользователем",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026030.htm"
+          },
+          {
+            "title": "P026033 — Объединенные провода, распределенные на несколько групп",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026033.htm"
+          },
+          {
+            "title": "P026034 — Монтажная поверхность ЧУ не имеет действительного размера поля",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026034.htm"
+          },
+          {
+            "title": "P026036 — Размещение изделия находится в области маршрутизации",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026036.htm"
+          },
+          {
+            "title": "P026037 — Сегменты маршрутизации находятся друг над другом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026037.htm"
+          },
+          {
+            "title": "P026038 — Сеть соединенных сегментов устарела",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026038.htm"
+          },
+          {
+            "title": "P026039 — Соединение проходит через недействительные сегменты маршрутизации",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026039.htm"
+          },
+          {
+            "title": "P026040 — Соединение/кабель без действительного диаметра (<x>)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026040.htm"
+          },
+          {
+            "title": "P026041 — Источник/цель, размещенные в различных пространствах листа",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026041.htm"
+          },
+          {
+            "title": "P026042 — Не найдена точка входа в сеть соединенных сегментов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026042.htm"
+          },
+          {
+            "title": "P026043 — Не найдена трасса маршрутизации между источником и целью. <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026043.htm"
+          },
+          {
+            "title": "P026044 — Схема соединений не определена.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026044.htm"
+          },
+          {
+            "title": "P026045 — Маршрутизируемое соединение графически не заканчивается на целях",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026045.htm"
+          },
+          {
+            "title": "P026052 — Источник/цель не размещены",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026052.htm"
+          },
+          {
+            "title": "P026053 — Вывод устройства '<x>' отсутствует и не может быть создан",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026053.htm"
+          },
+          {
+            "title": "P026054 — Соединения кабеля определены неоднозначно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026054.htm"
+          },
+          {
+            "title": "P026055 — Имеется многократный вывод соединения '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026055.htm"
+          },
+          {
+            "title": "P026056 — Поперечное сечение соединения больше, чем указано на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026056.htm"
+          },
+          {
+            "title": "P026057 — Поперечное сечение соединения меньше, чем указано на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026057.htm"
+          },
+          {
+            "title": "P026058 — Количество соединений на выводе устройства <x> больше, чем указано на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026058.htm"
+          },
+          {
+            "title": "P026062 — Не удалось маршрутизировать многополюсное соединение",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026062.htm"
+          },
+          {
+            "title": "P026070 — Гнутая сборная шина с недействительной общей длиной",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026070.htm"
+          },
+          {
+            "title": "P026071 — Отсутствует инструмент для экспорта (ЧУ, медь). <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026071.htm"
+          },
+          {
+            "title": "P026072 — Сборка проводов отсутствует: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026072.htm"
+          },
+          {
+            "title": "P026073 — Маршрутизируемое соединение без номера изделия, цвета / номера и (или) поперечного сечения / диаметра",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026073.htm"
+          },
+          {
+            "title": "P026074 — Экспорт ЧУ: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026074.htm"
+          },
+          {
+            "title": "P026075 — Радиус изгиба маршрутизируемого соединения слишком мал",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026075.htm"
+          },
+          {
+            "title": "P026076 — Защита кабеля/шланга или хомут для кабеля/шланга лежит не на сегменте маршрутизации / кривой",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026076.htm"
+          },
+          {
+            "title": "P026077 — Диаметр жгута слишком велик, невозможно объединить соединения с выбранным изделием",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026077.htm"
+          },
+          {
+            "title": "P026078 — Диаметр жгута слишком мал, невозможно объединить соединения с выбранным изделием",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026078.htm"
+          },
+          {
+            "title": "P026079 — Экспорт Rittal - Athex: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026079.htm"
+          },
+          {
+            "title": "P026080 — Невозможно генерировать данные экспорта",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026080.htm"
+          },
+          {
+            "title": "P026081 — Ошибка при размещении арматуры: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026081.htm"
+          },
+          {
+            "title": "P026089 — Маршрутизируемое соединение <x> совпадает <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026089.htm"
+          },
+          {
+            "title": "P026090 — Не удалось рассчитать фактическую мощность потерь из-за отсутствующих значений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026090.htm"
+          },
+          {
+            "title": "P026091 — Неполные свойства проекта для расчета кондиционирования",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026091.htm"
+          },
+          {
+            "title": "P026092 — Требуется новый расчет кондиционирования для климатической области <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026092.htm"
+          },
+          {
+            "title": "P026093 — Недостающие условия окружающей среды для расчета кондиционирования в электрошкафу",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026093.htm"
+          },
+          {
+            "title": "P026094 — Номера климатической области в проекте должны быть однозначными",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026094.htm"
+          },
+          {
+            "title": "P026095 — Как минимум два монтажных отверстия полностью или частично перекрывают друг друга",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026095.htm"
+          },
+          {
+            "title": "P026096 — Дополнительная длина арматуры равна 0",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026096.htm"
+          },
+          {
+            "title": "P026097 — Размещение изделия выходит за пределы области с оптимальным кондиционированием",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026097.htm"
+          },
+          {
+            "title": "P026098 — Размещение изделия совпадает с зарезервированной зоной для воздушного потока",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026098.htm"
+          },
+          {
+            "title": "P026099 — Неравномерное распределение тепловыделения в климатической области <x> (основное направление распределения тепловыделения: <y>)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026099.htm"
+          },
+          {
+            "title": "P026100 — Невозможно обновить размещение изделия: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026100.htm"
+          },
+          {
+            "title": "P026101 — Автоматическая разводка невозможна: <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026101.htm"
+          },
+          {
+            "title": "P026102 — Невозможно перенести изделие <x>.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026102.htm"
+          },
+          {
+            "title": "P026103 — Неправильное размещение изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026103.htm"
+          },
+          {
+            "title": "P026104 — Изделие <x> еще не перенесено.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026104.htm"
+          },
+          {
+            "title": "P026105 — Наличие нескольких ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_026105.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Топология",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_027Topology.htm",
+        "children": [
+          {
+            "title": "P027002 — Функция топологии не связана с сегментом маршрутизации",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027002.htm"
+          },
+          {
+            "title": "P027003 — Функция топологии не связана с соединением",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027003.htm"
+          },
+          {
+            "title": "P027004 — Топология - Соединение от <x> до <y> не проходит через сегмент маршрутизации / еще не маршрутизировано",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027004.htm"
+          },
+          {
+            "title": "P027007 — Больше одной функции топологии в устройстве <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027007.htm"
+          },
+          {
+            "title": "P027009 — Топология - У сегмента маршрутизации имеется как минимум один незамкнутый конец",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027009.htm"
+          },
+          {
+            "title": "P027010 — Топология - Трасса маршрутизации у соединения от <x> до <y> имеет недействительный сегмент маршрутизации",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027010.htm"
+          },
+          {
+            "title": "P027012 — У соединения от <x> до <y> заполнено несколько трасс маршрутизации (топология, пространство листа)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027012.htm"
+          },
+          {
+            "title": "P027013 — Одинаковое ОУ в точках разрыва топологии и стандартных точка разрыва",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027013.htm"
+          },
+          {
+            "title": "P027014 — Топология - Сегменты маршрутизации находятся друг над другом",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027014.htm"
+          },
+          {
+            "title": "P027015 — Топология - Сеть соединенных сегментов устарела",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027015.htm"
+          },
+          {
+            "title": "P027016 — Топология - Не найдена трасса маршрутизации к цели",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027016.htm"
+          },
+          {
+            "title": "P027017 — Топология - Схема соединений не определена",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027017.htm"
+          },
+          {
+            "title": "P027018 — Вывод устройства <x> отсутствует и не может быть создан",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027018.htm"
+          },
+          {
+            "title": "P027019 — Соединения кабеля определены неоднозначно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027019.htm"
+          },
+          {
+            "title": "P027020 — Имеется многократный вывод устройства <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027020.htm"
+          },
+          {
+            "title": "P027021 — Нет маршрутизации всеполярного соединения от <x> до <y>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027021.htm"
+          },
+          {
+            "title": "P027024 — Определение функции топологии не подходит для главной функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027024.htm"
+          },
+          {
+            "title": "P027025 — Определение клеммника многократно представлено в той же сети соединенных сегментов",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027025.htm"
+          },
+          {
+            "title": "P027026 — В представлении топологии отсутствует распределитель <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027026.htm"
+          },
+          {
+            "title": "P027027 — Распределитель проводов <x> находится не на трассе маршрутизации соединения",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027027.htm"
+          },
+          {
+            "title": "P027028 — Длина сегмента маршрутизации больше, чем поставляемая длина изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027028.htm"
+          },
+          {
+            "title": "P027029 — Вывод устройства <x> доступен в функции топологии многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027029.htm"
+          },
+          {
+            "title": "P027030 — Распределенный сегмент маршрутизации топологии недоступен попарно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_027030.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Предварительное планирование",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_028Preplanning.htm",
+        "children": [
+          {
+            "title": "P028001 — Сегмент структуры встречается несколько раз",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028001.htm"
+          },
+          {
+            "title": "P028002 — Объект планирования встречается несколько раз",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028002.htm"
+          },
+          {
+            "title": "P028003 — Структурный идентификатор в сегменте структуры встречается несколько раз (<x> = структурный идентификатор)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028003.htm"
+          },
+          {
+            "title": "P028004 — Объект планирования имеет несколько изделий с потенциальными главными функциями",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028004.htm"
+          },
+          {
+            "title": "P028005 — Наборы значений на сегменте или шаблоне сегмента не подходят к указанному макросу",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028005.htm"
+          },
+          {
+            "title": "P028006 — Полное ОУ функции не соответствует предварительному планированию",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028006.htm"
+          },
+          {
+            "title": "P028007 — Изделия или число / кол-во изделий на главной функции и соответствующем объекте планирования различаются",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028007.htm"
+          },
+          {
+            "title": "P028008 — Объект планирования имеет шаблон функции, к которому отсутствуют функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028008.htm"
+          },
+          {
+            "title": "P028009 — Не все функции / виды представления устройства отсылают к одному и тому же объекту планирования",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028009.htm"
+          },
+          {
+            "title": "P028010 — Данные вывода устройства ПЛК отличаются от данных адреса ПЛК в предварительном планировании",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028010.htm"
+          },
+          {
+            "title": "P028011 — Адрес ПЛК на объекте планирования без размещенного вывода устройства ПЛК",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028011.htm"
+          },
+          {
+            "title": "P028012 — Имеется более чем одно графическое размещение сегмента структуры",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028012.htm"
+          },
+          {
+            "title": "P028013 — Имеется более чем одно графическое размещение для объекта планирования в виде представления '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028013.htm"
+          },
+          {
+            "title": "P028014 — Объект планирования имеет изделия с шаблонами и как минимум один дополнительный шаблон",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028014.htm"
+          },
+          {
+            "title": "P028015 — Сегмент с определением сегмента '<x>', которое не должно больше использоваться",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028015.htm"
+          },
+          {
+            "title": "P028016 — Сегмент подчинен неразрешенному определению сегмента '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028016.htm"
+          },
+          {
+            "title": "P028017 — Многократно встречающееся идентифицирующее обозначение на технологических контурах",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028017.htm"
+          },
+          {
+            "title": "P028018 — Разница между сегментом и шаблоном сегмента (свойство '<x>')",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028018.htm"
+          },
+          {
+            "title": "P028019 — Макрос на объекте планирования не соответствует размещенному макросу",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028019.htm"
+          },
+          {
+            "title": "P028020 — Макрос на объекте планирования не помещен в вид представления 'Многополюсный'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028020.htm"
+          },
+          {
+            "title": "P028021 — Макрос на объекте планирования не помещен в вид представления 'Однополюсный'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028021.htm"
+          },
+          {
+            "title": "P028022 — Объект планирования не помещен в вид представления 'Предварительное планирование'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028022.htm"
+          },
+          {
+            "title": "P028023 — Технологический контур или функция ТК не помещены в вид представления 'Функциональная схема автоматизации'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028023.htm"
+          },
+          {
+            "title": "P028024 — Присвоенное объекту предварительное планирование было удалено",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028024.htm"
+          },
+          {
+            "title": "P028025 — Макрос на объекте планирования многократно помещен в вид представления",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028025.htm"
+          },
+          {
+            "title": "P028026 — На объекте трубопровода или объекте планирования (кабель) отсутствует исходный и / или целевой сегмент",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028026.htm"
+          },
+          {
+            "title": "P028027 — Источник или цель '<x>' определения трубопровода не согласуется с исходным или целевым сегментом '<y>' в объекте планирования (трубопровод)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028027.htm"
+          },
+          {
+            "title": "P028028 — Указанное вещество '<x>' содержится в проекте не в качестве шаблона",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028028.htm"
+          },
+          {
+            "title": "P028029 — Указанный класс трубы '<x>' содержится в проекте не в качестве шаблона",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028029.htm"
+          },
+          {
+            "title": "P028030 — Указанный в точке определения трубопровода класс трубы не соответствует классу трубы '<x>' связанного объекта планирования (трубопровод)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028030.htm"
+          },
+          {
+            "title": "P028031 — Указанное на сегменте изделие '<x>' не содержится в классе трубы '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028031.htm"
+          },
+          {
+            "title": "P028032 — Connection and function have differing pipe classes",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_028032.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Глубина предварительного планирования",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_029Preplanningdepth.htm",
+        "children": [
+          {
+            "title": "P029001 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029001.htm"
+          },
+          {
+            "title": "P029002 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029002.htm"
+          },
+          {
+            "title": "P029003 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029003.htm"
+          },
+          {
+            "title": "P029004 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029004.htm"
+          },
+          {
+            "title": "P029005 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029005.htm"
+          },
+          {
+            "title": "P029006 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029006.htm"
+          },
+          {
+            "title": "P029007 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029007.htm"
+          },
+          {
+            "title": "P029008 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029008.htm"
+          },
+          {
+            "title": "P029009 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029009.htm"
+          },
+          {
+            "title": "P029010 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029010.htm"
+          },
+          {
+            "title": "P029011 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029011.htm"
+          },
+          {
+            "title": "P029012 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029012.htm"
+          },
+          {
+            "title": "P029013 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029013.htm"
+          },
+          {
+            "title": "P029014 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029014.htm"
+          },
+          {
+            "title": "P029015 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029015.htm"
+          },
+          {
+            "title": "P029016 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029016.htm"
+          },
+          {
+            "title": "P029017 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029017.htm"
+          },
+          {
+            "title": "P029018 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029018.htm"
+          },
+          {
+            "title": "P029019 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029019.htm"
+          },
+          {
+            "title": "P029020 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029020.htm"
+          },
+          {
+            "title": "P029021 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029021.htm"
+          },
+          {
+            "title": "P029022 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029022.htm"
+          },
+          {
+            "title": "P029023 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029023.htm"
+          },
+          {
+            "title": "P029024 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029024.htm"
+          },
+          {
+            "title": "P029025 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029025.htm"
+          },
+          {
+            "title": "P029026 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029026.htm"
+          },
+          {
+            "title": "P029027 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029027.htm"
+          },
+          {
+            "title": "P029028 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029028.htm"
+          },
+          {
+            "title": "P029029 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029029.htm"
+          },
+          {
+            "title": "P029030 — <x>: Обязательное свойство '<y>' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_029030.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Частичные проекты",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_030Subprojects.htm",
+        "children": [
+          {
+            "title": "P030001 — Оригинальный проект содержит изменения в области обработки частичного проекта '<x>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030001.htm"
+          },
+          {
+            "title": "P030002 — Частичный проект '<x>' содержит изменения за пределами определенной области обработки",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030002.htm"
+          },
+          {
+            "title": "P030003 — Из частичного проекта '<x>' были выгружены другие частичные проекты",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030003.htm"
+          },
+          {
+            "title": "P030004 — Страница не вмещается в заданную область обработки частичного проекта.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030004.htm"
+          },
+          {
+            "title": "P030005 — Пространство листа не вмещается в заданную область обработки частичного проекта.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030005.htm"
+          },
+          {
+            "title": "P030006 — Объект предварительного планирования не вмещается в заданную область обработки частичного проекта.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030006.htm"
+          },
+          {
+            "title": "P030007 — Неразмещенная функция не вмещается в заданную область обработки частичного проекта.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030007.htm"
+          },
+          {
+            "title": "P030008 — Неразмещенное соединение не вмещается в заданную область обработки частичного проекта.",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_030008.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Схема сверления",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_032Drillingpattern.htm",
+        "children": [
+          {
+            "title": "P032001 — Не удалось сгенерировать схему сверления, или она была сгенерирована не полностью. <x>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_032001.htm"
+          },
+          {
+            "title": "P032002 — Имя схемы сверления <x> представлено многократно",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_032002.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Проводной монтаж",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_033Wireharness.htm",
+        "children": [
+          {
+            "title": "P033001 — Недействительное имя проводного монтажа функции",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_033001.htm"
+          },
+          {
+            "title": "P033002 — Соединение содержит недействительное имя проводного монтажа",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_033002.htm"
+          },
+          {
+            "title": "P033003 — Изделие в узле проводного монтажа не подходит к элементам узла",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_033003.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Основные данные изделия",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_501Partmasterdata.htm",
+        "children": [
+          {
+            "title": "P501001 — Записанный на изделии макрос <x> <y> отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501001.htm"
+          },
+          {
+            "title": "P501002 — Записанный на изделии графический файл <x> отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501002.htm"
+          },
+          {
+            "title": "P501003 — Записанный на изделии документ <x> отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501003.htm"
+          },
+          {
+            "title": "P501004 — Записанное на изделии определение функции <x> устарело",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501004.htm"
+          },
+          {
+            "title": "P501005 — Присвоенный макросу <x> (<y> / <z>) слой <u> определен пользователем",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501005.htm"
+          },
+          {
+            "title": "P501006 — Элементы макроса <x> (<y> / <z>) не сгруппированы",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501006.htm"
+          },
+          {
+            "title": "P501007 — На изделии не указана высота, ширина и / или глубина: Высота = <x>, Ширина = <y>, Глубина = <z>",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501007.htm"
+          },
+          {
+            "title": "P501008 — Записанная на изделии схема соединений <x> отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501008.htm"
+          },
+          {
+            "title": "P501009 — Записанная на изделии схема сверления <x> отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501009.htm"
+          },
+          {
+            "title": "P501010 — Внесенное на узле / модуле изделие <x>, вариант <y>, отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501010.htm"
+          },
+          {
+            "title": "P501011 — Свойство изделия 'Номер типа' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501011.htm"
+          },
+          {
+            "title": "P501012 — Свойство изделия 'Номер для заказа' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501012.htm"
+          },
+          {
+            "title": "P501013 — Свойство изделия 'Обозначение 1' пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501013.htm"
+          },
+          {
+            "title": "P501014 — Свойство изделия 'Главная группа продуктов' не определено",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501014.htm"
+          },
+          {
+            "title": "P501015 — Свойство изделия 'Группа продуктов' не определено",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501015.htm"
+          },
+          {
+            "title": "P501016 — Свойство изделия 'Подгруппа продуктов' не определено",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501016.htm"
+          },
+          {
+            "title": "P501017 — В изделии не выбран раздел",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501017.htm"
+          },
+          {
+            "title": "P501018 — Сохраненные в изделии размеры 'Ширина' и 'Высота' не совпадают с размерами макроса <x> (<y> / <z>) (допуск <u> проц.)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501018.htm"
+          },
+          {
+            "title": "P501019 — Библиотека символов <x> в проекте не найдена (<y>)",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501019.htm"
+          },
+          {
+            "title": "P501020 — Внесенная в изделие принадлежность <x>, вариант <y>, <z>, отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501020.htm"
+          },
+          {
+            "title": "P501022 — Размеры присоединений шаблонов функций не совпадают с размерами присоединений на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501022.htm"
+          },
+          {
+            "title": "P501023 — Шаблоны функций узла / модуля <x>, вариант <y>, неактуальны",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501023.htm"
+          },
+          {
+            "title": "P501024 — Номер изделия с пробелом в начале или в конце",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501024.htm"
+          },
+          {
+            "title": "P501025 — Свойства изделия 'Обозначение типа ПЛК' и 'Описание устройства: Имя файла' не заполнены",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501025.htm"
+          },
+          {
+            "title": "P501026 — Вывод шины '<x>', внесенный в шаблоны функций изделия, не найден в однополюсном представлении в макросе '<y>'",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501026.htm"
+          },
+          {
+            "title": "P501027 — Данные вывода устройства на выводе шины заполнены",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501027.htm"
+          },
+          {
+            "title": "P501028 — Свойство 'Обозначение штекера' на выводе шины пусто",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501028.htm"
+          },
+          {
+            "title": "P501029 — Внесенное на модуле <x>, вариант <y>, изделие <z>, вариант <u>, не имеет ни ОУ, ни идентификатора ОУ",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501029.htm"
+          },
+          {
+            "title": "P501030 — Внесенная на изделии схема сверления '<x>' является неполной. Контур '<y>' отсутствует",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501030.htm"
+          },
+          {
+            "title": "P501031 — Внесенное на изделии общее определение функции '<x>' не должно использоваться на изделии",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501031.htm"
+          },
+          {
+            "title": "P501032 — Неверное обозначение канала, указанного в шаблонах функций изделия",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501032.htm"
+          },
+          {
+            "title": "P501033 — Идентифицированная информация вывода устройства, относящаяся к шаблонам функций, не совпадает с данными вывода устройства на схеме соединений",
+            "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_p_501033.htm"
+          }
+        ]
+      },
+      {
+        "title": "Сообщения контрольного прогона: Обзор",
+        "link": "https://eplan.help/ru-ru/Infoportal/Content/Plattform/2.9/Content/htm/messages_o_start.htm"
+      }
+    ]
+  }
+]

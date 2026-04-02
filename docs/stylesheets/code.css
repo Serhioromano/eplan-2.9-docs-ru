@@ -1,0 +1,23 @@
+.md-typeset__table table tr td,
+.md-typeset .admonition,.md-typeset details {
+    font-size: .8rem !important;
+}
+
+.md-content img {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.md-content img.ui-icon {
+    display: inline !important;
+    vertical-align: middle;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
