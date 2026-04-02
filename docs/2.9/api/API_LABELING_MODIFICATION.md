@@ -8,7 +8,7 @@ Following points need to be done to use it in an API program:
 
 Any labeling scheme now contains a property, where you can set a name of an action : 
 
-![](Label_Settings_Action.jpg)
+![](images/Label_Settings_Action.jpg)
 
 If an action by this name is registered in EPLAN, it is called during label generation. 
 
@@ -30,14 +30,14 @@ This list can be modified (not the objects themselves!). You can add or remove o
 
 You can now add an action to a label: 
 
-![](Label_Label_Action.jpg)
+![](images/Label_Label_Action.jpg)
 
 This action will be called, when the label is created. The action is called with the following parameters: 
 
 [in] "objects" value: main object for the line (can be more than one). 
 
-[out]: Call SetStrings() of the calling context to set the result text. More than one result text will generate new lines. 
+[out]: Call `SetStrings()` of the calling context to set the result text. More than one result text will generate new lines. 
 
-Please set only one string in the string array you pass to SetStrings(). 
+Please set only one string in the string array you pass to `SetStrings()`. 
 
 Line breaks are always written to the output file as they are in the string. If necessary, remove line breaks from the strings.

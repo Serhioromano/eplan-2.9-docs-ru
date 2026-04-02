@@ -8,8 +8,8 @@ The condition is that EPLAN variant is started as remoting server (without /NoRe
 
 EPLAN Remoting consits of following libraries:
 
-  * Eplan.EplApi.RemoteClientu.dll (namespace [Eplan.EplApi.RemoteClient](Eplan_EplApi_RemoteClient.html))
-  * Eplan.EplApi.Remotingu.dll (namespace [Eplan.EplApi.Remoting](Eplan_EplApi_Remoting.html))
+  * `Eplan.EplApi.RemoteClientu.dll` (namespace [Eplan.EplApi.RemoteClient](Eplan_EplApi_RemoteClient.html))
+  * `Eplan.EplApi.Remotingu.dll` (namespace [Eplan.EplApi.Remoting](Eplan_EplApi_Remoting.html))
 
 
 

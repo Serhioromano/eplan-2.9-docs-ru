@@ -1,10 +1,10 @@
 # EPLAN API offline applications
 
-The easiest way to use EPLAN API objects in your program is to directly use the functionally of the API dlls in your code.It is even easier, if your program is a .Net application: You just reference the managed EPLAN API assemblies in your project. This type of application, we call an "**offline application** ". 
+The easiest way to use EPLAN API objects in your program is to directly use the functionally of the API dlls in your `code.It` is even easier, if your program is a .Net application: You just reference the managed EPLAN API assemblies in your project. This type of application, we call an "**offline application** ". 
 
-![](EplApi_AssemlyReference.jpg)
+![](images/EplApi_AssemlyReference.jpg)
 
-Then -- in the appropriate place (e.g. in the main form) -- you create an instance of class Eplan.EplApi.System.EplApplication and initialize it: 
+Then -- in the appropriate place (e.g. in the main form) -- you create an instance of class `Eplan.EplApi.System.EplApplication` and initialize it: 
 
 === "C#"
 
@@ -37,11 +37,11 @@ Then -- in the appropriate place (e.g. in the main form) -- you create an instan
     End Sub 'New MainForm
     ```
 
-The string parameter strAppModifier determines, which configuration file is used and thus which modules will be loaded. If you pass an empty string like in the above example, the eplset.xml of the standard version of the current user will be loaded. 
+The string parameter `strAppModifier` determines, which configuration file is used and thus which modules will be loaded. If you pass an empty string like in the above example, the `eplset.xml` of the standard version of the current user will be loaded. 
 
-After executing theInit() function, all functions/objects of the EPLAN API are available, except those, which are exposing GUI functionality like dialogs, dialog-bars or MDI windows. The API Classes and methods, ... then are used in the same way as if programming a normal EPLAN add-in. A few selected modal Dialogs of EPLAN are provided by special methods of class in Eplan.EplApi.System.EplApplication. 
+After executing `theInit()` function, all functions/objects of the EPLAN API are available, except those, which are exposing GUI functionality like dialogs, dialog-bars or MDI windows. The API Classes and methods, ... then are used in the same way as if programming a normal EPLAN add-in. A few selected modal Dialogs of EPLAN are provided by special methods of class in `Eplan.EplApi.System.EplApplication`. 
 
-When you no longer need the EPLAN API in your program, you should call the Exit() function of your EplApplication object to unload the API. 
+When you no longer need the EPLAN API in your program, you should call the `Exit()` function of your EplApplication object to unload the API. 
 
 ### How to make sure, that the API Assemblies are directly loaded from EPLAN bin folder ?
 
@@ -52,7 +52,7 @@ This is also the reason, why in general it will not work, to register the EPLAN 
 You can make sure, the API assemblies are loaded from the bin directory by different means:
 
   1. This is the easiest way: You can just copy the executable of your offline application to the <eplan main path>\Platform\<version>\Bin folder.
-  2. Use EPLAN API Offline wizard. Then your assemblies will be bound to correct EPLAN variant by means of Eplan.EplApi.Starter library:
+  2. Use EPLAN API Offline wizard. Then your assemblies will be bound to correct EPLAN variant by means of `Eplan.EplApi.Starter` library:
 
 
 
@@ -78,7 +78,7 @@ oForm.EplanBinFolder = oResolver.GetEplanBinPath();
 Application.Run(oForm);
 ```
 
-3\. Publish the codebases of all needed API assemblies in the application config file. (An XML file, which is named like your executable with an additional extension .config., e.g. MyApplication.exe.config). The following code shows an example for the contents of such a config file.
+3\. Publish the codebases of all needed API assemblies in the application config file. (An XML file, which is named like your executable with an additional extension .config., e.g. `MyApplication.exe.config`). The following code shows an example for the contents of such a config file.
 
 ```xml
 <?xml version="1.0"?>
@@ -144,12 +144,12 @@ Application.Run(oForm);
     }
 ```
 
-In Visual Studio Tools for Office (**VSTO**) projects, the assembly resolver or the application config file is not working. Office still tries to copy the EPLAN API assemblies to a temporary folder before loading. VSTO applications will only work, if you set the codebases of the API assemblies in the machine.config file, which you usualy find in the directory C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\CONFIG.
+In Visual Studio Tools for Office (**VSTO**) projects, the assembly resolver or the application config file is not working. Office still tries to copy the EPLAN API assemblies to a temporary folder before loading. VSTO applications will only work, if you set the codebases of the API assemblies in the `machine.config` file, which you usualy find in the directory C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\CONFIG.
 
 Remarks 
 
-If you want to use any object from the name spaces beginning with Eplan.EplApi.DataModel , you need to open a LockingStep, before you e.g. open an EPLAN project. 
+If you want to use any object from the name spaces beginning with `Eplan.EplApi.DataModel` , you need to open a LockingStep, before you e.g. open an EPLAN project. 
 
-Make sure to call Exit() only one time in your application. It is currently not possible to use Init("") after Exit(), while the application is still running.
+Make sure to call `Exit()` only one time in your application. It is currently not possible to use Init("") after `Exit()`, while the application is still running.
 
 EplApplication instance should be deinitialized explicitly by the main thread. When <c>Exit</c> method is called by thread of garbage collector or after leaving main function of application, it cause application crash.

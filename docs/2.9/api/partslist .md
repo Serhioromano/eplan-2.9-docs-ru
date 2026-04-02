@@ -129,22 +129,23 @@ CONFIGSCHEME |
       
   
   
-Example
-    
-    
-    Export:
-    
-    partslist /TYPE:EXPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk    /FORMAT:XPalCSVConverter /EXPORTFILE:C:\temp\PartsList.csv
-    
-    Import:
-    
-    partslist /TYPE:IMPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk    /FORMAT:XPalCSVConverter /IMPORTFILE:C:\temp\PartsList.csv
-    
-    Deletes stored properties from a project.
-    
-    partslist /TYPE:DELETESTOREDPROPERTIES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /CONFIGSCHEME:config_scheme
-    
-    Use the most recent configuration scheme: The 'CONFIGSCHEME'
-    parameter is not entered.
-    
-    partslist /TYPE:DELETESTOREDPROPERTIES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+**Example**
+
+```
+Export:
+
+partslist /TYPE:EXPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk    /FORMAT:XPalCSVConverter /EXPORTFILE:C:\temp\PartsList.csv
+
+Import:
+
+partslist /TYPE:IMPORT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk    /FORMAT:XPalCSVConverter /IMPORTFILE:C:\temp\PartsList.csv
+
+Deletes stored properties from a project.
+
+partslist /TYPE:DELETESTOREDPROPERTIES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /CONFIGSCHEME:config_scheme
+
+Use the most recent configuration scheme: The 'CONFIGSCHEME'
+parameter is not entered.
+
+partslist /TYPE:DELETESTOREDPROPERTIES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+```

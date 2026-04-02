@@ -40,9 +40,10 @@ EXTENDONLY |
       
   
   
-Example
-    
-    
-    Export subproject.
-    
-    subprojects /TYPE:FILEOFF /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /SPNR:1
+**Example**
+
+```
+Export subproject.
+
+subprojects /TYPE:FILEOFF /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /SPNR:1
+```

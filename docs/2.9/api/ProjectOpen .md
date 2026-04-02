@@ -31,8 +31,9 @@ Remarks
     
 
   
-Example
-    
-    
-            ProjectOpen /Project:C:\EPLAN\Projects\ESS_Sample_Project.elk
-            ProjectOpen /Project:"C:\EPLAN\my own Projects\ESS_Sample_Project.elk"
+**Example**
+
+```
+ProjectOpen /Project:C:\EPLAN\Projects\ESS_Sample_Project.elk
+ProjectOpen /Project:"C:\EPLAN\my own Projects\ESS_Sample_Project.elk"
+```

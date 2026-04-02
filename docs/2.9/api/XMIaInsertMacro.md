@@ -52,7 +52,8 @@ RepresentationType |
       
   
   
-Example
-    
-    
-    XGedStartInteractionAction /Name:XMIaInsertMacro /filename:"?"
+**Example**
+
+```
+XGedStartInteractionAction /Name:XMIaInsertMacro /filename:"?"
+```

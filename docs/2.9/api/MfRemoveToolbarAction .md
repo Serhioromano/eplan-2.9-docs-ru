@@ -28,7 +28,8 @@ Remarks
 
 
   
-Example
-    
-    
-             MfRemoveToolbarAction /ToolbarName:"?" /Silent:No
+**Example**
+
+```
+MfRemoveToolbarAction /ToolbarName:"?" /Silent:No
+```

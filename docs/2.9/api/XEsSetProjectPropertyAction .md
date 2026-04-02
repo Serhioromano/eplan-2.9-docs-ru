@@ -46,9 +46,10 @@ Remarks
     
 
   
-Example
-    
-    
-    XEsSetProjectPropertyAction /PropertyId:? /PropertyIndex:0 /PropertyValue:"?"
-     or
-     XEsSetProjectPropertyAction /PropertyIdentName:? /PropertyIndex:0 /PropertyValue:"?"
+**Example**
+
+```
+XEsSetProjectPropertyAction /PropertyId:? /PropertyIndex:0 /PropertyValue:"?"
+ or
+ XEsSetProjectPropertyAction /PropertyIdentName:? /PropertyIndex:0 /PropertyValue:"?"
+```

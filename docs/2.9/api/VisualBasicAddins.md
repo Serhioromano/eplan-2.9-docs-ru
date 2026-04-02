@@ -1,8 +1,8 @@
-# Creating add-ins in Visual Basic.Net
+# Creating add-ins in Visual `Basic.Net`
 
-Writing an add-in in Visual Basic.Net basically works exactly like already describes under the topic"[Creating add-ins in CSharp](CSharpAddins.html)". The only difference is the source code syntax and how to call the compiler. 
+Writing an add-in in Visual `Basic.Net` basically works exactly like already describes under the topic"[Creating add-ins in CSharp](CSharpAddins.html)". The only difference is the source code syntax and how to call the compiler. 
 
-Create a file VBAddInModule.vb with the following contents: 
+Create a file `VBAddInModule.vb` with the following contents: 
 
 ```vb
 Public Class AddInModule
@@ -36,11 +36,11 @@ Public Class AddInModule
 End Class 'AddInModule
 ```
 
-Invoke the Visual Basic compiler (vbc.exe) with the following parameters: 
+Invoke the Visual Basic compiler (`vbc.exe`) with the following parameters: 
 
-vbc /target:library /reference:..\\..\\..\\..\bin\Eplan.EplApi.AFu.dll /out:SimpleVBAddIn.dll VBAddinModule.vb 
+vbc /target:library /reference:..\\..\\..\\..\bin\`Eplan.EplApi.AFu.dll` /out:`SimpleVBAddIn.dll` `VBAddinModule.vb` 
 
-For an action create the following source file and save it as SimpleVBAction.cs in your source directory. To create an action, we need a class, which implements the IEplAction interface. For a more detailed explanation, see the [Actions](Actions.html) topic. 
+For an action create the following source file and save it as `SimpleVBAction.cs` in your source directory. To create an action, we need a class, which implements the IEplAction interface. For a more detailed explanation, see the [Actions](Actions.html) topic. 
 
 ```vb
 Imports Eplan.EplApi.ApplicationFramework
@@ -67,4 +67,4 @@ Public Class VBAction
 End Class 'VBAction
 ```
 
-vbc /target:library /reference:..\\..\\..\\..\bin\Eplan.EplApi.AFu.dll /reference:..\\..\\..\\..\bin\Eplan.EplApi.Baseu.dll /out:SimpleVBAddIn.dll VBAddinModule.vb SimpleVBAction.vb
+vbc /target:library /reference:..\\..\\..\\..\bin\`Eplan.EplApi.AFu.dll` /reference:..\\..\\..\\..\bin\`Eplan.EplApi.Baseu.dll` /out:`SimpleVBAddIn.dll` `VBAddinModule.vb` `SimpleVBAction.vb`

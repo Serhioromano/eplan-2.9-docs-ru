@@ -30,7 +30,7 @@ oMatrix3D.Translate(new Vector3D(1.0, 2.0, 3.0));
 oComponent1.AbsoluteTransformation = oMatrix3D;
 ```
 
-It is also possible to move 3D object using Move() method :
+It is also possible to move 3D object using `Move()` method :
 
 ```csharp
 oComponent1.Move(1.0, 2.0, 3.0);

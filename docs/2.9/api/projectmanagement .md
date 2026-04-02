@@ -88,21 +88,22 @@ Remarks
     
 
   
-Example
-    
-    
-    projectmanagement /TYPE:READPROJECTINFO /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /FILENAME:C:\Files\ProjectInfo.xml
-    
-    projectmanagement /TYPE:ToggleSections /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk"
-    
-    projectmanagement /TYPE:EXPORTPROPERTYPLACEMENTSSCHEMAS /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /FILENAME:C:\Files\PPSchemas.xml
-    
-    projectmanagement /TYPE:IMPORTPROPERTYPLACEMENTSSCHEMAS /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /FILENAME:C:\Files\PPSchemas.xml /OVERWRITE:1
-    
-    projectmanagement /TYPE:REORGANIZE /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /EXTENDEDMODE:1
-    
-    projectmanagement /TYPE:CORRECTPROJECTITEMS /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /SCHEME:Default
-    
-    projectmanagement /TYPE:LOADDIRECTORY /PROJECTSDIRECTORY:"C:\Projects\EPLAN" /SCANSUBDIRECTORIES:true
-    
-    projectmanagement /TYPE:LOADDIRECTORY
+**Example**
+
+```
+projectmanagement /TYPE:READPROJECTINFO /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /FILENAME:C:\Files\ProjectInfo.xml
+
+projectmanagement /TYPE:ToggleSections /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk"
+
+projectmanagement /TYPE:EXPORTPROPERTYPLACEMENTSSCHEMAS /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /FILENAME:C:\Files\PPSchemas.xml
+
+projectmanagement /TYPE:IMPORTPROPERTYPLACEMENTSSCHEMAS /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /FILENAME:C:\Files\PPSchemas.xml /OVERWRITE:1
+
+projectmanagement /TYPE:REORGANIZE /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /EXTENDEDMODE:1
+
+projectmanagement /TYPE:CORRECTPROJECTITEMS /PROJECTNAME:"C:\Projects\EPLAN\ESS_Sample_Project.elk" /SCHEME:Default
+
+projectmanagement /TYPE:LOADDIRECTORY /PROJECTSDIRECTORY:"C:\Projects\EPLAN" /SCANSUBDIRECTORIES:true
+
+projectmanagement /TYPE:LOADDIRECTORY
+```

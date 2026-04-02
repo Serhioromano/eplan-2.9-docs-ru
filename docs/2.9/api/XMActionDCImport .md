@@ -35,7 +35,8 @@ Remarks
     
 
   
-Example
-    
-    
-            XMActionDCImport /ProjectLink:c:\\Projects\\EPLAN\\test.elk /DataConfigurationFile:c:\\EPLAN\\DataCfgFile.edc
+**Example**
+
+```
+XMActionDCImport /ProjectLink:c:\\Projects\\EPLAN\\test.elk /DataConfigurationFile:c:\\EPLAN\\DataCfgFile.edc
+```

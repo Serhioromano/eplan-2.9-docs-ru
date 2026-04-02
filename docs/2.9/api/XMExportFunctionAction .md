@@ -79,7 +79,8 @@ Remarks
     
 
   
-Example
-    
-    
-     XMExportFunctionAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Function.xls /ExecutionMode:0
+**Example**
+
+```
+XMExportFunctionAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Function.xls /ExecutionMode:0
+```

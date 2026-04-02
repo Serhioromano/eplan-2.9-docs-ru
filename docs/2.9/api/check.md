@@ -110,25 +110,26 @@ Remarks
     
 
   
-Example
-    
-    
-    Check project with scheme: Offline
-    
-    check /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /VERIFICATIONSCHEME:Offline
-    
-    Check most recently used project with most recently used scheme
-    
-    check /TYPE:PROJECT
-    
-    Check pages
-    
-    check /TYPE:PAGES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/6
-    
-    Check pages of the recently used project 
-    
-    check /TYPE:PAGES /USEPAGEFILTER:1
-    
-    Check an installation space
-    
-    check /TYPE:INSTALLATIONSPACE /INSTALLATIONSPACENAME:BR1
+**Example**
+
+```
+Check project with scheme: Offline
+
+check /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /VERIFICATIONSCHEME:Offline
+
+Check most recently used project with most recently used scheme
+
+check /TYPE:PROJECT
+
+Check pages
+
+check /TYPE:PAGES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/6
+
+Check pages of the recently used project 
+
+check /TYPE:PAGES /USEPAGEFILTER:1
+
+Check an installation space
+
+check /TYPE:INSTALLATIONSPACE /INSTALLATIONSPACENAME:BR1
+```

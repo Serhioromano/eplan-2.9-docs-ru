@@ -11,7 +11,7 @@ using (Transaction oTransaction = new TransactionManager().CreateTransaction())
 }
 ```
 
-So in case when execution of the code is broken off before Commit() was called, properties "Name" remain unchanged. 
+So in case when execution of the code is broken off before `Commit()` was called, properties "Name" remain unchanged. 
 
 ### Nesting API transactions 
 
@@ -59,7 +59,7 @@ Using API transactions and internal ones in the same time can bring problems. So
 
 
 
-![](Transaction_API_in_internal.jpg)
+![](images/Transaction_API_in_internal.jpg)
 
 API transaction may always be opened within internal transaction. API developer has a possibility to check whether an API transaction is open using following property : 
 
@@ -73,7 +73,7 @@ A commit of API transaction leads to no change in the database and is saved in t
 
 
 
-![](Transaction_internal_in_API.jpg)
+![](images/Transaction_internal_in_API.jpg)
 
 An internal transaction may be always opened within a API transaction. The API developer has the possibility to check each time whether an internal transaction is open using following property: 
 

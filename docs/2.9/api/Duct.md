@@ -13,4 +13,4 @@ oDuct.Parent = oPlane;
 oDuct.FindSourceMate("M4", true).SnapTo(oPlane.GetTargetMates(true)[0] as PlaneMate, 0.0, 20.0, 300.0);
 ```
 
-![](Duct.jpg)
+![](images/Duct.jpg)

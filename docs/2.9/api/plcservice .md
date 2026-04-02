@@ -163,44 +163,45 @@ PLCCPU |
       
   
   
-Example
-    
-    
-    Bus data export:
-    
-    plcservice 
-                    /TYPE:BUSDATAEXPORT
-                    /CONFIGURATIONPROJECT:Schneider-Electric
-                    /DESTINATIONFILE:"c:\tempdir\plcservice_export_1.xef"
-                    /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
-                    /LANGUAGE:de_DE
-                    /CONVERTERID:PlcDcXMLExchangerSchneider
-                    /OVERWRITE:1
-    
-    Bus data import:
-    
-    plcservice 
-                    /TYPE:BUSDATAIMPORT
-                    /SOURCEFILE:"c:\tempdir\plcservice_export_2.pbf"
-                    /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
-                    /LANGUAGE:de_DE
-                    /CONVERTERID:PlcDcXMLExchangerUniversal
-    
-    Schematics generation:
-    
-    plcservice 
-                    /TYPE:GENERATEPLCSCHEMATIC
-                    /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
-                    /CONFIGFILE:"c:\tempdir\schematics_generation_config.xml"
-                    /SINGLELINEPAGES:1
-                    /MULTILINEPAGES:1
-                            
-    Address overview export:
-    
-    plcservice 
-                    /TYPE:EXPORTADDRESSOVERVIEW
-                    /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
-                    /CONFIGURATIONPROJECT:"CAx_AML_Drive_00"
-                    /PLCSTATION:"S71500/ET200MP station_1"
-                    /PLCCPU:"1"
-                    /DESTINATIONFILE:"c:\tempdir\address_overview_export.csv"
+**Example**
+
+```
+Bus data export:
+
+plcservice 
+                /TYPE:BUSDATAEXPORT
+                /CONFIGURATIONPROJECT:Schneider-Electric
+                /DESTINATIONFILE:"c:\tempdir\plcservice_export_1.xef"
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /LANGUAGE:de_DE
+                /CONVERTERID:PlcDcXMLExchangerSchneider
+                /OVERWRITE:1
+
+Bus data import:
+
+plcservice 
+                /TYPE:BUSDATAIMPORT
+                /SOURCEFILE:"c:\tempdir\plcservice_export_2.pbf"
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /LANGUAGE:de_DE
+                /CONVERTERID:PlcDcXMLExchangerUniversal
+
+Schematics generation:
+
+plcservice 
+                /TYPE:GENERATEPLCSCHEMATIC
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /CONFIGFILE:"c:\tempdir\schematics_generation_config.xml"
+                /SINGLELINEPAGES:1
+                /MULTILINEPAGES:1
+
+Address overview export:
+
+plcservice 
+                /TYPE:EXPORTADDRESSOVERVIEW
+                /PROJECTNAME:"C:\Users\Public\EPLAN\Electric P8\Projects\Microsoft\ESS_Sample_Project.elk" 
+                /CONFIGURATIONPROJECT:"CAx_AML_Drive_00"
+                /PLCSTATION:"S71500/ET200MP station_1"
+                /PLCCPU:"1"
+                /DESTINATIONFILE:"c:\tempdir\address_overview_export.csv"
+```

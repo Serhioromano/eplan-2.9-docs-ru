@@ -23,9 +23,10 @@ PROJECTNAME |
       
   
   
-Example
-    
-    
-    Update project master data from system
-    
-    masterdata /TYPE:UPDATEPROJECT
+**Example**
+
+```
+Update project master data from system
+
+masterdata /TYPE:UPDATEPROJECT
+```

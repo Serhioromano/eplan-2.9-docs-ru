@@ -28,7 +28,8 @@ Remarks
     
 
   
-Example
-    
-    
-             MfImportToolbarAction /File:"?" /Replace:Yes
+**Example**
+
+```
+MfImportToolbarAction /File:"?" /Replace:Yes
+```

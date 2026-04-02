@@ -12,7 +12,7 @@ Following points need to be done to in order to use the interface :
 
 Any report template now contains a property where you can set a name of an action : 
 
-![](report_action_field.jpg)
+![](images/report_action_field.jpg)
 
 If an action by this name is registered in EPLAN, it is called on several occasions during report generation. 
 
@@ -80,11 +80,11 @@ The simplest way is to use a copy of existing form.
 
 Such form should be set in Form field of project template: 
 
-![](report_form_field.jpg)
+![](images/report_form_field.jpg)
 
 The form could have a custom actions assigned to placeholder texts . This could be set in the form editor : 
 
-![](placeholdertext_action.jpg)
+![](images/placeholdertext_action.jpg)
 
 Now it is necessary to create the text processing action (see bellow) 
 
@@ -94,7 +94,7 @@ This action will be called, when the placeholder text is evaluated during report
 
 [in] "objects" value: main object for the line (can be more than one). 
 
-[out]: Call SetStrings() of the calling context to set the result text. More than one result text will generate new lines. 
+[out]: Call `SetStrings()` of the calling context to set the result text. More than one result text will generate new lines. 
 
 [in/out] "color" value: ColorId. Set the color to change color of placeholder texts. It works with one result text only. 
 

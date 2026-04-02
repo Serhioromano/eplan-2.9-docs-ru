@@ -104,7 +104,7 @@ Now you need to create an instance of your event listener class. During the life
 
 Every event may additionally have parameters of a certain type. For this purpose we have EventParameter classes, like for example EventParameterString. 
 
-The "OnEvent()" function has a generic interface as parameter. It takes the specific EventParameter classes as constructor argument. Subsequently it tries to create this parameter object. If the interface does not contain an adequate object, EPLAN throws an exception. 
+The "`OnEvent()`" function has a generic interface as parameter. It takes the specific EventParameter classes as constructor argument. Subsequently it tries to create this parameter object. If the interface does not contain an adequate object, EPLAN throws an exception. 
 
 So if you handle a specific event, you need to know in advance the type of the event parameter in order to create the correct parameter from the interface. 
 
@@ -139,7 +139,7 @@ So if you handle a specific event, you need to know in advance the type of the e
 
 ###  Raising events 
 
-You can create and send your own events with arbitrary names. However you have no influence on whether your event is handled somewhere.In the following example an event named "EventFromCSharpAddIn" is raised. The event has a parameter of type EventParameterString. 
+You can create and send your own events with arbitrary names. However you have no influence on whether your event is handled `somewhere.In` the following example an event named "EventFromCSharpAddIn" is raised. The event has a parameter of type EventParameterString. 
 
 === "C#"
 

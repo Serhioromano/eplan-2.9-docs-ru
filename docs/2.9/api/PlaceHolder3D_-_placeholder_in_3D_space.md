@@ -24,4 +24,4 @@ oNewPlaceHolder3D.set_Value("Record2", "Test123_de", "Wert 2");
 oNewPlaceHolder3D.ApplyRecord("Record1");
 ```
 
-![](Placeholder3d.jpg)
+![](images/Placeholder3d.jpg)

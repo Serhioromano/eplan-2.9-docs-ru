@@ -2,9 +2,9 @@
 
 The documentation you are reading, is divided into two sections : 
 
-\- User Guide introduces you into how to set up a development environment and start developing or use more advanced functionality 
+- User Guide introduces you into how to set up a development environment and start developing or use more advanced functionality 
 
-\- API Reference. It lists and describes in detail all the namespaces, classes methods, etc. of the EPLAN API. 
+- API Reference. It lists and describes in detail all the namespaces, classes methods, etc. of the EPLAN API. 
 
 API Support setup installs API Help in HTML and Microsoft Help Viewer format. This way it can be accessed online or locally from a disk (i.e. in offline mode). 
 
@@ -20,7 +20,7 @@ a) Start Microsoft Help Viewer using Help->Add and Remove Help Content from Visu
 
 ![](images/API_Help_offline.png)
 
-b) In 'Manage Content' tab, please select Disk installation source, then browse helpcontentsetup.msha file from the directory where was API Help installed. By default is should be in %ProgramData%\EPLAN\O_Data\API-Support\<Eplan version>\doc 
+b) In 'Manage Content' tab, please select Disk installation source, then browse `helpcontentsetup.msha` file from the directory where was API Help installed. By default is should be in %ProgramData%\EPLAN\O_Data\API-Support\<Eplan version>\doc 
 
 c) Select 'Add' link and press 'Update' button 
 

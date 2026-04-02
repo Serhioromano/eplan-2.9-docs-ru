@@ -44,7 +44,8 @@ Remarks
     
 
   
-Example
-    
-    
-                    XDLInsertDeviceAction /PartNr:MOE.010042 /PartVariant:1 /PropertyIndex:0 /ProjectId:0
+**Example**
+
+```
+XDLInsertDeviceAction /PartNr:MOE.010042 /PartVariant:1 /PropertyIndex:0 /ProjectId:0
+```

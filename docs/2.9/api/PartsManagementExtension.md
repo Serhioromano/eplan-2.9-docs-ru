@@ -4,7 +4,7 @@ The API Parts Management Extension feature can be used to add you own custom inf
 
 You store this information in your own database and can attach it to the part and visualize it. When a part which references such custom information is exported or stored in a project, the information is stored as a sting in the indexed properties ARTICLE_CUSTOM_DATA_INDEX and ARTICLE_CUSTOM_DATA_VALUE. The first property contains the name of the addin to which the information belongs, the second property contains the data string at the same index position. 
 
-To use this feature, you need to call the methods MDPartsManagement.RegisterAddin(<AddinName>, <ActionName>) and MDPartsManagement.RegisterItem(<AddinName>, <ItemType>) in your addin. As <ItemType> you set the string "eplan.part"(There is also the possibility to register other custom items in the parts management tree, by setting other values for<ItemType>.). As <AddinName>, you set the assembly name of your addin, which is normally the dll title without the extension dll. In your addin, you implement an action with the name you set in the parameter <ActionName>. 
+To use this feature, you need to call the methods `MDPartsManagement.RegisterAddin`(<AddinName>, <ActionName>) and `MDPartsManagement.RegisterItem`(<AddinName>, <ItemType>) in your addin. As <ItemType> you set the string "`eplan.part`"(There is also the possibility to register other custom items in the parts management tree, by setting other values for<ItemType>.). As <AddinName>, you set the assembly name of your addin, which is normally the dll title without the extension dll. In your addin, you implement an action with the name you set in the parameter <ActionName>. 
 
 Upon this, your action is called on different events in the parts management. It has a different set of parameters passed in the ActionCallingContext on each occasion. The parameter 'action' tells you, which kind of 'event' is called. The parameter can contain the following values: 
 
@@ -28,11 +28,11 @@ SelectItem  | An item / part was selected in parts management. | itemtype : type
 partnr : selected part number (if only one part is selected)   
 variant : selected part variant ((if only one variant is selected)   
 key : identifying key of the selected element  |   
-PreShowTab  | An item/part was selected in parts management.You have now the possibility to show/hide tab sheets, which are registered for this element. | itemtype : type of item of the selected element   
+PreShowTab  | An item/part was selected in parts `management.You` have now the possibility to show/hide tab sheets, which are registered for this element. | itemtype : type of item of the selected element   
 partnr : selected part number (if only one part is selected)   
 variant : selected part variant ((if only one variant is selected)   
 key : identifying key of the selected element   
-tabsheet : tab sheet, to be checked. The tab sheet was previously registered using MDPartsManagement.RegisterTabsheet(...)  | show : (bool) should the tab sheet be displayed? (1 : yes (default), 0 : no)  
+tabsheet : tab sheet, to be checked. The tab sheet was previously registered using `MDPartsManagement.RegisterTabsheet`(...)  | show : (bool) should the tab sheet be displayed? (1 : yes (default), 0 : no)  
 SaveItem  | An item/part was saved in parts management.  | partnr : selected part number (if only one part is selected)   
 variant : selected part variant ((if only one variant is selected)   
 itemtype : type of item of the selected element   
@@ -55,17 +55,17 @@ DeleteItem  | item/part is being deleted from parts management.  | itemtype : ty
 partnr : selected part number (if only one part is selected)   
 variant : selected part variant ((if only one variant is selected)   
 key : identifying key of the element to be deleted  |   
-AddPartToProject  | A part from parts management is stored in the project. The addin can add additional custom data to the stored part. | itemtype : type of the stored part (always 'eplan.part')   
+AddPartToProject  | A part from parts management is stored in the project. The addin can add additional custom data to the stored part. | itemtype : type of the stored part (always '`eplan.part`')   
 key : identifying key of the stored part  | value = (string) custom part data to be stored with the part inside the project (In properties ARTICLE_CUSTOM_DATA_INDEX and ARTICLE_CUSTOM_DATA_VALUE).  
-AddPartToDatabase  | A part is synchronized from the project to the parts management. The additional custom data can now be extracted and stored by the addin. | itemtype : type of the synchronized part (always 'eplan.part')   
+AddPartToDatabase  | A part is synchronized from the project to the parts management. The additional custom data can now be extracted and stored by the addin. | itemtype : type of the synchronized part (always '`eplan.part`')   
 key : identifying key of the synchronized part   
 value : (string) custom part data which was stored with the part inside the project  |   
-AddItemToProject  | An item (part, manufacturer, drilling pattern, ...) is stored in the project. The addin can add additional custom data to the stored item.  |  itemtype : item types of stored items (eplan.part, eplan.manufacturer, ...)   
+AddItemToProject  | An item (part, manufacturer, drilling pattern, ...) is stored in the project. The addin can add additional custom data to the stored item.  |  itemtype : item types of stored items (`eplan.part`, `eplan.manufacturer`, ...)   
 key : identifying field of stored items   
 name : name of the stored items (abbreviated name of the manufacturer, name of drilling pattern, ...)  | value = (string) custom data which was stored with an item inside a project (in properties ARTICLE_CUSTOM_DATA_INDEX and ARTICLE_CUSTOM_DATA_VALUE).  
-ExportEplanItem  | A part is exported from parts management to a file. The additional custom data from the addin can now be added to the export file.  | itemtype : type of the item to export (always 'eplan.part')   
+ExportEplanItem  | A part is exported from parts management to a file. The additional custom data from the addin can now be added to the export file.  | itemtype : type of the item to export (always '`eplan.part`')   
 key : identifying key of the part to export  | value : (string) custom part data to be added to the export file   
-ImportEplanItem  | A part is imported to parts management. The additional custom data from the file can now be extracted and stored by the addin.  | itemtype : type of the part to import (always 'eplan.part')   
+ImportEplanItem  | A part is imported to parts management. The additional custom data from the file can now be extracted and stored by the addin.  | itemtype : type of the part to import (always '`eplan.part`')   
 key : identifying key of the imported part   
 mode : import mode. Possible values:   
 0: append new records only   

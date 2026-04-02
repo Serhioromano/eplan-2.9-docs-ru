@@ -61,7 +61,8 @@ Remarks
 
 
   
-Example
-    
-    
-    ExportProductionWiring  /MACHINETYPE:5 /MACHINENAME:Metzner /TARGETDIRECTORY:D:\export /MultipleConnections:1  /UseSelection:0
+**Example**
+
+```
+ExportProductionWiring  /MACHINETYPE:5 /MACHINENAME:Metzner /TARGETDIRECTORY:D:\export /MultipleConnections:1  /UseSelection:0
+```

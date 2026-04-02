@@ -1,6 +1,6 @@
 # Command line parameters
 
-Here is a full list of parameters of the EPLAN.exe application. By default, it is installed in C:\Program Files\EPLAN\Platform\<version>\Bin directory .
+Here is a full list of parameters of the `EPLAN.exe` application. By default, it is installed in C:\Program Files\EPLAN\Platform\<version>\Bin directory .
 
   
 Parameter | Description  
@@ -126,7 +126,7 @@ PathsScheme |
     Sets scheme of directories' paths, e.g. /PathsScheme:PredefinedPathScheme. If a chosen scheme not exists, the default scheme is used. 
       
   
-autoRegAddon | 
+`autoRegAddon` | 
     
     
     New installed addons will be registered at startup
@@ -240,129 +240,129 @@ Remarks
     
 
   
-Example
-    
-    
-        
-     "C:\\Program Files\\EPLAN\\Platform\\2.7.1\\Bin\\EPLAN.exe" /variant:"Electric P8"
-     
-      
-    
+**Example**
 
-  
+```
+"C:\\Program Files\\EPLAN\\Platform\\2.7.1\\Bin\\EPLAN.exe" /variant:"Electric P8"
 
-    
-    
-        
-     W3u.exe action /Param1:wert1 /Param2:wert2 /Param3
-     
-      
-    
 
-  
 
-    
-    
-        
-     W3u.exe /Setup:USER.WORKSPACE_MFC_FP.NAMED
-     
-      
-    
 
-  
 
-    
-    
-        
-     W3u.exe /User:UserXYZ
-     
-      
-    
 
-  
 
-    
-    
-        
-     W3u.exe /NoLoadWorkspace action /Param1:wert1
-     
-      
-    
 
-  
 
-    
-    
-        
-     W3u.exe /Language:en_us
-     
-      
-    
+W3u.exe action /Param1:wert1 /Param2:wert2 /Param3
 
-  
 
-    
-    
-        
-     W3u.exe /Auto /Quiet /Frame:2 AnotherAction /ActionPar
-     
-      
-    
 
-  
 
-    
-    
-     If the license dialog is needed, the flag NoLicenseDialog disables calling it.
-     
-     W3u.exe /NoLicenseDialog action /Param1:wert1 /Param2:wert2
-     
-    
 
-  
 
-    
-    
-     If no user rights dialog is needed, the flag NoUserRightsDialog disables calling it. If user rights check fails, EPLAN application will terminate.
-     
-     W3u.exe /NoUserRightsDialog action /Param1:wert1 /Param2:wert2
-     
-    
 
-  
 
-    
-    
-     Use or borrow a License defined in myLicense.lis. In myLicense.lis you can define a product variant and License modules to use or to borrow for a period of time.
-     
-     W3u.exe /License:"D:\\myLicense.lis"
-     
-    
 
-  
+W3u.exe /Setup:USER.WORKSPACE_MFC_FP.NAMED
 
-    
-    
-     Return a license
-     
-     W3u.exe /ReturnLicense:"D:\\myLicense.lis"
-     
-    
 
-  
 
-    
-    
-     Request a license file
-     
-     W3u.exe /RequestOfflineLicense:"D:\\myLicense.lis"
-     
-    
 
-  
 
-    
-    
-     Use a license offline
-     
-     W3u.exe /OfflineLicense:"D:\\myLicense.lis"
+
+
+
+
+W3u.exe /User:UserXYZ
+
+
+
+
+
+
+
+
+
+W3u.exe /NoLoadWorkspace action /Param1:wert1
+
+
+
+
+
+
+
+
+
+W3u.exe /Language:en_us
+
+
+
+
+
+
+
+
+
+W3u.exe /Auto /Quiet /Frame:2 AnotherAction /ActionPar
+
+
+
+
+
+
+
+
+If the license dialog is needed, the flag NoLicenseDialog disables calling it.
+
+W3u.exe /NoLicenseDialog action /Param1:wert1 /Param2:wert2
+
+
+
+
+
+
+
+If no user rights dialog is needed, the flag NoUserRightsDialog disables calling it. If user rights check fails, EPLAN application will terminate.
+
+W3u.exe /NoUserRightsDialog action /Param1:wert1 /Param2:wert2
+
+
+
+
+
+
+
+Use or borrow a License defined in myLicense.lis. In myLicense.lis you can define a product variant and License modules to use or to borrow for a period of time.
+
+W3u.exe /License:"D:\\myLicense.lis"
+
+
+
+
+
+
+
+Return a license
+
+W3u.exe /ReturnLicense:"D:\\myLicense.lis"
+
+
+
+
+
+
+
+Request a license file
+
+W3u.exe /RequestOfflineLicense:"D:\\myLicense.lis"
+
+
+
+
+
+
+
+Use a license offline
+
+W3u.exe /OfflineLicense:"D:\\myLicense.lis"
+```

@@ -41,7 +41,8 @@ Remarks
     
 
   
-Example
-    
-    
-    SetProjectLanguage /DISPLAY:en_US;de_DE /VARIABLE:en_US
+**Example**
+
+```
+SetProjectLanguage /DISPLAY:en_US;de_DE /VARIABLE:en_US
+```

@@ -109,9 +109,9 @@ These base classes are:
 
 
 
-In your add-in you just let your verification class inherit from one of these base classes and implement the necessary interface functions. For outputting messages, then different variations of the AddMessage() function are available. Additionally, the classes contain some functions to find cross-referenced objects. 
+In your add-in you just let your verification class inherit from one of these base classes and implement the necessary interface functions. For outputting messages, then different variations of the `AddMessage()` function are available. Additionally, the classes contain some functions to find cross-referenced objects. 
 
-If you want to implement a verification that verifies something concerning potentials then you implement a new verification derived from PotentialVerification. In the Execute function of your new verification you can use the function GetAllPotentialsWithSameName() to get the potential from the verification cache. It makes no sense to call this function in other context than in verification Execute(). 
+If you want to implement a verification that verifies something concerning potentials then you implement a new verification derived from PotentialVerification. In the Execute function of your new verification you can use the function `GetAllPotentialsWithSameName()` to get the potential from the verification cache. It makes no sense to call this function in other context than in verification `Execute()`. 
 
 All registered verifications will be called from the system by using "Check project...". If you want to execute only your verification, then you have to configure the settings for the check (create new scheme, disable other verifications ("Type of check": No)) 
 
@@ -132,7 +132,7 @@ oFunction.Location = new PointD(oFunction.Location.X + 10.0, oFunction.Location.
 }
 ```
 
-Prevent errors mode (restrictive mode). This is similar to Online mode, but in case DoErrorMessage() is called, the last UndoStep is undone automatically, so that the last changes are reverted. For 'Prevent errors mode' you should set the following options in OnRegister of the verification:
+Prevent errors mode (restrictive mode). This is similar to Online mode, but in case `DoErrorMessage()` is called, the last UndoStep is undone automatically, so that the last changes are reverted. For 'Prevent errors mode' you should set the following options in OnRegister of the verification:
 
 ```csharp
 this.VerificationPermission = IVerification.Permission.RestrictivePermitted;

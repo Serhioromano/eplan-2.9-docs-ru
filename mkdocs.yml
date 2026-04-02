@@ -2763,7 +2763,7 @@ nav:
         - "Общие условия": 2.9/news_p_weiteres_softwarevoraussetzungen.md
   - "API EPLAN":
     - "Limitation of Liability": 2.9/api/LimitationOfLiability.md
-    - "Help structure": 2.9/api/Help structure.md
+    - "Help structure": 2.9/api/Help_structure.md
     - "User Guide":
       - "Development environment":
         - "EPLAN .Net API": 2.9/api/EplanApiDotNet.md

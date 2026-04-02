@@ -79,7 +79,8 @@ Remarks
     
 
   
-Example
-    
-    
-     XMExportPagesAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Pages.xls /ExecutionMode:0
+**Example**
+
+```
+XMExportPagesAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Pages.xls /ExecutionMode:0
+```

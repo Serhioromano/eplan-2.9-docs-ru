@@ -19,4 +19,4 @@ oMountingRail.SetParent(oPlane1, false);
 oMountingRail.FindSourceMate("M4", true).SnapTo(oPlane1.GetTargetMates(true)[0] as PlaneMate, 0.0, 10.0, 12.0);
 ```
 
-![](MountingRail.jpg)
+![](images/MountingRail.jpg)

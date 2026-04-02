@@ -104,38 +104,39 @@ Remarks
     
 
   
-Example
-    
-    
-    Translate project
-    
-    translate /TYPE:TRANSLATEPROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
-    
+**Example**
 
-  
+```
+Translate project
 
-    
-    
-                           
-    Import database texts
-    
-    translate /TYPE:IMPORTTOTRANSDB  /CONVERTER:XTrLanguageDbXmlConverterImpl  /IMPORTFILE:c:\test\TranslationDB_FULL.etd /LANGUAGE:de_DE
-    
+translate /TYPE:TRANSLATEPROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
 
-  
 
-    
-    
-                           
-    Remove translation from project:
-    
-    translate /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk  /TYPE:REMOVELANGUAGE /LANGUAGE:en_US
-    
 
-  
 
-    
-    
-    Export missing-word list
-    
-    translate /TYPE:EXPORTMISSINGTRANSLATIONS /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /LANGUAGE:en_US /EXPORTFILE:C:\temp\missingTransFile.txt /CONVERTER:XTrLanguageDbXmlConverterImpl
+
+
+
+Import database texts
+
+translate /TYPE:IMPORTTOTRANSDB  /CONVERTER:XTrLanguageDbXmlConverterImpl  /IMPORTFILE:c:\test\TranslationDB_FULL.etd /LANGUAGE:de_DE
+
+
+
+
+
+
+
+Remove translation from project:
+
+translate /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk  /TYPE:REMOVELANGUAGE /LANGUAGE:en_US
+
+
+
+
+
+
+Export missing-word list
+
+translate /TYPE:EXPORTMISSINGTRANSLATIONS /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /LANGUAGE:en_US /EXPORTFILE:C:\temp\missingTransFile.txt /CONVERTER:XTrLanguageDbXmlConverterImpl
+```

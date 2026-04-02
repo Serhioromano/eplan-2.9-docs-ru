@@ -77,7 +77,8 @@ REPLACEEXISTING |
       
   
   
-Example
-    
-    
-    reports /TYPE:PROJECT /PROJECTNAME:C\\Projects\EPLAN\ESS_Sample_Project.elk
+**Example**
+
+```
+reports /TYPE:PROJECT /PROJECTNAME:C\\Projects\EPLAN\ESS_Sample_Project.elk
+```

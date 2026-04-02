@@ -32,42 +32,43 @@ Mode |
       
   
   
-Example
-    
-    
-     Example 1 (Full path of project)
-     
-     XPamsDeviceSelectionAction /ProjectName:"C:\\My Folder\\MyProject.elk" //absolute
-     XPamsDeviceSelectionAction /ProjectName:"C:\\My Folder\\MyProject"             //absolute without file-extension
-     XPamsDeviceSelectionAction /ProjectName:"My Folder\\MyProject.elk"             //relative to standard-folder
-     XPamsDeviceSelectionAction /ProjectName:MyProject.elk                                  //relative to standard-folder
-     XPamsDeviceSelectionAction /ProjectName:MyProject                                              //relative to standard-folder without file-extension
-     
-    
+**Example**
 
-  
+```csharp
+Example 1 (Full path of project)
 
-    
-    
-     Example 2 (Full path of project, in scripting)
-     
-     CommandLineInterpreter oCommandLineInterpreter = new CommandLineInterpreter();
-     bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"C:\\My Folder\\MyProject.elk\"");       //absolute
-     bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"C:\\My Folder\\MyProject\"");           //absolute without file-extension
-     bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"My Folder\\MyProject.elk\"");           //relative to standard-folder
-     bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:MyProject.elk");                                  //relative to standard-folder
-     bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:MyProject");                                              //relative to standard-folder without file-extension
-     
-    
+XPamsDeviceSelectionAction /ProjectName:"C:\\My Folder\\MyProject.elk" //absolute
+XPamsDeviceSelectionAction /ProjectName:"C:\\My Folder\\MyProject"             //absolute without file-extension
+XPamsDeviceSelectionAction /ProjectName:"My Folder\\MyProject.elk"             //relative to standard-folder
+XPamsDeviceSelectionAction /ProjectName:MyProject.elk                                  //relative to standard-folder
+XPamsDeviceSelectionAction /ProjectName:MyProject                                              //relative to standard-folder without file-extension
 
-  
 
-    
-    
-     Example 3 (object passed by context)
-     
-     StorableObjectContext context = new StorableObjectContext();
-     context.StorableObject = hProject;                             //option 1: project
-     context.StorableObject = hFunction;                            //option 2: function
-     context.StorableObject = hConnection;                  //option 3: connection
-     new CommandLineInterpreter().Execute("XPamsDeviceSelectionAction ", context);
+
+
+
+
+
+Example 2 (Full path of project, in scripting)
+
+CommandLineInterpreter oCommandLineInterpreter = new CommandLineInterpreter();
+bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"C:\\My Folder\\MyProject.elk\"");       //absolute
+bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"C:\\My Folder\\MyProject\"");           //absolute without file-extension
+bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"My Folder\\MyProject.elk\"");           //relative to standard-folder
+bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:MyProject.elk");                                  //relative to standard-folder
+bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:MyProject");                                              //relative to standard-folder without file-extension
+
+
+
+
+
+
+
+Example 3 (object passed by context)
+
+StorableObjectContext context = new StorableObjectContext();
+context.StorableObject = hProject;                             //option 1: project
+context.StorableObject = hFunction;                            //option 2: function
+context.StorableObject = hConnection;                  //option 3: connection
+new CommandLineInterpreter().Execute("XPamsDeviceSelectionAction ", context);
+```

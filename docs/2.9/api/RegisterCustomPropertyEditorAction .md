@@ -74,23 +74,24 @@ Remarks
     
 
   
-Example
-    
-    
-           RegisterCustomPropertyEditorAction /Register:True /Action:WPF_Demo_Custom_Editor /PropertyId:40001 /PropertyIndex:0 /Editable:False
-           RegisterCustomPropertyEditorAction /Register:True /Action:WPF_Demo_Custom_Editor /PropertyId:40002 /PropertyIndex:0 /Editable:True
-     
-           RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:1 /Editable:0
-           RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:2 /Editable:1
-     
-           RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField1 /Editable:0
-           RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField2 /Editable:1
-     
-           RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyId:40001 /PropertyIndex:0
-           RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyId:40002 /PropertyIndex:0
-     
-           RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:1
-           RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:2
-     
-           RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField1
-           RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField2
+**Example**
+
+```
+RegisterCustomPropertyEditorAction /Register:True /Action:WPF_Demo_Custom_Editor /PropertyId:40001 /PropertyIndex:0 /Editable:False
+RegisterCustomPropertyEditorAction /Register:True /Action:WPF_Demo_Custom_Editor /PropertyId:40002 /PropertyIndex:0 /Editable:True
+
+RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:1 /Editable:0
+RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:2 /Editable:1
+
+RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField1 /Editable:0
+RegisterCustomPropertyEditorAction /Register:1 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField2 /Editable:1
+
+RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyId:40001 /PropertyIndex:0
+RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyId:40002 /PropertyIndex:0
+
+RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:1
+RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyId:20901 /PropertyIndex:2
+
+RegisterCustomPropertyEditorAction /Register:False /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField1
+RegisterCustomPropertyEditorAction /Register:0 /Action:WPF_Demo_Custom_Editor /PropertyIdentName:EPLAN.Page.UserSupplementaryField2
+```

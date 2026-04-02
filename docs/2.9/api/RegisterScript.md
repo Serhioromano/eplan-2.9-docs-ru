@@ -35,7 +35,8 @@ Remarks
     
 
   
-Example
-    
-    
-                    RegisterScript /ScriptFile:c:\program\EPLAN\Scripts\myScript1.cs
+**Example**
+
+```
+RegisterScript /ScriptFile:c:\program\EPLAN\Scripts\myScript1.cs
+```

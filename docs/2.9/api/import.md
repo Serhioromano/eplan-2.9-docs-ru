@@ -156,17 +156,18 @@ VERIFY |
       
   
   
-Example
-    
-    
-    Import PXF project:
-    
-    import /TYPE:PXFPROJECT /IMPORTFILE:C:\Projects\ESS_Sample_Project.epj /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
-    
-    Import DXF / DWG drawings in macros
-    
-    import /TYPE:DXFDWGFILES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /SOURCEPATH:C:\Projects\DXF_DWG /DESTINATIONPATH:C:\Macros
-    
-    Insert DXF / DWG drawing into a page:
-    
-    import /TYPE:DWGPAGE /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/4 /IMPORTFILE:C:\Projects\EPLAN\DXF_DWG\pline_1.dwg /XSCALE:0.5 /YSCALE:0.5 /XOFFSET:100.0 /YOFFSET:100.0
+**Example**
+
+```
+Import PXF project:
+
+import /TYPE:PXFPROJECT /IMPORTFILE:C:\Projects\ESS_Sample_Project.epj /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+
+Import DXF / DWG drawings in macros
+
+import /TYPE:DXFDWGFILES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /SOURCEPATH:C:\Projects\DXF_DWG /DESTINATIONPATH:C:\Macros
+
+Insert DXF / DWG drawing into a page:
+
+import /TYPE:DWGPAGE /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/4 /IMPORTFILE:C:\Projects\EPLAN\DXF_DWG\pline_1.dwg /XSCALE:0.5 /YSCALE:0.5 /XOFFSET:100.0 /YOFFSET:100.0
+```

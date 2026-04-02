@@ -142,11 +142,40 @@ The types of pages, which you can create are listed in the `DocumentTypeManager.
 ## Другое
 
 
+- [![](Cabinet.jpg)](`Cabinet.jpg` "Click to enlarge") - (это ссылки на картики)
+- To find out, which action is connected to which menu item, you can evaluate the "`onActionStart.String`.*" - (не включил .*)
+- Sometimes `e.g`. project Ids are added to - (это просто текст)
+- example. C:\WINDOWS\`Microsoft.NET`\Framework\v2.0.50727. This folde - (Не надо внтури ссылок)
+- # `Eplan.EplApi.OnPostOpenProject` (не надо внутри заголовков)
 
 
 
+Example
+    
+    
+    m_EventHandler = new EventHandler("Eplan.EplApi.OnPostOpenProject");
+    m_EventHandler.EplanEvent += delegate(IEventParameter parameter)
+    {
+        new Decider().Decide(EnumDecisionType.eOkDecision, " Project " + new EventParameterString(parameter).String + " was open!", "OnPostOpenProject", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+    };
 
+Parameter Type: AfEvParString  
 
+<Add-on>
+
+<Add-on version>
+
+BIN Here, all binaries of the add-on are installed.
+
+CFG Here, all XMLfiles and the `install.xmlare` installed. The `Install.xmlfile` is the base data. The names of the folders are listed in the `install.xml` for copying the data to the EPLAN base data
+
+<Images>
+
+<Scripts>
+
+<XML>
+
+<…>
 
 
 

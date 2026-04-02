@@ -42,29 +42,30 @@ Remarks
     
 
   
-Example
-    
-    
-    Return current project:
-    
-    selectionset  /TYPE:PROJECT
-    
-    Results in calling context: Parameter name = 'PROJECT'
-    
-    Value = 'C:\Projects\EPLAN\ESS_Sample_Project.elk'
-    
-    Return currently selected projects:
-    
-    selectionset  /TYPE:PROJECTS
-    
-    Results in calling context: Parameter name = 'PROJECTS'
-    
-    Value = 'C:\Projects\EPLAN\ESS_Sample_Project.elk;C:\Projects\EPLAN\ESS_Sample_Project2.elk'
-    
-    Return currently selected pages:
-    
-    selectionset  /TYPE:PAGES
-    
-    Results in calling context: Parameter name = 'PAGES'
-    
-    Value = '=AP+ST1/1;=AP+ST1/2;=AP+ST1/5'
+**Example**
+
+```
+Return current project:
+
+selectionset  /TYPE:PROJECT
+
+Results in calling context: Parameter name = 'PROJECT'
+
+Value = 'C:\Projects\EPLAN\ESS_Sample_Project.elk'
+
+Return currently selected projects:
+
+selectionset  /TYPE:PROJECTS
+
+Results in calling context: Parameter name = 'PROJECTS'
+
+Value = 'C:\Projects\EPLAN\ESS_Sample_Project.elk;C:\Projects\EPLAN\ESS_Sample_Project2.elk'
+
+Return currently selected pages:
+
+selectionset  /TYPE:PAGES
+
+Results in calling context: Parameter name = 'PAGES'
+
+Value = '=AP+ST1/1;=AP+ST1/2;=AP+ST1/5'
+```

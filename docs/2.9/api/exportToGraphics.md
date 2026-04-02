@@ -1,5 +1,4 @@
 # exportToGraphics
-
     Action to export pages and projects to graphical (TIF, GIF, PNG, JPG) format.
     
 
@@ -103,21 +102,22 @@ Remarks
     
 
   
-Example
-    
-    
-    Export a project 
-    
-    exportToGraphics /TYPE:GRAPHICPROJECT /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /DESTINATIONPATH:C:\\temp  /FORMAT:BMP /COLORDEPTH:24 /IMAGEWIDTH:1024 /BLACKWHITE:1
-    
-    Export a page 
-    
-    exportToGraphics /TYPE:GRAPHICPAGE /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /PAGENAME:=AP1+ST1/2 /DESTINATIONPATH:C:\\temp /FORMAT:BMP /COLORDEPTH:24 /IMAGEWIDTH:1024 /BLACKWHITE:1
-    
-    Export several pages 
-    
-    exportToGraphics /TYPE:GRAPHICPAGE /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /DESTINATIONPATH:C:\\temp /FORMAT:BMP /COLORDEPTH:24 /IMAGEWIDTH:1024 /BLACKWHITE:1 /USEPAGEFILTER:1
-    
-    Export a page with a 'scheme' parameter
-    
-    exportToGraphics /TYPE:GRAPHICPAGE /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /PAGENAME:=AP1+ST1/2 /EXPORTSCHEME:Bitmap
+**Example**
+
+```
+Export a project 
+
+exportToGraphics /TYPE:GRAPHICPROJECT /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /DESTINATIONPATH:C:\\temp  /FORMAT:BMP /COLORDEPTH:24 /IMAGEWIDTH:1024 /BLACKWHITE:1
+
+Export a page 
+
+exportToGraphics /TYPE:GRAPHICPAGE /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /PAGENAME:=AP1+ST1/2 /DESTINATIONPATH:C:\\temp /FORMAT:BMP /COLORDEPTH:24 /IMAGEWIDTH:1024 /BLACKWHITE:1
+
+Export several pages 
+
+exportToGraphics /TYPE:GRAPHICPAGE /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /DESTINATIONPATH:C:\\temp /FORMAT:BMP /COLORDEPTH:24 /IMAGEWIDTH:1024 /BLACKWHITE:1 /USEPAGEFILTER:1
+
+Export a page with a 'scheme' parameter
+
+exportToGraphics /TYPE:GRAPHICPAGE /PROJECTNAME:C:\\Projects\\EPLAN\\ESS_Sample_Project.elk /PAGENAME:=AP1+ST1/2 /EXPORTSCHEME:Bitmap
+```

@@ -2,7 +2,7 @@
 
 EPLAN expects, that system errors are treated by exceptions. Because of this the interface to the EPLAN system messages is implemented in the BaseException class. This means, in order to write a system message you first need to create a BaseException object. However the exception does not need to be thrown! 
 
-By the fixMessage() function of the exception, the message is added to the EPLAN system messages. 
+By the `fixMessage()` function of the exception, the message is added to the EPLAN system messages. 
 
 === "C#"
 
@@ -20,4 +20,4 @@ By the fixMessage() function of the exception, the message is added to the EPLAN
     exc.FixMessage
     ```
 
-![](SystemMessage.jpg)
+![](images/SystemMessage.jpg)

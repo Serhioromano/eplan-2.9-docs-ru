@@ -19,4 +19,4 @@ InstallationSpace[] arrInstallationSpace = oProject.InstallationSpaces;
 
 In GUI it is called 'Layout space'. It is independent on pages in a project. 
 
-![](InstallationSpace.jpg)
+![](images/InstallationSpace.jpg)

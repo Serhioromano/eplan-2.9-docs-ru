@@ -450,7 +450,7 @@ As mentioned above, each setting has its default value. In order to set a settin
     oSettings.SetStringSetting("USER.TrDMProject.Masterdata.Pathnames.Projects", sProjectsPath, 0)
     ```
 
-In order to make it easier for the API user to find a certain settings key, the settings dialog provides a hidden feature. If you set the Boolean setting "USER.EnfMVC.ContextMenuSetting.ShowExtended" to true, you will get an additional context menu point in the settings dialog, which shows you the path of the selected setting.
+In order to make it easier for the API user to find a certain settings key, the settings dialog provides a hidden feature. If you set the Boolean setting "`USER.EnfMVC.ContextMenuSetting.ShowExtended`" to true, you will get an additional context menu point in the settings dialog, which shows you the path of the selected setting.
 
 ### Remarks
 

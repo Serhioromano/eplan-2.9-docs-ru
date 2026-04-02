@@ -9,7 +9,7 @@ There are 2 kinds of mates:
 
 
 
-![](Mates.jpg)
+![](images/Mates.jpg)
 
 Another division is besed on a purpose and a shape of mates :
 
@@ -19,7 +19,7 @@ Another division is besed on a purpose and a shape of mates :
 
 
 
-![](Mates2.jpg)
+![](images/Mates2.jpg)
 
 ### Getting mates
 

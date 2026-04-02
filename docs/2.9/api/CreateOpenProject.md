@@ -1,8 +1,8 @@
 # Creating or opening projects
 
-The most important object in the Eplan.EplApi.DataModel namespace is the Project. The project must be open in EPLAN in order to work with it. In an add-in you most often will be working with the project, which the user interactively opened via the GUI. You can obtain the project currently selected by the user via the SelectionSet object which is described under the topic "[Getting the current selection](HE_Selectionset.html)". 
+The most important object in the `Eplan.EplApi.DataModel namespace` is the Project. The project must be open in EPLAN in order to work with it. In an add-in you most often will be working with the project, which the user interactively opened via the GUI. You can obtain the project currently selected by the user via the SelectionSet object which is described under the topic "[Getting the current selection](HE_Selectionset.html)". 
 
-However you also might want to open or create a project in EPLAN via API -- this will definitely the case in [offline programs](UsingEplanAssemblies.html). In order to do this and other project related tasks, the Eplan.EplApi.Datamodel namespace provides the ProjectManager Class. 
+However you also might want to open or create a project in EPLAN via API -- this will definitely the case in [offline programs](UsingEplanAssemblies.html). In order to do this and other project related tasks, the `Eplan.EplApi.Datamodel namespace` provides the ProjectManager Class. 
 
 To create a project, you use the CreateProject method. It takes two parameters, the full file name of the new project link file to be created and the link file of the project template. After successfully creating the project, the project is open and the method returns the new project object. 
 

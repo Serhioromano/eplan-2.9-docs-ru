@@ -10,11 +10,11 @@ EPLAN carries on exporting / importing its XML format. Additionally, conversion 
 
 Import of different formats: 
 
-![](to_EPLAN.gif)
+![](images/to_EPLAN.gif)
 
 Export of different formats: 
 
-![](from_EPLAN.gif)
+![](images/from_EPLAN.gif)
 
 The following work flow is used: 
 
@@ -190,7 +190,7 @@ Registering a conversion module
 
 Each conversion module needs to register itself with EPLAN so it will be available during import or export. Because a conversion is only meant for a special task, the scope of functions of the converter needs to be set during registering. This is done via the IInterface interface as it is shown at the end of the above example. 
 
-The property InterfaceName returns the interface name followed by the interface category. The category specifies, in which export dialog the new processor will be shown. You can find the available interface categories in the list of available XML processors under Eplan.EplApi.ApplicationFramework.XMLConverter and Eplan.EplApi.ApplicationFramework.XMLConverterCategories.
+The property InterfaceName returns the interface name followed by the interface category. The category specifies, in which export dialog the new processor will be shown. You can find the available interface categories in the list of available XML processors under `Eplan.EplApi.ApplicationFramework.XMLConverter` and `Eplan.EplApi.ApplicationFramework.XMLConverterCategories`.
 
 See Also
 

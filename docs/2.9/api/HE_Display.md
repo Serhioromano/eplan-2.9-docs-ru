@@ -1,12 +1,12 @@
 # Displaying a preview
 
-The Eplan.EplApi.HEServices namespace provides the class DrawingService, which contains functionality for outputting objects (WindowMacros, SymbolVariants, Placements, or Pages) on a window or control. 
+The `Eplan.EplApi.HEServices namespace` provides the class DrawingService, which contains functionality for outputting objects (WindowMacros, SymbolVariants, Placements, or Pages) on a window or control. 
 
 Displaying the preview takes two steps: 
 
 First step is creating a so-called display list using the CreateDisplayList function. This actually processes the data into a list of graphical primitives, which can be drawn. Depending on what kind of data you want to show, this function will take some time. For example, when you want to create a preview of a macro, CreateDisplayList loads the macro file, analyzes it and creates the items to display. You need to call this function just once for a given preview. 
 
-The second step actually shows the preview (the created display list) on a window. It takes an System.Windows.Forms.PaintEventArgs object as parameter, which is provided by any control in the Paint callback. 
+The second step actually shows the preview (the created display list) on a window. It takes an `System.Windows.Forms.PaintEventArgs object` as parameter, which is provided by any control in the Paint callback. 
 
 The DrawingService class also provides the possibility to influence the look of the preview in many ways, like zooming and changing the background color. 
 

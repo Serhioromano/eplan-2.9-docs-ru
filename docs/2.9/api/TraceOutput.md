@@ -2,7 +2,7 @@
 
 For debugging purposes (or program logging in the release version) it is useful to log messages to a trace listener. The API framework therefore provides a TraceListener class. 
 
-In your API program, you just add your own trace listener to the System.Diagnostics.Trace.Listeners: 
+In your API program, you just add your own trace listener to the `System.Diagnostics.Trace.Listeners`: 
 
 === "C#"
 

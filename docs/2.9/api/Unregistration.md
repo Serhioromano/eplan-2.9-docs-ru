@@ -2,17 +2,17 @@
 
 ### Manual unregistration of an add-on
 
-After clicking the Add-ons menu point (as shown in figure 1), the same dialogue – as shown in figure 2 – will appear. After deactivating the add-on, the button ![](images/Addons_files/image012.png) will be enabled.
+After clicking the Add-ons menu point (as shown in figure 1), the same dialogue – as shown in figure 2 – will appear. After deactivating the add-on, the button ![](images/image012.png) will be enabled.
 
-![](images/Addons_files/image013.jpg)
+![](images/image013.jpg)
 
 Figure 7: Unregister add-ons
 
 By clicking on the delete button, the add-on will be deleted from the list and also will the belonging add-in be deleted from the list of the API module dialogue.
 
-![](images/Addons_files/image014.gif)Warning:
+![](images/image014.gif)Warning:
 
-The delete button ![](images/Addons_files/image012.png) will only be enabled, when the add-on was manually registered before.
+The delete button ![](images/image012.png) will only be enabled, when the add-on was manually registered before.
 
 ### Unregistration of an add-on via an action
 
@@ -21,16 +21,16 @@ It is also possible to unregister an add-on via an action call.
 **Parameter** |  **Description**  
 ---|---  
 Path |  The path where the add-on is located  
-InstallFile |  The complete path to the install.xml  
+InstallFile |  The complete path to the `install.xml`  
 AllowAutoInstall |  When the value is set to TRUE Remove the marker for auto install, then the add-on is auto installed next time  
   
-![](images/Addons_files/image007.gif)Example:
+![](images/image007.gif)Example:
 
 Registering Add-ons:
 
 XSettingsUnregisterAction /Path:c:\MyAddOn
 
-XSettingsUnregisterAction /InstallFile: c:\MyAddOn\CFG\Install.xml
+XSettingsUnregisterAction /InstallFile: c:\MyAddOn\CFG\`Install.xml`
 
 XSettingsUnregisterAction /Path:c:\MyAddOn /AllowAutoInstall:TRUE
 

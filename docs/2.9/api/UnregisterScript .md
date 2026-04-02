@@ -21,7 +21,8 @@ Remarks
     
 
   
-Example
-    
-    
-                    UnregisterScript /ScriptFile:c:\program\EPLAN\Scripts\myScript2.vb
+**Example**
+
+```
+UnregisterScript /ScriptFile:c:\program\EPLAN\Scripts\myScript2.vb
+```

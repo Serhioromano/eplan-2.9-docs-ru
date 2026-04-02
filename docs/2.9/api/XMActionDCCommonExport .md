@@ -68,7 +68,8 @@ IMMEDIATEIMPORT |
       
   
   
-Example
-    
-    
-     XMActionDCCommonExport /CONFIGSCHEME:config_scheme /COMPLETEPROJECT:1  /LANGUAGE:en_US /DESTINATION:c:\\temp\\Pages.xls /EXECUTIONMODE:0
+**Example**
+
+```
+XMActionDCCommonExport /CONFIGSCHEME:config_scheme /COMPLETEPROJECT:1  /LANGUAGE:en_US /DESTINATION:c:\\temp\\Pages.xls /EXECUTIONMODE:0
+```

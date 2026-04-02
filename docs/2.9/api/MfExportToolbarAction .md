@@ -40,7 +40,8 @@ Remarks
     
 
   
-Example
-    
-    
-             MfExportToolbarAction /File:"?" /ToolbarName:"?"
+**Example**
+
+```
+MfExportToolbarAction /File:"?" /ToolbarName:"?"
+```

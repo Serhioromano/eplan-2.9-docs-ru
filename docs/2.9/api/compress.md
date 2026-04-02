@@ -35,13 +35,14 @@ USEFILTER |
       
   
   
-Example
-    
-    
-    Compress a project.
-    
-    compress /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /CONFIGSCHEME:config_scheme /FILTERSCHEME:filter_scheme
-    
-    Use the most recent configuration scheme: The 'CONFIGSCHEME' parameter is not entered.
-    
-    compress /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /FILTERSCHEME:filter_scheme
+**Example**
+
+```
+Compress a project.
+
+compress /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /CONFIGSCHEME:config_scheme /FILTERSCHEME:filter_scheme
+
+Use the most recent configuration scheme: The 'CONFIGSCHEME' parameter is not entered.
+
+compress /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /FILTERSCHEME:filter_scheme
+```

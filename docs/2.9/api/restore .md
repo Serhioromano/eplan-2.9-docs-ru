@@ -58,14 +58,15 @@ Remarks
     
 
   
-Example
-    
-    
-    Restore project:
-    
-    restore /TYPE:PROJECT /ARCHIVENAME:C:\temp\ESS_Sample_Project.zw1 /PROJECTNAME:C:\temp\ESS_Sample_Project.elk /UNPACKPROJECT:0
-    
-    
-    Restore master data (plot frames, ...) to a DestinationPath
-    
-    restore /TYPE:MASTERDATA /ARCHIVENAME:C:\temp\ESS_Sample_Project.zw2 /DESTINATIONPATH:C:\temp
+**Example**
+
+```
+Restore project:
+
+restore /TYPE:PROJECT /ARCHIVENAME:C:\temp\ESS_Sample_Project.zw1 /PROJECTNAME:C:\temp\ESS_Sample_Project.elk /UNPACKPROJECT:0
+
+
+Restore master data (plot frames, ...) to a DestinationPath
+
+restore /TYPE:MASTERDATA /ARCHIVENAME:C:\temp\ESS_Sample_Project.zw2 /DESTINATIONPATH:C:\temp
+```

@@ -50,7 +50,8 @@ Remarks
     
 
   
-Example
-    
-    
-            ProjectAction /PROJECTNAME:C:\Projects\ESS_Sample_Project.elk /Action:export /TYPE:PDFPROJECT /EXPORTFILE:C:\pdf\export.pdf
+**Example**
+
+```
+ProjectAction /PROJECTNAME:C:\Projects\ESS_Sample_Project.elk /Action:export /TYPE:PDFPROJECT /EXPORTFILE:C:\pdf\export.pdf
+```

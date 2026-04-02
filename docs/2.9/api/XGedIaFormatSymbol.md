@@ -114,13 +114,13 @@ adjustframe |
                                               208 = Text: Width fixed - word-wrap - remove line breaks)
       
   
-propertyId | 
+`propertyId` | 
     
     
     ID (of 5 digits) of a property of the symbol; if this ID is set, only this property-text will be changed
       
   
-propertyIndex | 
+`propertyIndex` | 
     
     
     index of the property ID, negative values are possible (example: ... -1, 1, 2, 3, ...)
@@ -158,7 +158,8 @@ Remarks
     
 
   
-Example
-    
-    
-     See
+**Example**
+
+```
+See
+```

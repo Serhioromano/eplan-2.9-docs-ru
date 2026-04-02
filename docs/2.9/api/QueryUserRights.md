@@ -2,9 +2,9 @@
 
 EPLAN can combine user interactions with certain rights. This is done by the EPLAN module "Rights management". If this module is not available or not licensed, the rights management is not active in EPLAN. The following screen shot shows the rights management dialog with a list of rights. 
 
-![](RightsManagement.jpg)
+![](images/RightsManagement.jpg)
 
-In your API application, you can find out, whether the rights management module is active and you can query the status of a given user right. The following example checks the user right for "XPLEditorStart", using the checkUserRights and the checkRightFor method. 
+In your API application, you can find out, whether the rights management module is active and you can query the status of a given user right. The following example checks the user right for "XPLEditorStart", using the `checkUserRights` and the `checkRightFor` method. 
 
 === "C#"
 

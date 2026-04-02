@@ -49,7 +49,8 @@ Remarks
 
 
   
-Example
-    
-    
-    ExportNCData /MACHINETYPE:2 /MACHINENAME:Standard /TARGETDIRECTORY:D:\export /MATERIALNAME:Steel
+**Example**
+
+```
+ExportNCData /MACHINETYPE:2 /MACHINENAME:Standard /TARGETDIRECTORY:D:\export /MATERIALNAME:Steel
+```

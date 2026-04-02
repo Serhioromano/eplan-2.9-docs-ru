@@ -20,7 +20,8 @@ Project |
       
   
   
-Example
-    
-    
-       XEsUserPropertiesExportAction /XMLFile:c:\my_user.xml  /Project:c:\...\ESS_Sample_Project.elk
+**Example**
+
+```
+XEsUserPropertiesExportAction /XMLFile:c:\my_user.xml  /Project:c:\...\ESS_Sample_Project.elk
+```

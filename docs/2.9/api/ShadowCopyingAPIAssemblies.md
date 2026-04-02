@@ -26,4 +26,4 @@ As a solution, there was created [IEplAddInShadowCopy](Eplan.EplApi.AFu~Eplan.Ep
 
 See Also
 
-<https://msdn.microsoft.com/en-us/library/ms404279(v=vs.110).aspx >
+<https://`msdn.microsoft.com`/en-us/library/ms404279(v=vs.110).aspx >

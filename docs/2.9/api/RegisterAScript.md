@@ -37,4 +37,4 @@ Once the script was loaded, it will be automatically loaded during the Startup o
 
 To unload (unregister) a script, you just call the menu point "Unload" and select the respective script in the dialog: 
 
-![](UnloadScript.png)
+![](images/UnloadScript.png)

@@ -17,4 +17,4 @@ oArea.Parent = oMountingPanel.Planes[0];
 oArea.Size = new PointD(200.0, 250.0);
 ```
 
-![](Area.jpg)
+![](images/Area.jpg)

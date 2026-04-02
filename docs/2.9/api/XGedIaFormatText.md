@@ -158,7 +158,8 @@ Remarks
     
 
   
-Example
-    
-    
-      XGedStartInteractionAction /Name:XGedIaFormatText /height:3,5 /color:? /justification:? /angle:-90 /font:2 /visible:? /bold:? /italic:? /underline:? /showtextbox:? /setframeactive:1 /showframe:1 /framewidth:20 /frameheight:10 /adjustframe:208
+**Example**
+
+```
+XGedStartInteractionAction /Name:XGedIaFormatText /height:3,5 /color:? /justification:? /angle:-90 /font:2 /visible:? /bold:? /italic:? /underline:? /showtextbox:? /setframeactive:1 /showframe:1 /framewidth:20 /frameheight:10 /adjustframe:208
+```

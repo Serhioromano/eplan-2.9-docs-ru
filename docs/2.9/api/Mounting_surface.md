@@ -9,4 +9,4 @@ oMountingPanel.Parent = m_oInstallationSpace; Plane oPlane1 = oMountingPanel.Chi
 Plane oPlane2 = oMountingPanel.Children[1] as Plane; 
 ```
 
-![](Plane.jpg)
+![](images/Plane.jpg)

@@ -34,7 +34,8 @@ Remarks
     
 
   
-Example
-    
-    
-        XAfActionSetting /set:USER.MacrosLog.Pxf.writeDebugInfo /value:1
+**Example**
+
+```
+XAfActionSetting /set:USER.MacrosLog.Pxf.writeDebugInfo /value:1
+```

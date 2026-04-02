@@ -30,7 +30,8 @@ Remarks
 
 
   
-Example
-    
-    
-       XEsUserPropertiesImportAction /XMLFile:c:\my_user.xml  /Project:c:\...\ESS_Sample_Project.elk
+**Example**
+
+```
+XEsUserPropertiesImportAction /XMLFile:c:\my_user.xml  /Project:c:\...\ESS_Sample_Project.elk
+```

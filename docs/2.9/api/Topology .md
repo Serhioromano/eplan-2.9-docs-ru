@@ -30,13 +30,14 @@ Remarks
     
 
   
-Example
-    
-    
-    Route topology connections
-    
-    Topology /TYPE:RouteConnections /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
-    
-    Topology function generation
-    
-    Topology /TYPE:CreateFunctions /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+**Example**
+
+```
+Route topology connections
+
+Topology /TYPE:RouteConnections /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+
+Topology function generation
+
+Topology /TYPE:CreateFunctions /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+```

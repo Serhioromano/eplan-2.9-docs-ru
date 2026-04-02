@@ -1,14 +1,14 @@
 # Event handling in scripts
 
-You can write a script to react on EPLAN events. Therefore you need to declare at least one function of the script as event handler using the [DeclareEventHandler()] attribute and load the script. 
+You can write a script to react on EPLAN events. Therefore you need to declare at least one function of the script as event handler using the [`DeclareEventHandler()`] attribute and load the script. 
 
 It is even possible to handle event parameters. However you need to know the event parameters in advance.
 
 The following two example show scripts, which --when loaded -- react on events. 
 
-The script in the first example reacts the "onMainStart" event. The function MyEventHandlerFunction in the class SimpleEventHandler is registered as event handler for the "onMainStart" event. When this event is raised in EPLAN, the function is called. 
+The script in the first example reacts the "`onMainStart`" event. The function MyEventHandlerFunction in the class SimpleEventHandler is registered as event handler for the "`onMainStart`" event. When this event is raised in EPLAN, the function is called. 
 
-The second example shows an event handler script, which catches any "onActionStart.String" event. There is one event parameter for the action's name. 
+The second example shows an event handler script, which catches any "`onActionStart.String`" event. There is one event parameter for the action's name. 
 
 === "C#"
 

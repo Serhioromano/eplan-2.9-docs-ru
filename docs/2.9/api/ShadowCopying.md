@@ -18,7 +18,7 @@ Eplan will load addon's assemblies from the shadow directory and not from the or
 
 ### What EPLAN does ?
 
-At any start of EPLAN, the registry or the path for server add-ons is scanned for new add-ons. The install.xmlis read and the following things are done:
+At any start of EPLAN, the registry or the path for server add-ons is scanned for new add-ons. The `install.xmlis` read and the following things are done:
 
 · Does this addon fit to the main version?
 

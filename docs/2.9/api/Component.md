@@ -13,7 +13,7 @@ oTerminal.Create(m_oTestProject, "PXC.3022276", "1");
 oTerminal.Parent = oInstallationSpace;
 ```
 
-![](Terminal.jpg)
+![](images/Terminal.jpg)
 
 Plug: 
 
@@ -26,7 +26,7 @@ oComponent.Create(m_oTestProject, "Plug.3-pole+PE", "1");
 oComponent.Parent = oInstallationSpace;
 ```
 
-![](Plug.jpg)
+![](images/Plug.jpg)
 
 Power supply : 
 
@@ -38,4 +38,4 @@ oComponent.Create(m_oTestProject, @"PXC.2938581", "1");
 oComponent.Parent = oInstallationSpace;
 ```
 
-![](PowerSupply.jpg)
+![](images/PowerSupply.jpg)

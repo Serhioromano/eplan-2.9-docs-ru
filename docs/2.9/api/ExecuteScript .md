@@ -26,7 +26,8 @@ Remarks
     
 
   
-Example
-    
-    
-          EPLAN.exe /Variant:"Electric P8" ExecuteScript /ScriptFile:"C:\...\EPLAN\Electric P8\Scripts\...\SimpleScriptWithParameters.cs /Param1:Hello /Param2:EPLAN /Param3:" API developer!"
+**Example**
+
+```
+EPLAN.exe /Variant:"Electric P8" ExecuteScript /ScriptFile:"C:\...\EPLAN\Electric P8\Scripts\...\SimpleScriptWithParameters.cs /Param1:Hello /Param2:EPLAN /Param3:" API developer!"
+```

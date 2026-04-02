@@ -79,7 +79,8 @@ Remarks
     
 
   
-Example
-    
-    
-     XMExportConnectionsAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Connection.xls /ExecutionMode:0
+**Example**
+
+```
+XMExportConnectionsAction /ConfigScheme:config_scheme /CompleteProject:1  /Language:en_US /Destination:c:\\temp\\Connection.xls /ExecutionMode:0
+```

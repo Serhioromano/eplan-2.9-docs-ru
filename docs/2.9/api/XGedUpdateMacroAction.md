@@ -36,52 +36,53 @@ NewVariant |
       
   
   
-Example
-    
-    
-     Example 1 (selected object in ged)
-     
-     XGedUpdateMacroAction
-     
-    
+**Example**
 
-  
+```csharp
+Example 1 (selected object in ged)
 
-    
-    
-     Example 2 (Full path of project)
-     
-     XGedUpdateMacroAction /ProjectName:"C:\\My Folder\\MyProject.elk"      //absolute
-     XGedUpdateMacroAction /ProjectName:"C:\\My Folder\\MyProject"          //absolute without file-extension
-     XGedUpdateMacroAction /ProjectName:"My Folder\\MyProject.elk"          //relative to standard-folder
-     XGedUpdateMacroAction /ProjectName:MyProject.elk                                               //relative to standard-folder
-     XGedUpdateMacroAction /ProjectName:MyProject                                                   //relative to standard-folder without file-extension
-     
-    
+XGedUpdateMacroAction
 
-  
 
-    
-    
-     Example 3 (Full path of project, in scripting)
-     
-     CommandLineInterpreter oCommandLineInterpreter = new CommandLineInterpreter();
-     bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"C:\\My Folder\\MyProject.elk\"");    //absolute
-     bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"C:\\My Folder\\MyProject\"");                //absolute without file-extension
-     bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"My Folder\\MyProject.elk\"");                //relative to standard-folder
-     bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:MyProject.elk");                                               //relative to standard-folder
-     bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:MyProject");                                                   //relative to standard-folder without file-extension
-     
-    
 
-  
 
-    
-    
-     Example 4 (object passed by context)
-     
-     StorableObjectContext context = new StorableObjectContext();
-     context.StorableObject = hProject;                             //option 1: project
-     context.StorableObject = aMacroBox;                            //option 2: macrobox
-     context.StorableObject = hInstanceFromMacroBox;        //option 3: instance of macrobox
-     new CommandLineInterpreter().Execute("XGedUpdateMacroAction ", context);
+
+
+
+Example 2 (Full path of project)
+
+XGedUpdateMacroAction /ProjectName:"C:\\My Folder\\MyProject.elk"      //absolute
+XGedUpdateMacroAction /ProjectName:"C:\\My Folder\\MyProject"          //absolute without file-extension
+XGedUpdateMacroAction /ProjectName:"My Folder\\MyProject.elk"          //relative to standard-folder
+XGedUpdateMacroAction /ProjectName:MyProject.elk                                               //relative to standard-folder
+XGedUpdateMacroAction /ProjectName:MyProject                                                   //relative to standard-folder without file-extension
+
+
+
+
+
+
+
+Example 3 (Full path of project, in scripting)
+
+CommandLineInterpreter oCommandLineInterpreter = new CommandLineInterpreter();
+bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"C:\\My Folder\\MyProject.elk\"");    //absolute
+bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"C:\\My Folder\\MyProject\"");                //absolute without file-extension
+bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"My Folder\\MyProject.elk\"");                //relative to standard-folder
+bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:MyProject.elk");                                               //relative to standard-folder
+bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:MyProject");                                                   //relative to standard-folder without file-extension
+
+
+
+
+
+
+
+Example 4 (object passed by context)
+
+StorableObjectContext context = new StorableObjectContext();
+context.StorableObject = hProject;                             //option 1: project
+context.StorableObject = aMacroBox;                            //option 2: macrobox
+context.StorableObject = hInstanceFromMacroBox;        //option 3: instance of macrobox
+new CommandLineInterpreter().Execute("XGedUpdateMacroAction ", context);
+```

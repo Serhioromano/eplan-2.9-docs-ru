@@ -50,7 +50,8 @@ Remarks
     
 
   
-Example
-    
-    
-      XMDeleteReprTypeAction /RepresentationType:0 /Source:c:\macros\*.ema /Destination:c:\dest
+**Example**
+
+```
+XMDeleteReprTypeAction /RepresentationType:0 /Source:c:\macros\*.ema /Destination:c:\dest
+```

@@ -40,7 +40,8 @@ Remarks
     
 
   
-Example
-    
-    
-            XAfActionSettingProject /set:EsCrossReference.ContactImage.MotorSwitchDisplayBitMask /value:1
+**Example**
+
+```
+XAfActionSettingProject /set:EsCrossReference.ContactImage.MotorSwitchDisplayBitMask /value:1
+```

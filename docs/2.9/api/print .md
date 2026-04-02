@@ -90,17 +90,18 @@ Remarks
     
 
   
-Example
-    
-    
-    Print page:
-    
-    print /TYPE:PAGES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/6 /PRINTERNAME:my_printer /NUMBER:2
-    
-    Print page to file:
-    
-    print /TYPE:PAGES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PRINTCOLLATE:0 /PRINTREVERSE:1 /DESTINATIONFILE:C:\TEMP\ESS_Sample_Project_print.prn /USEPAGEFILTER:1
-    
-    Print project:
-    
-    print /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PRINTCOLLATE:0 /PRINTREVERSE:1 /DESTINATIONFILE:C:\TEMP\\ESS_Sample_Project_print.prn
+**Example**
+
+```
+Print page:
+
+print /TYPE:PAGES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/6 /PRINTERNAME:my_printer /NUMBER:2
+
+Print page to file:
+
+print /TYPE:PAGES /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PRINTCOLLATE:0 /PRINTREVERSE:1 /DESTINATIONFILE:C:\TEMP\ESS_Sample_Project_print.prn /USEPAGEFILTER:1
+
+Print project:
+
+print /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PRINTCOLLATE:0 /PRINTREVERSE:1 /DESTINATIONFILE:C:\TEMP\\ESS_Sample_Project_print.prn
+```

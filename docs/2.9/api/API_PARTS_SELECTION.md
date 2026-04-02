@@ -10,21 +10,21 @@ In EPLAN you have the possibility to switch between different data sources for p
 
 Setting data source as API means that an API action will be called in case of operations related to accessing parts , for example: 
 
-\- new part (or reference) is added to a project 
+- new part (or reference) is added to a project 
 
-\- part reference is changed in a project 
+- part reference is changed in a project 
 
-\- part information is loaded from system 
+- part information is loaded from system 
 
-\- part is synchronized to a project 
+- part is synchronized to a project 
 
-\- new macro with parts is inserted to a project 
+- new macro with parts is inserted to a project 
 
-\- new device is inserted to project 
+- new device is inserted to project 
 
-\- new device is selected (with device section) 
+- new device is selected (with device section) 
 
-\- new device list item is inserted to project 
+- new device list item is inserted to project 
 
 This way user a can create its own dialog for setting parts data, can set additional properties when selecting a part , etc. 
 
@@ -101,7 +101,7 @@ GraphicalPreview - is set to "1", if the user wishes a preview of the part. Othe
 preselectpartnr - contains the part number in the table cell from which the part selection is started. If the cell is empty, the parameter contains an empty string.  
 preselectvariant - contains the part variant number in the table cell from which the part selection is started.  
 PartSelection - is set to "1", if only a selection dialog should be shown. Otherwise, it is "0", the parts can also be edited.  
-DatabaseId - StorableObject.DatabaseIdentifier of the current project  
+DatabaseId - `StorableObject.DatabaseIdentifier` of the current project  
 UsePreSelection - is set to "1", if the pre selection list should be taken into account. Otherwise, it is "0" or an empty string.  
 codeletter - 'Identifier' property of selected symbol  
 symbollib - symbol library of selected symbol  
@@ -110,23 +110,23 @@ craft - trade number of selected part
 _cmdline - name of calling action   
 Read  |  Separator – contains separator between property number and part index in parameter name, for example  
 <property number><separator><part index>[<separator><property index>] - e.g. "22001_1", value “SIE.5SX2102-8”  
-22024_<part index> \- part variant  
+22024_<part index> - part variant  
 _cmdline - name of calling action   
 Create  |  Separator – contains separator between property number and part index in parameter name  
 <property number><separator><part index>[<separator><property index>] - e.g. "22001_1", value “SIE.5SX2102-8”  
 _cmdline - name of calling action   
 Exist | Separator – contains separator between property number and part index in parameter name, for example  
 <property number><separator><part index>[<separator><property index>] - e.g. "22001_1", value “SIE.5SX2102-8”  
-22024_<part index> \- part variant  
+22024_<part index> - part variant  
 _cmdline - name of calling action   
   
 The output parameters are following : 
 
-\- the property to set. Parameter name has format : <property number><separator><part index>[<separator><property index>] . It is required to set part number property (22001), another properties are optional. The <part index> is used to pass more than one part simultaneously. It starts from 1. Example : "1234_1" . As a value it can be any any string for example “11.0”, etc 
+- the property to set. Parameter name has format : <property number><separator><part index>[<separator><property index>] . It is required to set part number property (22001), another properties are optional. The <part index> is used to pass more than one part simultaneously. It starts from 1. Example : "1234_1" . As a value it can be any any string for example “11.0”, etc 
 
-\- count of parts to transmit. Parameter name is "count", value is determined by the last <part index>
+- count of parts to transmit. Parameter name is "count", value is determined by the last <part index>
 
-\- in case of 'Exists' mode, there is also 'Result' parameter which determines whether a part exists
+- in case of 'Exists' mode, there is also 'Result' parameter which determines whether a part exists
 
 Important input parameter is the object ID ("objectid"). With help of the object id, you can locate the function in the project and get additional information about it. 
 

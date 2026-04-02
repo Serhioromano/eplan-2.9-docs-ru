@@ -71,9 +71,10 @@ UPDATEONLY |
       
   
   
-Example
-    
-    
-    Importing pre-planning data from excel file:  
-    
-    ImportPrePlanningData /PROJECTNAME:C:\Projects\ESS_Sample_Project.elk /FILENAME:C:\Projects\EPLAN\preplanning.xls       /SCHEMENAME:config_scheme       /HEADER:1 /SKIPERRORS:0 /UPDATEONLY:0
+**Example**
+
+```
+Importing pre-planning data from excel file:  
+
+ImportPrePlanningData /PROJECTNAME:C:\Projects\ESS_Sample_Project.elk /FILENAME:C:\Projects\EPLAN\preplanning.xls       /SCHEMENAME:config_scheme       /HEADER:1 /SKIPERRORS:0 /UPDATEONLY:0
+```

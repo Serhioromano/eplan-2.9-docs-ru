@@ -1,5 +1,4 @@
 # gedRedraw
-
     Action class for GED redraw.
     
 
@@ -14,9 +13,10 @@ Remarks
     
 
   
-Example
-    
-    
-    Redraw GED surface:
-    
-    gedRedraw
+**Example**
+
+```
+Redraw GED surface:
+
+gedRedraw
+```

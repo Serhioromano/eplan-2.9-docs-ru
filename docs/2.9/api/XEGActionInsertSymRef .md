@@ -73,7 +73,8 @@ Remarks
     
 
   
-Example
-    
-    
-     XEGActionInsertSymRef  /SymbolLibName:IEC_symbol /SymbolId:55 /VariantId:0
+**Example**
+
+```
+XEGActionInsertSymRef  /SymbolLibName:IEC_symbol /SymbolId:55 /VariantId:0
+```

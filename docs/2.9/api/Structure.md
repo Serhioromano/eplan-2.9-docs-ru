@@ -2,9 +2,9 @@
 
 ### The folder structure
 
-Every add-on has the same folder structure.The folder names are marked with <> when names are optional and can be changed by the addon developer.
+Every add-on has the same folder structure. The folder names are marked with <> when names are optional and can be changed by the addon developer.
 
-![](images/Addons_files/image002.gif)Note:
+![](images/image002.gif)Note:
 
 This add-on folder can exist anywhere on the disk!
 
@@ -16,7 +16,7 @@ An add-on always consists of the same folder structure, which basically looks li
 
 BIN Here, all binaries of the add-on are installed.
 
-CFG Here, all XMLfiles and the install.xmlare installed. The Install.xmlfile is the base data. The names of the folders are listed in the install.xml for copying the data to the EPLAN base data
+CFG Here, all XMLfiles and the `install.xmlare` installed. The `Install.xmlfile` is the base data. The names of the folders are listed in the `install.xml` for copying the data to the EPLAN base data
 
 <Images>
 
@@ -28,15 +28,15 @@ CFG Here, all XMLfiles and the install.xmlare installed. The Install.xmlfile is 
 
 ### The files
 
-The most important file is the install.xml. It contains all the information about the add-on and the EPLAN version.
+The most important file is the `install.xml`. It contains all the information about the add-on and the EPLAN version.
 
-The install.xml
+The `install.xml`
 
-This paragraph shows an install.xmlfile example, which is created with the EplAddonUtility.exe.
+This paragraph shows an `install.xmlfile` example, which is created with the `EplAddonUtility.exe`.
 
-![](images/Addons_files/image003.gif)Tip:
+![](images/image003.gif)Tip:
 
-For further information, about how to create an add-on with the EplAddonUtility.exe and which terms and conditions you should follow, see the EplAddonUtility documentation.
+For further information, about how to create an add-on with the `EplAddonUtility.exe` and which terms and conditions you should follow, see the EplAddonUtility documentation.
 
 ```xml
 <Settings format="2">

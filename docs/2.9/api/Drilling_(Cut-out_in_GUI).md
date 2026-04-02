@@ -11,4 +11,4 @@ Drilling oDrillingHexagon = Drilling.CreateHexagon(oProject, 75.0, null);
 oDrillingHexagon.SetParent(oPlane, true); oDrillingHexagon.GetSourceMates(true)[0].SnapTo(oPlane.GetTargetMates(true)[0] as PlaneMate, 40.0, 30.0, 50.0);
 ```
 
-![](Drilling.jpg)
+![](images/Drilling.jpg)

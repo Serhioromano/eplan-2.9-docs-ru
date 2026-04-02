@@ -2,11 +2,11 @@
 
 The script functionality does also accept parameters. However this only makes sense if a parameter can be passed to the script, when it is started. This can be done by invoking EPLAN via the command line: 
 
-W3u.exe ExecuteScript /ScriptFile:"C:\Program Files\EPLAN\EPLAN\Basic\Scripts\EPLAN\SimpleScriptWithParameters.cs" /Param1:Hello /Param2:EPLAN /Param3:" API developer!" 
+`W3u.exe` ExecuteScript /ScriptFile:"C:\Program Files\EPLAN\EPLAN\Basic\Scripts\EPLAN\`SimpleScriptWithParameters.cs`" /Param1:Hello /Param2:EPLAN /Param3:" API developer!" 
 
 When starting EPLAN via command line, in order to run a script, the first parameter is the name of the action to execute. "ExecuteScript" is the action for running scripts. This action takes the parameter "ScriptFile" which specifies the name of the script file to run. Any further parameter (Param1, Param2, Param3) will be passed to the start function of the script.
 
-![](sectionminus.png)Example
+![](images/sectionminus.png)Example
 
 In the following example, the script (the script function) requires 3 string parameters Param1, Param2 and Param3: 
 

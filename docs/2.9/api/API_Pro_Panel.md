@@ -6,7 +6,7 @@ The chapter gives user an overview about how to use API objects in EPLAN Pro Pan
 
 Basics 
 
-API Pro Panel was created as an extension to standard API DataModel (Eplan.EplApi.DataModelu.dll assembly). 
+API Pro Panel was created as an extension to standard API DataModel (`Eplan.EplApi.DataModelu.dll assembly`). 
 
 So there is a new namespace Eplan:EplApi:DataModel:E3D for 3d classes and HEServices methods that operates on them. 
 
@@ -16,7 +16,7 @@ UML class diagram
 
 The graph below shows hierarchy of the most important classes in Pro Panel API 
 
-[![](images/propanel.jpg)](images/propanel.jpg "Click to enlarge")
+![](images/propanel.jpg)
 
 See Also
 

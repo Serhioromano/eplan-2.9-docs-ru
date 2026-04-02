@@ -69,24 +69,25 @@ Remarks
     
 
   
-Example
-    
-    
-    Open project:
-    edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
-    
-    Open page:
-    
-    edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7
-    
-    Open page by a device tag of a device, which is located on the page:
-    
-    edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /DEVICENAME:=AP+PT1-G1
-    
-    Open page and set cursor to X, Y position:
-    
-    edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7 /X:200 /Y:100
-    
-    edit /PROJECTNAME:$(MD_PROJECTS)\ESS_Sample_Project.elk /INSTALLATIONSPACE:"=EB3+ET1 (-MP1)"
-    
-    edit /PROJECTNAME:$(MD_PROJECTS)\ESS_Sample_Project.elk /DEVICENAME3D:=EB3+ET1-F14
+**Example**
+
+```
+Open project:
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+
+Open page:
+
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7
+
+Open page by a device tag of a device, which is located on the page:
+
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /DEVICENAME:=AP+PT1-G1
+
+Open page and set cursor to X, Y position:
+
+edit /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /PAGENAME:=AP+ST1/7 /X:200 /Y:100
+
+edit /PROJECTNAME:$(MD_PROJECTS)\ESS_Sample_Project.elk /INSTALLATIONSPACE:"=EB3+ET1 (-MP1)"
+
+edit /PROJECTNAME:$(MD_PROJECTS)\ESS_Sample_Project.elk /DEVICENAME3D:=EB3+ET1-F14
+```

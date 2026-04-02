@@ -65,9 +65,10 @@ Remarks
     
 
   
-Example
-    
-    
-    Macros generation
-    
-    generatemacros /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+**Example**
+
+```
+Macros generation
+
+generatemacros /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+```

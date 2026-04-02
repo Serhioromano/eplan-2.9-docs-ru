@@ -30,7 +30,8 @@ Remarks
     
 
   
-Example
-    
-    
-    XGedStartInteractionAction /Name:XGedIaSelectRectangleXGedStartInteractionAction /Name:XMIaInsertMacro /filename:"?"
+**Example**
+
+```
+XGedStartInteractionAction /Name:XGedIaSelectRectangleXGedStartInteractionAction /Name:XMIaInsertMacro /filename:"?"
+```

@@ -41,9 +41,10 @@ Remarks
     
 
   
-Example
-    
-    
-    XEsSetPropertyAction /PropertyId:? /PropertyIndex:0 /PropertyValue:"?"
-     or
-     XEsSetPropertyAction /PropertyIdentName:? /PropertyIndex:0 /PropertyValue:"?"
+**Example**
+
+```
+XEsSetPropertyAction /PropertyId:? /PropertyIndex:0 /PropertyValue:"?"
+ or
+ XEsSetPropertyAction /PropertyIdentName:? /PropertyIndex:0 /PropertyValue:"?"
+```

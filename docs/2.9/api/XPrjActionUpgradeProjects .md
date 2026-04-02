@@ -97,7 +97,8 @@ Remarks
     
 
   
-Example
-    
-    
-                    XPrjActionUpgradeProjects /Project:$(MD_PROJECTS)\ESS_Sample_Project.elk
+**Example**
+
+```
+XPrjActionUpgradeProjects /Project:$(MD_PROJECTS)\ESS_Sample_Project.elk
+```

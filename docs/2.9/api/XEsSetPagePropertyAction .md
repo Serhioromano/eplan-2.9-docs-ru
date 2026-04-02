@@ -46,9 +46,10 @@ Remarks
     
 
   
-Example
-    
-    
-    XEsSetPagePropertyAction /PropertyId:? /PropertyIndex:0 /PropertyValue:"?"
-     or
-     XEsSetPagePropertyAction /PropertyIdentName:? /PropertyIndex:0 /PropertyValue:"?"
+**Example**
+
+```
+XEsSetPagePropertyAction /PropertyId:? /PropertyIndex:0 /PropertyValue:"?"
+ or
+ XEsSetPagePropertyAction /PropertyIdentName:? /PropertyIndex:0 /PropertyValue:"?"
+```

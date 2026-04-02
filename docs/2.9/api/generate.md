@@ -118,13 +118,14 @@ SELn |
       
   
   
-Example
-    
-    
-    Connection generation
-    
-    generate /TYPE:CONNECTIONS /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
-    
-    Cable generation
-    
-    generate /TYPE:CABLES /KEEPOLDNAMES:0 /STARTVALUE:5 /STEPVALUE:2 /ONLYAUTOCABLES:0
+**Example**
+
+```
+Connection generation
+
+generate /TYPE:CONNECTIONS /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk
+
+Cable generation
+
+generate /TYPE:CABLES /KEEPOLDNAMES:0 /STARTVALUE:5 /STEPVALUE:2 /ONLYAUTOCABLES:0
+```
