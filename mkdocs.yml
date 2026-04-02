@@ -2768,10 +2768,10 @@ plugins:
   - git-authors
   - git-revision-date-localized:
       fallback_to_build_date: true
-  # - git-committers:
-  #     repository: serhioromano/eplan-2026-docs-ru
-  #     branch: main
-  #     token: !ENV GH_TOKEN
+  - git-committers:
+      repository: serhioromano/eplan-2026-docs-ru
+      branch: main
+      token: !ENV GH_TOKEN
 
 markdown_extensions:
   - abbr
