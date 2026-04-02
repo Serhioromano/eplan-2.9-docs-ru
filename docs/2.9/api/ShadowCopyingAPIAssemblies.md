@@ -22,7 +22,7 @@ Eplan keeps the original addin path for further assembly resolving. This means, 
 
 After resolving they will be copied to the shadow directory. The problem could be referencing data from other directories using a relative path to the original addin directory.
 
-As a solution, there was created [IEplAddInShadowCopy](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.IEplAddInShadowCopy.html) interface allowing getting original path of an addin.
+As a solution, there was created [IEplAddInShadowCopy](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.IEplAddInShadowCopy.md) interface allowing getting original path of an addin.
 
 See Also
 

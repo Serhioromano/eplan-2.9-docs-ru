@@ -2,8 +2,8 @@
 
 This is the list of the available GED interactions.
 
-  * [XGedIaFormatDefPoints](XGedIaFormatDefPoints.html)
-  * [XGedIaFormatGraphic](XGedIaFormatGraphic.html)
-  * [XGedIaFormatSymbol](XGedIaFormatSymbol.html)
-  * [XGedIaFormatText](XGedIaFormatText.html)
-  * [XMIaInsertMacro](XMIaInsertMacro.html)
+  * [XGedIaFormatDefPoints](XGedIaFormatDefPoints.md)
+  * [XGedIaFormatGraphic](XGedIaFormatGraphic.md)
+  * [XGedIaFormatSymbol](XGedIaFormatSymbol.md)
+  * [XGedIaFormatText](XGedIaFormatText.md)
+  * [XMIaInsertMacro](XMIaInsertMacro.md)

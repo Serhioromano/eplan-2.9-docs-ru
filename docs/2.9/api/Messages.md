@@ -134,6 +134,6 @@ See Also
 
 #### Reference
 
-[Message Class](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Message.html)
+[Message Class](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Message.md)
 
-[IMessage Interface](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IMessage.html)
+[IMessage Interface](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IMessage.md)

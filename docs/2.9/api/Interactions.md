@@ -110,7 +110,7 @@ Programmer can decorate interaction class with Eplan::EplApi::EServices::Ged::In
     }
 ```
 
-For more details see [Eplan::EplApi::EServices::Ged::InteractionAttribute](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.InteractionAttribute.html).
+For more details see [Eplan::EplApi::EServices::Ged::InteractionAttribute](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.InteractionAttribute.md).
 
 ### Overriding default interactions
 
@@ -118,7 +118,7 @@ API interactions can also override default EPLAN interactions. This way executio
 
 Such interactions has to derive from Interaction class also. Example how to do it is shown above (DerivedSymbolInsertInteraction)
 
-**The only change which has to be done is in InteractionAttribute :**
+**The only change which has to be done is in InteractionAttribute:**
 
    
 
@@ -135,14 +135,14 @@ But DerivedSymbolInsertInteraction can override default interaction by using 'Na
 
 ### Getting feedback from GED
 
-Most of interaction's methods return [Eplan::EplApi::EServices::Ged::RequestCode](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.html) which is used to control workflow of interaction. Default implementation of method Interaction::OnStart returns RequestCode::Success which causes end of interaction. If it's overridden and returns RequestCode::Point then interaction stays active, and when user clicks mouse button, method Interaction::OnPoint is called by EPLAN.
+Most of interaction's methods return [Eplan::EplApi::EServices::Ged::RequestCode](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.md) which is used to control workflow of interaction. Default implementation of method Interaction::OnStart returns RequestCode::Success which causes end of interaction. If it's overridden and returns RequestCode::Point then interaction stays active, and when user clicks mouse button, method Interaction::OnPoint is called by EPLAN.
 
 See Also
 
 #### API Interactions
 
-[Interactions](API Interactions.html)
+[Interactions](API Interactions.md)
 
 #### Reference
 
-[RequestCode Enumeration](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.html)
+[RequestCode Enumeration](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.md)

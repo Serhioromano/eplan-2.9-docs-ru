@@ -28,7 +28,7 @@ oComponent.Parent = oInstallationSpace;
 
 ![](images/Plug.jpg)
 
-**Power supply :**
+**Power supply:**
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();

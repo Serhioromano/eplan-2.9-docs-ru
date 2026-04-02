@@ -240,9 +240,9 @@ Properties can have more than one value. In this case, we call it an indexed pro
 
 EPLAN API supports also user-defined properties that were introduced in EPLAN 2.4
 
-**Following enhancements were added due to it :**
+**Following enhancements were added due to it:**
 
-**- access to properties by case-sensitive string identifiers :**
+**- access to properties by case-sensitive string identifiers:**
 
 ```csharp
 //setting user-defined property

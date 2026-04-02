@@ -85,7 +85,7 @@ The parameter "Modus" is used to identify the mode in which parts selection is c
   * “Create” - a part is created and parts selection action is called as alternative parts data source
   * “Exist” - check if part exist
 
-**Here is also a table with other input parameters :**
+**Here is also a table with other input parameters:**
 
 Mode ("Modus" parameter)  |  Input parameters  
 
@@ -145,7 +145,7 @@ _cmdline - name of calling action
 
  
 
-**The output parameters are following :**
+**The output parameters are following:**
 
 - the property to set. Parameter name has format : <property number><separator><part index>[<separator><property index>] . It is required to set part number property (22001), another properties are optional. The <part index> is used to pass more than one part simultaneously. It starts from 1. Example : "1234_1" . As a value it can be any any string for example “11.0”, etc
 

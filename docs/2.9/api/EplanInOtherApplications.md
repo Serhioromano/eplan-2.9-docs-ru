@@ -4,7 +4,7 @@ This topic describes different means to use EPLAN functions outside a script or 
 
 Basically, there are three options to use EPLAN functionality in other applications:
 
-  1. Calling EPLAN with [command line parameters](Command line parameters.html)
+  1. Calling EPLAN with [command line parameters](Command line parameters.md)
   2. Using parts of EPLAN (modules/dlls) in other processes. Only the functionality of EPLAN is used no main frame an - with some exceptions - no dialogs of EPLAN will be shown.
   3. Eplan runs as a separate process and functions, objects in this process are called by another process. (ActiveX automation, out-of-process server, EXE server) In this case EPLAN can be visible or invisible.
 

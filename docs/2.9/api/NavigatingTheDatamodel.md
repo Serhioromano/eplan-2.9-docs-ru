@@ -4,7 +4,7 @@ There are two distinct methods of navigating through the EPLAN project. The most
 
 ### Navigating through properties
 
-Regardless of the underlying implementation of EPLAN, the entire data model can be seen as a graph, with one to many and many to many relationships between the various object types in the graph. For example, a project has a one-to-many relationship with its pages. These relationships can be thought of as if they were simple basic arrays. Each of the objects of the EPLAN data model have a set of properties, which return such arrays of dependant objects, as you can see in the topic "[Data model overview](DataModelOverview.html)".
+Regardless of the underlying implementation of EPLAN, the entire data model can be seen as a graph, with one to many and many to many relationships between the various object types in the graph. For example, a project has a one-to-many relationship with its pages. These relationships can be thought of as if they were simple basic arrays. Each of the objects of the EPLAN data model have a set of properties, which return such arrays of dependant objects, as you can see in the topic "[Data model overview](DataModelOverview.md)".
 
 One of the most common requirements of a program is to loop through all of the objects in an array performing some function or other on each element. As an example, the class `Eplan.EplApi.DataModel.Page` has the following navigation properties, with each of which you can loop over a different collection of objects:
 

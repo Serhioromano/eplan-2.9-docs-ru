@@ -11,7 +11,7 @@ Using API, we can modify the database and also create custom values for usage in
   * Company settings: They should be located on a server and should be the same for the whole company
   * Workstation settings: These settings apply for one computer and should be saved on a local hard disk.
   * User settings: for example dimensions and positions of toolbars and dialogs. These settings also need to be saved on a central server to enable a user to use his own settings on another workstation.
-  * Project related settings: These settings are independent on a user nor workstation. They are stored in a project. See ["Project Settings"](DM_ProjectSettings.html) chapter.
+  * Project related settings: These settings are independent on a user nor workstation. They are stored in a project. See ["Project Settings"](DM_ProjectSettings.md) chapter.
 
 For more details, please refer to "Settings: Operation" chapter of EPLAN Help.
 
@@ -473,4 +473,4 @@ See Also
 
 #### API DataModel
 
-[Project settings](DM_ProjectSettings.html)
+[Project settings](DM_ProjectSettings.md)

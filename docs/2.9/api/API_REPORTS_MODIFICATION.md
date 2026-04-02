@@ -6,11 +6,11 @@ This way it is possible to filter or change the order of objects for a report.
 
 Warning: when a report action is used, please don't set a filter or sort setting, because it can be inconsistent with the action.
 
-**Following points need to be done to in order to use the interface :**
+**Following points need to be done to in order to use the interface:**
 
 ### a) Create report processing action
 
-**Any report template now contains a property where you can set a name of an action :**
+**Any report template now contains a property where you can set a name of an action:**
 
 ![](images/report_action_field.jpg)
 
@@ -132,7 +132,7 @@ This can be done using Eplan::EplApi::HEServices::Masterdata class
 
 Example
 
-**Here is an example of creating an embedded report with report processing action :**
+**Here is an example of creating an embedded report with report processing action:**
 
 ```csharp
 //copy a form with placeholder texts processing action to the master data directory

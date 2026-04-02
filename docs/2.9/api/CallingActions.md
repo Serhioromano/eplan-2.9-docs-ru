@@ -49,7 +49,7 @@ For passing and evaluating action parameters, you need the ActionCallingContext 
 
 To find out, which action is connected to which menu item, you can evaluate the `onActionStart.String.*` event. Alternatively, after clicking the menu item, press [Ctrl]+[VK_OEM_5] to show the "Diagnose Dialog". [VK_OEM_5] corresponds to the [^] key on a German keyboard or to the [\\] on a United States 101 keyboard.
 
-For a list of automatic actions refer to the topic [Automatic Actions](AutomaticActions.html)
+For a list of automatic actions refer to the topic [Automatic Actions](AutomaticActions.md)
 
 **Important:**
 
@@ -141,4 +141,4 @@ See Also
 
 #### API Miscellaneous
 
-[Command line parameters ](Command line parameters.html)
+[Command line parameters ](Command line parameters.md)

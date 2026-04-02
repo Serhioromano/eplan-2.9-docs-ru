@@ -2,7 +2,7 @@
 
 ### Export
 
-**Export 3D graphics is possible to STEP or VRML format :**
+**Export 3D graphics is possible to STEP or VRML format:**
 
 Export3D::ProjectToStep - exports all installation spaces from a project
 

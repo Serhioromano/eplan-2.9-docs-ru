@@ -82,11 +82,11 @@ In case you need to consider other users, or processes working on the same proje
 
 The main difference between Locking in Add-Ins and offline API applications is that the Execute(...) method of the IEplAction interface, is already surrounded by a Locking step, while the API programmer needs to implement the LockingStep(s) in an offline application by himself.
 
-### API [Verifications](Verifications.html)
+### API [Verifications](Verifications.md)
 
 Methods of verification which are called by EPLAN framework are not surrounded by a Locking step. If it is necessary then user needs to implement it by himself. Please have in mind that creating a Locking step inside verification method has a big influence on performance of whole check. This is why this should be done as little as possible.
 
-### Locking in Service methods (HeServices/[Actions](Actions.html))
+### Locking in Service methods (HeServices/[Actions](Actions.md))
 
 All service functionality, to which you pass a project resource as a string parameter, will always automatically care for locking/unlocking said resource. If the locking is not possible, due to multiple-user issues, an exception will be thrown. This applies to all command line actions, which only have string parameters. HeServices classes most of the time have method overloads with both string-based and object passed parameters. If you pass an object to the method, you need to take care for the locking.
 

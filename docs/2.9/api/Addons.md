@@ -4,15 +4,11 @@ EPLAN has a modular architecture. This architecture system provides the possibil
 
 Add-ons enables the user to extend an installed version of EPLAN. Using an add-on, you can basically distribute and centrally administer the following kind of date:
 
-· Master data
-
-· Settings
-
-· API add-ins
-
-· Scripts
-
-· Toolbars
+* Master data
+* Settings
+* API add-ins
+* Scripts
+* Toolbars
 
 When the EPLAN version is started the first time after an add-on installation was done, the new add-on is registered automatically to this EPLAN version (When the add-on is set to autoregister).
 

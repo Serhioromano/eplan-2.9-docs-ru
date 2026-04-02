@@ -44,4 +44,4 @@ The following example shows, how to get the project setting for the project's di
 
 ![](images/sectionminus.png)See Also
 
-[Working with settings](WorkingWithSettings.html)
+[Working with settings](WorkingWithSettings.md)

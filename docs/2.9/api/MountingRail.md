@@ -1,6 +1,6 @@
 # MountingRail (mounting rail in GUI)
 
-MountingRail is an item used to hold devices, usually attached to a Plane or [Cabinet](Cabinet.html).
+MountingRail is an item used to hold devices, usually attached to a Plane or [Cabinet](Cabinet.md).
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();

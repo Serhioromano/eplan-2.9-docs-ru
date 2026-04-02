@@ -4,7 +4,7 @@ EPLAN has a modular architecture. It is possible to add functionality to EPLAN a
 
 These different means to modify the system are implemented in modules, which can be loaded by EPLAN, so-called add-ins. So, if you want to add functionality to EPLAN, you first need to create an add-in.
 
-**You can enhance existing functionality for example by :**
+**You can enhance existing functionality for example by:**
 
   * Adding new GUI items, such as menu points, buttons
   * Adding new actions, verifications, interactions, messages, XML processors
@@ -14,10 +14,10 @@ An add-in is an assembly, written in one of the .Net framework's programming lan
 
 ### Remarks
 
-Add-in assemblies should be named like <YourCompanyName>.EplAddin.<NameOfTheProject>.dll.
+Add-in assemblies should be named like `<YourCompanyName>.EplAddin.<NameOfTheProject>.dll`.
 
 See Also
 
 #### Development environment
 
-[Development environment](DevelopmentEnvironment.html)
+[Development environment](DevelopmentEnvironment.md)

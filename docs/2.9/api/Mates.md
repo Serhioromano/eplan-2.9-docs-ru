@@ -11,10 +11,10 @@ There is also possibility to transform 3D objects by snapping i.e. by means of a
 
 **Another division is besed on a purpose and a shape of mates:**
 
-  * point mates (classes [PointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PointMate.html), [HandleMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.HandleMate.html), [BasePointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.BasePointMate.html), [MountingPointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPointMate.html), [PlacementAreaPointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlacementAreaPointMate.html))
-  * line mates (classes [LineMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.LineMate.html), [MountingLineMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingLineMate.html))
+  * point mates (classes [PointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PointMate.md), [HandleMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.HandleMate.md), [BasePointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.BasePointMate.md), [MountingPointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingPointMate.md), [PlacementAreaPointMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlacementAreaPointMate.md))
+  * line mates (classes [LineMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.LineMate.md), [MountingLineMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.MountingLineMate.md))
 
-  * plane mates (class [PlaneMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlaneMate.html))
+  * plane mates (class [PlaneMate](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PlaneMate.md))
 
 ![](images/Mates2.jpg)
 
@@ -64,7 +64,7 @@ oTerminal.Create(oProject, "SIE.4AV2400-2EB00-0A", "1");
 oTerminal.FindSourceMate("M4", false).SnapTo(oRail.BaseMate, 100.0);
 ```
 
-Please be aware that not every mates can be snapped each other. This is determined by property [Mate.MatchingMateNames](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Mate~MatchingMateNames.html) . To make sure that a mate can be snapped to another, please use method [PointMate::CanSnapTo](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PointMate~CanSnapTo.html).
+Please be aware that not every mates can be snapped each other. This is determined by property [Mate.MatchingMateNames](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Mate~MatchingMateNames.md) . To make sure that a mate can be snapped to another, please use method [PointMate::CanSnapTo](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.PointMate~CanSnapTo.md).
 
 ### Creating custom mates
 
@@ -109,8 +109,8 @@ mountingLineMate.Create("Test mounting line",
 placement3D.AddMatePersistent(mountingLineMate);
 ```
 
-Please be aware that the coordinates of a mate are relative until it is not persistent, i.e. without [.Placement](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Mate~Placement.html) set. After calling [Placement3D::AddMatePersistent](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3D~AddMatePersistent.html), they are recalculated and become absolute.
+Please be aware that the coordinates of a mate are relative until it is not persistent, i.e. without [.Placement](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Mate~Placement.md) set. After calling [Placement3D::AddMatePersistent](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.E3D.Placement3D~AddMatePersistent.md), they are recalculated and become absolute.
 
 See Also
 
-[Transformations in 3D space](Transformations_in_3D_space.html)
+[Transformations in 3D space](Transformations_in_3D_space.md)

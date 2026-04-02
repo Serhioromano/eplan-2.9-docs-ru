@@ -45,7 +45,7 @@ When you no longer need the EPLAN API in your program, you should call the `Exit
 
 ### How to make sure, that the API Assemblies are directly loaded from EPLAN bin folder ?
 
-As was briefly mentioned in the topic [EPLAN .Net API](EplanApiDotNet.html), a path must be set to the <eplan main path>\Platform\<version>\Bin folder. More precisely, you need to make sure to load the EPLAN API assemblies from exactly this folder. The reason for this is, that the API assemblies have statically linked unmanaged dependencies, which need to be loaded directly from the current directory.
+As was briefly mentioned in the topic [EPLAN .Net API](EplanApiDotNet.md), a path must be set to the <eplan main path>\Platform\<version>\Bin folder. More precisely, you need to make sure to load the EPLAN API assemblies from exactly this folder. The reason for this is, that the API assemblies have statically linked unmanaged dependencies, which need to be loaded directly from the current directory.
 
 This is also the reason, why in general it will not work, to register the EPLAN API dlls in GAC. The directory from which references of your Visual Studio project are added does not influence from where the dlls are actually loaded.
 

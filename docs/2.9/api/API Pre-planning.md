@@ -32,4 +32,4 @@ See Also
 
 #### Reference
 
-[Eplan.EplApi.DataModel.Planning Namespace](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning_namespace.html)
+[Eplan.EplApi.DataModel.Planning Namespace](Eplan.EplApi.DataModelu~Eplan.EplApi.DataModel.Planning_namespace.md)

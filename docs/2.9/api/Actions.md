@@ -185,12 +185,12 @@ If an action is assigned to a menu item or a tool bar button, these items are on
 
 See Also
 
-[Calling actions](CallingActions.html)
+[Calling actions](CallingActions.md)
 
 #### API Actions
 
-[Actions](API Actions.html)
+[Actions](API Actions.md)
 
 #### Reference
 
-[Action Class](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.Action.html)
+[Action Class](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.Action.md)

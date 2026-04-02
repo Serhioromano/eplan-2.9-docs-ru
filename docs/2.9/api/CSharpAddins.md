@@ -72,7 +72,7 @@ Our add-in now appears in the list of the API modules dialog and will be loaded,
 
 ### e) Adding an Action to the C-Sharp add-in
 
-Therefore create a second source file and save it as `SimpleCSharpAction.cs` in your source directory. To create an action, we need a class, which implements the IEplAction interface. For a more detailed explanation, see the [Actions](Actions.html) topic.
+Therefore create a second source file and save it as `SimpleCSharpAction.cs` in your source directory. To create an action, we need a class, which implements the IEplAction interface. For a more detailed explanation, see the [Actions](Actions.md) topic.
 
 ```csharp
 using Eplan.EplApi.ApplicationFramework;
@@ -112,8 +112,8 @@ When you start the action, the `Execute()` function of the CSharpAction is calle
 
 Remarks
 
-Please mind, that users may start EPLAN in QUIET mode using `W3u.exe` /Quiet or the API could be initialized by an [offline program](UsingEplanAssemblies.html). Because of this, it is not recommended to show any message boxes in the methods of the IEplAddIn interface. If you encounter some problem during registering or initializing an add-in, just create and throw a BaseException or use `BaseException.FixMessage`(...) to add the message to the system messages list.
+Please mind, that users may start EPLAN in QUIET mode using `W3u.exe` /Quiet or the API could be initialized by an [offline program](UsingEplanAssemblies.md). Because of this, it is not recommended to show any message boxes in the methods of the IEplAddIn interface. If you encounter some problem during registering or initializing an add-in, just create and throw a BaseException or use `BaseException.FixMessage`(...) to add the message to the system messages list.
 
 See Also
 
-[Creating add-ins in Visual Basic.Net](VisualBasicAddins.html)
+[Creating add-ins in Visual Basic.Net](VisualBasicAddins.md)

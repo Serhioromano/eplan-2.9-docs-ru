@@ -4,7 +4,7 @@ EPLAN has its own mechanism to send notifications and to react on notifications.
 
 EPLAN and each module in EPLAN can send and handle events without any need to register the event in the system. EPLAN's event mechanism is very flexible. Even the API user can send and handle events with new names.
 
-For a list of EPLAN events, please refer to this link [Eplan.EplApi.ApplicationFramework.Events](API Events.html).
+For a list of EPLAN events, please refer to this link [Eplan.EplApi.ApplicationFramework.Events](API Events.md).
 
 ### How to react on EPLAN events?
 

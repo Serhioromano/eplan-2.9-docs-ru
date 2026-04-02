@@ -80,8 +80,8 @@ See Also
 
 #### API Framework
 
-[Events](Events.html)
+[Events](Events.md)
 
 #### API Events
 
-[Events](API Events.html)
+[Events](API Events.md)

@@ -155,6 +155,6 @@ See Also
 
 #### Reference
 
-[Verification Class](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Verification.html)
+[Verification Class](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Verification.md)
 
-[IVerification Interface](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IVerification.html)
+[IVerification Interface](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.IVerification.md)

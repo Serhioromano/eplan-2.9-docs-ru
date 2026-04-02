@@ -1,8 +1,8 @@
 # Development environment
 
-The preferable way to develop EPLAN API applications is to reference the API assemblies directly in a .NET project using CLI programming languages like C# (C Sharp), Visual `Basic.Net`, C++/CLI. You could do this by just using a text editor and calling the compiler from a DOS box -- like described in the topics "[Creating add-ins in CSharp](CSharpAddins.html)" or "[Creating add-ins in Visual Basic.Net](VisualBasicAddins.html)".
+The preferable way to develop EPLAN API applications is to reference the API assemblies directly in a .NET project using CLI programming languages like C# (C Sharp), Visual `Basic.Net`, C++/CLI. You could do this by just using a text editor and calling the compiler from a DOS box -- like described in the topics "[Creating add-ins in CSharp](CSharpAddins.md)" or "[Creating add-ins in Visual Basic.Net](VisualBasicAddins.md)".
 
-The much more convenient way of developing involves the use of an Integrated Development Environment (IDE). We recommend the use of Microsoft Visual Studio, but there are also free development environments like SharpDevelop. How you would start an API project in the Visual Studio is described in the topic "[EPLAN .Net API](EplanApiDotNet.html)".
+The much more convenient way of developing involves the use of an Integrated Development Environment (IDE). We recommend the use of Microsoft Visual Studio, but there are also free development environments like SharpDevelop. How you would start an API project in the Visual Studio is described in the topic "[EPLAN .Net API](EplanApiDotNet.md)".
 
 The EPLAN API has explicitly been tested and released for Microsoft Windows 7, 8 and 10.
 

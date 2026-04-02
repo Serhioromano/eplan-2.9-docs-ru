@@ -1,12 +1,12 @@
 # Transformations in 3D space
 
-**Each Placement3D has 2 read-write properties which describes its transformation :**
+**Each Placement3D has 2 read-write properties which describes its transformation:**
 
 Matrix3D Placement3D::AbsoluteTransformation - absolute transformation
 
 Matrix3D Placement3D::RelativeTransformation - transformation relative to a parent object
 
-**The properties are represented by 4x4 transformation matrix :**
+**The properties are represented by 4x4 transformation matrix:**
 
 M11 M12 M13 M14
 
@@ -38,8 +38,8 @@ oComponent1.Move(1.0, 2.0, 3.0);
 
 For more details about Matrix3D structure, please refer to [MSDN webpage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.media3d.matrix3d).
 
-It is also possilbe to transform objects by means of mates - see chapter [Mates](Mates.html) for the details.
+It is also possilbe to transform objects by means of mates - see chapter [Mates](Mates.md) for the details.
 
 See Also
 
-[Mates](Mates.html)
+[Mates](Mates.md)

@@ -192,8 +192,8 @@ See Also
 
 #### API XML Converters
 
-[XML Converters](API XML Converters.html)
+[XML Converters](API XML Converters.md)
 
 #### Reference
 
-[IXMLProcessor Interface](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.IXMLProcessor.html)
+[IXMLProcessor Interface](Eplan.EplApi.AFu~Eplan.EplApi.ApplicationFramework.IXMLProcessor.md)
