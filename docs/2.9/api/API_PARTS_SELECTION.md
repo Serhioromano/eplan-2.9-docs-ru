@@ -38,7 +38,7 @@ To use the API parts selection interface, you first have to enable and configure
 
 ![](images/Setting_Partselection.gif)
 
-By clicking the ellipsis [...] button beside „API“ you can open a dialog with further settings for the API interface.
+By clicking the ellipsis ++"..."++ button beside „API“ you can open a dialog with further settings for the API interface.
 
 ![](images/API_PartSelection.gif)
 

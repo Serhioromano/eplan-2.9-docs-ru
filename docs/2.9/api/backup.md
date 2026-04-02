@@ -1,9 +1,6 @@
 # backup
 
-    Action class for backup functions: backup a project and master data (forms, symbols,...)
-   
-
- 
+Action class for backup functions: backup a project and master data (forms, symbols,...)
 
 Parameter | Description 
 

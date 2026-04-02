@@ -8,7 +8,7 @@ Basics
 
 API Pro Panel was created as an extension to standard API DataModel (`Eplan.EplApi.DataModelu.dll assembly`).
 
-So there is a new namespace Eplan:EplApi:DataModel:E3D for 3d classes and HEServices methods that operates on them.
+So there is a new namespace `Eplan:EplApi:DataModel:E3D` for 3d classes and HEServices methods that operates on them.
 
 Usually it is enough to have Eplan Electric P8 to use API Pro Panel. Some methods/properties however may require EPLAN Pro Panel to be installed with corresponding license.
 
