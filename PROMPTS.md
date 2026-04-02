@@ -1,3 +1,19 @@
+В навигации есть 3 раздела
+
+Справка EPLAN
+Обзоры EPLAN
+Новости EPLAN
+
+Нужно добавить туда 
+
+API EPLAN
+
+с сылками  и структурой дерева созданного файла tools/29/api-tree.json на файлы маркдаун которые будут в папке site/2.9/api их я выкачаю позже.
+
+
+
+
+
 This is MkDocs project. It is empty frame configured as I want it to look. I have to files 
 
 1. file `tree.json` - contains structure tree

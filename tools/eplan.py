@@ -8,9 +8,9 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 # Пути
-INPUT_FILE = "29/missing.json"
-OUTPUT_DIR = Path("../docs/2.9/missing")
-LOG_FILE = Path("processed_links.txt")
+INPUT_FILE = "29/api_tree.json"
+OUTPUT_DIR = Path("../docs/2.9/api")
+LOG_FILE = Path("processed_linksapi.txt")
 
 # Настройки для Markdown
 h = html2text.HTML2Text()

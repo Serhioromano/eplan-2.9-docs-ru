@@ -1,0 +1,631 @@
+[
+  {
+    "title": "EPLAN API",
+    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/index.html",
+    "children": [
+      {
+        "title": "Limitation of Liability",
+        "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/LimitationOfLiability.html"
+      },
+      {
+        "title": "Help structure",
+        "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Help structure.html"
+      },
+      {
+        "title": "User Guide",
+        "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_UserGuide.html",
+        "children": [
+          {
+            "title": "Development environment",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DevelopmentEnvironment.html",
+            "children": [
+              {
+                "title": "EPLAN .Net API",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EplanApiDotNet.html"
+              }
+            ]
+          },
+          {
+            "title": "API Framework",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_Framework.html",
+            "children": [
+              {
+                "title": "Scripts",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Scripts.html",
+                "children": [
+                  {
+                    "title": "Structure of a simple script",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/VerySimpleScript.html"
+                  },
+                  {
+                    "title": "Simple script with parameters",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SimpleScriptWithParameters.html"
+                  },
+                  {
+                    "title": "Loading a script",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/RegisterAScript.html"
+                  },
+                  {
+                    "title": "Event handling in scripts",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Script_EventHandling.html"
+                  },
+                  {
+                    "title": "Adding menu points by a script",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/script_menu.html"
+                  }
+                ]
+              },
+              {
+                "title": "Add-ins",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/AddIns.html",
+                "children": [
+                  {
+                    "title": "Creating add-ins in CSharp",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/CSharpAddins.html"
+                  },
+                  {
+                    "title": "Creating add-ins in Visual Basic.Net",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/VisualBasicAddins.html"
+                  },
+                  {
+                    "title": "Creating an add-in in VisualStudio",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/AddinInVisualStudio.html"
+                  },
+                  {
+                    "title": "Shadow Copying API Assemblies",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ShadowCopyingAPIAssemblies.html"
+                  },
+                  {
+                    "title": "Actions",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Actions.html",
+                    "children": [
+                      {
+                        "title": "Calling actions",
+                        "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/CallingActions.html"
+                      },
+                      {
+                        "title": "Automatic actions",
+                        "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/AutomaticActions.html"
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Adding menu points",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/AddinMenuPoints.html"
+                  }
+                ]
+              },
+              {
+                "title": "Addons",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Addons.html",
+                "children": [
+                  {
+                    "title": "Structure",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Structure.html"
+                  },
+                  {
+                    "title": "Registration",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Registration.html"
+                  },
+                  {
+                    "title": "Unregistration",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Unregistration.html"
+                  },
+                  {
+                    "title": "Shadow Copying",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ShadowCopying.html"
+                  }
+                ]
+              },
+              {
+                "title": "Using EPLAN in other applications",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EplanInOtherApplications.html",
+                "children": [
+                  {
+                    "title": "EPLAN API offline applications",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/UsingEplanAssemblies.html"
+                  },
+                  {
+                    "title": "EPLAN Remoting",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EPLANRemoting.html"
+                  },
+                  {
+                    "title": "Using other applications",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/UsingOtherApplications.html"
+                  }
+                ]
+              },
+              {
+                "title": "Events",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Events.html"
+              }
+            ]
+          },
+          {
+            "title": "API DataModel",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_DataModel.html",
+            "children": [
+              {
+                "title": "Creating or opening projects",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/CreateOpenProject.html"
+              },
+              {
+                "title": "Creating pages",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/CreatePages.html"
+              },
+              {
+                "title": "Working with parts",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/WorkingWithParts.html"
+              },
+              {
+                "title": "Navigating the project data",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/NavigatingTheDatamodel.html",
+                "children": [
+                  {
+                    "title": "DataModel overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelHierarchyOverview.html"
+                  },
+                  {
+                    "title": "DataModel navigation overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelNavigationOverview.html"
+                  },
+                  {
+                    "title": "DMObjectsFinder overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelFilterOFOverview.html"
+                  },
+                  {
+                    "title": "Filtering overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelFilterOverview.html"
+                  },
+                  {
+                    "title": "Connections overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelConnectionsOverview.html"
+                  },
+                  {
+                    "title": "MasterData overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelMasterDataOverview.html"
+                  },
+                  {
+                    "title": "EObjects overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelEObjectsOverview.html"
+                  },
+                  {
+                    "title": "Graphics overview",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModelGraphicsOverview.html"
+                  }
+                ]
+              },
+              {
+                "title": "EPLAN properties",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EPLAN_Properties.html"
+              },
+              {
+                "title": "Project settings",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DM_ProjectSettings.html"
+              },
+              {
+                "title": "Transactions",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Transactions.html"
+              },
+              {
+                "title": "Locking",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Locking.html"
+              },
+              {
+                "title": "API Pro Panel",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_Pro_Panel.html",
+                "children": [
+                  {
+                    "title": "Creating 3D objects",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Creating_3D_objects.html"
+                  },
+                  {
+                    "title": "Getting 3D objects",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Getting_3d_objects.html"
+                  },
+                  {
+                    "title": "Transformations in 3D space",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Transformations_in_3D_space.html"
+                  },
+                  {
+                    "title": "Mates",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Mates.html"
+                  },
+                  {
+                    "title": "InstallationSpace",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Installaction_space.html"
+                  },
+                  {
+                    "title": "Component",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Component.html"
+                  },
+                  {
+                    "title": "Cabinet",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Cabinet.html"
+                  },
+                  {
+                    "title": "MountingPanel",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Mounting_Panel.html"
+                  },
+                  {
+                    "title": "Plane",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Mounting_surface.html"
+                  },
+                  {
+                    "title": "MountingRail",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/MountingRail.html"
+                  },
+                  {
+                    "title": "Area",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Area.html"
+                  },
+                  {
+                    "title": "Duct",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Duct.html"
+                  },
+                  {
+                    "title": "PlaceHolder3D",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlaceHolder3D_-_placeholder_in_3D_space.html"
+                  },
+                  {
+                    "title": "Drilling",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Drilling_(Cut-out_in_GUI).html"
+                  },
+                  {
+                    "title": "RoutingSegment",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/RoutingSegment.html"
+                  },
+                  {
+                    "title": "Connection3D",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Connection3D.html"
+                  },
+                  {
+                    "title": "3D macros",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/3D_macros.html"
+                  },
+                  {
+                    "title": "ViewPlacement (model view in GUI)",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ViewPlacement_(model_view_in_GUI).html"
+                  },
+                  {
+                    "title": "Import/export 3D graphics",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Import_export_3G_graphics.html"
+                  }
+                ]
+              },
+              {
+                "title": "API Pre-planning",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API Pre-planning.html",
+                "children": [
+                  {
+                    "title": "StructureSegment",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/StructureSegment.html"
+                  },
+                  {
+                    "title": "SegmentDefinition",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SegmentDefinition.html"
+                  },
+                  {
+                    "title": "SegmentTemplate",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SegmentTemplate.html"
+                  },
+                  {
+                    "title": "PCTLoop",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PCTLoop.html"
+                  },
+                  {
+                    "title": "SegmentPlacement",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SegmentPlacement.html"
+                  },
+                  {
+                    "title": "Pre-planning macro",
+                    "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Pre-planning_macro.html"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "API Higher Electrotechnical services",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_HEServices.html",
+            "children": [
+              {
+                "title": "Accessing selected objects",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/HE_Selectionset.html"
+              },
+              {
+                "title": "Displaying a preview",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/HE_Display.html"
+              },
+              {
+                "title": "Placing window macros",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/HE_PlaceMacros.html"
+              }
+            ]
+          },
+          {
+            "title": "API Electrotechnical services",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EServices.html",
+            "children": [
+              {
+                "title": "Messages",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Messages.html"
+              },
+              {
+                "title": "Verifications",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Verifications.html"
+              },
+              {
+                "title": "Interactions",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Interactions.html"
+              }
+            ]
+          },
+          {
+            "title": "API Miscellaneous",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_Other.html",
+            "children": [
+              {
+                "title": "API Parts Selection Interface",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_PARTS_SELECTION.html"
+              },
+              {
+                "title": "API Parts Management Extension",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PartsManagementExtension.html"
+              },
+              {
+                "title": "How to display a MessageBox with the EPLAN window as owner",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Get_EPLAN_Window.html"
+              },
+              {
+                "title": "API Reports Modification Interface",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_REPORTS_MODIFICATION.html"
+              },
+              {
+                "title": "API Labeling Modification Interface",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API_LABELING_MODIFICATION.html"
+              },
+              {
+                "title": "Writing system messages",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/WritingSystemMessages.html"
+              },
+              {
+                "title": "Throwing and catching exceptions",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ThrowingAndCatchingExceptions.html"
+              },
+              {
+                "title": "Trace output",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/TraceOutput.html"
+              },
+              {
+                "title": "Working with settings",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/WorkingWithSettings.html"
+              },
+              {
+                "title": "Query user rights",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/QueryUserRights.html"
+              },
+              {
+                "title": "Signing EPLAN assemblies",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Signing_EPLAN_assembies.html"
+              },
+              {
+                "title": "XMLProcessor",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMLProcessor.html"
+              },
+              {
+                "title": "Command line parameters",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Command line parameters.html"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "API Reference",
+        "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API Reference.html",
+        "children": [
+          {
+            "title": "Assemblies",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Assemblies.html",
+            "children": [
+              { "title": "Eplan.EplApi.AFu Assembly" },
+              { "title": "Eplan.EplApi.Baseu Assembly" },
+              { "title": "Eplan.EplApi.DataModelu Assembly" },
+              { "title": "Eplan.EplApi.EServicesu Assembly" },
+              { "title": "Eplan.EplApi.Guiu Assembly" },
+              { "title": "Eplan.EplApi.HEServicesu Assembly" },
+              { "title": "Eplan.EplApi.MasterDatau Assembly" },
+              { "title": "Eplan.EplApi.RemoteClientu Assembly" },
+              { "title": "Eplan.EplApi.Remotingu Assembly" },
+              { "title": "Eplan.EplApi.Starteru Assembly" },
+              { "title": "Eplan.EplApi.Systemu Assembly" }
+            ]
+          },
+          {
+            "title": "Actions",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API Actions.html",
+            "children": [
+              { "title": "backup", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/backup.html" },
+              { "title": "changelayer", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/changelayer.html" },
+              { "title": "check", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/check.html" },
+              { "title": "compress", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/compress.html" },
+              { "title": "CopyToolBarAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/CopyToolBarAction.html" },
+              { "title": "devicelist", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/devicelist .html" },
+              { "title": "E21EasyImportSettingAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/E21EasyImportSettingAction .html" },
+              { "title": "edit", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/edit.html" },
+              { "title": "EsCorrectConnections", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EsCorrectConnections.html" },
+              { "title": "EplApiModuleAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/EplApiModuleAction.html" },
+              { "title": "ExecuteScript", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ExecuteScript .html" },
+              { "title": "export", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/export.html" },
+              { "title": "export3d", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/export3d .html" },
+              { "title": "ExportNCData", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ExportNCData .html" },
+              { "title": "ExportProductionWiring", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ExportProductionWiring  .html" },
+              { "title": "ExportSegmentsTemplate", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ExportSegmentsTemplate .html" },
+              { "title": "exportToGraphics", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/exportToGraphics.html" },
+              { "title": "gedRedraw", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/gedRedraw .html" },
+              { "title": "generate", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/generate.html" },
+              { "title": "generatemacros", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/generatemacros .html" },
+              { "title": "graphicallayertable", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/graphicallayertable .html" },
+              { "title": "import", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/import.html" },
+              { "title": "InsertModelViewAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/InsertModelViewAction.html" },
+              { "title": "ImportPrePlanningData", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ImportPrePlanningData .html" },
+              { "title": "ImportSegmentsTemplate", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ImportSegmentsTemplate .html" },
+              { "title": "label", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/label .html" },
+              { "title": "masterdata", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/masterdata.html" },
+              { "title": "MfExportToolbarAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/MfExportToolbarAction .html" },
+              { "title": "MfImportToolbarAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/MfImportToolbarAction .html" },
+              { "title": "MfRemoveToolbarAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/MfRemoveToolbarAction .html" },
+              { "title": "OpenWorkspaceAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/OpenWorkspaceAction.html" },
+              { "title": "partslist", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/partslist .html" },
+              { "title": "plcservice", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/plcservice .html" },
+              { "title": "print", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/print .html" },
+              { "title": "ProjectAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ProjectAction .html" },
+              { "title": "projectmanagement", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/projectmanagement .html" },
+              { "title": "ProjectOpen", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/ProjectOpen .html" },
+              { "title": "RegisterCustomPropertyEditorAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/RegisterCustomPropertyEditorAction .html" },
+              { "title": "RegisterScript", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/RegisterScript.html" },
+              { "title": "renumber", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/renumber.html" },
+              { "title": "reports", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/reports.html" },
+              { "title": "restore", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/restore .html" },
+              { "title": "SaveWorkspaceAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SaveWorkspaceAction .html" },
+              { "title": "search", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/search .html" },
+              { "title": "selectionset", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/selectionset .html" },
+              { "title": "SetProjectLanguage", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SetProjectLanguage .html" },
+              { "title": "subprojects", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/subprojects.html" },
+              { "title": "SwitchProjectType", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/SwitchProjectType .html" },
+              { "title": "synchronize", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/synchronize .html" },
+              { "title": "Topology", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Topology .html" },
+              { "title": "translate", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/translate .html" },
+              { "title": "UnregisterScript", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/UnregisterScript .html" },
+              { "title": "UpdateSegmentsFilling", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/UpdateSegmentsFilling.html" },
+              { "title": "XAfActionSetting", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XAfActionSetting.html" },
+              { "title": "XAfActionSettingProject", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XAfActionSettingProject .html" },
+              { "title": "XCMRemoveUnnecessaryNDPsAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XCMRemoveUnnecessaryNDPsAction .html" },
+              { "title": "XCMUniteNetDefinitionPointsAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XCMUniteNetDefinitionPointsAction.html" },
+              { "title": "XDLInsertDeviceAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XDLInsertDeviceAction.html" },
+              { "title": "XEGActionInsertSymRef", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEGActionInsertSymRef .html" },
+              { "title": "XEsSetPagePropertyAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsSetPagePropertyAction .html" },
+              { "title": "XEsSetProjectPropertyAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsSetProjectPropertyAction .html" },
+              { "title": "XEsSetPropertyAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsSetPropertyAction .html" },
+              { "title": "XEsUserPropertiesExportAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsUserPropertiesExportAction .html" },
+              { "title": "XEsUserPropertiesImportAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XEsUserPropertiesImportAction .html" },
+              { "title": "XGedClosePage", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedClosePage.html" },
+              { "title": "XGedStartInteractionAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedStartInteractionAction .html" },
+              { "title": "XGedUpdateMacroAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedUpdateMacroAction.html" },
+              { "title": "XMActionDCImport", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMActionDCImport .html" },
+              { "title": "XMActionDCCommonExport", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMActionDCCommonExport .html" },
+              { "title": "XMDeleteReprTypeAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMDeleteReprTypeAction .html" },
+              { "title": "XMExportConnectionsAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMExportConnectionsAction .html" },
+              { "title": "XMExportFunctionAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMExportFunctionAction .html" },
+              { "title": "XMExportPagesAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMExportPagesAction.html" },
+              { "title": "XPamSelectPart", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPamSelectPart .html" },
+              { "title": "XSDPreviewAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XSDPreviewAction .html" },
+              { "title": "XPamsDeviceSelectionAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPamsDeviceSelectionAction .html" },
+              { "title": "XPlaUpdateDetailAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPlaUpdateDetailAction.html" },
+              { "title": "XPrjActionUpgradeProjects", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPrjActionUpgradeProjects .html" },
+              { "title": "XSettingsExport", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XSettingsExport .html" },
+              { "title": "XSettingsImport", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XSettingsImport.html" },
+              { "title": "XSettingsRegisterAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XSettingsRegisterAction.html" },
+              { "title": "XSettingsUnregisterAction", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XSettingsUnregisterAction.html" }
+            ]
+          },
+          {
+            "title": "Events",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API Events.html",
+            "children": [
+              { "title": "Eplan.EplApi.OnMainEnd", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.OnMainEnd.html" },
+              { "title": "Eplan.EplApi.OnMainStart", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.OnMainStart.html" },
+              { "title": "Eplan.EplApi.OnPostOpenProject", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.OnPostOpenProject.html" },
+              { "title": "Eplan.EplApi.OnUserPreCloseProject", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Eplan.EplApi.OnUserPreCloseProject.html" },
+              { "title": "onActionEnd.String.*", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/onActionEnd.String._star_.html" },
+              { "title": "onActionStart.String.*", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/onActionStart.String._star_.html" },
+              { "title": "Ged.Redraw", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Ged.Redraw.html" },
+              { "title": "NCSettingsMachineTools.Redraw", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/NCSettingsMachineTools.Redraw.html" },
+              { "title": "Page.ConnectionDirty", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Page.ConnectionDirty.html" },
+              { "title": "Project.CablingDirty", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/Project.CablingDirty.html" },
+              { "title": "RefreshPageFilter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/RefreshPageFilter.html" }
+            ]
+          },
+          {
+            "title": "Interactions",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API Interactions.html",
+            "children": [
+              { "title": "XGedIaFormatDefPoints", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedIaFormatDefPoints.html" },
+              { "title": "XGedIaFormatGraphic", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedIaFormatGraphic.html" },
+              { "title": "XGedIaFormatSymbol", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedIaFormatSymbol.html" },
+              { "title": "XGedIaFormatText", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XGedIaFormatText.html" },
+              { "title": "XMIaInsertMacro", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMIaInsertMacro.html" }
+            ]
+          },
+          {
+            "title": "XML Converters",
+            "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/API XML Converters.html",
+            "children": [
+              {
+                "title": "Category DeviceListXmlConverter",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DeviceListXmlConverter.html",
+                "children": [
+                  { "title": "XDLCsvCommaSepImporterExporter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XDLCsvCommaSepImporterExporter.html" },
+                  { "title": "XDLCsvImporterExporter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XDLCsvImporterExporter.html" },
+                  { "title": "XDLTxtImporterExporter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XDLTxtImporterExporter.html" },
+                  { "title": "XDLXmlExporter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XDLXmlExporter.html" }
+                ]
+              },
+              {
+                "title": "Category LanguageDbXmlConverter",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/LanguageDbXmlConverter.html",
+                "children": [
+                  { "title": "XTrLanguageDbXml2E21UnicodeTabConverter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XTrLanguageDbXml2E21UnicodeTabConverter.html" },
+                  { "title": "XTrLanguageDbXml2TabConverterImpl", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XTrLanguageDbXml2TabConverterImpl.html" }
+                ]
+              },
+              {
+                "title": "Category PartsListXmlConverter",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PartsListXmlConverter.html",
+                "children": [
+                  { "title": "XPalCSVConverter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPalCSVConverter.html" },
+                  { "title": "XPalXmlExporter", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPalXmlExporter.html" }
+                ]
+              },
+              {
+                "title": "Category XPamExport",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPamExport.html",
+                "children": [
+                  { "title": "IXPartsImportExportEdz", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/IXPartsImportExportEdz.html" },
+                  { "title": "XPamExportXml", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPamExportXml.html" }
+                ]
+              },
+              {
+                "title": "Category XPamImport",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPamImport.html",
+                "children": [
+                  { "title": "XPamImportXml", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XPamImportXml.html" }
+                ]
+              },
+              {
+                "title": "Category PLCXmlConverter",
+                "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PLCXmlConverter.html",
+                "children": [
+                  { "title": "PlcDcExchangerMitsubishiAML", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcExchangerMitsubishiAML.html" },
+                  { "title": "PlcDcExchangerSiemensTIAAML", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcExchangerSiemensTIAAML.html" },
+                  { "title": "PlcDcXMLExchangerABB", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerABB.html" },
+                  { "title": "PlcDcXMLExchangerBandR", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerBandR.html" },
+                  { "title": "PlcDcXMLExchangerBeckhoff", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerBeckhoff.html" },
+                  { "title": "PlcDcXMLExchangerCodesys", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerCodesys.html" },
+                  { "title": "PlcDcXMLExchangerLogiCals", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerLogiCals.html" },
+                  { "title": "PlcDcXMLExchangerMitsubishi", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerMitsubishi.html" },
+                  { "title": "PlcDcXmlExchangerRexroth", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXmlExchangerRexroth.html" },
+                  { "title": "PlcDCXmlExchangerSchneider", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDCXmlExchangerSchneider.html" },
+                  { "title": "PlcDcXMLExchangerSiemens", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerSiemens.html" },
+                  { "title": "PlcDcXMLExchangerUniversal", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/PlcDcXMLExchangerUniversal.html" },
+                  { "title": "XMLRockwellExchanger", "link": "https://www.eplan.help/en-us/Infoportal/Content/api/2.9/XMLRockwellExchanger.html" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
