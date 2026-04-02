@@ -1,0 +1,15 @@
+# Events
+
+This is the list of the system notifications from EPLAN on which an API add-in can react.
+
+  * [Eplan.EplApi.OnMainEnd](Eplan.EplApi.OnMainEnd.html)
+  * [Eplan.EplApi.OnMainStart](Eplan.EplApi.OnMainStart.html)
+  * [Eplan.EplApi.OnPostOpenProject](Eplan.EplApi.OnPostOpenProject.html)
+  * [Eplan.EplApi.OnUserPreCloseProject](Eplan.EplApi.OnUserPreCloseProject.html)
+  * [onActionEnd.String.*](onActionEnd.String._star_.html)
+  * [onActionStart.String.*](onActionStart.String._star_.html)
+  * [Ged.Redraw](Ged.Redraw.html)
+  * [NCSettingsMachineTools.Redraw](NCSettingsMachineTools.Redraw.html)
+  * [Page.ConnectionDirty](Page.ConnectionDirty.html)
+  * [Project.CablingDirty](Project.CablingDirty.html)
+  * [RefreshPageFilter](RefreshPageFilter.html)

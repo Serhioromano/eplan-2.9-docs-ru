@@ -2761,6 +2761,239 @@ nav:
       - "Другие нововведения и сведения":
         - "Новый метод лицензирования": 2.9/news_p_weiteres_lizenzierung_206396.md
         - "Общие условия": 2.9/news_p_weiteres_softwarevoraussetzungen.md
+  - "API EPLAN":
+    - "Limitation of Liability": 2.9/api/LimitationOfLiability.md
+    - "Help structure": 2.9/api/Help structure.md
+    - "User Guide":
+      - "Development environment":
+        - "EPLAN .Net API": 2.9/api/EplanApiDotNet.md
+      - "API Framework":
+        - "Scripts":
+          - "Structure of a simple script": 2.9/api/VerySimpleScript.md
+          - "Simple script with parameters": 2.9/api/SimpleScriptWithParameters.md
+          - "Loading a script": 2.9/api/RegisterAScript.md
+          - "Event handling in scripts": 2.9/api/Script_EventHandling.md
+          - "Adding menu points by a script": 2.9/api/script_menu.md
+        - "Add-ins":
+          - "Creating add-ins in CSharp": 2.9/api/CSharpAddins.md
+          - "Creating add-ins in Visual Basic.Net": 2.9/api/VisualBasicAddins.md
+          - "Creating an add-in in VisualStudio": 2.9/api/AddinInVisualStudio.md
+          - "Shadow Copying API Assemblies": 2.9/api/ShadowCopyingAPIAssemblies.md
+          - "Actions":
+            - "Calling actions": 2.9/api/CallingActions.md
+            - "Automatic actions": 2.9/api/AutomaticActions.md
+          - "Adding menu points": 2.9/api/AddinMenuPoints.md
+        - "Addons":
+          - "Structure": 2.9/api/Structure.md
+          - "Registration": 2.9/api/Registration.md
+          - "Unregistration": 2.9/api/Unregistration.md
+          - "Shadow Copying": 2.9/api/ShadowCopying.md
+        - "Using EPLAN in other applications":
+          - "EPLAN API offline applications": 2.9/api/UsingEplanAssemblies.md
+          - "EPLAN Remoting": 2.9/api/EPLANRemoting.md
+          - "Using other applications": 2.9/api/UsingOtherApplications.md
+        - "Events": 2.9/api/Events.md
+      - "API DataModel":
+        - "Creating or opening projects": 2.9/api/CreateOpenProject.md
+        - "Creating pages": 2.9/api/CreatePages.md
+        - "Working with parts": 2.9/api/WorkingWithParts.md
+        - "Navigating the project data":
+          - "DataModel overview": 2.9/api/DataModelHierarchyOverview.md
+          - "DataModel navigation overview": 2.9/api/DataModelNavigationOverview.md
+          - "DMObjectsFinder overview": 2.9/api/DataModelFilterOFOverview.md
+          - "Filtering overview": 2.9/api/DataModelFilterOverview.md
+          - "Connections overview": 2.9/api/DataModelConnectionsOverview.md
+          - "MasterData overview": 2.9/api/DataModelMasterDataOverview.md
+          - "EObjects overview": 2.9/api/DataModelEObjectsOverview.md
+          - "Graphics overview": 2.9/api/DataModelGraphicsOverview.md
+        - "EPLAN properties": 2.9/api/EPLAN_Properties.md
+        - "Project settings": 2.9/api/DM_ProjectSettings.md
+        - "Transactions": 2.9/api/Transactions.md
+        - "Locking": 2.9/api/Locking.md
+        - "API Pro Panel":
+          - "Creating 3D objects": 2.9/api/Creating_3D_objects.md
+          - "Getting 3D objects": 2.9/api/Getting_3d_objects.md
+          - "Transformations in 3D space": 2.9/api/Transformations_in_3D_space.md
+          - "Mates": 2.9/api/Mates.md
+          - "InstallationSpace": 2.9/api/Installaction_space.md
+          - "Component": 2.9/api/Component.md
+          - "Cabinet": 2.9/api/Cabinet.md
+          - "MountingPanel": 2.9/api/Mounting_Panel.md
+          - "Plane": 2.9/api/Mounting_surface.md
+          - "MountingRail": 2.9/api/MountingRail.md
+          - "Area": 2.9/api/Area.md
+          - "Duct": 2.9/api/Duct.md
+          - "PlaceHolder3D": 2.9/api/PlaceHolder3D_-_placeholder_in_3D_space.md
+          - "Drilling": 2.9/api/Drilling_(Cut-out_in_GUI).md
+          - "RoutingSegment": 2.9/api/RoutingSegment.md
+          - "Connection3D": 2.9/api/Connection3D.md
+          - "3D macros": 2.9/api/3D_macros.md
+          - "ViewPlacement (model view in GUI)": 2.9/api/ViewPlacement_(model_view_in_GUI).md
+          - "Import/export 3D graphics": 2.9/api/Import_export_3G_graphics.md
+        - "API Pre-planning":
+          - "StructureSegment": 2.9/api/StructureSegment.md
+          - "SegmentDefinition": 2.9/api/SegmentDefinition.md
+          - "SegmentTemplate": 2.9/api/SegmentTemplate.md
+          - "PCTLoop": 2.9/api/PCTLoop.md
+          - "SegmentPlacement": 2.9/api/SegmentPlacement.md
+          - "Pre-planning macro": 2.9/api/Pre-planning_macro.md
+      - "API Higher Electrotechnical services":
+        - "Accessing selected objects": 2.9/api/HE_Selectionset.md
+        - "Displaying a preview": 2.9/api/HE_Display.md
+        - "Placing window macros": 2.9/api/HE_PlaceMacros.md
+      - "API Electrotechnical services":
+        - "Messages": 2.9/api/Messages.md
+        - "Verifications": 2.9/api/Verifications.md
+        - "Interactions": 2.9/api/Interactions.md
+      - "API Miscellaneous":
+        - "API Parts Selection Interface": 2.9/api/API_PARTS_SELECTION.md
+        - "API Parts Management Extension": 2.9/api/PartsManagementExtension.md
+        - "How to display a MessageBox with the EPLAN window as owner": 2.9/api/Get_EPLAN_Window.md
+        - "API Reports Modification Interface": 2.9/api/API_REPORTS_MODIFICATION.md
+        - "API Labeling Modification Interface": 2.9/api/API_LABELING_MODIFICATION.md
+        - "Writing system messages": 2.9/api/WritingSystemMessages.md
+        - "Throwing and catching exceptions": 2.9/api/ThrowingAndCatchingExceptions.md
+        - "Trace output": 2.9/api/TraceOutput.md
+        - "Working with settings": 2.9/api/WorkingWithSettings.md
+        - "Query user rights": 2.9/api/QueryUserRights.md
+        - "Signing EPLAN assemblies": 2.9/api/Signing_EPLAN_assembies.md
+        - "XMLProcessor": 2.9/api/XMLProcessor.md
+        - "Command line parameters": 2.9/api/Command line parameters.md
+    - "API Reference":
+      - "Assemblies":
+      - "Actions":
+        - "backup": 2.9/api/backup.md
+        - "changelayer": 2.9/api/changelayer.md
+        - "check": 2.9/api/check.md
+        - "compress": 2.9/api/compress.md
+        - "CopyToolBarAction": 2.9/api/CopyToolBarAction.md
+        - "devicelist": 2.9/api/devicelist .md
+        - "E21EasyImportSettingAction": 2.9/api/E21EasyImportSettingAction .md
+        - "edit": 2.9/api/edit.md
+        - "EsCorrectConnections": 2.9/api/EsCorrectConnections.md
+        - "EplApiModuleAction": 2.9/api/EplApiModuleAction.md
+        - "ExecuteScript": 2.9/api/ExecuteScript .md
+        - "export": 2.9/api/export.md
+        - "export3d": 2.9/api/export3d .md
+        - "ExportNCData": 2.9/api/ExportNCData .md
+        - "ExportProductionWiring": 2.9/api/ExportProductionWiring  .md
+        - "ExportSegmentsTemplate": 2.9/api/ExportSegmentsTemplate .md
+        - "exportToGraphics": 2.9/api/exportToGraphics.md
+        - "gedRedraw": 2.9/api/gedRedraw .md
+        - "generate": 2.9/api/generate.md
+        - "generatemacros": 2.9/api/generatemacros .md
+        - "graphicallayertable": 2.9/api/graphicallayertable .md
+        - "import": 2.9/api/import.md
+        - "InsertModelViewAction": 2.9/api/InsertModelViewAction.md
+        - "ImportPrePlanningData": 2.9/api/ImportPrePlanningData .md
+        - "ImportSegmentsTemplate": 2.9/api/ImportSegmentsTemplate .md
+        - "label": 2.9/api/label .md
+        - "masterdata": 2.9/api/masterdata.md
+        - "MfExportToolbarAction": 2.9/api/MfExportToolbarAction .md
+        - "MfImportToolbarAction": 2.9/api/MfImportToolbarAction .md
+        - "MfRemoveToolbarAction": 2.9/api/MfRemoveToolbarAction .md
+        - "OpenWorkspaceAction": 2.9/api/OpenWorkspaceAction.md
+        - "partslist": 2.9/api/partslist .md
+        - "plcservice": 2.9/api/plcservice .md
+        - "print": 2.9/api/print .md
+        - "ProjectAction": 2.9/api/ProjectAction .md
+        - "projectmanagement": 2.9/api/projectmanagement .md
+        - "ProjectOpen": 2.9/api/ProjectOpen .md
+        - "RegisterCustomPropertyEditorAction": 2.9/api/RegisterCustomPropertyEditorAction .md
+        - "RegisterScript": 2.9/api/RegisterScript.md
+        - "renumber": 2.9/api/renumber.md
+        - "reports": 2.9/api/reports.md
+        - "restore": 2.9/api/restore .md
+        - "SaveWorkspaceAction": 2.9/api/SaveWorkspaceAction .md
+        - "search": 2.9/api/search .md
+        - "selectionset": 2.9/api/selectionset .md
+        - "SetProjectLanguage": 2.9/api/SetProjectLanguage .md
+        - "subprojects": 2.9/api/subprojects.md
+        - "SwitchProjectType": 2.9/api/SwitchProjectType .md
+        - "synchronize": 2.9/api/synchronize .md
+        - "Topology": 2.9/api/Topology .md
+        - "translate": 2.9/api/translate .md
+        - "UnregisterScript": 2.9/api/UnregisterScript .md
+        - "UpdateSegmentsFilling": 2.9/api/UpdateSegmentsFilling.md
+        - "XAfActionSetting": 2.9/api/XAfActionSetting.md
+        - "XAfActionSettingProject": 2.9/api/XAfActionSettingProject .md
+        - "XCMRemoveUnnecessaryNDPsAction": 2.9/api/XCMRemoveUnnecessaryNDPsAction .md
+        - "XCMUniteNetDefinitionPointsAction": 2.9/api/XCMUniteNetDefinitionPointsAction.md
+        - "XDLInsertDeviceAction": 2.9/api/XDLInsertDeviceAction.md
+        - "XEGActionInsertSymRef": 2.9/api/XEGActionInsertSymRef .md
+        - "XEsSetPagePropertyAction": 2.9/api/XEsSetPagePropertyAction .md
+        - "XEsSetProjectPropertyAction": 2.9/api/XEsSetProjectPropertyAction .md
+        - "XEsSetPropertyAction": 2.9/api/XEsSetPropertyAction .md
+        - "XEsUserPropertiesExportAction": 2.9/api/XEsUserPropertiesExportAction .md
+        - "XEsUserPropertiesImportAction": 2.9/api/XEsUserPropertiesImportAction .md
+        - "XGedClosePage": 2.9/api/XGedClosePage.md
+        - "XGedStartInteractionAction": 2.9/api/XGedStartInteractionAction .md
+        - "XGedUpdateMacroAction": 2.9/api/XGedUpdateMacroAction.md
+        - "XMActionDCImport": 2.9/api/XMActionDCImport .md
+        - "XMActionDCCommonExport": 2.9/api/XMActionDCCommonExport .md
+        - "XMDeleteReprTypeAction": 2.9/api/XMDeleteReprTypeAction .md
+        - "XMExportConnectionsAction": 2.9/api/XMExportConnectionsAction .md
+        - "XMExportFunctionAction": 2.9/api/XMExportFunctionAction .md
+        - "XMExportPagesAction": 2.9/api/XMExportPagesAction.md
+        - "XPamSelectPart": 2.9/api/XPamSelectPart .md
+        - "XSDPreviewAction": 2.9/api/XSDPreviewAction .md
+        - "XPamsDeviceSelectionAction": 2.9/api/XPamsDeviceSelectionAction .md
+        - "XPlaUpdateDetailAction": 2.9/api/XPlaUpdateDetailAction.md
+        - "XPrjActionUpgradeProjects": 2.9/api/XPrjActionUpgradeProjects .md
+        - "XSettingsExport": 2.9/api/XSettingsExport .md
+        - "XSettingsImport": 2.9/api/XSettingsImport.md
+        - "XSettingsRegisterAction": 2.9/api/XSettingsRegisterAction.md
+        - "XSettingsUnregisterAction": 2.9/api/XSettingsUnregisterAction.md
+      - "Events":
+        - "Eplan.EplApi.OnMainEnd": 2.9/api/Eplan.EplApi.OnMainEnd.md
+        - "Eplan.EplApi.OnMainStart": 2.9/api/Eplan.EplApi.OnMainStart.md
+        - "Eplan.EplApi.OnPostOpenProject": 2.9/api/Eplan.EplApi.OnPostOpenProject.md
+        - "Eplan.EplApi.OnUserPreCloseProject": 2.9/api/Eplan.EplApi.OnUserPreCloseProject.md
+        - "onActionEnd.String.*": 2.9/api/onActionEnd.String._star_.md
+        - "onActionStart.String.*": 2.9/api/onActionStart.String._star_.md
+        - "Ged.Redraw": 2.9/api/Ged.Redraw.md
+        - "NCSettingsMachineTools.Redraw": 2.9/api/NCSettingsMachineTools.Redraw.md
+        - "Page.ConnectionDirty": 2.9/api/Page.ConnectionDirty.md
+        - "Project.CablingDirty": 2.9/api/Project.CablingDirty.md
+        - "RefreshPageFilter": 2.9/api/RefreshPageFilter.md
+      - "Interactions":
+        - "XGedIaFormatDefPoints": 2.9/api/XGedIaFormatDefPoints.md
+        - "XGedIaFormatGraphic": 2.9/api/XGedIaFormatGraphic.md
+        - "XGedIaFormatSymbol": 2.9/api/XGedIaFormatSymbol.md
+        - "XGedIaFormatText": 2.9/api/XGedIaFormatText.md
+        - "XMIaInsertMacro": 2.9/api/XMIaInsertMacro.md
+      - "XML Converters":
+        - "Category DeviceListXmlConverter":
+          - "XDLCsvCommaSepImporterExporter": 2.9/api/XDLCsvCommaSepImporterExporter.md
+          - "XDLCsvImporterExporter": 2.9/api/XDLCsvImporterExporter.md
+          - "XDLTxtImporterExporter": 2.9/api/XDLTxtImporterExporter.md
+          - "XDLXmlExporter": 2.9/api/XDLXmlExporter.md
+        - "Category LanguageDbXmlConverter":
+          - "XTrLanguageDbXml2E21UnicodeTabConverter": 2.9/api/XTrLanguageDbXml2E21UnicodeTabConverter.md
+          - "XTrLanguageDbXml2TabConverterImpl": 2.9/api/XTrLanguageDbXml2TabConverterImpl.md
+        - "Category PartsListXmlConverter":
+          - "XPalCSVConverter": 2.9/api/XPalCSVConverter.md
+          - "XPalXmlExporter": 2.9/api/XPalXmlExporter.md
+        - "Category XPamExport":
+          - "IXPartsImportExportEdz": 2.9/api/IXPartsImportExportEdz.md
+          - "XPamExportXml": 2.9/api/XPamExportXml.md
+        - "Category XPamImport":
+          - "XPamImportXml": 2.9/api/XPamImportXml.md
+        - "Category PLCXmlConverter":
+          - "PlcDcExchangerMitsubishiAML": 2.9/api/PlcDcExchangerMitsubishiAML.md
+          - "PlcDcExchangerSiemensTIAAML": 2.9/api/PlcDcExchangerSiemensTIAAML.md
+          - "PlcDcXMLExchangerABB": 2.9/api/PlcDcXMLExchangerABB.md
+          - "PlcDcXMLExchangerBandR": 2.9/api/PlcDcXMLExchangerBandR.md
+          - "PlcDcXMLExchangerBeckhoff": 2.9/api/PlcDcXMLExchangerBeckhoff.md
+          - "PlcDcXMLExchangerCodesys": 2.9/api/PlcDcXMLExchangerCodesys.md
+          - "PlcDcXMLExchangerLogiCals": 2.9/api/PlcDcXMLExchangerLogiCals.md
+          - "PlcDcXMLExchangerMitsubishi": 2.9/api/PlcDcXMLExchangerMitsubishi.md
+          - "PlcDcXmlExchangerRexroth": 2.9/api/PlcDcXmlExchangerRexroth.md
+          - "PlcDCXmlExchangerSchneider": 2.9/api/PlcDCXmlExchangerSchneider.md
+          - "PlcDcXMLExchangerSiemens": 2.9/api/PlcDcXMLExchangerSiemens.md
+          - "PlcDcXMLExchangerUniversal": 2.9/api/PlcDcXMLExchangerUniversal.md
+          - "XMLRockwellExchanger": 2.9/api/XMLRockwellExchanger.md
+
 plugins:
   - search:
       lang: ru
@@ -2786,6 +3019,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - def_list
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets:
       auto_append:
         - docs/includes/abbreviations.md

@@ -1,0 +1,41 @@
+# XPlaUpdateDetailAction
+
+    The detail engineering is updated for the selected planning objects
+     
+    
+
+  
+Parameter | Description  
+---|---  
+PROJECTNAME | 
+    
+    
+    if set, the project is updated
+      
+  
+UpdateMacros | 
+    
+    
+    if set, the macros related to the planning object are removed and placed again
+      
+  
+UpdateIdentifier | 
+    
+    
+    if set, the structure identifiers, the symbolic adresses and the pipenames are written to the functions or pipe definitions
+      
+  
+UpdatePlaceholder | 
+    
+    
+    if set, the placeholder records from macros related to the planning object are updated
+      
+  
+UpdatePipedata | 
+    
+    
+    pipe class and substance are written to pipe definition points and related connections and functions
+      
+  
+  
+Example

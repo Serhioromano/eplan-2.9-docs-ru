@@ -42,7 +42,7 @@ init: gitc
 		libxss1
 	@echo "Start PIP configuration"
 	@pip3 install --break-system-packages --upgrade pip
-	@pip3 install --break-system-packages mkdocs mkdocs-material mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin
+	@pip3 install --break-system-packages mkdocs mkdocs-material mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin html2text bs4
 	@echo "Configuration is done"
 
 gitc:

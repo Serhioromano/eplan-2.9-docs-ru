@@ -1,3 +1,30 @@
+## Заголовок
+
+В начале каждого файла маркдаун в docs/2.9/api есть
+
+---
+[![](images/EPLAN_Logo_black.png)](index.html)
+
+API Help
+
+[](webindex.html)
+
+[EPLAN API](index.html) / [User Guide](API_UserGuide.html) / [API Framework](API_Framework.html) / [Add-ins](AddIns.html) / Actions
+
+Collapse All Expand All
+
+In This Topic
+
+
+
+
+Actions
+---
+
+Нужно все удалить а строку типа Actions сделать заголовком первого уровня.
+
+## Навигация
+
 В навигации есть 3 раздела
 
 Справка EPLAN
@@ -8,7 +35,117 @@
 
 API EPLAN
 
-с сылками  и структурой дерева созданного файла tools/29/api-tree.json на файлы маркдаун которые будут в папке site/2.9/api их я выкачаю позже.
+с ссылками и структурой дерева созданного файла tools/29/api-tree.json на файлы маркдаун в папке site/2.9/api.
+
+
+## коды
+
+В файлах например docs/2.9/api/AddinMenuPoints.md есть такие примеры кода выглядят вот так
+
+---
+  * C#
+  * VB
+
+
+    
+    
+    /// <summary>
+    /// This function is called by the framework of EPLAN, when the framework already has initialized its
+    /// graphical user interface (GUI) and the add-in can start to modify the GUI.
+    /// The function only is called, if the add-in is loaded on system-startup.
+    /// </summary>
+    /// <returns>true, if function succeeds</returns>
+    public bool OnInitGui()
+    {
+       Eplan.EplApi.Gui.Menu oMenu = new Eplan.EplApi.Gui.Menu();
+       oMenu.AddMenuItem("CSharpAction", "CSharpAction");
+       return true;
+    }
+    
+    
+    
+    ''' <summary>
+    ''' This function is called by the framework of EPLAN, when the framework already has initialized its
+    ''' graphical user interface (GUI) and the add-in can start to modify the GUI.
+    ''' The function only is called, if the add-in is loaded on system-startup.
+    ''' </summary>
+    ''' <returns>true, if function succeeds</returns>
+    Public Function OnInitGui() As Boolean Implements IEplAddin.OnInitGui
+       Dim oMenu As Eplan.EplApi.Gui.Menu = New Eplan.EplApi.Gui.Menu
+       oMenu.AddMenuItem("CSharpAction", "CSharpAction")
+       Return True
+    End Function 'OnInitGui
+---    
+
+
+Их нужно превратить вот в такие
+
+---
+=== "C#"
+
+    ```C#
+    /// <summary>
+    /// This function is called by the framework of EPLAN, when the framework already has initialized its
+    /// graphical user interface (GUI) and the add-in can start to modify the GUI.
+    /// The function only is called, if the add-in is loaded on system-startup.
+    /// </summary>
+    /// <returns>true, if function succeeds</returns>
+    public bool OnInitGui()
+    {
+       Eplan.EplApi.Gui.Menu oMenu = new Eplan.EplApi.Gui.Menu();
+       oMenu.AddMenuItem("CSharpAction", "CSharpAction");
+       return true;
+    }
+    ```
+
+=== "VB"
+
+    ```vb
+    ''' <summary>
+    ''' This function is called by the framework of EPLAN, when the framework already has initialized its
+    ''' graphical user interface (GUI) and the add-in can start to modify the GUI.
+    ''' The function only is called, if the add-in is loaded on system-startup.
+    ''' </summary>
+    ''' <returns>true, if function succeeds</returns>
+    Public Function OnInitGui() As Boolean Implements IEplAddin.OnInitGui
+       Dim oMenu As Eplan.EplApi.Gui.Menu = New Eplan.EplApi.Gui.Menu
+       oMenu.AddMenuItem("CSharpAction", "CSharpAction")
+       Return True
+    End Function 'OnInitGui
+    ```
+---
+
+
+
+## Картика
+
+Некоторые картинки не скачались. Код 404 например в docs/2.9/api/DataModelEObjectsOverview.htm
+
+Вот базовый УЛР для картинок
+
+https://www.eplan.help/en-us/Infoportal/Content/api/2.9/DataModel_EObjects_Graph.PNG
+
+Можешь создать скрипт который пройдется по всем файлам htm в папке docs/2.9/api и от туда все картинки выбрать и скачать в папку docs/2.9/api/images. Каждую картинку только один раз скачать.
+
+
+## Коды
+
+В некоторых файлах есть вот такое.
+
+The types of pages, which you can create are listed in the DocumentTypeManager.DocumentType enumeration.
+
+Создай скрипт который такие конструкции возьмёт в обратные кавычки.
+
+The types of pages, which you can create are listed in the `DocumentTypeManager.DocumentType enumeration`.
+
+
+## Другое
+
+
+
+
+
+
 
 
 

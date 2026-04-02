@@ -1,0 +1,5 @@
+# DataModel class diagram
+
+Illustration below shows the class diagram in the Eplan.EplApi.DataModel namespace. 
+
+[![](graphs/DatamodelClassDiagram.png)](graphs/DatamodelClassDiagram.png "Click to enlarge")
