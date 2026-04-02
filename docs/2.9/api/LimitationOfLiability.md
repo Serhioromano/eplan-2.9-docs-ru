@@ -1,16 +1,16 @@
 # Limitation of Liability
 
-Copyright ® 2020 by EPLAN Software & Service GmbH & Co. KG 
+Copyright ® 2020 by EPLAN Software & Service GmbH & Co. KG
 
-EPLAN Software & Service GmbH & Co. KG assumes no liability for either technical or printing errors or for deficiencies in this technical information and cannot be held liable for damages that may directly or indirectly result from delivery, performance, and use of this material. 
+EPLAN Software & Service GmbH & Co. KG assumes no liability for either technical or printing errors or for deficiencies in this technical information and cannot be held liable for damages that may directly or indirectly result from delivery, performance, and use of this material.
 
-This technical information includes information on the basis of a proprietary system that is protected by copyright laws. All rights reserved. These information or part thereof may not be copied or reproduced by any other means without the previous permission of EPLAN Software & Service. 
+This technical information includes information on the basis of a proprietary system that is protected by copyright laws. All rights reserved. These information or part thereof may not be copied or reproduced by any other means without the previous permission of EPLAN Software & Service.
 
-The software described in these technical information is subject to a licensing agreement. The software may only be used and copied within the scope of this agreement. 
+The software described in these technical information is subject to a licensing agreement. The software may only be used and copied within the scope of this agreement.
 
-EPLAN® is a registered trademark of EPLAN Software & Service GmbH & Co. KG. 
+EPLAN® is a registered trademark of EPLAN Software & Service GmbH & Co. KG.
 
-Microsoft Windows® is a registered trademark of the Microsoft Corporation. 
+Microsoft Windows® is a registered trademark of the Microsoft Corporation.
 
 **Note: The hardware requirements indicated by the operating system manufacturers must be considered. Hardware combinations that cause malfunctions according to the manufacturer's specification may also have an effect on the operation of EPLAN. Therefore an accurate basic installation of hardware, operating system, and hardware drivers (e.g. graphics board driver etc.) is essential for a smooth operation of EPLAN. For this reason, the main conditions and areas of application as specified by the hardware manufacturers also apply to the operation of EPLAN.**
 

@@ -1,112 +1,188 @@
 # backup
 
     Action class for backup functions: backup a project and master data (forms, symbols,...)
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed:PROJECT: Backing up the entire project MASTERDATA:      Backing up the master data
-      
-  
-PROJECTNAME | 
-    
-    
-    Project name with full path(optional). 
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
-    If called from the windows command line, PROJECTNAME must be set or the ProjectAction must be used first, otherwise an  exception is thrown. 
-      
-  
-ARCHIVENAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
+    Project name with full path(optional).
+
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
+    If called from the windows command line, PROJECTNAME must be set or the ProjectAction must be used first, otherwise an  exception is thrown.
+
+     
+
+ 
+
+ARCHIVENAME |
+
+   
+
+   
+
     Archive name.
     Name of the file where the backed up data is to be saved (without path information).
-      
-  
-DESTINATIONPATH | 
-    
-    
+     
+
+ 
+
+DESTINATIONPATH |
+
+   
+
+   
+
     Target directory
-      
-  
-COMMENT | 
-    
-    
+     
+
+ 
+
+COMMENT |
+
+   
+
+   
+
     Remark on backup (optional).
     The remark is written as a string to the corresponding property of the backed up project.
     Default = corresponding property is not set.
-      
-  
-BACKUPMEDIA | 
-    
-    
+     
+
+ 
+
+BACKUPMEDIA |
+
+   
+
+   
+
     Type of saving:
     EMAIL: Project is sent by e-mail.
     DISK: Project is backed up to a hard drive, diskette, etc.
-      
-  
-SPLITSIZE | 
-    
-    
-    If the project to be backed up is to be packed (zipped), the target file can be automatically split into several parts to be sent by e-mail. 
+     
+
+ 
+
+SPLITSIZE |
+
+   
+
+   
+
+    If the project to be backed up is to be packed (zipped), the target file can be automatically split into several parts to be sent by e-mail.
+
     SPLITSIZE specifies the maximum file size in megabytes. If SPLITSIZE = 0, the file is not split up. If the parameter: BACKUPMEDIA = DISK, SPLITSIZE is ignored.
     The parameter is optional.
     Default = 0.0
-      
-  
-BACKUPAMOUNT | 
-    
-    
+     
+
+ 
+
+BACKUPAMOUNT |
+
+   
+
+   
+
     An enum constant that may assume the following values:
     BACKUPAMOUNT_ALL: The contents of the project directory is backed up completely.
     BACKUPAMOUNT_MIN: Only the database files required to restore the project are backed up; redundant database files are ignored.
     Default = BACKUPAMOUNT_ALL.
-      
-  
-COMPRESSPRJ | 
-    
-    
+     
+
+ 
+
+COMPRESSPRJ |
+
+   
+
+   
+
     Specifies whether the database is to be compressed before being backed up (optional, 0 = No, 1= Yes).
     Default = 0
-      
-  
-INCLEXTDOCS | 
-    
-    
+     
+
+ 
+
+INCLEXTDOCS |
+
+   
+
+   
+
     Specifies whether external documents are to be included in the backup (optional, 0 = No, 1= Yes).
     Default = 0
-      
-  
-INCLIMAGES | 
-    
-    
+     
+
+ 
+
+INCLIMAGES |
+
+   
+
+   
+
     Specifies whether image files are to be included in the backup (optional, 0 = No, 1=Yes).
     Default = 0
-      
-  
-COPYREFDATA | 
-    
-    
-    Specifies whether external files that are referenced by the project 
+     
+
+ 
+
+COPYREFDATA |
+
+   
+
+   
+
+    Specifies whether external files that are referenced by the project
+
     are copied to the project's directory (the '\DOC' subdirectory) before the backup.
     (optional, 0 = No, 1 = Yes).
     Default = 0
     Valid only if TYPE parameter equals 'PROJECT'.
-      
-  
-BACKUPMETHOD | 
-    
-    
+     
+
+ 
+
+BACKUPMETHOD |
+
+   
+
+   
+
     Type of backup:BACKUP: Project is backed upSOURCEOUT: Project is filed offARCHIVE: Project is archived. Must not be set if BACKUPMEDIA parameter is set to EMAIL.PACK: Project is packed.
-      
-  
-MDTYPE | 
-    
-    
+     
+
+ 
+
+MDTYPE |
+
+   
+
+   
+
     Type of master data to be backed up:
     SYMBOLS,
     MACROS,
@@ -115,32 +191,49 @@ MDTYPE |
     LANGUAGES,
     STANDARDSHEET,
     STATIONDATA
-      
-  
-SOURCEPATH | 
-    
-    
+     
+
+ 
+
+SOURCEPATH |
+
+   
+
+   
+
     Source directory, only applies to backup of master data.
-      
-  
-FILENAME | 
-    
-    
+     
+
+ 
+
+FILENAME |
+
+   
+
+   
+
     Name of the file to be backed up.
     • The file name can be entered with or without the complete path.
     • The file extension must be specified.
     • A file extension with a wildcard is also possible (for example: /FILENAME:*.fn1, /FILENAME:*.*, /FILENAME:*sh)
     This only applies to the backup of master data.
-      
-  
-  
-Remarks
-    
-    
-    Archive names of the form <some name>.nnn (n = a digit 0 - 9) are forbidden, because an archive name of this form ( with a three-digit-extension)is automatically created when the backup file is split into several parts. 
-    
+     
 
-  
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+    Archive names of the form <some name>.nnn (n = a digit 0 - 9) are forbidden, because an archive name of this form ( with a three-digit-extension)is automatically created when the backup file is split into several parts.
+
+   
+
+ 
+
 **Example**
 
 ```
@@ -149,9 +242,6 @@ Back up project:
 backup /TYPE:PROJECT /PROJECTNAME:C:\Projects\EPLAN\ESS_Sample_Project.elk /DESTINATIONPATH:U:\temp /ARCHIVENAME:ESS_Sample_Project.zw1 /COMMENT:Hello /BACKUPMETHOD:BACKUP /BACKUPMEDIA:DISK /SPLITSIZE:0.0 /BACKUPAMOUNT:BACKUPAMOUNT_ALL /COMPRESSPRJ:0 /INCLEXTDOCS:1 /INCLIMAGES:1
 
 backup  /TYPE:PROJECT /COMMENT:Hello /DESTINATIONPATH:U:\temp /ARCHIVENAME:ESS_Sample_Project.zw1 /BACKUPMETHOD:BACKUP /BACKUPMEDIA:DISK /SPLITSIZE:0.0 /BACKUPAMOUNT:BACKUPAMOUNT_ALL /COMPRESSPRJ:0 /INCLEXTDOCS:1 /INCLIMAGES:1
-
-
-
 
 
 

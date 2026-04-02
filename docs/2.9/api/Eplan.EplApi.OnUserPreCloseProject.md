@@ -1,16 +1,16 @@
 # Eplan.EplApi.OnUserPreCloseProject
-Project management: Before closing a project 
+Project management: Before closing a project
 
-  
-
+ 
 
 #### Parameters
 
-Parameter Type: AfEvParString  
-Parameter Description: Name of project which will be closed.  
+Parameter Type: AfEvParString 
 
+Parameter Description: Name of project which will be closed. 
 
-  
+ 
+
 **Example**
 
 ```csharp

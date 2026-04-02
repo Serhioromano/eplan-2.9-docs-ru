@@ -18,12 +18,18 @@ The delete button ![](images/image012.png) will only be enabled, when the add-on
 
 It is also possible to unregister an add-on via an action call.
 
-**Parameter** |  **Description**  
----|---  
-Path |  The path where the add-on is located  
-InstallFile |  The complete path to the `install.xml`  
-AllowAutoInstall |  When the value is set to TRUE Remove the marker for auto install, then the add-on is auto installed next time  
-  
+**Parameter** |  **Description** 
+
+---|--- 
+
+Path |  The path where the add-on is located 
+
+InstallFile |  The complete path to the `install.xml` 
+
+AllowAutoInstall |  When the value is set to TRUE Remove the marker for auto install, then the add-on is auto installed next time 
+
+ 
+
 ![](images/image007.gif)Example:
 
 Registering Add-ons:

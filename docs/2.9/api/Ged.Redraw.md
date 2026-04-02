@@ -1,10 +1,10 @@
 # Ged.Redraw
-Force a Redraw for the GED 
+Force a Redraw for the GED
 
-  
+ 
 
+ 
 
-  
 **Example**
 
 ```csharp

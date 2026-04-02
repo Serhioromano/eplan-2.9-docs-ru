@@ -4,34 +4,51 @@
      It can be passed the full path of a project. When project is not opened, this action opens it and closes it automatically.
      Alternatively an object can be passed by a special DMBaseHandleContext.
      This object can be a project/function/connection.
-     
     
 
-  
-Parameter | Description  
----|---  
-ProjectName | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+ProjectName |
+
+   
+
+   
+
     The full path of project(optional). When project specified by ProjectName is not open, this action opens it and closes it automatically.
      If nothing is entered, the selected project will be used if the action is to be run over the user interface (e.g. via script or the toolbar).
      When executing from the Windows command line, PROJECTNAME must be specified or ProjectAction has to be used before that. Otherwise a system message will appear.
+    
+
      
-      
-  
-Mode | 
-    
-    
+
+ 
+
+Mode |
+
+   
+
+   
+
      Mode (optional)
      Supported modes are:
      • selectDevice (default value): Selects a new device for the existing objects.
      In the process all device data including the part reference data is deleted and reassigned in accordance with the device selection.
      • updateDevice : updateDevice: Updates only the device data of the parts of the existing objects. The part numbers and part reference data are retained.
      The functionality corresponds to the Update device data menu item in the bill of materials navigator.
+    
+
      
-      
-  
-  
+
+ 
+
+ 
+
 **Example**
 
 ```csharp
@@ -45,10 +62,6 @@ XPamsDeviceSelectionAction /ProjectName:MyProject                               
 
 
 
-
-
-
-
 Example 2 (Full path of project, in scripting)
 
 CommandLineInterpreter oCommandLineInterpreter = new CommandLineInterpreter();
@@ -57,10 +70,6 @@ bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /Project
 bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:\"My Folder\\MyProject.elk\"");           //relative to standard-folder
 bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:MyProject.elk");                                  //relative to standard-folder
 bool bRet = oCommandLineInterpreter.Execute("XPamsDeviceSelectionAction /ProjectName:MyProject");                                              //relative to standard-folder without file-extension
-
-
-
-
 
 
 

@@ -8,72 +8,115 @@
      click on the hot-spot button the given action will be started
      and you can modified the displayed value in a own dialog with
      the given calling context.
-     
     
 
-  
-Parameter | Description  
----|---  
-PropertyId | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PropertyId |
+
+   
+
+   
+
     property id
-      
-  
-PropertyIndex | 
-    
-    
+     
+
+ 
+
+PropertyIndex |
+
+   
+
+   
+
     property index
-      
-  
-PropertyIdentName | 
-    
-    
+     
+
+ 
+
+PropertyIdentName |
+
+   
+
+   
+
     Identifying name of the user-defined property
-      
-  
-Action | 
-    
-    
+     
+
+ 
+
+Action |
+
+   
+
+   
+
     this action will be called for editing the specified property
-      
-  
-Editable | 
-    
-    
+     
+
+ 
+
+Editable |
+
+   
+
+   
+
     "true" (1): edit inside of the hotspot cell allowed
-      
-  
-Register | 
-    
-    
+     
+
+ 
+
+Register |
+
+   
+
+   
+
      "true" (1): register this action.
      "false" (0): unregister this action.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
      Calling context of the registered Action are:
      * Parameters *
-     
+    
+
      PropertyId           Property Id
      PropertyIndex        Property Index
      PropertyIdentName    Identifying name of user-defined property
      DbObjectId           object id from the first datamodel
      Value                displayed string or multilanguage string
-     
     
+
+   
+
      * Return values *
-     
+    
+
      DialogModalResult   1 for OK
      DialogModified      1 (True) for modified
      Value               new display value or new multilanguage string
-     
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

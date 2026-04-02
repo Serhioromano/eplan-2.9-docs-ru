@@ -1,14 +1,14 @@
 # Simple script with parameters
 
-The script functionality does also accept parameters. However this only makes sense if a parameter can be passed to the script, when it is started. This can be done by invoking EPLAN via the command line: 
+The script functionality does also accept parameters. However this only makes sense if a parameter can be passed to the script, when it is started. This can be done by invoking EPLAN via the command line:
 
-`W3u.exe` ExecuteScript /ScriptFile:"C:\Program Files\EPLAN\EPLAN\Basic\Scripts\EPLAN\`SimpleScriptWithParameters.cs`" /Param1:Hello /Param2:EPLAN /Param3:" API developer!" 
+`W3u.exe` ExecuteScript /ScriptFile:"C:\Program Files\EPLAN\EPLAN\Basic\Scripts\EPLAN\`SimpleScriptWithParameters.cs`" /Param1:Hello /Param2:EPLAN /Param3:" API developer!"
 
 When starting EPLAN via command line, in order to run a script, the first parameter is the name of the action to execute. "ExecuteScript" is the action for running scripts. This action takes the parameter "ScriptFile" which specifies the name of the script file to run. Any further parameter (Param1, Param2, Param3) will be passed to the start function of the script.
 
 ![](images/sectionminus.png)Example
 
-In the following example, the script (the script function) requires 3 string parameters Param1, Param2 and Param3: 
+In the following example, the script (the script function) requires 3 string parameters Param1, Param2 and Param3:
 
 === "C#"
 
@@ -39,7 +39,7 @@ In the following example, the script (the script function) requires 3 string par
     End Class 'SimpleScriptWithParameters
     ```
 
-It is important, that the identifiers (Param1, Param2, Param3) are exactly matching in the command line and in the function! 
+It is important, that the identifiers (Param1, Param2, Param3) are exactly matching in the command line and in the function!
 
 It is possible to use script with ActionCallingContext as a parameter. To do that please look at the following example:
 
@@ -80,7 +80,8 @@ It is possible to use script with ActionCallingContext as a parameter. To do tha
             Dim strNewParam As [String] = ""
             oActionCallingContext.AddParameter("strNewParam", strFirstParam + strSecondParam)
             oActionCallingContext.GetParameter("strNewParam", strNewParam)
-            If strNewParam = strFirstParam + strSecondParam Then        
+            If strNewParam = strFirstParam + strSecondParam Then       
+
                 ' TODO: Add some functionality here
             End If
         End Sub 'FunctionWithActionCallingContext

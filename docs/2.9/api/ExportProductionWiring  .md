@@ -1,66 +1,112 @@
 # ExportProductionWiring
 
      Action export Production Wiring Data for machines  according to calling parameters
-     
     
 
-  
-Parameter | Description  
----|---  
-MachineType | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+MachineType |
+
+   
+
+   
+
     integer, mandatory:        1: Komax, 2: CadCabel, 3: Schleuniger,
-                                                                                                            4: Steinhauer PWA, 5: Metzner, 7: WireList, 8: Averex, 9: Rittal - Wire Terminal WT 
-      
-  
-MachineName | 
-    
-    
+                                                                                                            4: Steinhauer PWA, 5: Metzner, 7: WireList, 8: Averex, 9: Rittal - Wire Terminal WT
+
+     
+
+ 
+
+MachineName |
+
+   
+
+   
+
     string, mandatory: Name of Machine, which has to be defined in Settings
-      
-  
-ProjectName | 
-    
-    
+     
+
+ 
+
+ProjectName |
+
+   
+
+   
+
     string, optional: if not set, the actual project ist exported. If set with project name (including complete path and extension), project is loaded (if needed) and activated
-      
-  
-UseSelection | 
-    
-    
+     
+
+ 
+
+UseSelection |
+
+   
+
+   
+
     integer, optional: 0: don't care for user selection, != 0: use fields included in actual selection. Only used if ProjectName not set in parameters. Default: 0
-      
-  
-TargetDirectory | 
-    
-    
+     
+
+ 
+
+TargetDirectory |
+
+   
+
+   
+
     string, optional: if set, content overrides export directory of settings
-      
-  
-FileName | 
-    
-    
+     
+
+ 
+
+FileName |
+
+   
+
+   
+
     string, optional: if set, content overrides export Filename of settings.
-      
-  
-Language | 
-    
-    
+     
+
+ 
+
+Language |
+
+   
+
+   
+
     string, optional: Language code for export language. Default: de_DE
-      
-  
-MultipleConnections | 
-    
-    
+     
+
+ 
+
+MultipleConnections |
+
+   
+
+   
+
     bool, otional: if true, reexport already exported wires. if false, export only those wires never exported before. Default: false.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
 
+ 
 
-  
 **Example**
 
 ```

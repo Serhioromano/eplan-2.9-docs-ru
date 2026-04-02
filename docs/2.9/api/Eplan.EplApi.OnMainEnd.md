@@ -1,15 +1,14 @@
 # Eplan.EplApi.OnMainEnd
-Send when the Main End starts. 
+Send when the Main End starts.
 
-  
-
+ 
 
 #### Parameters
 
-Has no event parameter.  
+Has no event parameter. 
 
+ 
 
-  
 **Example**
 
 ```csharp

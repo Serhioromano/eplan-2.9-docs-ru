@@ -1,40 +1,64 @@
 # RegisterScript
 
      Register a script.
-     
     
 
-  
-Parameter | Description  
----|---  
-ScriptFile | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+ScriptFile |
+
+   
+
+   
+
     Script file name with a complete path.
-      
-  
-RegisterAgain | 
-    
-    
+     
+
+ 
+
+RegisterAgain |
+
+   
+
+   
+
     true: register a script with the same name again.
             When this parameter is set, no Decider is shown for this question.
-      
-  
-ShowDecider | 
-    
-    
-    Show a Decider when needed. Value is true or false.
-     The parameter is ignored when quiet mode is set. (Then RegisterAgain is set to true). 
-      
-  
-  
-Remarks
-    
-    
-    Two types of scripts can be registered: C#(*.cs) and VB.Net(*.vb)
-    
+     
 
-  
+ 
+
+ShowDecider |
+
+   
+
+   
+
+    Show a Decider when needed. Value is true or false.
+     The parameter is ignored when quiet mode is set. (Then RegisterAgain is set to true).
+
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+    Two types of scripts can be registered: C#(*.cs) and VB.Net(*.vb)
+   
+
+ 
+
 **Example**
 
 ```

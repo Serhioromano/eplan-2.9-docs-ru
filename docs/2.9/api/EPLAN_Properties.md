@@ -1,14 +1,14 @@
 # EPLAN properties
 
-EPLAN API allows accessing object properties, i.e. characteristics which are visible in GUI in "Properties" dialog. 
+EPLAN API allows accessing object properties, i.e. characteristics which are visible in GUI in "Properties" dialog.
 
-This is possible through Properties property which is defined for almost all DataModel objects. 
+This is possible through Properties property which is defined for almost all DataModel objects.
 
-The list of all available properties for a particular object, you can find in the properties of the Properties Class (for example Properties::AllMDSymbolLibraryPropIDs). 
+The list of all available properties for a particular object, you can find in the properties of the Properties Class (for example Properties::AllMDSymbolLibraryPropIDs).
 
 ### Property types
 
-EPLAN properties are typed. The property values can have one of the following types: 
+EPLAN properties are typed. The property values can have one of the following types:
 
   * bool
   * int
@@ -17,23 +17,33 @@ EPLAN properties are typed. The property values can have one of the following ty
   * PointD
   * MultiLangString
 
-
-
 With help of the `PropertyDefinition.PropertyType`, you can determine the type of a property:
 
-`PropertyDefinition.PropertyType` | Corresponding .NET Framework type  
----|---  
-Point |   
-MultilangString |   
-Variable | `System.String`  
-String | `System.String`  
-Time | `System.DateTime`  
-Bool | `System.Boolean`  
-Double | `System.Double`  
-Coord | `System.Double`  
-Long | `System.Int64`  
-  
-The following example gets the type of a page property: 
+`PropertyDefinition.PropertyType` | Corresponding .NET Framework type 
+
+---|--- 
+
+Point |  
+
+MultilangString |  
+
+Variable | `System.String` 
+
+String | `System.String` 
+
+Time | `System.DateTime` 
+
+Bool | `System.Boolean` 
+
+Double | `System.Double` 
+
+Coord | `System.Double` 
+
+Long | `System.Int64` 
+
+ 
+
+The following example gets the type of a page property:
 
 === "C#"
 
@@ -49,7 +59,7 @@ The following example gets the type of a page property:
 
 ### Setting and getting property
 
-The following example shows, how to set a bool property: 
+The following example shows, how to set a bool property:
 
 === "C#"
 
@@ -63,7 +73,7 @@ The following example shows, how to set a bool property:
     oFunction.Properties(Properties.Function.FUNC_ARTICLE_SUPPRESSINPARTSLIST) = PropertyValue.op_Implicit(True)
     ```
 
-The following example, shows, how to get a MultiLangString property (project description): 
+The following example, shows, how to get a MultiLangString property (project description):
 
 === "C#"
 
@@ -77,7 +87,7 @@ The following example, shows, how to get a MultiLangString property (project des
     Dim mlTest As MultiLangString = oProject.Properties(Properties.Project.PROJ_INSTALLATIONNAME).ToMultiLangString()
     ```
 
-As an alternative syntax, you can also write: 
+As an alternative syntax, you can also write:
 
 === "C#"
 
@@ -91,7 +101,7 @@ As an alternative syntax, you can also write:
     Dim mlTest As MultiLangString = oProject.Properties.PROJ_INSTALLATIONNAME.ToMultiLangString()
     ```
 
-Finally an example, which loops over all string properties of a project: 
+Finally an example, which loops over all string properties of a project:
 
 === "C#"
 
@@ -135,19 +145,20 @@ Finally an example, which loops over all string properties of a project:
 
 ### Conversion property value to another types
 
-It is possible to get a property as a value of .NET Framework type or Eplan API type (for example `Eplan.EplApi.Base.MultiLangString`). It can be done explicitly by `PropertyValue.To` _< type>_() for example :
+It is possible to get a property as a value of .NET Framework type or Eplan API type (for example `Eplan.EplApi.Base.MultiLangString`). It can be done explicitly by `PropertyValue.To` _< type>_() for example:
 
 ```csharp
-string strStringValue = oFunction.Properties.FUNC_CODE.ToString();  
+string strStringValue = oFunction.Properties.FUNC_CODE.ToString(); 
+
 ```
 
-or implicitly :
+or implicitly:
 
 ```csharp
 int nValue = oFunction.Properties.FUNC_CRAFT;
 ```
 
-It is not allowed to convert property value to non-matching type, for example MultiLangString to int. In such cases there will be a runtime warning generated (as Eplan system message) or an exception thrown :
+It is not allowed to convert property value to non-matching type, for example MultiLangString to int. In such cases there will be a runtime warning generated (as Eplan system message) or an exception thrown:
 
 ```csharp
 string strValue = oArticle.Properties.ARTICLE_DEPTH.ToString(); //will generate a system warning
@@ -155,30 +166,49 @@ double dValue = oArticle.Properties.ARTICLE_DEPTH.ToDouble(); //ok
 string strValue2 = oArticle.Properties.ARTICLE_DEPTH.ToDouble().ToString("0.00", CultureInfo.InvariantCulture); //also ok
 ```
 
-Here is a table that shows which conversions are allowed :
+Here is a table that shows which conversions are allowed:
 
-| `Eplan.EplApi.Base.Point`   
-`PropertyValue.ToPointD()` | `Eplan.EplApi.Base.MultiLangString`  
-`PropertyValue.ToMultiLangString()` | `System.String`   
-`PropertyValue.ToString()` | `System.DateTime`   
-`PropertyValue.ToTime()` | bool   
-`PropertyValue.ToBool()` | double   
-`PropertyValue.ToDouble()` | long   
-`PropertyValue.ToInt()`  
----|---|---|---|---|---|---|---  
-`PropertyType.Point` | ✓ |  |  |  |  |  |   
-`PropertyType.MultilangString` |  | ✓ |  |  |  |  |   
-`PropertyType.Variable` |  |  | ✓ |  |  |  |   
-`PropertyType.String` |  |  | ✓ |  |  |  |   
-`PropertyType.Time` |  |  |  | ✓ |  |  |   
-`PropertyType.Bool` |  |  |  |  | ✓ |  |   
-`PropertyType.Double` |  |  |  |  |  | ✓ |   
-`PropertyType.Coord` |  |  |  |  |  | ✓ |   
-`PropertyType.Long` |  |  |  |  |  | ✓ | ✓  
-  
+| `Eplan.EplApi.Base.Point`  
+
+`PropertyValue.ToPointD()` | `Eplan.EplApi.Base.MultiLangString` 
+
+`PropertyValue.ToMultiLangString()` | `System.String`  
+
+`PropertyValue.ToString()` | `System.DateTime`  
+
+`PropertyValue.ToTime()` | bool  
+
+`PropertyValue.ToBool()` | double  
+
+`PropertyValue.ToDouble()` | long  
+
+`PropertyValue.ToInt()` 
+
+---|---|---|---|---|---|---|--- 
+
+`PropertyType.Point` | ✓ |  |  |  |  |  |  
+
+`PropertyType.MultilangString` |  | ✓ |  |  |  |  |  
+
+`PropertyType.Variable` |  |  | ✓ |  |  |  |  
+
+`PropertyType.String` |  |  | ✓ |  |  |  |  
+
+`PropertyType.Time` |  |  |  | ✓ |  |  |  
+
+`PropertyType.Bool` |  |  |  |  | ✓ |  |  
+
+`PropertyType.Double` |  |  |  |  |  | ✓ |  
+
+`PropertyType.Coord` |  |  |  |  |  | ✓ |  
+
+`PropertyType.Long` |  |  |  |  |  | ✓ | ✓ 
+
+ 
+
 ### Indexed properties
 
-Properties can have more than one value. In this case, we call it an indexed property. The index is passed after the property designation. The example gets index 1 of the function property FUNC_CONNECTIONDESIGNATION: 
+Properties can have more than one value. In this case, we call it an indexed property. The index is passed after the property designation. The example gets index 1 of the function property FUNC_CONNECTIONDESIGNATION:
 
 === "C#"
 
@@ -192,7 +222,7 @@ Properties can have more than one value. In this case, we call it an indexed pro
     strConnDes1 = oFunction.Properties(Properties.Function.FUNC_CONNECTIONDESIGNATION, 1).ToString()
     ```
 
-Alternatively: 
+Alternatively:
 
 === "C#"
 
@@ -208,11 +238,11 @@ Alternatively:
 
 ### User-defined properties
 
-EPLAN API supports also user-defined properties that were introduced in EPLAN 2.4 
+EPLAN API supports also user-defined properties that were introduced in EPLAN 2.4
 
-Following enhancements were added due to it : 
+Following enhancements were added due to it :
 
-- access to properties by case-sensitive string identifiers : 
+- access to properties by case-sensitive string identifiers :
 
 ```csharp
 //setting user-defined property
@@ -221,10 +251,10 @@ oProject.Properties["EPLAN.Project.UserSupplementaryField1"] = "test1";
 string strValue = oProject.Properties["EPLAN.Project.UserSupplementaryField1"];
 ```
 
-- UserDefinedPropertyDefinition class extending PropertyDefinition. The class allows creating custom property definitions or accessing information from existing ones: 
+- UserDefinedPropertyDefinition class extending PropertyDefinition. The class allows creating custom property definitions or accessing information from existing ones:
 
 ```csharp
-//create new property definition :
+//create new property definition:
  UserDefinedPropertyDefinition oUDPDProject = UserDefinedPropertyDefinition.Create(oCurrentProject, "API.Property.Project", UserDefinedPropertyDefinition.Enums.ClientType.Project);
  oCurrentProject.Properties["API.Property.Project"] = "something";
 
@@ -232,9 +262,9 @@ var oCategory = oProject.Properties["EPLAN.Project.UserSupplementaryField1"].Cat
  MultiLangString strDisplayedName = oProject.Properties["EPLAN.Project.UserSupplementaryField1"].DisplayedName; //gets name that is displayed in GUI properties window
 ```
 
-- import/export property definitions (ExportPropertyDefinitions, ImportPropertyDefinitions from PrePlanningService class) 
+- import/export property definitions (ExportPropertyDefinitions, ImportPropertyDefinitions from PrePlanningService class)
 
-- new AnyPropertyId constructor allowing creating ID of user defined property: 
+- new AnyPropertyId constructor allowing creating ID of user defined property:
 
 ```csharp
 public AnyPropertyId(
@@ -243,19 +273,19 @@ public AnyPropertyId(
 );
 ```
 
-- `AnyPropertyId.AsString` propety to get identifying name from AnyPropertyId which represents user-defined property 
+- `AnyPropertyId.AsString` propety to get identifying name from AnyPropertyId which represents user-defined property
 
-- actions that expects id of a property were extend to support also identifying names. Please go to API Reference for details 
+- actions that expects id of a property were extend to support also identifying names. Please go to API Reference for details
 
 ### Accessing default user-defined properties
 
-Some user-defined properties are created by default, for example "`EPLAN.Project.UserSupplementaryField1`" 
+Some user-defined properties are created by default, for example "`EPLAN.Project.UserSupplementaryField1`"
 
-They have the same internal ids as old *_CUSTOM_SUPPLEMENTARYFIELD* properties (like "PROJ_CUSTOM_SUPPLEMENTARYFIELD01", etc). 
+They have the same internal ids as old *_CUSTOM_SUPPLEMENTARYFIELD* properties (like "PROJ_CUSTOM_SUPPLEMENTARYFIELD01", etc).
 
-Using old identifiers is still possible for compatibility reasons, however generates warnings and will be removed in future. 
+Using old identifiers is still possible for compatibility reasons, however generates warnings and will be removed in future.
 
-So please replace them with new IDs to unique problems in forthcoming EPLAN versions: 
+So please replace them with new IDs to unique problems in forthcoming EPLAN versions:
 
 ```csharp
 MultiLangString oMLS = oProject.Properties.PROJ_CUSTOM_SUPPLEMENTARYFIELD01;             //old code, generates warning

@@ -1,134 +1,221 @@
 # partslist
 
     Action class for exporting and importing parts and other parts management items like addresses, constructions, terminals, accessory lists and accessory placements. Allows also to delete stored properties.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed:
     IMPORT: Import parts lists
     EXPORT: Export parts lists
     IMPORTTOSYSTEM: Import to parts management
     EXPORTFROMSYSTEM: Export from parts management
     DELETESTOREDPROPERTIES: Delete stored properties from project
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
-    If called from the windows command line,PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown. 
-      
-  
-IMPORTFILE | 
-    
-    
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
+    If called from the windows command line,PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown.
+
+     
+
+ 
+
+IMPORTFILE |
+
+   
+
+   
+
     The directory and the file name of the file to be imported must be specified here. This only applies to IMPORT.
-      
-  
-EXPORTFILE | 
-    
-    
+     
+
+ 
+
+EXPORTFILE |
+
+   
+
+   
+
     The directory and the file name of the file to be exported must be specified here. The file extension is automatically added by the system. This only applies to EXPORT
-      
-  
-FORMAT | 
-    
-    
-    Optional: File format ("XPalXmlExporter","XPalCSVConverter", or user-defined format). 
+     
+
+ 
+
+FORMAT |
+
+   
+
+   
+
+    Optional: File format ("XPalXmlExporter","XPalCSVConverter", or user-defined format).
+
     For parts management ( IXPamImportText, IXPamImportCSV, IXPamImportEcad, XPamImportXml and IXPamImportText, IXPamImportCSVAddresses, XPamExportXml)
     XPalXmlExporter is the default format value for tasks of 'TYPE': IMPORT, EXPORT,
     XPamExportXml is the default format value for tasks of 'TYPE': IMPORTTOSYSTEM, EXPORTFROMSYSTEM.
     See also  and  namespace.
-      
-  
-SQLFILTERPART | 
-    
-    
+     
+
+ 
+
+SQLFILTERPART |
+
+   
+
+   
+
     Optional: Sql filter for advanced users.
     Default value: 1=1
-      
-  
-SQLFILTERADDRESS | 
-    
-    
+     
+
+ 
+
+SQLFILTERADDRESS |
+
+   
+
+   
+
     Optional: Sql filter for advanced users (used with 'IXPamImportCSVAddresses' format).
     Default value: 1=1
-      
-  
-SQLFILTERCONSTRUCTION | 
-    
-    
+     
+
+ 
+
+SQLFILTERCONSTRUCTION |
+
+   
+
+   
+
     Optional: Sql filter for advanced users. Used for exporting constructions.
     Default value: 1=0
-      
-  
-SQLFILTERTERMINAL | 
-    
-    
+     
+
+ 
+
+SQLFILTERTERMINAL |
+
+   
+
+   
+
     Optional: Sql filter for advanced users. Used for exporting terminals.
     Default value: 1=0
-      
-  
-SQLFILTERACCESSORYLIST | 
-    
-    
+     
+
+ 
+
+SQLFILTERACCESSORYLIST |
+
+   
+
+   
+
     Optional: Sql filter for  advanced users. Used for exporting accessory lists.
     Default value: 1=0
-      
-  
-SQLFILTERACCESSORYPLACEMENT | 
-    
-    
+     
+
+ 
+
+SQLFILTERACCESSORYPLACEMENT |
+
+   
+
+   
+
     Optional: Sql filter for advanced users. Used for exporting accessory placements.
     Default value: 1=0
-      
-  
-CFGFILE | 
-    
-    
+     
+
+ 
+
+CFGFILE |
+
+   
+
+   
+
     Optional: The directory and the file name of the configuration file.
     Default value: the currently used config file.
-      
-  
-FIELDASSIGNMENTSCHEME | 
-    
-    
+     
+
+ 
+
+FIELDASSIGNMENTSCHEME |
+
+   
+
+   
+
     Optional: Name of scheme that is used to assign fields in some article properties
-      
-  
-MODE | 
-    
-    
+     
+
+ 
+
+MODE |
+
+   
+
+   
+
     Optional: Import mode.
     Supported modes are:
     0: append new records only
     1: update existing records only
     2: update existing records and append new ones
     Default value= 0, append new records only. If an invalid value is set, the default value 0 will be used.
-      
-  
-ADDITIONAL_LANGUAGE | 
-    
-    
+     
+
+ 
+
+ADDITIONAL_LANGUAGE |
+
+   
+
+   
+
     Optional.Valid only when TYPE has 'IMPORTTOSYSTEM' value.
     If the value of this parameter is 1, multi-language properties will be updated with another language values rather than being replaced with the file's content.
     If the parameter is omitted, content of the file replaces values of multi-language properties.
-      
-  
-CONFIGSCHEME | 
-    
-    
+     
+
+ 
+
+CONFIGSCHEME |
+
+   
+
+   
+
     Configuration scheme for deleting stored properties (optional).
     Default value: Recent configuration scheme. The most recently used scheme is taken if an empty string is passed. This applies only to delete stored properties.
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

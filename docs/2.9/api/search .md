@@ -1,92 +1,151 @@
 # search
 
     Action class for search operations. Search items in a  project.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Describes the search area:
     DEVICETAG: Search for devices
     ALLPROPERTIES: Search through all properties
     TEXTS: Text search
     PAGEDATA: Search through page data
     PROJECTDATA: Search through project data
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path optional).
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
-    If called from the windows command line,PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown. 
-      
-  
-SEARCHITEM | 
-    
-    
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
+    If called from the windows command line,PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown.
+
+     
+
+ 
+
+SEARCHITEM |
+
+   
+
+   
+
     Text you are searching for.
-      
-  
-CASESENSITIVE | 
-    
-    
+     
+
+ 
+
+CASESENSITIVE |
+
+   
+
+   
+
     Match case (optional, 1 = Yes, 0 = No).
     Default value: Most recently used value which is currently set in GUI.
-      
-  
-WHOLETEXT | 
-    
-    
+     
+
+ 
+
+WHOLETEXT |
+
+   
+
+   
+
     Find whole texts only (optional, 1 = Yes, 0 = No).
     Default value: Most recently used value which is currently set in GUI.
-      
-  
-LOGICPAGES | 
-    
-    
+     
+
+ 
+
+LOGICPAGES |
+
+   
+
+   
+
     Search on logic pages (optional, 1 = Yes, 0 = No).
     Default value: Most recently used value which is currently set in GUI.
-      
-  
-GRAPHICPAGES | 
-    
-    
+     
+
+ 
+
+GRAPHICPAGES |
+
+   
+
+   
+
     Search on graphical pages (optional, 1 = Yes, 0 = No).
     Default value: Most recently used value which is currently set in GUI.
-      
-  
-EVALUATIONPAGES | 
-    
-    
+     
+
+ 
+
+EVALUATIONPAGES |
+
+   
+
+   
+
     Search on report pages (optional, 1 = Yes, 0 = No).
     Default value: Most recently used value which is currently set in GUI.
-      
-  
-NOTPLACEDFUNCTIONS | 
-    
-    
+     
+
+ 
+
+NOTPLACEDFUNCTIONS |
+
+   
+
+   
+
     Search in unplaced functions (optional, 1 = Yes, 0 = No).
     Default value: Most recently used value which is currently set in GUI.
-      
-  
-SEARCHDB | 
-    
-    
-    Don't use this parameter any more.
-      
-  
-  
-Remarks
-    
-    
-    The results of the search will only be visible in the list of results dialog, if the project for which the search was conducted is currently open in EPLAN.
-    
+     
 
-  
+ 
+
+SEARCHDB |
+
+   
+
+   
+
+    Don't use this parameter any more.
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+    The results of the search will only be visible in the list of results dialog, if the project for which the search was conducted is currently open in EPLAN.
+   
+
+ 
+
 **Example**
 
 ```

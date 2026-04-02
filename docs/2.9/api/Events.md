@@ -1,14 +1,14 @@
 # Events
 
-EPLAN has its own mechanism to send notifications and to react on notifications. Notifications (events) are identified in EPLAN by their names (string). This means there is no specific type of class you send as a notification. 
+EPLAN has its own mechanism to send notifications and to react on notifications. Notifications (events) are identified in EPLAN by their names (string). This means there is no specific type of class you send as a notification.
 
-EPLAN and each module in EPLAN can send and handle events without any need to register the event in the system. EPLAN's event mechanism is very flexible. Even the API user can send and handle events with new names. 
+EPLAN and each module in EPLAN can send and handle events without any need to register the event in the system. EPLAN's event mechanism is very flexible. Even the API user can send and handle events with new names.
 
-For a list of EPLAN events, please refer to this link [Eplan.EplApi.ApplicationFramework.Events](API Events.html). 
+For a list of EPLAN events, please refer to this link [Eplan.EplApi.ApplicationFramework.Events](API Events.html).
 
 ### How to react on EPLAN events?
 
-To react on an event, just implement an event handler function and register it with the EPLAN EventHandler object. 
+To react on an event, just implement an event handler function and register it with the EPLAN EventHandler object.
 
 === "C#"
 
@@ -54,7 +54,7 @@ To react on an event, just implement an event handler function and register it w
     End Class 'MyEventListener
     ```
 
-Now you need to create an instance of your event listener class. During the lifetime of this object the event is handled. You can for instance instantiate the object in the API module class of your add-in: 
+Now you need to create an instance of your event listener class. During the lifetime of this object the event is handled. You can for instance instantiate the object in the API module class of your add-in:
 
 === "C#"
 
@@ -98,15 +98,15 @@ Now you need to create an instance of your event listener class. During the life
     End Class 'AddInModule
     ```
 
-### 
+###
 
-### Event parameter 
+### Event parameter
 
-Every event may additionally have parameters of a certain type. For this purpose we have EventParameter classes, like for example EventParameterString. 
+Every event may additionally have parameters of a certain type. For this purpose we have EventParameter classes, like for example EventParameterString.
 
-The "`OnEvent()`" function has a generic interface as parameter. It takes the specific EventParameter classes as constructor argument. Subsequently it tries to create this parameter object. If the interface does not contain an adequate object, EPLAN throws an exception. 
+The "`OnEvent()`" function has a generic interface as parameter. It takes the specific EventParameter classes as constructor argument. Subsequently it tries to create this parameter object. If the interface does not contain an adequate object, EPLAN throws an exception.
 
-So if you handle a specific event, you need to know in advance the type of the event parameter in order to create the correct parameter from the interface. 
+So if you handle a specific event, you need to know in advance the type of the event parameter in order to create the correct parameter from the interface.
 
 === "C#"
 
@@ -116,7 +116,8 @@ So if you handle a specific event, you need to know in advance the type of the e
     try
     { EventParameterString oEventParameterString= new
     EventParameterString(iEventParameter);
-    String strActionName= oEventParameterString.String; 
+    String strActionName= oEventParameterString.String;
+
     }
     catch (System.InvalidCastException exc)
     {
@@ -130,16 +131,17 @@ So if you handle a specific event, you need to know in advance the type of the e
     ```vb
     Private Sub myHandler_EplanEvent(iEventParameter As IEventParameter)
     TryDim oEventParameterString As New EventParameterString(iEventParameter)
-    Dim strActionName As String = oEventParameterString.String 
+    Dim strActionName As String = oEventParameterString.String
+
     Catch exc As System.InvalidCastException
     Dim strexc As String = exc.Message
     End Try
     End Sub 'myHandler_EplanEvent
     ```
 
-###  Raising events 
+###  Raising events
 
-You can create and send your own events with arbitrary names. However you have no influence on whether your event is handled `somewhere.In` the following example an event named "EventFromCSharpAddIn" is raised. The event has a parameter of type EventParameterString. 
+You can create and send your own events with arbitrary names. However you have no influence on whether your event is handled `somewhere.In` the following example an event named "EventFromCSharpAddIn" is raised. The event has a parameter of type EventParameterString.
 
 === "C#"
 

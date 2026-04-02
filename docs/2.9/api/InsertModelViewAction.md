@@ -1,91 +1,161 @@
 # InsertModelViewAction
 
     Action to insert model view object on a page.
-    
+   
 
-  
-Parameter | Description  
----|---  
-PROJECTNAME | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
     If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). If called from the windows command line,
-    PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown. 
-      
-  
-LAYOUTSPACE | 
-    
-    
+    PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown.
+
+     
+
+ 
+
+LAYOUTSPACE |
+
+   
+
+   
+
     Name of layout space for which model view is created. This parameter is mandatory.
-      
-  
-STRUCTURE | 
-    
-    
+     
+
+ 
+
+STRUCTURE |
+
+   
+
+   
+
     Structure identifier for which model view is created. This parameter is mandatory if name of layout space is not unique in project.
-      
-  
-PAGENAME | 
-    
-    
+     
+
+ 
+
+PAGENAME |
+
+   
+
+   
+
     Full name of page on which model view will be inserted. This parameter is mandatory.
-      
-  
-X | 
-    
-    
+     
+
+ 
+
+X |
+
+   
+
+   
+
     X-coordinate of model view's lower left corner. This parameter is mandatory.
-      
-  
-Y | 
-    
-    
+     
+
+ 
+
+Y |
+
+   
+
+   
+
     Y-coordinate of model view's lower left corner. This parameter is mandatory.
-      
-  
-DX | 
-    
-    
+     
+
+ 
+
+DX |
+
+   
+
+   
+
     Width of model view. This parameter is mandatory.
-      
-  
-DY | 
-    
-    
+     
+
+ 
+
+DY |
+
+   
+
+   
+
     Height of model view. This parameter is mandatory.
-      
-  
-VIEWNAME | 
-    
-    
+     
+
+ 
+
+VIEWNAME |
+
+   
+
+   
+
     Name of model view.
-      
-  
-DESCRIPTION | 
-    
-    
+     
+
+ 
+
+DESCRIPTION |
+
+   
+
+   
+
     Description of model view. Value of this parameter can be in multi-language string format.
-      
-  
-ANGLE | 
-    
-    
-    Rotation of the content of model view. 
-    Possible values are: 
-    1 - content is rotated 90° counter-clockwise; 
+     
+
+ 
+
+ANGLE |
+
+   
+
+   
+
+    Rotation of the content of model view.
+
+    Possible values are:
+
+    1 - content is rotated 90° counter-clockwise;
+
     2 - content is rotated 90° in opposite direction.
-      
-  
-SELECTIONSCHEME | 
-    
-    
+     
+
+ 
+
+SELECTIONSCHEME |
+
+   
+
+   
+
     Name of the selection scheme. It must be used with cabinet VIEWTYPE parameter.
-      
-  
-STYLE | 
-    
-    
+     
+
+ 
+
+STYLE |
+
+   
+
+   
+
     Style in which content of model view is displayed.
     Possible values are:
     0 - Wire frame model;
@@ -93,17 +163,27 @@ STYLE |
     2 - Shading;
     3 - Hidden lines / Simplified representation;
     4 - Shading / Simplified representation.
-      
-  
-ITEMLABELING | 
-    
-    
+     
+
+ 
+
+ITEMLABELING |
+
+   
+
+   
+
     Name of the scheme which is applied for labeling the items in the model view.
-      
-  
-VIEWPOINT | 
-    
-    
+     
+
+ 
+
+VIEWPOINT |
+
+   
+
+   
+
     The direction from which objects are seen in model view.
     Possible values are:
     0 - Default;
@@ -117,43 +197,69 @@ VIEWPOINT |
     8 - SW isometric;
     9 - NE isometric;
     10 - NW isometric;
-      
-  
-ROOTELEMENTS | 
-    
-    
+     
+
+ 
+
+ROOTELEMENTS |
+
+   
+
+   
+
     Values of property FUNCTION3D_ID_RELATIVE separated by # from 3D placements which will be set as root elements in created model view.
-      
-  
-SCALESETTING | 
-    
-    
+     
+
+ 
+
+SCALESETTING |
+
+   
+
+   
+
     Type of scaling used to display objects in the model view.
     Possible values are:
     0 - Automatic;
     1 - Fit;
     2 - Manually defined;
-      
-  
-SCALE | 
-    
-    
+     
+
+ 
+
+SCALE |
+
+   
+
+   
+
     Scale used to display objects in model view.
-      
-  
-VIEWTYPE | 
-    
-    
-    Type of view used to display objects. 
+     
+
+ 
+
+VIEWTYPE |
+
+   
+
+   
+
+    Type of view used to display objects.
+
     Possible values are:
     0 - Undefined;
     1 - Cabinet;
     2 - EMI;
     3 - Unfolding;
     4 - DrillView;
-      
-  
-OBJECTID | 
-    
-    
+     
+
+ 
+
+OBJECTID |
+
+   
+
+   
+
     [OUT] Object id of created model view.

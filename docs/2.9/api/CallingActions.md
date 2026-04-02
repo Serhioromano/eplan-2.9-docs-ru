@@ -1,10 +1,10 @@
 # Calling actions
 
-All menu points in P8 are connected to an action. This means when calling a menu point, the respective action is executed. In order to execute an action via EPLAN API, you have to create an Action object and execute the action with the Execute method. 
+All menu points in P8 are connected to an action. This means when calling a menu point, the respective action is executed. In order to execute an action via EPLAN API, you have to create an Action object and execute the action with the Execute method.
 
-In order to create an action object, you need to know the action by its name. You have to create a new ActionManager object call the `findAction` function, which takes the name of the action as parameter. 
+In order to create an action object, you need to know the action by its name. You have to create a new ActionManager object call the `findAction` function, which takes the name of the action as parameter.
 
-For passing and evaluating action parameters, you need the ActionCallingContext class: 
+For passing and evaluating action parameters, you need the ActionCallingContext class:
 
 === "C#"
 
@@ -17,7 +17,8 @@ For passing and evaluating action parameters, you need the ActionCallingContext 
         ActionCallingContext ctx = new ActionCallingContext();
         bool bRet=oAction.Execute(ctx);
         if (bRet)
-        {               
+        {              
+
         new Decider().Decide(EnumDecisionType.eOkDecision, "The Action " + strAction + " ended successfully!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
         }
         else
@@ -38,59 +39,72 @@ For passing and evaluating action parameters, you need the ActionCallingContext 
        Dim ctx As New ActionCallingContext()
        Dim bRet As Boolean = oAction.Execute(ctx)
        If bRet Then
-          dec.Decide(EnumDecisionType.eOkDecision, "The Action " + strAction + " ended successfully!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)               
+          dec.Decide(EnumDecisionType.eOkDecision, "The Action " + strAction + " ended successfully!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)              
+
        Else
           dec.Decide(EnumDecisionType.eOkDecision, "The Action " + strAction + " ended with errors!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
        End If
     End If
     ```
 
-To find out, which action is connected to which menu item, you can evaluate the `onActionStart.String.*` event. Alternatively, after clicking the menu item, press [Ctrl]+[VK_OEM_5] to show the "Diagnose Dialog". [VK_OEM_5] corresponds to the [^] key on a German keyboard or to the [\\] on a United States 101 keyboard. 
+To find out, which action is connected to which menu item, you can evaluate the `onActionStart.String.*` event. Alternatively, after clicking the menu item, press [Ctrl]+[VK_OEM_5] to show the "Diagnose Dialog". [VK_OEM_5] corresponds to the [^] key on a German keyboard or to the [\\] on a United States 101 keyboard.
 
 For a list of automatic actions refer to the topic [Automatic Actions](AutomaticActions.html)
 
 **Important:**
 
-Please mind, that an Action may modify the ActionCallingContext dureing its execution. Sometimes e.g. project Ids are added to the context and are passed to an inner action. Re-using the same ActionCallingContext for a further Action call may lead to unexpected results. So in most cases, it is advisable to create a new ActionCallingContext for a new Action call. 
+Please mind, that an Action may modify the ActionCallingContext dureing its execution. Sometimes e.g. project Ids are added to the context and are passed to an inner action. Re-using the same ActionCallingContext for a further Action call may lead to unexpected results. So in most cases, it is advisable to create a new ActionCallingContext for a new Action call.
 
 ### Command line call
 
-In order to enhance the EPLAN command line with new commands and parameters, you need to implement an action. The action can have its own parameters and can call other API functions. 
+In order to enhance the EPLAN command line with new commands and parameters, you need to implement an action. The action can have its own parameters and can call other API functions.
 
-This way an action is executed just after starting EPLAN, for example: 
+This way an action is executed just after starting EPLAN, for example:
 
-`EPLAN.EXE` /Variant:"Electric P8" /NoLoadWorkspace action /Param1:value1 /Param2:value2 /Param3:value3 
+`EPLAN.EXE` /Variant:"Electric P8" /NoLoadWorkspace action /Param1:value1 /Param2:value2 /Param3:value3
 
-The parameter without flag (/ or -) is interpreted as name of an action to be executed. All following parameters are passed to the action. Only one action per command line call is possible. 
+The parameter without flag (/ or -) is interpreted as name of an action to be executed. All following parameters are passed to the action. Only one action per command line call is possible.
 
-A script can also contain and register an action. This means it can also evaluate action parameters. 
+A script can also contain and register an action. This means it can also evaluate action parameters.
 
-It is necessary to pass further general command line parameters **before** the action name. 
+It is necessary to pass further general command line parameters **before** the action name.
 
 List of general command line parameters evaluated by EPLAN:
 
-Parameter  |  Description   
----|---  
-/Variant  |  Choose, which product variant, you want to start. E.g. "Electric P8" or "Fluid"   
-/NoLoadWorkspace  |  No workspace is loaded or restored   
-/NoSplash  |  No splash screen is shown on system start   
-/Language:en_us  |  EPLAN will be started with GUI language English. The language predefined in the settings of EPLAN will not be changed.   
-/Auto  |  EPLAN is shut down after executing the command line.   
-/Quiet  |  No dialogs are shown while a command line is executed   
-/Frame:0  | 
+Parameter  |  Description  
+
+---|--- 
+
+/Variant  |  Choose, which product variant, you want to start. E.g. "Electric P8" or "Fluid"  
+
+/NoLoadWorkspace  |  No workspace is loaded or restored  
+
+/NoSplash  |  No splash screen is shown on system start  
+
+/Language:en_us  |  EPLAN will be started with GUI language English. The language predefined in the settings of EPLAN will not be changed.  
+
+/Auto  |  EPLAN is shut down after executing the command line.  
+
+/Quiet  |  No dialogs are shown while a command line is executed  
+
+/Frame:0  |
 
   * /Frame:0 => the EPLAN main frame is invisible
   * /Frame:1 => the EPLAN main frame is restored to its original size and position
   * /Frame:2 => the EPLAN main frame is started minimized
   * /Frame:3 => the EPLAN main frame is started maximized
 
-  
-Setup  |  All Settings are restored to their installation default   
-<action name> |  the action will be executed, all following parameters (starting with "/" or "-") are passed to the action as parameters   
-  
-Every command line parameter behind the name of the action thus is passed as parameters to the action. The parameters are wrapped into an ActionCallingContext as string parameters and can be extracted by the Action. Please pay attention to spell the parameter names in command line and ActionCallingContext in exactly the same way: 
+ 
 
-`EPLAN.EXE` /Variant:"Electric P8" action /Param1:value1 /Param2:value2 /Param3:value3 
+Setup  |  All Settings are restored to their installation default  
+
+<action name> |  the action will be executed, all following parameters (starting with "/" or "-") are passed to the action as parameters  
+
+ 
+
+Every command line parameter behind the name of the action thus is passed as parameters to the action. The parameters are wrapped into an ActionCallingContext as string parameters and can be extracted by the Action. Please pay attention to spell the parameter names in command line and ActionCallingContext in exactly the same way:
+
+`EPLAN.EXE` /Variant:"Electric P8" action /Param1:value1 /Param2:value2 /Param3:value3
 
 === "C#"
 

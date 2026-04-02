@@ -2,21 +2,21 @@
 
 ### The XMLProcessor interface
 
-In general EPLAN uses XML as its interchange format. Furthermore EPLAN is required to support various other export/import formats. It is not practicable to consider all possible such formats. 
+In general EPLAN uses XML as its interchange format. Furthermore EPLAN is required to support various other export/import formats. It is not practicable to consider all possible such formats.
 
 ### Solution
 
-EPLAN carries on exporting / importing its XML format. Additionally, conversion modules can be added to EPLAN, which convert the created XML files into other import / export formats. 
+EPLAN carries on exporting / importing its XML format. Additionally, conversion modules can be added to EPLAN, which convert the created XML files into other import / export formats.
 
-Import of different formats: 
+Import of different formats:
 
 ![](images/to_EPLAN.gif)
 
-Export of different formats: 
+Export of different formats:
 
 ![](images/from_EPLAN.gif)
 
-The following work flow is used: 
+The following work flow is used:
 
 Import:
 
@@ -24,19 +24,15 @@ Import:
   * converting XYZ to XML through the conversion module
   * importing the XML file
 
-
-
 Export:
 
   * Starting the exports. selecting the export format XYZ
   * exporting the XML file
   * converting XML to XYZ through the conversion module
 
-
-
 ### Interface
 
-API conversion modules can be created by implementing the interface IXMLProcessor. Though not all formats will be read as well as written, it makes sense to treat the import as well as the export in one interface. 
+API conversion modules can be created by implementing the interface IXMLProcessor. Though not all formats will be read as well as written, it makes sense to treat the import as well as the export in one interface.
 
 The following example shows the usage of the interface, with only the export implemented:
 
@@ -186,9 +182,9 @@ public class MySimpleXMLConverter : Eplan.EplApi.ApplicationFramework.IXMLProces
 }
 ```
 
-Registering a conversion module 
+Registering a conversion module
 
-Each conversion module needs to register itself with EPLAN so it will be available during import or export. Because a conversion is only meant for a special task, the scope of functions of the converter needs to be set during registering. This is done via the IInterface interface as it is shown at the end of the above example. 
+Each conversion module needs to register itself with EPLAN so it will be available during import or export. Because a conversion is only meant for a special task, the scope of functions of the converter needs to be set during registering. This is done via the IInterface interface as it is shown at the end of the above example.
 
 The property InterfaceName returns the interface name followed by the interface category. The category specifies, in which export dialog the new processor will be shown. You can find the available interface categories in the list of available XML processors under `Eplan.EplApi.ApplicationFramework.XMLConverter` and `Eplan.EplApi.ApplicationFramework.XMLConverterCategories`.
 

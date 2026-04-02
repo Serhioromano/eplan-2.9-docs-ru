@@ -1,11 +1,11 @@
 # `onActionEnd.String`.*
 
-Send after the end of any Action. 
+Send after the end of any Action.
 
-  
+ 
 
+ 
 
-  
 **Example**
 
 ```csharp
@@ -17,12 +17,9 @@ m_EventHandler.EplanEvent += delegate (IEventParameter parameter)
 
 
 
-
-
-
-
 m_EventHandler = new EventHandler("onActionEnd.String.XPartsManagementStart");
-m_EventHandler.EplanNameEvent += delegate 
+m_EventHandler.EplanNameEvent += delegate
+
 {
     new Decider().Decide(EnumDecisionType.eOkDecision, " Action XPartsManagementStart was be called!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
 };

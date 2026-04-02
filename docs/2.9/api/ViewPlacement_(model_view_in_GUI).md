@@ -1,6 +1,6 @@
 # ViewPlacement (model view in GUI)
 
-Model views are objects used to show a 3d view on a standard EPLAN page . 
+Model views are objects used to show a 3d view on a standard EPLAN page .
 
 Example:
 

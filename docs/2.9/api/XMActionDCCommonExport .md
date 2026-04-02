@@ -2,72 +2,121 @@
 
     Action name = XMActionDCCommonExport
      Starts the export for the external editing
-     
     
 
-  
-Parameter | Description  
----|---  
-DATABASEID | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+DATABASEID |
+
+   
+
+   
+
     The databaseId of one project (optional).
      If not entered, the ProjectName parameter is used.
+    
+
      
-      
-  
-PROJECTNAME | 
-    
-    
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     The full path of project(optional).
      When project specified by ProjectName is not open, this action opens it and closes automatically.
      If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+    
+
      
-      
-  
-COMPLETEPROJECT | 
-    
-    
+
+ 
+
+COMPLETEPROJECT |
+
+   
+
+   
+
     The whole project is exported, not only the selected objects (0= No, 1= Yes).
+    
+
      
-      
-  
-CONFIGSCHEME | 
-    
-    
+
+ 
+
+CONFIGSCHEME |
+
+   
+
+   
+
     Configuration scheme (optional).
      If this parameter is not set, a dialog asking for the configuration scheme is displayed
-      
-  
-LANGUAGE | 
-    
-    
+     
+
+ 
+
+LANGUAGE |
+
+   
+
+   
+
     Language (e.g., en_US).
-      
-  
-DESTINATION | 
-    
-    
+     
+
+ 
+
+DESTINATION |
+
+   
+
+   
+
     Target file where the export results are saved.
      The following formats are supported: txt, xls, xml. Format must be set according to the extension that is in CONFIGSCHEME
-      
-  
-EXECUTIONMODE | 
-    
-    
+     
+
+ 
+
+EXECUTIONMODE |
+
+   
+
+   
+
     0: Export, 1: Export and Edit, 2: Edit and return
-      
-  
-IMMEDIATEIMPORT | 
-    
-    
+     
+
+ 
+
+IMMEDIATEIMPORT |
+
+   
+
+   
+
     After edit no question appears to import the data (optional, 0= No, 1= Yes).
      Default value: 0
      This only applies to ExecutionMode= 2.
+    
+
      
-      
-  
-  
+
+ 
+
+ 
+
 **Example**
 
 ```

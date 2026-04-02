@@ -1,42 +1,66 @@
 # synchronize
 
     Action class to synchronize project's data.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of synchronization task to be performed:
     MULTILINE: 'Multi-line' data synchronization.
     SINGLELINE:'Single-line' data synchronization.
     OVERVIEW: 'Overview' data synchronization.
     SYSTEMPARTSTOPROJECT: Add system parts to your project.
     PARTSTOSYSTEM: Add parts of the project to the system.
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
-    If called from the windows command line, PROJECTNAME must be set or the  must be used first,otherwise an  exception is thrown. 
-      
-  
-STOREMODE | 
-    
-    
-    Specifies whether existing parts are overwritten or only new ones added (optional). 
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
+    If called from the windows command line, PROJECTNAME must be set or the  must be used first,otherwise an  exception is thrown.
+
+     
+
+ 
+
+STOREMODE |
+
+   
+
+   
+
+    Specifies whether existing parts are overwritten or only new ones added (optional).
+
     • Default = 0 (Append only new ones).
     • 1 (Overwrite existing).
     • 2 (Overwrite existing and append new).
     This parameter is only effective with the following value of the TYPE parameter: SYSTEMPARTSTOPROJECT.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
     This action can be used to synchronize 'multi-line', 'single-line' and 'overview' project's data, and to synchronize the system parts with the project and vice versa.

@@ -1,11 +1,11 @@
 # `onActionStart.String`.*
 
-Send before the start of any Action. 
+Send before the start of any Action.
 
-  
+ 
 
+ 
 
-  
 **Example**
 
 ```csharp
@@ -14,10 +14,6 @@ m_EventHandler.EplanNameEvent += delegate (IEventParameter parameter, string str
 {
     new Decider().Decide(EnumDecisionType.eOkDecision, "Event " + strNameOfEvent + " will be called!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
 };
-
-
-
-
 
 
 

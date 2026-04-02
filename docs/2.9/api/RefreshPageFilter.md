@@ -1,11 +1,11 @@
 # RefreshPageFilter
 
-Page filter has been changed, refresh navigator data 
+Page filter has been changed, refresh navigator data
 
-  
+ 
 
+ 
 
-  
 **Example**
 
 ```csharp

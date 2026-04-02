@@ -1,6 +1,6 @@
 # Creating 3D objects
 
-Creating most 3D objects is done by using an article number and variant. The example below shows how to create and place a cabinet in InstallationSpace. 
+Creating most 3D objects is done by using an article number and variant. The example below shows how to create and place a cabinet in InstallationSpace.
 
 ```csharp
 Cabinet oCabinet = new Cabinet();

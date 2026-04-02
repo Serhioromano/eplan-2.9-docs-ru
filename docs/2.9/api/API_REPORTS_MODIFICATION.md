@@ -1,138 +1,138 @@
 # API Reports Modification Interface
 
-The API Reports Modification Interface makes it possible to take influence on the result of report generation via an API action . 
+The API Reports Modification Interface makes it possible to take influence on the result of report generation via an API action .
 
-This way it is possible to filter or change the order of objects for a report. 
+This way it is possible to filter or change the order of objects for a report.
 
-Warning: when a report action is used, please don't set a filter or sort setting, because it can be inconsistent with the action. 
+Warning: when a report action is used, please don't set a filter or sort setting, because it can be inconsistent with the action.
 
-Following points need to be done to in order to use the interface : 
+Following points need to be done to in order to use the interface :
 
 ### a) Create report processing action
 
-Any report template now contains a property where you can set a name of an action : 
+Any report template now contains a property where you can set a name of an action :
 
 ![](images/report_action_field.jpg)
 
-If an action by this name is registered in EPLAN, it is called on several occasions during report generation. 
+If an action by this name is registered in EPLAN, it is called on several occasions during report generation.
 
-During these steps, you can influence the texts appearing in the report as well as the objects, which are reported and the order in which they appear. 
+During these steps, you can influence the texts appearing in the report as well as the objects, which are reported and the order in which they appear.
 
-The steps are distinguished by the "mode" parameter of the called action. 
+The steps are distinguished by the "mode" parameter of the called action.
 
-The action from template will be called with following parameters: 
+The action from template will be called with following parameters:
 
 _Step 1._
 
-Parameters: 
+Parameters:
 
-[in] "project" value: id of a project 
+[in] "project" value: id of a project
 
-[in] "mode" value: "Start" 
+[in] "mode" value: "Start"
 
-[in] "objects" value: Ids of objects that will be updated (only if you UPDATE a report) 
+[in] "objects" value: Ids of objects that will be updated (only if you UPDATE a report)
 
-Prepare project data for this report if necessary, fill caches etc. 
+Prepare project data for this report if necessary, fill caches etc.
 
 _Step 2._
 
-Parameters: 
+Parameters:
 
-[in] "project" value: id of a project 
+[in] "project" value: id of a project
 
-[in] "mode" value: "ModifyObjectList" 
+[in] "mode" value: "ModifyObjectList"
 
-[in /out] "objects" value: Ids of objects that will be evaluated separated with semicolon. 
+[in /out] "objects" value: Ids of objects that will be evaluated separated with semicolon.
 
-This list can be modified (not the objects themselves!). You can add or remove object ids from the list or change their order in the list 
+This list can be modified (not the objects themselves!). You can add or remove object ids from the list or change their order in the list
 
-The parameter "objects" can be set only in mode ModifyObjectList! 
+The parameter "objects" can be set only in mode ModifyObjectList!
 
 _Step 3._
 
-Parameters: 
+Parameters:
 
-[in] "project" value: id of a project 
+[in] "project" value: id of a project
 
-[in] "mode" value: "ModifyPages" 
+[in] "mode" value: "ModifyPages"
 
-[in] "pages" value: ids of created pages separated with semicolon. 
+[in] "pages" value: ids of created pages separated with semicolon.
 
-The created pages and their properties can be modified. 
+The created pages and their properties can be modified.
 
-_Step 4_. 
+_Step 4_.
 
-Parameters: 
+Parameters:
 
-[in] "project" value: id of a project 
+[in] "project" value: id of a project
 
-[in] "mode" value: "Finish" 
+[in] "mode" value: "Finish"
 
-Clean up caches or undo changes from Step 1. 
+Clean up caches or undo changes from Step 1.
 
 ### b) Prepare a form that will be processed
 
-It is recommended to use a custom form that will be processed by the action described above. 
+It is recommended to use a custom form that will be processed by the action described above.
 
-This will ensure that reports could be created either in 'standard' way or in the new one. 
+This will ensure that reports could be created either in 'standard' way or in the new one.
 
-The simplest way is to use a copy of existing form. 
+The simplest way is to use a copy of existing form.
 
-Such form should be set in Form field of project template: 
+Such form should be set in Form field of project template:
 
 ![](images/report_form_field.jpg)
 
-The form could have a custom actions assigned to placeholder texts . This could be set in the form editor : 
+The form could have a custom actions assigned to placeholder texts . This could be set in the form editor :
 
 ![](images/placeholdertext_action.jpg)
 
-Now it is necessary to create the text processing action (see bellow) 
+Now it is necessary to create the text processing action (see bellow)
 
 ### c) Create placeholder texts processing action
 
-This action will be called, when the placeholder text is evaluated during report generation. The action is called with the following parameters: 
+This action will be called, when the placeholder text is evaluated during report generation. The action is called with the following parameters:
 
-[in] "objects" value: main object for the line (can be more than one). 
+[in] "objects" value: main object for the line (can be more than one).
 
-[out]: Call `SetStrings()` of the calling context to set the result text. More than one result text will generate new lines. 
+[out]: Call `SetStrings()` of the calling context to set the result text. More than one result text will generate new lines.
 
-[in/out] "color" value: ColorId. Set the color to change color of placeholder texts. It works with one result text only. 
+[in/out] "color" value: ColorId. Set the color to change color of placeholder texts. It works with one result text only.
 
-Color index (0-255) Please use -16002 as "From layer" value. 
+Color index (0-255) Please use -16002 as "From layer" value.
 
-Predefined values for line color index are: 
+Predefined values for line color index are:
 
-0 = black 
+0 = black
 
-1 = red 
+1 = red
 
-2 = yellow 
+2 = yellow
 
-3 = green 
+3 = green
 
-4 = cyan 
+4 = cyan
 
-5 = blue 
+5 = blue
 
-6 = magenta 
+6 = magenta
 
-7 = white 
+7 = white
 
-... 
+...
 
-252 = dark gray 
+252 = dark gray
 
-253 = gray 
+253 = gray
 
-... 
+...
 
 ### d) Make sure that new form is included in project master data pool
 
-This can be done using Eplan::EplApi::HEServices::Masterdata class 
+This can be done using Eplan::EplApi::HEServices::Masterdata class
 
-Example 
+Example
 
-Here is an example of creating an embedded report with report processing action : 
+Here is an example of creating an embedded report with report processing action :
 
 ```csharp
 //copy a form with placeholder texts processing action to the master data directory

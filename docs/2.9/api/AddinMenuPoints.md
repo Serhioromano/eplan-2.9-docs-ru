@@ -1,6 +1,6 @@
 # Adding menu points
 
-An add-in can add one or more menu points to the "Utilities" menu of EPLAN. There fore the class `Eplan.EplApi.Gui.Menu` provides a function `addMenuItem` which has to be called in the `OnInitGui()` function of the add-in module class: 
+An add-in can add one or more menu points to the "Utilities" menu of EPLAN. There fore the class `Eplan.EplApi.Gui.Menu` provides a function `addMenuItem` which has to be called in the `OnInitGui()` function of the add-in module class:
 
 === "C#"
 
@@ -35,6 +35,6 @@ An add-in can add one or more menu points to the "Utilities" menu of EPLAN. Ther
     End Function 'OnInitGui
     ```
 
-The function `AddMenuItem()` adds a menu point with the text `"CSharpAction"` and assigns the action "CSharpAction" to this menu point. 
+The function `AddMenuItem()` adds a menu point with the text `"CSharpAction"` and assigns the action "CSharpAction" to this menu point.
 
 Menu points always have to be assigned to an action. this means you need to implement a new action in your add-in or you could assign the new menu point to an already existing action.

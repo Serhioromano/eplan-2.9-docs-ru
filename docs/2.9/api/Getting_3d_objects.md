@@ -1,8 +1,8 @@
 # Getting 3D objects
 
-Getting 3D objects 
+Getting 3D objects
 
-DMObjectsFinder class was enhanced with methods for searching 3D objects. 
+DMObjectsFinder class was enhanced with methods for searching 3D objects.
 
 ```csharp
 //searching 3D functions having name '=EB3+ET1-U1'

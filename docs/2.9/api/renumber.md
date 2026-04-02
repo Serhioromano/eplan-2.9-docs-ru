@@ -1,10 +1,15 @@
 # renumber
 
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed by the action
     DEVICES: Renumber devices.
     PAGES: Renumber pages.
@@ -12,122 +17,200 @@ TYPE |
     CABLES: Renumbering cables
     ADDITIONALPAGEFIELDS: Renumbering additional page fileds
     CONNECTIONS: Renumbering connections
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path.Optional.
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
     If called from the windows command line, PROJECTNAME must be set or the   must be used first, otherwise an  exception is thrown.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, PAGES, TERMINALS, CABLES, ADDITIONALPAGEFIELDS, CONNECTIONS.
-      
-  
-USESELECTION | 
-    
-    
+     
+
+ 
+
+USESELECTION |
+
+   
+
+   
+
     Optional. If this flag is set, only the objects currently selected in GUI will be renumbered instead of all objects in the project.
     Possible values: '0' - No (default), '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, PAGES, TERMINALS, CABLES, ADDITIONALPAGEFIELDS, CONNECTIONS.
-      
-  
-CONFIGSCHEME | 
-    
-    
+     
+
+ 
+
+CONFIGSCHEME |
+
+   
+
+   
+
     Name of the renumbering scheme. Optional.
     If not specified, the last used scheme will be selected again.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, TERMINALS, CABLES, CONNECTIONS.
-      
-  
-STARTVALUE | 
-    
-    
+     
+
+ 
+
+STARTVALUE |
+
+   
+
+   
+
     Start value. Integer. Optional. If not specified, 1 is taken by default.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, PAGES, TERMINALS, CABLES, ADDITIONALPAGEFIELDS.
-      
-  
-STEPVALUE | 
-    
-    
+     
+
+ 
+
+STEPVALUE |
+
+   
+
+   
+
     Increment value. Integer. Optional. If not specified, 1 is taken by default.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, PAGES, TERMINALS, CABLES.
-      
-  
-POSTNUMERATE | 
-    
-    
+     
+
+ 
+
+POSTNUMERATE |
+
+   
+
+   
+
     Optional. If this flag is set, only invalid device tags (i.e. those containing '?' character) will be renumbered.
     Possible values: '0' - No (default), '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, TERMINALS.
-      
-  
-ALSONUMERATEDBYPLC | 
-    
-    
+     
+
+ 
+
+ALSONUMERATEDBYPLC |
+
+   
+
+   
+
     Optional. If this flag is set, device tags which are influenced by PLC numbering will be numerated.
     Possible values: '0' - No (default), '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES, TERMINALS.
-      
-  
-PERMITSORTCHANGE | 
-    
-    
+     
+
+ 
+
+PERMITSORTCHANGE |
+
+   
+
+   
+
     Optional. Permit sort change.
     Possible values: '0' - No (default), '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-FILLGAPS | 
-    
-    
+     
+
+ 
+
+FILLGAPS |
+
+   
+
+   
+
     Optional. Fill Gaps.
     Possible values: '0' - No (default), '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-IDENTIFIER | 
-    
-    
-    Identifier, e.g. 'X*'. Optional. 
+     
+
+ 
+
+IDENTIFIER |
+
+   
+
+   
+
+    Identifier, e.g. 'X*'. Optional.
+
     If used, all devices from the project matching the identifier are taken for renumeration regardless of whether the 'USESELECTION' parameter is used or not.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES.
-      
-  
-NUMERATECABLES | 
-    
-    
+     
+
+ 
+
+NUMERATECABLES |
+
+   
+
+   
+
     Optional. If this flag is set, cables whose device tags contain source and target information are also numerated.
     Possible values: '0' - No (default), '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:DEVICES.
-      
-  
-STRUCTUREORIENTED | 
-    
-    
+     
+
+ 
+
+STRUCTUREORIENTED |
+
+   
+
+   
+
     Set this parameter to true to provide numbering per structure identifier.
     If false, then pages are continuously number without accounting for the structure identifiers.
     This parameter is only effective with the following values of the TYPE parameter:PAGES.
-      
-  
-KEEPINTERVAL | 
-    
-    
+     
+
+ 
+
+KEEPINTERVAL |
+
+   
+
+   
+
     In combination with the definition of the start page, this parameter retains the increments between the selected pages for the target pages.
     In this way you can move any desired number of selected pages by a specified increment.
-    Entering the increment size is not possible in this case. 
+    Entering the increment size is not possible in this case.
+
     This parameter is only effective with the following values of the TYPE parameter:PAGES.
-      
-  
-KEEPTEXT | 
-    
-    
+     
+
+ 
+
+KEEPTEXT |
+
+   
+
+   
+
     Set this to 1, if the alphabetic part of the page name should not be overwritten.
     This parameter is only effective with the following values of the TYPE parameter:PAGES.
-      
-  
-SUBPAGES | 
-    
-    
+     
+
+ 
+
+SUBPAGES |
+
+   
+
+   
+
     Values are:
     0 = Retain: Existing subpages are adopted unchanged into the target page.
     1 = ConsecutiveNumbering: Existing subpages are renumbered using the starting value "1" and an increment of "1".
@@ -135,191 +218,297 @@ SUBPAGES |
             The subpage numbering follows the project settings defined in the project setting "Characters for subpages".
     2 = ConvertIntoMainPages: Subpages are converted to main pages and renumbered.
     This parameter is only effective with the following values of the TYPE parameter:PAGES.
-      
-  
-PREFIX | 
-    
-    
+     
+
+ 
+
+PREFIX |
+
+   
+
+   
+
     Prefix.
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-SUFFIX | 
-    
-    
+     
+
+ 
+
+SUFFIX |
+
+   
+
+   
+
     Suffix.
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-SEQUENCE | 
-    
-    
+     
+
+ 
+
+SEQUENCE |
+
+   
+
+   
+
     Mode to use for numbering. Values are:
-    0 = Like sorting:The terminal / pin sorting sequence displayed under Terminal strips - (Project name) or Plugs - (Project name) is used. 
+    0 = Like sorting:The terminal / pin sorting sequence displayed under Terminal strips - (Project name) or Plugs - (Project name) is used.
+
     Select this option if you would like to number existing terminals / pins but retain the existing sorting.
     1 = Page oriented
     2 = Cable oriented
     3 = Level oriented
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-EXTENT | 
-    
-    
+     
+
+ 
+
+EXTENT |
+
+   
+
+   
+
     Parameter to define the scope of numbering. Values are:
     0 = Selected - only the selected terminals or pins will be numbered.
     1 = All selected terminal strips - all terminals of the same strip as selected terminal will be numbered.
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-POTENTIAL_N | 
-    
-    
+     
+
+ 
+
+POTENTIAL_N |
+
+   
+
+   
+
     Parameter to determine how N terminals will be treated during numbering. Values are:
     0 = Ignore
     1 = Do not modify, include in sequence. PE, N or SH terminals are not modified during numbering but are taken into account when numbering the other terminals.
             This means that the designations of the other terminals are assigned as though the PE, N or SH terminals were being included in the numbering.
     2 = Renumber
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-POTENTIAL_PE | 
-    
-    
+     
+
+ 
+
+POTENTIAL_PE |
+
+   
+
+   
+
     Parameter to determine how PE terminals will be treated during numbering. Values are:
     0 = Ignore
     1 = Do not modify, include in sequence. PE, N or SH terminals are not modified during numbering but are taken into account when numbering the other terminals.
             This means that the designations of the other terminals are assigned as though the PE, N or SH terminals were being included in the numbering.
     2 = Renumber
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-POTENTIAL_SH | 
-    
-    
+     
+
+ 
+
+POTENTIAL_SH |
+
+   
+
+   
+
     Parameter to determine how SH terminals will be treated during numbering. Values are:
     0 = Ignore
     1 = Do not modify, include in sequence. PE, N or SH terminals are not modified during numbering but are taken into account when numbering the other terminals.
             This means that the designations of the other terminals are assigned as though the PE, N or SH terminals were being included in the numbering.
     2 = Renumber
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-MULTIPLETERMINALS | 
-    
-    
+     
+
+ 
+
+MULTIPLETERMINALS |
+
+   
+
+   
+
     Also renumber multi path terminals.Values are:
     0 = Don't modify - terminals with the property "Allow same designations" are ignored during numbering
     1 = Number same - terminals with the same designation with the "Allow same designations" property are given the same number
     2 = Number individually - terminals with the "Allow same designations" property are each given their own number.
             Therefore, multiple terminals which had the same number before numbering will have different numbers after numbering
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-KEEPALPHA | 
-    
-    
+     
+
+ 
+
+KEEPALPHA |
+
+   
+
+   
+
     Keep alphabetical elements of the terminal number. Values are:
     0 = Dont modify - terminals or pins with alphabetical elements in the designation are ignored during numbering.
-    1 = Keep alphabetical elements - the alphabetical elements of the terminal or pin designation are retained. The first numeric elements are renumbered. If the designation only has alphabetical elements, the old designation is attached to the new numbering. Sequential terminals with different counters but the same numerical component receive the same numerical component in the counter even after the numbering. 
+    1 = Keep alphabetical elements - the alphabetical elements of the terminal or pin designation are retained. The first numeric elements are renumbered. If the designation only has alphabetical elements, the old designation is attached to the new numbering. Sequential terminals with different counters but the same numerical component receive the same numerical component in the counter even after the numbering.
+
     2 = Number - all terminals / pins are renumbered. In doing so, the old designation is overwritten
     This parameter is only effective with the following values of the TYPE parameter:TERMINALS.
-      
-  
-KEEPEXISTING | 
-    
-    
+     
+
+ 
+
+KEEPEXISTING |
+
+   
+
+   
+
     Overwrite mode. If set to 1, already existing cable names will not be changed.
     This parameter is only effective with the following values of the TYPE parameter:CABLES.
-      
-  
-FIELD | 
-    
-    
+     
+
+ 
+
+FIELD |
+
+   
+
+   
+
     Additional page field(property number).
     This parameter is only effective with the following values of the TYPE parameter:ADDITIONALPAGEFIELDS.
-      
-  
-INDEX | 
-    
-    
+     
+
+ 
+
+INDEX |
+
+   
+
+   
+
     Additional page field property index.
     This parameter is only effective with the following values of the TYPE parameter:ADDITIONALPAGEFIELDS.
-      
-  
-NUMBERDIGITS | 
-    
-    
+     
+
+ 
+
+NUMBERDIGITS |
+
+   
+
+   
+
     Number of digits from 0 to 10.
     This parameter is only effective with the following values of the TYPE parameter:ADDITIONALPAGEFIELDS.
-      
-  
-STARTVALUE_n | 
-    
-    
+     
+
+ 
+
+STARTVALUE_n |
+
+   
+
+   
+
     Start value. Where n is a connection group number (1,2,3...).
     This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-STEPVALUE_n | 
-    
-    
+     
+
+ 
+
+STEPVALUE_n |
+
+   
+
+   
+
     Step value. Where n is a connection group number (1,2,3...).
     This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-GROUP_n | 
-    
-    
+     
+
+ 
+
+GROUP_n |
+
+   
+
+   
+
     Group parameter. Where n is a connection group number (1,2,3...).
     This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-OVERWRITE | 
-    
-    
+     
+
+ 
+
+OVERWRITE |
+
+   
+
+   
+
     Overwrite mode. Values are:
     0 = All (always overwrite)
-    1 = ExceptManuals (overwrite all except those, which are marked as 'manually set') 
+    1 = ExceptManuals (overwrite all except those, which are marked as 'manually set')
+
     2 = None (never overwrite)
     This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-AVOIDIDENTICALDESIGNATIONS | 
-    
-    
+     
+
+ 
+
+AVOIDIDENTICALDESIGNATIONS |
+
+   
+
+   
+
     Values are:
     0 = In entire project
     1 = In the selection
     2 = None
     3 = Per counter reset range (structure/page)
     This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-VISIBILITY | 
-    
-    
+     
+
+ 
+
+VISIBILITY |
+
+   
+
+   
+
     Visiblity. Values are:
     0 = All visible
     1 = Do not modify
     2 = Once per page and range
     This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-MARKASMANUAL | 
-    
-    
+     
+
+ 
+
+MARKASMANUAL |
+
+   
+
+   
+
     Mark as 'manually set'. This parameter is only effective with the following values of the TYPE parameter:CONNECTIONS.
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```
 Numbering devices
 
 renumber /TYPE:DEVICES /STARTVALUE:1 /STEPVALUE:1 /USESELECTION:0 /OMITNUMERATEDBYPLC:0 /NUMERATECABLES:0 /IDENTIFIER:X* /CONFIGSCHEME:\"Kennbuchstabe Zähler\" /POSTNUMERATE:0
-renumber /TYPE:DEVICES /IDENTIFIER:V /POSTNUMERATE:0 /ALSONUMERATEDBYPLC:1 /NUMERATECABLES:1 /STARTVALUE:100 /STEPVALUE:5 /USESELECTION:1       
+renumber /TYPE:DEVICES /IDENTIFIER:V /POSTNUMERATE:0 /ALSONUMERATEDBYPLC:1 /NUMERATECABLES:1 /STARTVALUE:100 /STEPVALUE:5 /USESELECTION:1      
 
 Numbering page supplementary fields
 

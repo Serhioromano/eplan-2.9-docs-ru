@@ -1,16 +1,16 @@
 # Automatic actions
 
-This topic describes the automatic actions for the EPLAN command line -- we also call them 'Command Line Actions'. In contrast to a normal menu action, an automatic action does a complete task without any user interaction. It will show no dialogs. 
+This topic describes the automatic actions for the EPLAN command line -- we also call them 'Command Line Actions'. In contrast to a normal menu action, an automatic action does a complete task without any user interaction. It will show no dialogs.
 
 ### How do automatic actions work ?
 
-A command line action first checks, whether all parameters passed to it are valid. It checks, whether a given parameter exists or whether the given project is available, etc. Subsequently the parameter values are processed, so they can be passed to the parameters of the respective API HEServices `class.The` HEServices function now is called and performs the actual task. By this approach we can assure, that command line actions and HEServices functions conduct exactly the same internal functionality. 
+A command line action first checks, whether all parameters passed to it are valid. It checks, whether a given parameter exists or whether the given project is available, etc. Subsequently the parameter values are processed, so they can be passed to the parameters of the respective API HEServices `class.The` HEServices function now is called and performs the actual task. By this approach we can assure, that command line actions and HEServices functions conduct exactly the same internal functionality.
 
-A command line action has either the complete or a subset of the functionality of the respective HEServices class. The following image shows the principle: 
+A command line action has either the complete or a subset of the functionality of the respective HEServices class. The following image shows the principle:
 
 ![](images/AutoAction.jpg)
 
-These are some of the available command line actions: 
+These are some of the available command line actions:
 
 * Backup projects and master data
 * Restore projects and master data
@@ -29,23 +29,17 @@ These are some of the available command line actions:
 * Getting the selected project or page
 * ...
 
+### General remarks
 
-### General remarks 
+* In case the parameter for the project name is not given, the project, which is currently selected will be used. In case of calling the action from the windows command line the PROJECTNAME parameter need necessarily to be set.
 
-* In case the parameter for the project name is not given, the project, which is currently selected will be used. In case of calling the action from the windows command line the PROJECTNAME parameter need necessarily to be set. 
+* Boolean values need to be set as 0 for false and 1 for true.
 
+* You may not pass an empty string as parameter value (e.g. /PARAMETER:""). If you do not want to set a certain parameter, just skip it.
 
-* Boolean values need to be set as 0 for false and 1 for true. 
-
-
-* You may not pass an empty string as parameter value (e.g. /PARAMETER:""). If you do not want to set a certain parameter, just skip it. 
-
-
-* For most of the parameters, with which a scheme name is specified, the last used scheme will be used, if the respective parameter is not set. You can easily check in GUI, which is the last-used scheme. 
-
+* For most of the parameters, with which a scheme name is specified, the last used scheme will be used, if the respective parameter is not set. You can easily check in GUI, which is the last-used scheme.
 
 * In general parameter names are not case sensitive, while parameter values may be case sensitive depending on their purpose.
-
 
 See Also
 

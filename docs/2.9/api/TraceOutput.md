@@ -1,8 +1,8 @@
 # Trace output
 
-For debugging purposes (or program logging in the release version) it is useful to log messages to a trace listener. The API framework therefore provides a TraceListener class. 
+For debugging purposes (or program logging in the release version) it is useful to log messages to a trace listener. The API framework therefore provides a TraceListener class.
 
-In your API program, you just add your own trace listener to the `System.Diagnostics.Trace.Listeners`: 
+In your API program, you just add your own trace listener to the `System.Diagnostics.Trace.Listeners`:
 
 === "C#"
 
@@ -37,9 +37,12 @@ In your API program, you just add your own trace listener to the `System.Diagnos
     '...
     ```
 
-By this all further trace outputs are visible in the windows trace management and -- as the case may be -- written to the EPLAN log database at the program end. 
-    
-    
+By this all further trace outputs are visible in the windows trace management and -- as the case may be -- written to the EPLAN log database at the program end.
+
+   
+
+   
+
     TRACE: .\Actions\AfCommandLineInterpreter.cpp(18) : AfCommandLineInterpreter::execute: CSharpAction
     TRACE: .\Actions\AfAction.cpp(123) : Execute Action: URCheckRightsForAction
     TRACE: .\Actions\AfAction.cpp(123) : Execute Action: CSharpAction

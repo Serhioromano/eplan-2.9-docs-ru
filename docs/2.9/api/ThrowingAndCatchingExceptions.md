@@ -1,8 +1,8 @@
 # Throwing and catching exceptions
 
-Error handling in EPLAN is done preferentially by using exceptions. The API framework provides the base class BaseException , which gives you access to the error handling of EPLAN. 
+Error handling in EPLAN is done preferentially by using exceptions. The API framework provides the base class BaseException , which gives you access to the error handling of EPLAN.
 
-If an Exception object of this type is thrown, the EPLAN framework catches the exception and writes the data into the systems error management or shows the error message in the EPLAN error dialog. 
+If an Exception object of this type is thrown, the EPLAN framework catches the exception and writes the data into the systems error management or shows the error message in the EPLAN error dialog.
 
 === "C#"
 
@@ -22,7 +22,7 @@ If an Exception object of this type is thrown, the EPLAN framework catches the e
     Throw exc2
     ```
 
-Of course you can also catch exceptions in your API application and evaluate them, to e.g. display your own error message. 
+Of course you can also catch exceptions in your API application and evaluate them, to e.g. display your own error message.
 
 === "C#"
 

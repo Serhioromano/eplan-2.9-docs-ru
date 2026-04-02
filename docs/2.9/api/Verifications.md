@@ -1,8 +1,8 @@
 # Verifications
 
-You can use an EPLAN API add-in to add new verifications. EPLAN will use them in the same way as already existing internal verifications. 
+You can use an EPLAN API add-in to add new verifications. EPLAN will use them in the same way as already existing internal verifications.
 
-For a new verification the add-in has to implement the interface IVerification. 
+For a new verification the add-in has to implement the interface IVerification.
 
 ```csharp
 public class NewVerification : Eplan.EplApi.EServices.Verification
@@ -15,7 +15,8 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
     {
     }
     /// <summary>
-    /// In this function, the test logic will implement. 
+    /// In this function, the test logic will implement.
+
     /// </summary>
     /// <param name="oObject1">
     /// This object is tested.  One can be certain that here only
@@ -39,7 +40,8 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
     /// Under this name, the new verification registered  in the system.
     /// </param>
     /// <param name="iOrdinal">
-    /// Overload priority. 
+    /// Overload priority.
+
     /// </param>
     public override void OnRegister(ref string strName, ref int iOrdinal)
     {
@@ -61,8 +63,10 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
     }
 
     /// <summary>
-    /// This function must deliver the accompanying message text. 
-    /// A test has always exactly an accompanying message text. 
+    /// This function must deliver the accompanying message text.
+
+    /// A test has always exactly an accompanying message text.
+
     /// </summary>
     /// <returns>Der Meldungstext</returns>
     public override string GetMessageText()
@@ -70,10 +74,12 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
         return "Verification static text . %1!s!";
     }
     ///<summary>
-    ///This function is called if to a message the aid text is supposed to be indicated. 
+    ///This function is called if to a message the aid text is supposed to be indicated.
+
     ///It lies in the responsibility of the Implementation of the function to call
     ///the suitable aid system in the correct language.
-    ///In the simplest case, for example only a simple dialog can be called. 
+    ///In the simplest case, for example only a simple dialog can be called.
+
     ///</summary>
     public override void DoHelp()
     {
@@ -81,7 +87,8 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
     }
     /// <summary>
     /// This function is called of the system if the message of this test
-    ///  is supposed to be registered in the system. 
+    ///  is supposed to be registered in the system.
+
     /// </summary>
     /// <param name="strCreator">Creator of the message</param>
     /// <param name="eRegion">Message region</param>
@@ -99,7 +106,7 @@ public class NewVerification : Eplan.EplApi.EServices.Verification
 }
 ```
 
-In order to make creating a verification easier, the EPLAN API has some base classes, which provide a few service functions. 
+In order to make creating a verification easier, the EPLAN API has some base classes, which provide a few service functions.
 
 These base classes are:
 
@@ -107,22 +114,19 @@ These base classes are:
   * PotentialVerification
   * InterruptionPointVerification
 
+In your add-in you just let your verification class inherit from one of these base classes and implement the necessary interface functions. For outputting messages, then different variations of the `AddMessage()` function are available. Additionally, the classes contain some functions to find cross-referenced objects.
 
+If you want to implement a verification that verifies something concerning potentials then you implement a new verification derived from PotentialVerification. In the Execute function of your new verification you can use the function `GetAllPotentialsWithSameName()` to get the potential from the verification cache. It makes no sense to call this function in other context than in verification `Execute()`.
 
-In your add-in you just let your verification class inherit from one of these base classes and implement the necessary interface functions. For outputting messages, then different variations of the `AddMessage()` function are available. Additionally, the classes contain some functions to find cross-referenced objects. 
+All registered verifications will be called from the system by using "Check project...". If you want to execute only your verification, then you have to configure the settings for the check (create new scheme, disable other verifications ("Type of check": No))
 
-If you want to implement a verification that verifies something concerning potentials then you implement a new verification derived from PotentialVerification. In the Execute function of your new verification you can use the function `GetAllPotentialsWithSameName()` to get the potential from the verification cache. It makes no sense to call this function in other context than in verification `Execute()`. 
+Please take into account that in comparison to 1.9 version, verifications that inherit from Verification class need to have 'override' keyword in base methods' definitions. This is required since API extension was migrated to C++/CLI .
 
-All registered verifications will be called from the system by using "Check project...". If you want to execute only your verification, then you have to configure the settings for the check (create new scheme, disable other verifications ("Type of check": No)) 
+### How to start a verification
 
-Please take into account that in comparison to 1.9 version, verifications that inherit from Verification class need to have 'override' keyword in base methods' definitions. This is required since API extension was migrated to C++/CLI . 
+Verifications can be invoked from API or GUI in 3 modes:
 
-### How to start a verification 
-
-Verifications can be invoked from API or GUI in 3 modes: 
-
-  * Online mode . This is called when a change was done and UndoStep was disposed: 
-
+  * Online mode . This is called when a change was done and UndoStep was disposed:
 
 
 ```csharp

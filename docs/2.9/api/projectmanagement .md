@@ -1,14 +1,20 @@
 # projectmanagement
 
     Action class for project management.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed:
     • READPROJECTINFO: Load project information from an XML file into the project.
     • ToggleSections:If project sections are enabled, temporarily enables/disables whole project for the currently logged-in user. Note: The project must be open.
@@ -22,72 +28,122 @@ TYPE |
     • REORGANIZE:Reorganizes project.
     • CORRECTPROJECTITEMS:Corrects project items.
     • LOADDIRECTORY:  Scans directory for projects to add them into the project management. This type can be used as 'Stand-Alone' or with the Parameter: PROJECTSDIRECTORY and SCANSUBDIRECTORIES
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
-    If not entered, the selected project is used when the action is call from GUI (like from a script or button bar). 
-    If called from the windows command line, PROJECTNAME must be set or the   must be used first, otherwise an   exception is thrown. 
-      
-  
-FILENAME | 
-    
-    
+    If not entered, the selected project is used when the action is call from GUI (like from a script or button bar).
+
+    If called from the windows command line, PROJECTNAME must be set or the   must be used first, otherwise an   exception is thrown.
+
+     
+
+ 
+
+FILENAME |
+
+   
+
+   
+
     Full path / name of the XML file to be imported, or the filename to be send by e-mail, or full file path to be published to,
     or full file path to target project when creating snapshot copy.
-      
-  
-SCHEME | 
-    
-    
+     
+
+ 
+
+SCHEME |
+
+   
+
+   
+
     Name of the scheme. This parameter is only effective with the following values of the TYPE parameter:PUBLISHTODISK, PUBLISHTOEMAIL, CREATESNAPSHOTCOPY, CORRECTPROJECTITEMS.
-      
-  
-OVERWRITE | 
-    
-    
-    If the imported property placement schema already exists, this parameter specifies whether it should be overwritten. 
-    Possible values: 
-    '0' - No (default), 
+     
+
+ 
+
+OVERWRITE |
+
+   
+
+   
+
+    If the imported property placement schema already exists, this parameter specifies whether it should be overwritten.
+
+    Possible values:
+
+    '0' - No (default),
+
     '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:IMPORTPROPERTYPLACEMENTSSCHEMAS.
-      
-  
-EXTENDEDMODE | 
-    
-    
+     
+
+ 
+
+EXTENDEDMODE |
+
+   
+
+   
+
     Enables extended mode while reorganizing the project.
-    Possible values: 
-    '0' - No (default), 
+    Possible values:
+
+    '0' - No (default),
+
     '1' - Yes.
     This parameter is only effective with the following values of the TYPE parameter:REORGANIZE.
-      
-  
-PROJECTSDIRECTORY | 
-    
-    
-     Path to directory which will be scanned. If null or empty then default path 'USER.TrDMProject.Masterdata.Pathnames.Projects' is used.
-      
-  
-SCANSUBDIRECTORIES | 
-    
-    
-     Determines whether sub directories are also scanned for projects.
-    Possible values: 
-    FALSE, 
-    TRUE (default)
-      
-  
-  
-Remarks
-    
-    
-    The specified project may be open or closed. If the project is not open, it is opened when the process is started and closed after the export.
-    
+     
 
-  
+ 
+
+PROJECTSDIRECTORY |
+
+   
+
+   
+
+     Path to directory which will be scanned. If null or empty then default path 'USER.TrDMProject.Masterdata.Pathnames.Projects' is used.
+     
+
+ 
+
+SCANSUBDIRECTORIES |
+
+   
+
+   
+
+     Determines whether sub directories are also scanned for projects.
+    Possible values:
+
+    FALSE,
+
+    TRUE (default)
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+    The specified project may be open or closed. If the project is not open, it is opened when the process is started and closed after the export.
+   
+
+ 
+
 **Example**
 
 ```

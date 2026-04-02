@@ -10,21 +10,21 @@ EPLAN API provides now full access to Pre-planning data. Following enhancements 
 
 ###  Eplan.EplApi.DataModel.Planning namespace
 
-Pre-Planning related objects are stored in `Eplan.EplApi.DataModel.Planning namespace`. Here is an UML class diagram which shows their inheritance hierarchy :
+Pre-Planning related objects are stored in `Eplan.EplApi.DataModel.Planning namespace`. Here is an UML class diagram which shows their inheritance hierarchy:
 
 ![](images/preplanning.JPG)
 
 ###  Migration of PPE API to Preplanning
 
-Since EPLAN 2.4, there is a new product for the pre-planning and basic engineering of plant and machinery: 
+Since EPLAN 2.4, there is a new product for the pre-planning and basic engineering of plant and machinery:
 
 **EPLAN Preplanning Professional**
 
-The product was developed on the basis of the EPLAN Platform and in parallel to the EPLAN PPE solution. Now it is the replacement of the EPLAN PPE. 
+The product was developed on the basis of the EPLAN Platform and in parallel to the EPLAN PPE solution. Now it is the replacement of the EPLAN PPE.
 
-Because of this, EPLAN PPE is no longer supported nor described in API Help since version 2.7. So please migrate your applications using PPE API to Preplanning API. 
+Because of this, EPLAN PPE is no longer supported nor described in API Help since version 2.7. So please migrate your applications using PPE API to Preplanning API.
 
-As a replacement, use classes from `Eplan.EplApi.DataModel.Planning namespace` and PrePlanningService. 
+As a replacement, use classes from `Eplan.EplApi.DataModel.Planning namespace` and PrePlanningService.
 
 Please note also, there will be no further development of the EPLAN PPE system.
 

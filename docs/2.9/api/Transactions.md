@@ -1,6 +1,6 @@
 # Transactions
 
-Term "transaction" means set of operations that make up a unit of work on EPLAN project database. They can be executed all together or none. Such grouping assures data integrity and consistency even in case of system failure. For example : 
+Term "transaction" means set of operations that make up a unit of work on EPLAN project database. They can be executed all together or none. Such grouping assures data integrity and consistency even in case of system failure. For example :
 
 ```csharp
 using (Transaction oTransaction = new TransactionManager().CreateTransaction())
@@ -11,11 +11,11 @@ using (Transaction oTransaction = new TransactionManager().CreateTransaction())
 }
 ```
 
-So in case when execution of the code is broken off before `Commit()` was called, properties "Name" remain unchanged. 
+So in case when execution of the code is broken off before `Commit()` was called, properties "Name" remain unchanged.
 
-### Nesting API transactions 
+### Nesting API transactions
 
-It is also possible to nest transactions in API. For example : 
+It is also possible to nest transactions in API. For example :
 
 ```csharp
 oFunction.Name = "oFunction0";
@@ -33,15 +33,13 @@ using (Transaction oTransaction1 = new TransactionManager().CreateTransaction())
 Console.Writeline(oFunction.Name) //will be "oFunction0" returned, because outer transaction oTransaction1 wasn't committed
 ```
 
-In this case an inner transaction is treated as one of operations of the outer transaction. 
+In this case an inner transaction is treated as one of operations of the outer transaction.
 
 ### Internal EPLAN and API transactions
 
 We distinguish two types of transaction:
 
-  * API transactions - they are opened explicitly or implicitly from API. Explicit open is done by creating Transaction object from TransactionManager :
-
-
+  * API transactions - they are opened explicitly or implicitly from API. Explicit open is done by creating Transaction object from TransactionManager:
 
 ```csharp
 Transaction oTransaction = new TransactionManager().CreateTransaction();
@@ -51,17 +49,13 @@ Implicit open is done by creating the same Transaction object by some EPLAN oper
 
   * EPLAN internal transactions - they are started inside of EPLAN framework, so are opened and closed implicitly
 
-
-
 Using API transactions and internal ones in the same time can bring problems. So please consider following rules to unique them:
 
   * API transaction within an internal transaction.
 
-
-
 ![](images/Transaction_API_in_internal.jpg)
 
-API transaction may always be opened within internal transaction. API developer has a possibility to check whether an API transaction is open using following property : 
+API transaction may always be opened within internal transaction. API developer has a possibility to check whether an API transaction is open using following property :
 
 ```csharp
 TransactionManager::IsTransactionRunning
@@ -71,17 +65,15 @@ A commit of API transaction leads to no change in the database and is saved in t
 
   * An internal transaction within API transaction
 
-
-
 ![](images/Transaction_internal_in_API.jpg)
 
-An internal transaction may be always opened within a API transaction. The API developer has the possibility to check each time whether an internal transaction is open using following property: 
+An internal transaction may be always opened within a API transaction. The API developer has the possibility to check each time whether an internal transaction is open using following property:
 
 ```csharp
 TransactionManager::IsEplanTransactionRunning
 ```
 
-If an internal transaction is to be opened, the API transaction becomes committed. If an internal transaction is again closed (Abort or Commit), then the API transaction will be started again. API transaction class has also property which gives information whether an internal transaction was opened and closed within the API one : 
+If an internal transaction is to be opened, the API transaction becomes committed. If an internal transaction is again closed (Abort or Commit), then the API transaction will be started again. API transaction class has also property which gives information whether an internal transaction was opened and closed within the API one :
 
 ```csharp
 Transaction::IsImplicitEplanTransactionCommited

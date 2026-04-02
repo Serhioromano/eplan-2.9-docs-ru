@@ -1,8 +1,8 @@
 # PlaceHolder3D - placeholder in 3D space
 
-There was a new placeholder object created in EPLAN Pro Panel. In API there was a corresponding class created Placeholder3D that inherits from StorableObject and IPlaceHolder interface. 
+There was a new placeholder object created in EPLAN Pro Panel. In API there was a corresponding class created Placeholder3D that inherits from StorableObject and IPlaceHolder interface.
 
-Methods are similar to these in standard PlaceHolder . 
+Methods are similar to these in standard PlaceHolder .
 
 ```csharp
 PlaceHolder3D oNewPlaceHolder3D = new PlaceHolder3D();

@@ -1,35 +1,55 @@
 # XSettingsUnregisterAction
 
      Deregistration of Addons
-     
     
 
-  
-Parameter | Description  
----|---  
-path | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+path |
+
+   
+
+   
+
     The path the addon is located. p.e. addon/1.0.0 .
-      
-  
-`installFile` | 
-    
-    
+     
+
+ 
+
+`installFile` |
+
+   
+
+   
+
     or the complete path of the install.xml file
-      
-  
-`allowAutoInstall` | 
-    
-    
+     
+
+ 
+
+`allowAutoInstall` |
+
+   
+
+   
+
     true: remove the marker for autoinstall, then the addon is autoinstalled next time.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
 
+ 
 
-  
 **Example**
 
 ```

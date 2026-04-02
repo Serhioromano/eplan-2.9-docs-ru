@@ -1,54 +1,89 @@
 # ExportNCData
 
      Action exports NC Data for machines.
-     
     
 
-  
-Parameter | Description  
----|---  
-MachineType | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+MachineType |
+
+   
+
+   
+
     integer, mandatory:  1: NC Steinhauer, 2: Rittal - Perforex BC, 3: NC DXF, 4: Drilling template, 5: Rittal - Perforex LC,
      6: Copper NC, 7: Copper DXF, 8: Pipe bending
-      
-  
-MachineName | 
-    
-    
+     
+
+ 
+
+MachineName |
+
+   
+
+   
+
     string, mandatory: Name of Machine, which has to be defined in Settings under COMPANY.NCLog.[MachineTypeScheme].[MachineName]
-      
-  
-ProjectName | 
-    
-    
+     
+
+ 
+
+ProjectName |
+
+   
+
+   
+
     string, optional: if not set, the actual project ist exported. If set with project name (including complete path and extension), project is loaded (if needed) and activated
-      
-  
-UseSelection | 
-    
-    
+     
+
+ 
+
+UseSelection |
+
+   
+
+   
+
     integer, optional: 0: don't care for selection, != 0: use fields included in actual selection. Only used if ProjectName not set in parameters. Default: 0
-      
-  
-TargetDirectory | 
-    
-    
+     
+
+ 
+
+TargetDirectory |
+
+   
+
+   
+
     string, optional: if set, content overrides export directory of settings
-      
-  
-MaterialName | 
-    
-    
+     
+
+ 
+
+MaterialName |
+
+   
+
+   
+
     string, optional: only used for Rittal Perforex BC, LC and Copper NC. If set and known in machine settings, this material is set for export.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
 
+ 
 
-  
 **Example**
 
 ```

@@ -1,70 +1,107 @@
 # restore
 
     Action class for restore functions: restore projects and restore master data(Forms, symbols,...)
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed:
     PROJECT: Restore project
     MASTERDATA: Restore master data
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path.This only applies to TYPE = PROJECT.
-      
-  
-ARCHIVENAME | 
-    
-    
+     
+
+ 
+
+ARCHIVENAME |
+
+   
+
+   
+
     Archive name. Name of the  archive to be restored.
-      
-  
-DESTINATIONPATH | 
-    
-    
+     
+
+ 
+
+DESTINATIONPATH |
+
+   
+
+   
+
     Target directory. Path where the projects or data are to be restored.
     Only applies to TYPE = MASTERDATA
-      
-  
-UNPACKPROJECT | 
-    
-    
-    Specifies whether the previously packed project is to be unpacked (optional, Yes= 1, No = 0). 
+     
+
+ 
+
+UNPACKPROJECT |
+
+   
+
+   
+
+    Specifies whether the previously packed project is to be unpacked (optional, Yes= 1, No = 0).
+
     Set this flag to 0, only if previously packed projects are to be unpacked,
     Default value=0
     Only applies to TYPE = PROJECT.
-      
-  
-MODE | 
-    
-    
+     
+
+ 
+
+MODE |
+
+   
+
+   
+
     if set to 0, project information file (ProjectInfo.xml) will not be restored (optional).
     Default value=1
     Only applies to TYPE = PROJECT.
-      
-  
-  
-Remarks
-    
-    
-    Restored project is automatically upgraded to the currently used EPLAN version.
-    
+     
 
-  
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+    Restored project is automatically upgraded to the currently used EPLAN version.
+   
+
+ 
+
 **Example**
 
 ```
 Restore project:
 
 restore /TYPE:PROJECT /ARCHIVENAME:C:\temp\ESS_Sample_Project.zw1 /PROJECTNAME:C:\temp\ESS_Sample_Project.elk /UNPACKPROJECT:0
-
 
 Restore master data (plot frames, ...) to a DestinationPath
 

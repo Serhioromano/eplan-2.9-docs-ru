@@ -1,39 +1,63 @@
 # XAfActionSetting
 
      sets the value of a setting
-     
     
 
-  
-Parameter | Description  
----|---  
-set | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+set |
+
+   
+
+   
+
     name of the setting to set
-      
-  
-index | 
-    
-    
-    optional index of setting.if missing, then 0 is used
-      
-  
-value | 
-    
-    
-    new value of setting
-      
-  
-  
-Remarks
-    
-    
-     See also "XAfActionSettingProject" to change project settings
      
+
+ 
+
+index |
+
+   
+
+   
+
+    optional index of setting.if missing, then 0 is used
+     
+
+ 
+
+value |
+
+   
+
+   
+
+    new value of setting
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+     See also "XAfActionSettingProject" to change project settings
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

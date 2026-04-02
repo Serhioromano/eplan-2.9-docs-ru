@@ -1,15 +1,14 @@
 # Eplan.EplApi.OnMainStart
-Send when the Main Start is done. This is when a mainframe is available. The event is not send when the application is started in offline modus or to execute an action. 
+Send when the Main Start is done. This is when a mainframe is available. The event is not send when the application is started in offline modus or to execute an action.
 
-  
-
+ 
 
 #### Parameters
 
-Has no event parameter.  
+Has no event parameter. 
 
+ 
 
-  
 **Example**
 
 ```csharp

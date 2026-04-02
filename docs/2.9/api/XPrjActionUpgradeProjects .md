@@ -5,98 +5,167 @@
      Several input formats are provided: a project in zw1 format is upgraded and packed to zw1 again.
      All projects in a folder are upgraded (recursive).
      A backup of every project is done before changing.
-     
     
 
-  
-Parameter | Description  
----|---  
-Project | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+Project |
+
+   
+
+   
+
     full project link file name
-      
-  
-Folder | 
-    
-    
+     
+
+ 
+
+Folder |
+
+   
+
+   
+
     all projects in the folder and its subfolders are upgraded
-      
-  
-Archive | 
-    
-    
+     
+
+ 
+
+Archive |
+
+   
+
+   
+
     true: zw1 projects are also upgraded and packed afterwards.
-      
-  
-BaseProject | 
-    
-    
+     
+
+ 
+
+BaseProject |
+
+   
+
+   
+
     true: zw9 and zx1 projects are also upgraded and packed afterwards
-      
-  
-UpgradeWriteProtectedProjects | 
-    
-    
+     
+
+ 
+
+UpgradeWriteProtectedProjects |
+
+   
+
+   
+
     true: read only projects are also upgraded (*.elr and *.elt, *.els, elx)
-      
-  
-UpgradeXMLProjects | 
-    
-    
+     
+
+ 
+
+UpgradeXMLProjects |
+
+   
+
+   
+
     true: projects/base projects in XML format are also upgraded (*.ept and *.epj, *.zx2)
-      
-  
-FileTypes | 
-    
-    
+     
+
+ 
+
+FileTypes |
+
+   
+
+   
+
     *.*: all projects (same as *.elk,*.ell,*.elp,*.elr,*.elt,*.els,*.elx,*.zw1,*.zw9,*.zx1,*.ept,*.epj,*.zx2)
-      
-  
-PackOriginalProject | 
-    
-    
+     
+
+ 
+
+PackOriginalProject |
+
+   
+
+   
+
     true: the original projects will be packed into a 7zip file after upgrade (default = true).
-      
-  
-UpdateConnections | 
-    
-    
+     
+
+ 
+
+UpdateConnections |
+
+   
+
+   
+
     true: the connections in project will be updated (default = false). Note: if 'DoDataModelUpgrades' is false, this value will be ignored
-      
-  
-NoBackup | 
-    
-    
+     
+
+ 
+
+NoBackup |
+
+   
+
+   
+
     true: No Backup of the old Version is created (default = false).
-      
-  
-IgnoreUpgradeBackups | 
-    
-    
+     
+
+ 
+
+IgnoreUpgradeBackups |
+
+   
+
+   
+
     true: backup projects will be ignored when converting a complete folder (default = false). Backup projects have naming [NAME]_V[Version]_[Backuptime]
-      
-  
-DoDataModelUpgrades | 
-    
-    
+     
+
+ 
+
+DoDataModelUpgrades |
+
+   
+
+   
+
     true: also data model corrections will be done (default = true). Note: if false, than 'UpdateConnections' will be ignored
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
      BaseProjects are only upgraded when a major version change is done. For minor changes the base Project
      will stay unchanged.
      Each project found produces a system message with the upgrade result.
      handle Folder:
      All *.elk and *.ell and *.elp are upgraded
      when FileTypes is set, the params Archive/BaseProject/UpgradeWriteProtectedProjects  are ignored
-     
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

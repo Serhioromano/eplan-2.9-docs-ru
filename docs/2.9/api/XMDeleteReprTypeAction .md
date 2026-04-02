@@ -2,15 +2,22 @@
 
      removes a representation type from selected macros
      and what saves in a selected directory
-     
     
 
-  
-Parameter | Description  
----|---  
-RepresentationType | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+RepresentationType |
+
+   
+
+   
+
     representation type of macro that should be removed; value range [0-13];
             0       - Neutral
             1       - MultiLine
@@ -26,30 +33,47 @@ RepresentationType |
             11      - Functional
             12      - Planning
       13 - FluidFunctionalOverview
-      
-  
-Source | 
-    
-    
+     
+
+ 
+
+Source |
+
+   
+
+   
+
     specifies which files should be changed.
     There must be a file, a directory name, or a pattern can be specified
-      
-  
-Destination | 
-    
-    
-    Destination directory
-      
-  
-  
-Remarks
-    
-    
-     The action can be used only interactively
      
+
+ 
+
+Destination |
+
+   
+
+   
+
+    Destination directory
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+     The action can be used only interactively
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

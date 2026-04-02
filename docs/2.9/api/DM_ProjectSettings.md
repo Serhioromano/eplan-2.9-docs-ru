@@ -1,8 +1,8 @@
 # Project settings
 
-Each project has its own set of settings. For getting and setting these settings, as well as for creating new settings the DataModel namespace provides a class called ProjectSettings. It has similar methods like the settings class in `Eplan.EplApi.Base`, however an instance of this class is initialized with the project object. In contrary to the "normal" settings, project settings keys **don't** start with "PROJECT", where the other settings start with "USER", "STATION", or "COMPANY". 
+Each project has its own set of settings. For getting and setting these settings, as well as for creating new settings the DataModel namespace provides a class called ProjectSettings. It has similar methods like the settings class in `Eplan.EplApi.Base`, however an instance of this class is initialized with the project object. In contrary to the "normal" settings, project settings keys **don't** start with "PROJECT", where the other settings start with "USER", "STATION", or "COMPANY".
 
-Example for project related settings Projects->(project name)->Connections->General 
+Example for project related settings Projects->(project name)->Connections->General
 
 ```example title
 <?xml version="1.0" encoding="utf-8" ?>
@@ -23,7 +23,7 @@ Example for project related settings Projects->(project name)->Connections->Gene
 </Settings>
 ```
 
-The following example shows, how to get the project setting for the project's display languages. 
+The following example shows, how to get the project setting for the project's display languages.
 
 === "C#"
 

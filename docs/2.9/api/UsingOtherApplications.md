@@ -1,18 +1,18 @@
 # Using other applications
 
-The current topic describes, how you can use other applications, like Microsoft Excel in your EPLAN API add-in. 
+The current topic describes, how you can use other applications, like Microsoft Excel in your EPLAN API add-in.
 
-If you want to access data of an other program, the application needs to have a suitable interface. Because an EPLAN add-in is written in managed code (C# or `VB.Net`), you need to be able to set a reference to the other program. Either the other application already exposes its interface as .Net assembly, or the .Net framework creates an interop assembly from a COM type library. 
+If you want to access data of an other program, the application needs to have a suitable interface. Because an EPLAN add-in is written in managed code (C# or `VB.Net`), you need to be able to set a reference to the other program. Either the other application already exposes its interface as .Net assembly, or the .Net framework creates an interop assembly from a COM type library.
 
-The following example shows the use of Microsoft Excel 2003. Excel exposes its functions as COM interface. In your EPLAN add-in, you can add a Reference to the registered type library of Excel: 
+The following example shows the use of Microsoft Excel 2003. Excel exposes its functions as COM interface. In your EPLAN add-in, you can add a Reference to the registered type library of Excel:
 
 ![](images/ExcelReference.jpg)
 
-After you added the reference, the development environment creates an interop assembly. The types of this assembly then can be used in managed code (C# etc.): 
+After you added the reference, the development environment creates an interop assembly. The types of this assembly then can be used in managed code (C# etc.):
 
 ![](images/ExcelReference2.jpg)
 
-In your application code, the use of Excel would look like in the following example: 
+In your application code, the use of Excel would look like in the following example:
 
 === "C#"
 
@@ -74,6 +74,6 @@ In your application code, the use of Excel would look like in the following exam
     oExcel.Quit()
     ```
 
-Excel is started as a separate process. The only object, you create with new is `Excel.ApplicationClass`. All other objects like `Excel.Workbook`, are created -- or queried from Excel -- through functions of the Application object. 
+Excel is started as a separate process. The only object, you create with new is `Excel.ApplicationClass`. All other objects like `Excel.Workbook`, are created -- or queried from Excel -- through functions of the Application object.
 
 Each call of Excel functions is a communication between processes!

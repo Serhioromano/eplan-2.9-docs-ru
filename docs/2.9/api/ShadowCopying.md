@@ -4,15 +4,15 @@ Since version 2.6, EPLAN API assemblies are shadow copied, i.e. during registrat
 
 This concerns both add-ons and add-ins.
 
-In case of addons, the whole addon's bin directory with subdirectories will be copied to the user application roaming directory (%appdata%\EPLAN\ShadowCopyAssemblies\Process-ID\Addon-Name). 
+In case of addons, the whole addon's bin directory with subdirectories will be copied to the user application roaming directory (%appdata%\EPLAN\ShadowCopyAssemblies\Process-ID\Addon-Name).
 
-Example :
+Example:
 
 ![](images/shadow_copying.png)
 
 Application roaming directory Process-ID
 
-So all files (*.dlls, *.xml etc.) and all bin subdirectories (language subdirectories etc.) are also copied. This is done when EPLAN starts and an addon is registered or when an addon is manually registered from Add-ons dialogue. 
+So all files (*.dlls, *.xml etc.) and all bin subdirectories (language subdirectories etc.) are also copied. This is done when EPLAN starts and an addon is registered or when an addon is manually registered from Add-ons dialogue.
 
 Eplan will load addon's assemblies from the shadow directory and not from the original addon directory. So an addon could be updated without the need to stop all Eplan instances using the addon.
 

@@ -1,51 +1,83 @@
 # XEsSetProjectPropertyAction
 
      Sets a special property of a current project
-     
     
 
-  
-Parameter | Description  
----|---  
-PropertyId | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PropertyId |
+
+   
+
+   
+
     identifier name or number of the property to be set; values are defined in class Eplan::EplApi::DataModel::Properties (in)(obligatory)
-      
-  
-PropertyIdentName | 
-    
-    
+     
+
+ 
+
+PropertyIdentName |
+
+   
+
+   
+
     identifier name of the user defined property to be set (in)(obligatory)
-      
-  
-PropertyIndex | 
-    
-    
+     
+
+ 
+
+PropertyIndex |
+
+   
+
+   
+
     if the property has indices, the index; mostly 0 (in)(obligatory)
-      
-  
-PropertyValue | 
-    
-    
+     
+
+ 
+
+PropertyValue |
+
+   
+
+   
+
     new value of the property (in)(obligatory)
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
     Only project properties can be set.
-    
-    
-    
+   
+
+   
+
+   
+
     When PAGE_LASTMANUMODIFICATIONDATE property is set, then PropertyValue has to be formatted this way:
      long milliseconds = (DateTime.Now.Ticks - new DateTime(1970, 1, 1).Ticks) / TimeSpan.TicksPerSecond;
      context.AddParameter("PropertyValue", milliseconds.ToString());
-     
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

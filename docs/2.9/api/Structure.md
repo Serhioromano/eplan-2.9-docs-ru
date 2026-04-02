@@ -230,19 +230,19 @@ For further information, about how to create an add-on with the `EplAddonUtility
 
 ### Information about the settings
 
-· _ApplicationModifier_ :
+· _ApplicationModifier_:
 
 The identifier for this add-on. This has to be a unique name without blanks and dots
 
-· _XMLPath_ :
+· _XMLPath_:
 
 Location of CFG-folder of add-on
 
-· _Version_ :
+· _Version_:
 
 This is the version number of the add-on.
 
-· _MainVersion_ :
+· _MainVersion_:
 
 One sub-node belongs to one EPLAN version. The node Basic contains the licence information and version information for EPLAN Electric P8.
 

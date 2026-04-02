@@ -26,11 +26,16 @@ For further information about “Automatic actions” see our API Help.
 
 For the proper use of that command line action, it is necessary to pass further general command line parameters.
 
-**Parameter** |  **Description**  
----|---  
-Path |  The path where the add-on is located  
-InstallFile |  The complete path to the `install.xml`  
-  
+**Parameter** |  **Description** 
+
+---|--- 
+
+Path |  The path where the add-on is located 
+
+InstallFile |  The complete path to the `install.xml` 
+
+ 
+
 ![](images/image007.gif)Example:
 
 Registering Add-ons:

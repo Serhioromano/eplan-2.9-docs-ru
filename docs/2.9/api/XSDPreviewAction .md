@@ -1,45 +1,74 @@
 # XSDPreviewAction
 
      open or close the preview of a project page or macro
-     
     
 
-  
-Parameter | Description  
----|---  
-PROJECTNAME | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PROJECTNAME |
+
+   
+
+   
+
     name of the project; if the path is missing, the default value is used (see $(MD_PROJECTS))
-      
-  
-PAGENAME | 
-    
-    
-    name of page as string
-      
-  
-MACRONAME | 
-    
-    
-    complete path to a window or page macro (with extension); if the path is missing, the default value is used (see $(MD_MACROS))
-      
-  
-SHOW | 
-    
-    
-    1: the preview of the page/macro will be opened; 0: the preview will be closed
-      
-  
-  
-Remarks
-    
-    
-     if PAGENAME and MACRONAME are empty, all pages of the project will be displayed in the preview
      
+
+ 
+
+PAGENAME |
+
+   
+
+   
+
+    name of page as string
+     
+
+ 
+
+MACRONAME |
+
+   
+
+   
+
+    complete path to a window or page macro (with extension); if the path is missing, the default value is used (see $(MD_MACROS))
+     
+
+ 
+
+SHOW |
+
+   
+
+   
+
+    1: the preview of the page/macro will be opened; 0: the preview will be closed
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+     if PAGENAME and MACRONAME are empty, all pages of the project will be displayed in the preview
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

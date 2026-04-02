@@ -1,14 +1,14 @@
 # Adding menu points by a script
 
-A script can add one or more menu points to the utilities menu of EPLAN. When the script is loaded and if there is a function with the [DeclareMenu] attribute, the menu points specified by the `Eplan.EplApi.Gui.Menu.AddMenuItem() function` will be created. 
+A script can add one or more menu points to the utilities menu of EPLAN. When the script is loaded and if there is a function with the [DeclareMenu] attribute, the menu points specified by the `Eplan.EplApi.Gui.Menu.AddMenuItem() function` will be created.
 
 A menu point is always connected with an action, which is called, when the menu item is clicked. This means the script either additionally registers an action, or the menu point is assigned to an already existing action.
 
-Remarks 
+Remarks
 
 Please mind, that users may start EPLAN in QUIET mode using `W3u.exe` /Quiet or the API could be initialized by an [offline program](UsingEplanAssemblies.html). Because of this, it is not recommended to show any message boxes in the method marked by <`DeclareMenu()`>. If you encounter some problem during registering or initializing an script, just create and throw a BaseException or use `BaseException.FixMessage`(...) to add the message to the system messages list.
 
-The following example shows a script, which registers an action and a menu point. 
+The following example shows a script, which registers an action and a menu point.
 
 === "C#"
 

@@ -1,10 +1,10 @@
 # NCSettingsMachineTools.Redraw
-Force a Redraw for the NC Machine Tools settings tab 
+Force a Redraw for the NC Machine Tools settings tab
 
-  
+ 
 
+ 
 
-  
 **Example**
 
 ```csharp

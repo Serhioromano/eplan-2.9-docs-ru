@@ -1,49 +1,82 @@
 # devicelist
 
     Action class for device list functions: import, export, and delete device lists.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed by the action:
     IMPORT: Import device list
     EXPORT: Export device list
-    DELETE: Delete device list 
-      
-  
-PROJECTNAME | 
-    
-    
+    DELETE: Delete device list
+
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
-    If not entered, the selected project is used when the action is calledfrom GUI (like from a script or button bar). 
-    If called from the windows command line, PROJECTNAME must be set or the 
-    must be used first, otherwise an  exception is thrown. 
-      
-  
-IMPORTFILE | 
-    
-    
+    If not entered, the selected project is used when the action is calledfrom GUI (like from a script or button bar).
+
+    If called from the windows command line, PROJECTNAME must be set or the
+
+    must be used first, otherwise an  exception is thrown.
+
+     
+
+ 
+
+IMPORTFILE |
+
+   
+
+   
+
     The directory and the file name of       the device list to be imported must be specified here.
-      
-  
-EXPORTFILE | 
-    
-    
+     
+
+ 
+
+EXPORTFILE |
+
+   
+
+   
+
     The directory and the file name of      the device list to be exported must be specified here.
-      
-  
-FORMAT | 
-    
-    
+     
+
+ 
+
+FORMAT |
+
+   
+
+   
+
     Optional: File format ("XDLXmlExporter","XDLTxtImporterExporter", "XDLCsvImporterExporter", or       user-defined format)
     Default= XDLXmlExporter
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

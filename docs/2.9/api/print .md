@@ -1,95 +1,161 @@
 # print
 
     Action class to print projects and pages.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to ben performed:
     PROJECT: Print project.
     PAGES: Print pages.
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
-    If called from the windows command line, PROJECTNAME must be set or the  must be used first,otherwise an  exception is thrown. 
-      
-  
-PRINTERNAME | 
-    
-    
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
+    If called from the windows command line, PROJECTNAME must be set or the  must be used first,otherwise an  exception is thrown.
+
+     
+
+ 
+
+PRINTERNAME |
+
+   
+
+   
+
     Name of printer (optional).
     Default value: Printer set on your computer.
-      
-  
-PAGENAME | 
-    
-    
+     
+
+ 
+
+PAGENAME |
+
+   
+
+   
+
     Page to be printed (optional).
-      
-  
-PRINTCOLLATE | 
-    
-    
+     
+
+ 
+
+PRINTCOLLATE |
+
+   
+
+   
+
     Sorted order (optional, 0 = No, 1 = Yes).
     Default value: 1
-      
-  
-PRINTREVERSE | 
-    
-    
-    Reverse order (optional, 0 = No, 1 = Yes).
-    Default value: 0 
-      
-  
-NUMBER | 
-    
-    
-    Number of copies.
-    Default:1 
-      
-  
-DESTINATIONFILE | 
-    
-    
-    Path and name of the output file.
-    Default value: Printer set or Specified 
-      
-  
-USEPAGEFILTER | 
-    
-    
-    Determines if only filtered pages should be used or all project pages (optional). It corresponds to "Active"check box in GUI.
-    Default value: 0 
-      
-  
-PRINTCHANGEDPAGES | 
-    
-    
-    Print only changed pages
-      
-  
-  
-Remarks
-    
-    
-    If a page was explicitly entered by the PAGENAME parameter, then only this page is printed and the USEPAGEFILTER, parameter is ignored.
-    
-    If no specific page was explicitly entered by the PAGENAME parameter, project pages are determined. If USEPAGEFILTER is set to 1, only pages filtered in GUI page navigator will be printed. If USEPAGEFILTER is not used or if it is set to 0, all project pages will be printed.
-    
-    USEPAGEFILTER corresponds to "Active" check box in the page navigator.
-    
-    Warning! Please check settings under "Workstation->Graphical editing->Print" because they overwrite parameters of the action.
-    
+     
 
-  
+ 
+
+PRINTREVERSE |
+
+   
+
+   
+
+    Reverse order (optional, 0 = No, 1 = Yes).
+    Default value: 0
+
+     
+
+ 
+
+NUMBER |
+
+   
+
+   
+
+    Number of copies.
+    Default:1
+
+     
+
+ 
+
+DESTINATIONFILE |
+
+   
+
+   
+
+    Path and name of the output file.
+    Default value: Printer set or Specified
+
+     
+
+ 
+
+USEPAGEFILTER |
+
+   
+
+   
+
+    Determines if only filtered pages should be used or all project pages (optional). It corresponds to "Active"check box in GUI.
+    Default value: 0
+
+     
+
+ 
+
+PRINTCHANGEDPAGES |
+
+   
+
+   
+
+    Print only changed pages
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+    If a page was explicitly entered by the PAGENAME parameter, then only this page is printed and the USEPAGEFILTER, parameter is ignored.
+   
+
+    If no specific page was explicitly entered by the PAGENAME parameter, project pages are determined. If USEPAGEFILTER is set to 1, only pages filtered in GUI page navigator will be printed. If USEPAGEFILTER is not used or if it is set to 0, all project pages will be printed.
+   
+
+    USEPAGEFILTER corresponds to "Active" check box in the page navigator.
+   
+
+    Warning! Please check settings under "Workstation->Graphical editing->Print" because they overwrite parameters of the action.
+   
+
+ 
+
 **Example**
 
 ```

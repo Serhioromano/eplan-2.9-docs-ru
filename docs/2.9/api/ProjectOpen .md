@@ -1,36 +1,55 @@
 # ProjectOpen
 
      Open given project
-     
     
 
-  
-Parameter | Description  
----|---  
-Project | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+Project |
+
+   
+
+   
+
     used project
-      
-  
-OpenMode | 
-    
-    
+     
+
+ 
+
+OpenMode |
+
+   
+
+   
+
     Specifies the mode to open the project. Optional. May have the following values: 'Standard', 'ReadOnly', 'Exclusive'.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
      * When the OpenMode is specified, the project is opened in this mode or not opened at all, then an error is reported.
      * When the OpenMode is NOT specified, the system tries to open the project in standard mode (readable and writable).
      When the project needs an upgrade, it is opened in read only mode (or not opened at all, then an error is reported).
      The actual open mode is added to the calling context with the parameter "OpenMode".
-     
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

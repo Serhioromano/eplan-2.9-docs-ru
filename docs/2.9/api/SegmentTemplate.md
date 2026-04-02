@@ -1,6 +1,6 @@
 # SegmentTemplate
 
-SegmentTemplate class represents segment template objects. They contain common values of some properties. 
+SegmentTemplate class represents segment template objects. They contain common values of some properties.
 
 Segment inherits these values from a template.
 

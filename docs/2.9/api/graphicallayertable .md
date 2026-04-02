@@ -1,40 +1,66 @@
 # graphicallayertable
 
     Action class for graphical layer table functions: import, export.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed by the action:
     IMPORT:Import graphical layer table
     EXPORT:Export graphical layer table
-      
-  
-PROJECTNAME | 
-    
-    
+     
+
+ 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path(optional).
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
-    If called from the windows command line, PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown. 
-      
-  
-IMPORTFILE | 
-    
-    
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
+    If called from the windows command line, PROJECTNAME must be set or the  must be used first, otherwise an  exception is thrown.
+
+     
+
+ 
+
+IMPORTFILE |
+
+   
+
+   
+
     The directory and the file name of the table to be imported must be specified here.
-      
-  
-EXPORTFILE | 
-    
-    
+     
+
+ 
+
+EXPORTFILE |
+
+   
+
+   
+
     The directory and the file name of the table to be exported must be specified here.
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

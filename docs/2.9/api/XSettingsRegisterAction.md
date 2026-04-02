@@ -1,29 +1,44 @@
 # XSettingsRegisterAction
 
      Registers Addons
-     
     
 
-  
-Parameter | Description  
----|---  
-path | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+path |
+
+   
+
+   
+
     path where the addon is in (..\addon\1.0.0).
-      
-  
-`installFile` | 
-    
-    
+     
+
+ 
+
+`installFile` |
+
+   
+
+   
+
     or the complete path to the install.xml.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
 
+ 
 
-  
 **Example**
 
 ```

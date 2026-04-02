@@ -1,20 +1,23 @@
 # Interactions
 
-In EPLAN API, "interactions" term refers to classes used to handle events related to interactive work in GED. 
+In EPLAN API, "interactions" term refers to classes used to handle events related to interactive work in GED.
 
-Mechanism of interactions bases mostly on "XGedStartInteractionAction" action, which is invoked by EPLAN framework in case of moving, adding or selecting object, etc in graphic editor. For example when inserting a window macro on a page, EPLAN framework calls action: 
-    
-    
+Mechanism of interactions bases mostly on "XGedStartInteractionAction" action, which is invoked by EPLAN framework in case of moving, adding or selecting object, etc in graphic editor. For example when inserting a window macro on a page, EPLAN framework calls action:
+
+   
+
+   
+
      XGedStartInteractionAction /Name:XMIaInsertMacro
-    
+   
 
-Its parameter "Name" is used to pass a name of an interaction. 
+Its parameter "Name" is used to pass a name of an interaction.
 
-There are 2 general types of API Interactions usage : creating custom ones and overriding default (system). 
+There are 2 general types of API Interactions usage : creating custom ones and overriding default (system).
 
-### Creating custom interactions 
+### Creating custom interactions
 
-EPLAN API enables programmers to create their own custom interactions. 
+EPLAN API enables programmers to create their own custom interactions.
 
 ```csharp
 public class DeleteTerminalsInteraction : Interaction
@@ -70,13 +73,13 @@ public override bool OnFilterElement(StorableObject placement)
 }
 ```
 
-To add interaction to EPLAN , it must be included in an API add-in or addon. Interaction is registered under name of its class while loading an API add-in containing it. 
+To add interaction to EPLAN , it must be included in an API add-in or addon. Interaction is registered under name of its class while loading an API add-in containing it.
 
-There is also special class Eplan::EplApi::EServices::Ged::InsertInteraction for interactions which insert objects on a page. It contains additional property showing placed object. 
+There is also special class Eplan::EplApi::EServices::Ged::InsertInteraction for interactions which insert objects on a page. It contains additional property showing placed object.
 
-### Interaction attributes 
+### Interaction attributes
 
-Programmer can decorate interaction class with Eplan::EplApi::EServices::Ged::InteractionAttribute to customize name of interaction, set name of interaction to override (see paragraph bellow), ordinal number and priority: 
+Programmer can decorate interaction class with Eplan::EplApi::EServices::Ged::InteractionAttribute to customize name of interaction, set name of interaction to override (see paragraph bellow), ordinal number and priority:
 
 ```csharp
 //example of interaction attributes
@@ -107,27 +110,30 @@ Programmer can decorate interaction class with Eplan::EplApi::EServices::Ged::In
     }
 ```
 
-For more details see [Eplan::EplApi::EServices::Ged::InteractionAttribute](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.InteractionAttribute.html). 
+For more details see [Eplan::EplApi::EServices::Ged::InteractionAttribute](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.InteractionAttribute.html).
 
-### Overriding default interactions 
+### Overriding default interactions
 
-API interactions can also override default EPLAN interactions. This way execution will be passed to a user code instead of EPLAN core. 
+API interactions can also override default EPLAN interactions. This way execution will be passed to a user code instead of EPLAN core.
 
-Such interactions has to derive from Interaction class also. Example how to do it is shown above (DerivedSymbolInsertInteraction) 
+Such interactions has to derive from Interaction class also. Example how to do it is shown above (DerivedSymbolInsertInteraction)
 
-The only change which has to be done is in InteractionAttribute : 
-    
-    
+The only change which has to be done is in InteractionAttribute :
+
+   
+
+   
+
     [InteractionAttribute(Name = "XEGedIaInsertSymRef", NameOfBaseInteraction = "XEGedIaInsertSymRef", Ordinal = 50, Prio = 20)]
-    
+   
 
-How does this mechanism work ? 
+How does this mechanism work ?
 
-By default all events connected with inserting symbol operation are routed to the core interaction XEGedIaInsertSymRef. 
+By default all events connected with inserting symbol operation are routed to the core interaction XEGedIaInsertSymRef.
 
-But DerivedSymbolInsertInteraction can override default interaction by using 'NameOfBaseInteraction' and 'Name' property of the InteractionAttribute. 
+But DerivedSymbolInsertInteraction can override default interaction by using 'NameOfBaseInteraction' and 'Name' property of the InteractionAttribute.
 
-### Getting feedback from GED 
+### Getting feedback from GED
 
 Most of interaction's methods return [Eplan::EplApi::EServices::Ged::RequestCode](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.RequestCode.html) which is used to control workflow of interaction. Default implementation of method Interaction::OnStart returns RequestCode::Success which causes end of interaction. If it's overridden and returns RequestCode::Point then interaction stays active, and when user clicks mouse button, method Interaction::OnPoint is called by EPLAN.
 

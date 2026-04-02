@@ -1,12 +1,15 @@
 # Eplan.EplApi.OnPostOpenProject
 
-Project management: After opening a project 
+Project management: After opening a project
 
 #### Parameters
 
-Parameter Type: AfEvParString  
-Parameter Description: Name of project which is opened.  
-  
+Parameter Type: AfEvParString 
+
+Parameter Description: Name of project which is opened. 
+
+ 
+
 **Example**
 
 ```csharp

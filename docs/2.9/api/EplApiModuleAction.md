@@ -1,39 +1,66 @@
 # EplApiModuleAction
 
      action name = EplApiModuleAction
-    
+   
+
      Loads and registers an API addin.
-     
     
 
-  
-Parameter | Description  
----|---  
-register | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+register |
+
+   
+
+   
+
      File name of the  add-in dll to be registered.If no absolute file name is specified, the file name is preceeded with system's current directory.
-      
-  
-`registerModule` | 
-    
-    
+     
+
+ 
+
+`registerModule` |
+
+   
+
+   
+
     Register an API Module. The Settings must be available, then the services are created.
-      
-  
-unregister | 
-    
-    
+     
+
+ 
+
+unregister |
+
+   
+
+   
+
      Assembly file title of the add-in to be de-registered. The file title is the one displayed in the api module dialog. (This is the name of the assembly without path and without the ending .dll)
-      
-  
-`unregisterInternal` | 
-    
-    
-     Assembly file title of the add-in to be de-registered. When an error makes the unload impossible,the module is only deregistered. 
-      
-  
-  
+     
+
+ 
+
+`unregisterInternal` |
+
+   
+
+   
+
+     Assembly file title of the add-in to be de-registered. When an error makes the unload impossible,the module is only deregistered.
+
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

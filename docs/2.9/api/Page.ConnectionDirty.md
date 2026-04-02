@@ -1,10 +1,10 @@
 # Page.ConnectionDirty
-Event when a Page gets dirty 
+Event when a Page gets dirty
 
-  
+ 
 
+ 
 
-  
 **Example**
 
 ```csharp

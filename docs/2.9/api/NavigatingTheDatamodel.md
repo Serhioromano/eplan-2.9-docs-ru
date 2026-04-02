@@ -1,10 +1,10 @@
 # Navigating the project data
 
-There are two distinct methods of navigating through the EPLAN project. The most common is to use the navigation properties which you can find on each data model object. In addition to that, there is the DMObjectsFinder Class. By its methods, you can retrieve filtered lists (arrays) of certain objects in a project. 
+There are two distinct methods of navigating through the EPLAN project. The most common is to use the navigation properties which you can find on each data model object. In addition to that, there is the DMObjectsFinder Class. By its methods, you can retrieve filtered lists (arrays) of certain objects in a project.
 
 ### Navigating through properties
 
-Regardless of the underlying implementation of EPLAN, the entire data model can be seen as a graph, with one to many and many to many relationships between the various object types in the graph. For example, a project has a one-to-many relationship with its pages. These relationships can be thought of as if they were simple basic arrays. Each of the objects of the EPLAN data model have a set of properties, which return such arrays of dependant objects, as you can see in the topic "[Data model overview](DataModelOverview.html)". 
+Regardless of the underlying implementation of EPLAN, the entire data model can be seen as a graph, with one to many and many to many relationships between the various object types in the graph. For example, a project has a one-to-many relationship with its pages. These relationships can be thought of as if they were simple basic arrays. Each of the objects of the EPLAN data model have a set of properties, which return such arrays of dependant objects, as you can see in the topic "[Data model overview](DataModelOverview.html)".
 
 One of the most common requirements of a program is to loop through all of the objects in an array performing some function or other on each element. As an example, the class `Eplan.EplApi.DataModel.Page` has the following navigation properties, with each of which you can loop over a different collection of objects:
 
@@ -17,11 +17,9 @@ One of the most common requirements of a program is to loop through all of the o
   * PlugStrips
   * TerminalStrips
 
+There are also navigational properties with a one-to-one relationship, like `Page.Project`.
 
-
-There are also navigational properties with a one-to-one relationship, like `Page.Project`. 
-
-The following code snippet shows, how to loop over the Functions on a page and get the name of the Function: 
+The following code snippet shows, how to loop over the Functions on a page and get the name of the Function:
 
 === "C#"
 
@@ -49,7 +47,7 @@ The following code snippet shows, how to loop over the Functions on a page and g
     Next
     ```
 
-You even can filter these lists before getting them. The following example sets a filter to get only the functions, which have the function category PLUG. 
+You even can filter these lists before getting them. The following example sets a filter to get only the functions, which have the function category PLUG.
 
 === "C#"
 
@@ -81,11 +79,11 @@ You even can filter these lists before getting them. The following example sets 
     Next
     ```
 
-Please mind, that using navigation properties in order to set properties of an object in a nested way (e.g. `oRectangle.Pen.ColorId` = 5 ) will not work. In the example you need to first get the Pen object from the rectangle and then change the color id and afterwards set the changed Pen object back to the Rectangle class. 
+Please mind, that using navigation properties in order to set properties of an object in a nested way (e.g. `oRectangle.Pen.ColorId` = 5 ) will not work. In the example you need to first get the Pen object from the rectangle and then change the color id and afterwards set the changed Pen object back to the Rectangle class.
 
-###  DMObjectsFinder 
+###  DMObjectsFinder
 
-The DMObjectsFinder object is always initialized with a project. Starting with the project, it can get nearly any list of objects of a given type. Before getting the lists, they can be filtered by different means like a distinct set of properties. The following example gets all functions with a given device tag (name): 
+The DMObjectsFinder object is always initialized with a project. Starting with the project, it can get nearly any list of objects of a given type. Before getting the lists, they can be filtered by different means like a distinct set of properties. The following example gets all functions with a given device tag (name):
 
 === "C#"
 
@@ -125,9 +123,9 @@ The DMObjectsFinder object is always initialized with a project. Starting with t
 
 ### Search class
 
-The class `Eplan.EplApi.HEServices.Search` offers another way for finding objects in a project. The class corresponds to the dialogs Find>Find... and Find>Show Results... in the GUI of EPLAN. As in this dialogs, you have two result lists to store your search results. 
+The class `Eplan.EplApi.HEServices.Search` offers another way for finding objects in a project. The class corresponds to the dialogs Find>Find... and Find>Show Results... in the GUI of EPLAN. As in this dialogs, you have two result lists to store your search results.
 
-Using this class you can search for any string in a specified range of objects. The following example demonstrates the usage of the Search class. 
+Using this class you can search for any string in a specified range of objects. The following example demonstrates the usage of the Search class.
 
 === "C#"
 

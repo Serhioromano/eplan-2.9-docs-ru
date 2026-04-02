@@ -1,6 +1,6 @@
 # Drilling (Cut-out in GUI)
 
-Represents opening in construction items such as mounting panels and sheets, that are drilled or manufactured by NC robots 
+Represents opening in construction items such as mounting panels and sheets, that are drilled or manufactured by NC robots
 
 ```csharp
 Drilling oDrillingHole = Drilling.CreateTapHole(oProject, 50.0, null);

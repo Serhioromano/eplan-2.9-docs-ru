@@ -1,55 +1,89 @@
 # ProjectAction
 
      run action upon given project and close project afterwards
-     
     
 
-  
-Parameter | Description  
----|---  
-PROJECTNAME | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path
-      
-  
-Action | 
-    
-    
+     
+
+ 
+
+Action |
+
+   
+
+   
+
     used action, action parameter following.
-      
-  
-NOCLOSE | 
-    
-    
+     
+
+ 
+
+NOCLOSE |
+
+   
+
+   
+
     if "1" used project will not be closed afterwards (Optional). On default project will be closed afterwards.
-      
-  
-OpenMode | 
-    
-    
+     
+
+ 
+
+OpenMode |
+
+   
+
+   
+
     Specifies the mode to open the project. Optional. May have the following values: 'Standard', 'ReadOnly', 'Exclusive'.
-      
-  
-EnableDialogs | 
-    
-    
+     
+
+ 
+
+EnableDialogs |
+
+   
+
+   
+
     When status is set to true, value passed in Action parameter won't start in quiet mode.
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
     Without parameter "Project" last opend project will be used.
      * When the OpenMode is specified, the project is opened in this mode or not opened at all, then an error is reported.
      * When the OpenMode is NOT specified, the system tries to open the project in standard mode (readable and writable).
      When the project needs an upgrade, it is opened in read only mode (or not opened at all, then an error is reported).
      The actual open mode is added to the calling context with the parameter "OpenMode".
-     
     
 
-  
+   
+
+ 
+
 **Example**
 
 ```

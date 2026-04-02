@@ -5,47 +5,69 @@
      If no path is passed, action takes selected object in ged. Object can be a macrobox or an object of macrobox.
      Alternatively an object can be passed by a special DMBaseHandleContext.
      This object can be also a macrobox, an object of macrobox or a project.
-     
     
 
-  
-Parameter | Description  
----|---  
-ProjectName | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+ProjectName |
+
+   
+
+   
+
     The full path of project(optional). When project specified by ProjectName is not open, this action opens it and closes it automatically.
-      
-  
-SchemeName | 
-    
-    
+     
+
+ 
+
+SchemeName |
+
+   
+
+   
+
     Defines a concrete scheme to use (optional). If not given, last used scheme name is used.
-      
-  
-AutoAssignLastUsedRecord | 
-    
-    
-    Applies the last used record for several Placeholder automatically(optional), overwrites value of scheme. 
-      
-  
-NewVariant | 
-    
-    
+     
+
+ 
+
+AutoAssignLastUsedRecord |
+
+   
+
+   
+
+    Applies the last used record for several Placeholder automatically(optional), overwrites value of scheme.
+
+     
+
+ 
+
+NewVariant |
+
+   
+
+   
+
     Allows replacement of one macro variant to another variant of same macro.
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```csharp
 Example 1 (selected object in ged)
 
 XGedUpdateMacroAction
-
-
-
-
 
 
 
@@ -59,10 +81,6 @@ XGedUpdateMacroAction /ProjectName:MyProject                                    
 
 
 
-
-
-
-
 Example 3 (Full path of project, in scripting)
 
 CommandLineInterpreter oCommandLineInterpreter = new CommandLineInterpreter();
@@ -71,10 +89,6 @@ bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:
 bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:\"My Folder\\MyProject.elk\"");                //relative to standard-folder
 bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:MyProject.elk");                                               //relative to standard-folder
 bool bRet = oCommandLineInterpreter.Execute("XGedUpdateMacroAction /ProjectName:MyProject");                                                   //relative to standard-folder without file-extension
-
-
-
-
 
 
 

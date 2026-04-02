@@ -1,40 +1,66 @@
 # compress
 
     Action class to compress projects.
-    
+   
 
-  
-Parameter | Description  
----|---  
-PROJECTNAME | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PROJECTNAME |
+
+   
+
+   
+
     Project name with full path (optional).
-    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar). 
+    If not entered, the selected project is used when the action is called from GUI (like from a script or button bar).
+
     If called from the windows command line, PROJECTNAME must be set or the  must be used first, otherwise an exception is thrown.
-      
-  
-CONFIGSCHEME | 
-    
-    
+     
+
+ 
+
+CONFIGSCHEME |
+
+   
+
+   
+
     Configuration scheme for project compression (optional).
-    Default value: Recent configuration     scheme. The most recently used scheme is taken if an empty string is passed. 
-      
-  
-FILTERSCHEME | 
-    
-    
+    Default value: Recent configuration     scheme. The most recently used scheme is taken if an empty string is passed.
+
+     
+
+ 
+
+FILTERSCHEME |
+
+   
+
+   
+
     Filter scheme for project compression (optional).
     Default value: Most recently used filter scheme. The most recently used  scheme is taken if an empty string is passed.
-      
-  
-USEFILTER | 
-    
-    
+     
+
+ 
+
+USEFILTER |
+
+   
+
+   
+
     Use the filterscheme in the FILTERSCHEME Parameter. Default value is true.
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

@@ -1,10 +1,10 @@
 # Placing window macros
 
-An EPLAN macro is a piece of schematics, which can be introduced into a project -- onto a page or as a page. EPLAN uses file macros. They can have the extension .ema - for window macros, .emp - for page macros, and .ems for symbol macros. 
+An EPLAN macro is a piece of schematics, which can be introduced into a project -- onto a page or as a page. EPLAN uses file macros. They can have the extension .ema - for window macros, .emp - for page macros, and .ems for symbol macros.
 
-For placing macros, the EPLAN API provides the class `Eplan.EplApi.HEServices.Insert`. The class basically contains three overloaded methods for placing each type of macro. A window or symbol macro can either be placed on a page at absolute coordinates or with an offset relatively to its original position. 
+For placing macros, the EPLAN API provides the class `Eplan.EplApi.HEServices.Insert`. The class basically contains three overloaded methods for placing each type of macro. A window or symbol macro can either be placed on a page at absolute coordinates or with an offset relatively to its original position.
 
-The following example shows how to place a macro on page at a given position: 
+The following example shows how to place a macro on page at a given position:
 
 ```csharp
 Insert oInsert = new Insert();
@@ -13,7 +13,7 @@ oInsert.WindowMacro("$(MD_MACROS)\BECK.KL1012.ema", 0, m_oTestProject.Pages[9], 
 
 ### Placing macros and assigning value sets
 
-If there are PlaceHolders objects in a macro, you can assign value sets by using result from `Insert.WindoMacro function` : 
+If there are PlaceHolders objects in a macro, you can assign value sets by using result from `Insert.WindoMacro function` :
 
 ```csharp
         Insert oInsert = new Insert();

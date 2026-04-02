@@ -1,12 +1,12 @@
 # Accessing selected objects
 
-The advantage of an add-in is that it is called from within the context of a running EPLAN version and can access the currently selected objects. This can be achieved by using the SelectionSet class. The class provides a number of methods, to get a list of items currently selected by the user. 
+The advantage of an add-in is that it is called from within the context of a running EPLAN version and can access the currently selected objects. This can be achieved by using the SelectionSet class. The class provides a number of methods, to get a list of items currently selected by the user.
 
-You can either can get the project, which the user currently works on by using the SelectionSet::GetCurrentProject method, or you get the currently selected page(s) by the SelectionSet::GetSelectedPages method. Depending on whether the graphical editor or the page overview dialog has currently the focus, one ore many pages can be selected. 
+You can either can get the project, which the user currently works on by using the SelectionSet::GetCurrentProject method, or you get the currently selected page(s) by the SelectionSet::GetSelectedPages method. Depending on whether the graphical editor or the page overview dialog has currently the focus, one ore many pages can be selected.
 
-Most importantly, you can get any set of objects selected from any focused (non-modal) dialog by the `SelectionSet.Selection property`. The objects are returned by the function as an array of StorableObjects. You can loop over the array and determine the types (and any other information) about the objects. 
+Most importantly, you can get any set of objects selected from any focused (non-modal) dialog by the `SelectionSet.Selection property`. The objects are returned by the function as an array of StorableObjects. You can loop over the array and determine the types (and any other information) about the objects.
 
-The following example shows, how to access the selection. 
+The following example shows, how to access the selection.
 
 === "C#"
 

@@ -31,9 +31,9 @@ The following example shows a very simple script.
      End Class 'VerySimpleScript
     ```
 
-In this example the class "VerySimpleScript" with a function "MyFunction" was created. The function was marked by the attribute "[Start]". 
+In this example the class "VerySimpleScript" with a function "MyFunction" was created. The function was marked by the attribute "[Start]".
 
-When this script is run, using the menu point "[Scripts](Scripts.html)>Run..." the function "MyFunction" and a message box appears: 
+When this script is run, using the menu point "[Scripts](Scripts.html)>Run..." the function "MyFunction" and a message box appears:
 
 ![This message boy appears, when you run the very simple script.](VerySimpleScript.png)
 

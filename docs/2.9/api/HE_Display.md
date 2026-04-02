@@ -1,16 +1,16 @@
 # Displaying a preview
 
-The `Eplan.EplApi.HEServices namespace` provides the class DrawingService, which contains functionality for outputting objects (WindowMacros, SymbolVariants, Placements, or Pages) on a window or control. 
+The `Eplan.EplApi.HEServices namespace` provides the class DrawingService, which contains functionality for outputting objects (WindowMacros, SymbolVariants, Placements, or Pages) on a window or control.
 
-Displaying the preview takes two steps: 
+Displaying the preview takes two steps:
 
-First step is creating a so-called display list using the CreateDisplayList function. This actually processes the data into a list of graphical primitives, which can be drawn. Depending on what kind of data you want to show, this function will take some time. For example, when you want to create a preview of a macro, CreateDisplayList loads the macro file, analyzes it and creates the items to display. You need to call this function just once for a given preview. 
+First step is creating a so-called display list using the CreateDisplayList function. This actually processes the data into a list of graphical primitives, which can be drawn. Depending on what kind of data you want to show, this function will take some time. For example, when you want to create a preview of a macro, CreateDisplayList loads the macro file, analyzes it and creates the items to display. You need to call this function just once for a given preview.
 
-The second step actually shows the preview (the created display list) on a window. It takes an `System.Windows.Forms.PaintEventArgs object` as parameter, which is provided by any control in the Paint callback. 
+The second step actually shows the preview (the created display list) on a window. It takes an `System.Windows.Forms.PaintEventArgs object` as parameter, which is provided by any control in the Paint callback.
 
-The DrawingService class also provides the possibility to influence the look of the preview in many ways, like zooming and changing the background color. 
+The DrawingService class also provides the possibility to influence the look of the preview in many ways, like zooming and changing the background color.
 
-In the following example a preview of a macro is created. The first code snippet shows creating the display list: 
+In the following example a preview of a macro is created. The first code snippet shows creating the display list:
 
 === "C#"
 
@@ -58,7 +58,7 @@ In the following example a preview of a macro is created. The first code snippet
     End If
     ```
 
-The next piece of source code shows drawing the display list in the Paint method of a picture box: 
+The next piece of source code shows drawing the display list in the Paint method of a picture box:
 
 === "C#"
 
@@ -90,13 +90,13 @@ The next piece of source code shows drawing the display list in the Paint method
     End Sub
     ```
 
-### 
+###
 
-### Setting image size and the viewport 
+### Setting image size and the viewport
 
 For drawing more complex images it can be necessary to set resolution and a viewport of the drawn image.
 
-Viewport is a polygon which represents part of a page that will be rendered :
+Viewport is a polygon which represents part of a page that will be rendered:
 
 ![](images/viewport.png)
 

@@ -1,49 +1,82 @@
 # XDLInsertDeviceAction
 
      Starts interaction for inserting a device
-     
     
 
-  
-Parameter | Description  
----|---  
-PartNr | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+PartNr |
+
+   
+
+   
+
     Article's part number
-      
-  
-PartVariant | 
-    
-    
-    Variant of the Article. 
-      
-  
-ProjectId | 
-    
-    
-    Project id
-      
-  
-PropertyIndex | 
-    
-    
-    Index of the project article, must be reduced to (1-50). If 0, then no project article is set.
-      
-  
-  
-Remarks
-    
-    
-     The action can be used only interactively
      
-    
-    
-    
-    used specialized calling context: DMBaseHandleContext
+
+ 
+
+PartVariant |
+
+   
+
+   
+
+    Variant of the Article.
+
+     
+
+ 
+
+ProjectId |
+
+   
+
+   
+
+    Project id
+     
+
+ 
+
+PropertyIndex |
+
+   
+
+   
+
+    Index of the project article, must be reduced to (1-50). If 0, then no project article is set.
+     
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+     The action can be used only interactively
     
 
-  
+   
+
+   
+
+   
+
+    used specialized calling context: DMBaseHandleContext
+   
+
+ 
+
 **Example**
 
 ```

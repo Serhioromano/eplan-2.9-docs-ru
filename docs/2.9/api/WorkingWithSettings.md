@@ -1,27 +1,25 @@
 # Working with settings
 
-In EPLAN there is a settings database created to store user preferences such as used fonts, colors , etc. 
+In EPLAN there is a settings database created to store user preferences such as used fonts, colors , etc.
 
-In GUI it is visible under menu point Options->Settings 
+In GUI it is visible under menu point Options->Settings
 
-Using API, we can modify the database and also create custom values for usage in API applications. 
+Using API, we can modify the database and also create custom values for usage in API applications.
 
-We can distinguish following settings categories :
+We can distinguish following settings categories:
 
   * Company settings: They should be located on a server and should be the same for the whole company
   * Workstation settings: These settings apply for one computer and should be saved on a local hard disk.
   * User settings: for example dimensions and positions of toolbars and dialogs. These settings also need to be saved on a central server to enable a user to use his own settings on another workstation.
   * Project related settings: These settings are independent on a user nor workstation. They are stored in a project. See ["Project Settings"](DM_ProjectSettings.html) chapter.
 
-
-
-For more details, please refer to "Settings: Operation" chapter of EPLAN Help. 
+For more details, please refer to "Settings: Operation" chapter of EPLAN Help.
 
 ### Format of settings
 
-The settings database is organized in a tree tree structure : particular branches refer to similar setting and leafs stores relevant values. 
+The settings database is organized in a tree tree structure : particular branches refer to similar setting and leafs stores relevant values.
 
-Using export functionality we can access their values, also these which are not visible in Options->Settings dialog. The format of the file is XML and here is its XML Schema Definition : 
+Using export functionality we can access their values, also these which are not visible in Options->Settings dialog. The format of the file is XML and here is its XML Schema Definition :
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -59,7 +57,8 @@ Using export functionality we can access their values, also these which are not 
           <xs:attribute name="range" type="xs:string" use="optional" />
         </xs:complexType>
       </xs:element>
-    </xs:sequence>   
+    </xs:sequence>  
+
 </xs:group>
 <xs:attributeGroup name="levlAttrGroup">
     <xs:attribute name="name" use="required">
@@ -71,12 +70,15 @@ Using export functionality we can access their values, also these which are not 
     </xs:attribute>
     <xs:attribute name="info" type="xs:string" use="optional" />
     <xs:attribute name="nodekind" type="xs:string" use="optional" />
-</xs:attributeGroup> 
+</xs:attributeGroup>
+
 <xs:element name="Settings">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" maxOccurs="5" name="CAT">                           
-          <xs:complexType>               
+        <xs:element minOccurs="0" maxOccurs="5" name="CAT">                          
+
+          <xs:complexType>              
+
             <xs:sequence>
               <xs:element minOccurs="0" maxOccurs="unbounded" name="MOD">
                 <xs:complexType>
@@ -89,7 +91,8 @@ Using export functionality we can access their values, also these which are not 
                                 <xs:element name="LEV2">
                                   <xs:complexType>
                                     <xs:sequence>
-                                      <xs:choice minOccurs="0" maxOccurs="unbounded">                                       
+                                      <xs:choice minOccurs="0" maxOccurs="unbounded">                                      
+
                                         <xs:element name="LEV3">
                                           <xs:complexType>
                                             <xs:sequence>
@@ -121,19 +124,22 @@ Using export functionality we can access their values, also these which are not 
                                                                                                 <xs:element name="LEV10">
                                                                                                   <xs:complexType>
                                                                                                     <xs:group ref="levlSettingGroup"/>
-                                                                                                    <xs:attributeGroup ref="levlAttrGroup"/>                                                                                                  
+                                                                                                    <xs:attributeGroup ref="levlAttrGroup"/>                                                                                                 
+
                                                                                                   </xs:complexType>
                                                                                                 </xs:element>
                                                                                                 <xs:group ref="levlSettingGroup"/>
                                                                                               </xs:choice>
-                                                                                            </xs:sequence>                                                                                           
+                                                                                            </xs:sequence>                                                                                          
+
                                                                                             <xs:attributeGroup ref="levlAttrGroup"/>
                                                                                           </xs:complexType>
                                                                                         </xs:element>
                                                                                         <xs:group ref="levlSettingGroup"/>
                                                                                       </xs:choice>
                                                                                     </xs:sequence>
-                                                                                    <xs:attributeGroup ref="levlAttrGroup"/>                                                                                
+                                                                                    <xs:attributeGroup ref="levlAttrGroup"/>                                                                               
+
                                                                                   </xs:complexType>
                                                                                 </xs:element>
                                                                                 <xs:group ref="levlSettingGroup"/>
@@ -175,17 +181,22 @@ Using export functionality we can access their values, also these which are not 
                                 <xs:group ref="levlSettingGroup"/>
                               </xs:choice>
                             </xs:sequence>
-                            <xs:attributeGroup ref="levlAttrGroup"/>                          
+                            <xs:attributeGroup ref="levlAttrGroup"/>                         
+
                           </xs:complexType>
                         </xs:element>
-                      <xs:group ref="levlSettingGroup"/>                               
+                      <xs:group ref="levlSettingGroup"/>                              
+
                     </xs:choice>
                   </xs:sequence>
                   <xs:attributeGroup ref="levlAttrGroup"/>
                 </xs:complexType>
-              </xs:element>                 
-            </xs:sequence>                 
-            <xs:attribute name="name" use="required">               
+              </xs:element>                
+
+            </xs:sequence>                
+
+            <xs:attribute name="name" use="required">              
+
               <xs:simpleType>
                 <xs:restriction base="xs:string">
                   <xs:enumeration value="COMPANY"/>
@@ -205,28 +216,28 @@ Using export functionality we can access their values, also these which are not 
 </xs:schema>
 ```
 
-Here is a simplified description of the setting file :
+Here is a simplified description of the setting file:
 
   * The name of a setting (**name**) must be always unique within a setting node.
   * The root node is **Settings**
   * Then there are 0-5 possible **CAT** nodes with "name" attribute one of following: COMPANY, PROJECT, STATION, USER, INSTALL.
   * Next there is a subnode **MOD** that makes a kind of a namespace for a setting.
   * Next there are subnodes **LEV1** up to **LEV10** specifying path to a leaf node
-  * Next there is a leaf node **Setting** storing following data: 
+  * Next there is a leaf node **Setting** storing following data:
+
     * The setting value in **Val** node. There can be more such nodes, each of them is accessible by individual index parameter
     * The type of a setting (**type**) defines expected setting type
-    * The range of values (**range**) 
+    * The range of values (**range**)
+
       * ... does not concern Boolean data types
       * ... can consist of a token list for strings: (for example "arial/courier/tahoma")
       * ... can have a upper and lower bound for numbers in the format "from/to" (separated by slash): "1/10;20/100"
 
+###
 
+### Example of settings in XML format
 
-### 
-
-### Example of settings in XML format 
-
-Here is an example of simple user setting from User->Display->Identifier branch 
+Here is an example of simple user setting from User->Display->Identifier branch
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -241,7 +252,7 @@ Here is an example of simple user setting from User->Display->Identifier branch
 </Settings>
 ```
 
-Bellow is another example of workstation settings (Workstation->Graphical editing->Print) 
+Bellow is another example of workstation settings (Workstation->Graphical editing->Print)
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -286,7 +297,7 @@ Bellow is another example of workstation settings (Workstation->Graphical editin
 </Settings>
 ```
 
-Here is example of indexed settings from Company->Graphical editing->Fonts. 
+Here is example of indexed settings from Company->Graphical editing->Fonts.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -314,9 +325,9 @@ Here is example of indexed settings from Company->Graphical editing->Fonts.
 
 Settings - functions for reading, writing and creating User, Company or Workstation settings
 
-ProjectSettings - functions for reading, writing and creating project dependant settings. Refer to the "See Also" section. 
+ProjectSettings - functions for reading, writing and creating project dependant settings. Refer to the "See Also" section.
 
-SettingNode - functions for managing the settings hierarchy (only User, Company or Workstation) 
+SettingNode - functions for managing the settings hierarchy (only User, Company or Workstation)
 
 SchemeSetting - functions for managing a settings group (scheme). Only for User, Company or Workstation setting.
 
@@ -326,7 +337,7 @@ ProjectSettingNode - the same as SettingNode but for project settings
 
 ### Examples:
 
-Adding, setting and getting settings: 
+Adding, setting and getting settings:
 
 === "C#"
 
@@ -357,7 +368,7 @@ Adding, setting and getting settings:
     End If
     ```
 
-Example of merging nodes by SettingNode: 
+Example of merging nodes by SettingNode:
 
 === "C#"
 
@@ -406,7 +417,7 @@ Example of merging nodes by SettingNode:
     oNew.SetStringSetting("ActionName", "TestAction1", 0)
     ```
 
-You can also combine settings to a group under a certain name - it is called "schema" . It is possible to have multiple groups under different names but with the same settings structure. One of the groups is an active scheme. 
+You can also combine settings to a group under a certain name - it is called "schema" . It is possible to have multiple groups under different names but with the same settings structure. One of the groups is an active scheme.
 
 === "C#"
 
@@ -428,7 +439,7 @@ You can also combine settings to a group under a certain name - it is called "sc
     Dim iExportFormatVersion As Integer = oSchemeSetting.GetNumericSetting("EXPORT.FORMAT_VERSION", 0)
     ```
 
-As mentioned above, each setting has its default value. In order to set a setting back to default, you have to get the setting's default value and set it on the setting: 
+As mentioned above, each setting has its default value. In order to set a setting back to default, you have to get the setting's default value and set it on the setting:
 
 === "C#"
 
@@ -454,7 +465,7 @@ In order to make it easier for the API user to find a certain settings key, the 
 
 ### Remarks
 
-Due to changes in EPLAN, it may happen that settings will change their type or name or that some settings will be completely removed. We cannot guarantee the long-term compatibility of settings. When updating to a newer version, please check your source code, whether the settings you use are still working. 
+Due to changes in EPLAN, it may happen that settings will change their type or name or that some settings will be completely removed. We cannot guarantee the long-term compatibility of settings. When updating to a newer version, please check your source code, whether the settings you use are still working.
 
 Indexed settings always have continuous indexes. If a value is removed, the following values move up to fill the gap. This means, if you want to get all values of an indexed property, you just need to loop from index 0 to the number returned by GetCountOfValues(...) minus one. If you try to get the value from an index where no value exists, a BaseException is thrown.
 

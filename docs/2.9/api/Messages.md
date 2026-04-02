@@ -1,16 +1,14 @@
 # Messages
 
-As API developer, you can add new electrotechnical messages to EPLAN and to write them to the message management. 
+As API developer, you can add new electrotechnical messages to EPLAN and to write them to the message management.
 
-In order to create a new message, add a class to your project, which implements the interface IMessage. 
+In order to create a new message, add a class to your project, which implements the interface IMessage.
 
 The IEplMessage interface declares 3 functions:
 
   1. The parameters of the function `OnRegister()` define the properties of the message and how it is registered in EPLAN.
   2. The function `GetMessageText()` returns -- on request of EPLAN -- the message text, which is displayed in dialogs.
   3. The function `DoHelp()` is called by the system, if EPLAN request help about the message.
-
-
 
 === "C#"
 
@@ -65,7 +63,7 @@ The IEplMessage interface declares 3 functions:
     End Class 'Message
     ```
 
-A registered message can be written to the message database with help of the MessageManager class. 
+A registered message can be written to the message database with help of the MessageManager class.
 
 === "C#"
 
@@ -99,11 +97,11 @@ A registered message can be written to the message database with help of the Mes
     End If
     ```
 
-### Overriding text of an existing message 
+### Overriding text of an existing message
 
-It is **not** possible to change an existing verification by overriding it via API (by setting the same name and a higher Ordinal number). You can however override an existing message and by this change the standard message text to your own text. You need to implement a message with the dame number and region, but use a higher `iOrdinal`, e.g. 50. Other properties of the message are not influenced. 
+It is **not** possible to change an existing verification by overriding it via API (by setting the same name and a higher Ordinal number). You can however override an existing message and by this change the standard message text to your own text. You need to implement a message with the dame number and region, but use a higher `iOrdinal`, e.g. 50. Other properties of the message are not influenced.
 
-The following example shows, how to override the existing 007005 "Device without main function." message: 
+The following example shows, how to override the existing 007005 "Device without main function." message:
 
 ```csharp
 ///

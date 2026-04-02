@@ -1,12 +1,12 @@
 # Actions
 
-What is called an _action_ in EPLAN? 
+What is called an _action_ in EPLAN?
 
-An action is a procedure or function, which can be dynamically registered in EPLAN. The action is identified by its name and its overload priority. An action can have any number of parameters, which are passed to and from the action via a so-called ActionCallingContext. Each menu point in EPLAN is associated with an actions, which is called up, when the menu point is clicked. 
+An action is a procedure or function, which can be dynamically registered in EPLAN. The action is identified by its name and its overload priority. An action can have any number of parameters, which are passed to and from the action via a so-called ActionCallingContext. Each menu point in EPLAN is associated with an actions, which is called up, when the menu point is clicked.
 
-An add-in can add new actions to EPLAN. Actions can be called by the command line and they can be assigned to a new menu point. A new action can override an existing action with the same name. 
+An add-in can add new actions to EPLAN. Actions can be called by the command line and they can be assigned to a new menu point. A new action can override an existing action with the same name.
 
-An action is implemented by a class, which inherits the interface IEplAction. You need to add an implementation of all the functions of the interface. An add-in can contain an arbitrary number of actions. 
+An action is implemented by a class, which inherits the interface IEplAction. You need to add an implementation of all the functions of the interface. An add-in can contain an arbitrary number of actions.
 
 === "C#"
 
@@ -107,7 +107,7 @@ An action is implemented by a class, which inherits the interface IEplAction. Yo
     End Class 'VBAction ' description of second parameter
     ```
 
-By the parameter of type ActionCallingContext parameters can be passed to the action. For extracting the parameter values and for setting parameters (as return parameters!) the class ActionCallingContext provides a set of functions: 
+By the parameter of type ActionCallingContext parameters can be passed to the action. For extracting the parameter values and for setting parameters (as return parameters!) the class ActionCallingContext provides a set of functions:
 
 === "C#"
 
@@ -141,7 +141,7 @@ By the parameter of type ActionCallingContext parameters can be passed to the ac
     End Function 'Execute
     ```
 
-If an action is assigned to a menu item or a tool bar button, these items are only enabled if the action is registered and enabled. You can enable/disable a registered action via the IEplActionEnable interface. 
+If an action is assigned to a menu item or a tool bar button, these items are only enabled if the action is registered and enabled. You can enable/disable a registered action via the IEplActionEnable interface.
 
 === "C#"
 

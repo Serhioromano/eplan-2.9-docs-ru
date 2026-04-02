@@ -1,8 +1,8 @@
 # Component (part placement in GUI)
 
-The class represents various pro panel items, such as doors, frame profiles, accessories, etc. 
+The class represents various pro panel items, such as doors, frame profiles, accessories, etc.
 
-Terminal: 
+Terminal:
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();
@@ -15,7 +15,7 @@ oTerminal.Parent = oInstallationSpace;
 
 ![](images/Terminal.jpg)
 
-Plug: 
+Plug:
 
 ```csharp
 InstallationSpace oInstallationSpace = new InstallationSpace();
@@ -28,13 +28,17 @@ oComponent.Parent = oInstallationSpace;
 
 ![](images/Plug.jpg)
 
-Power supply : 
+Power supply :
 
 ```csharp
-InstallationSpace oInstallationSpace = new InstallationSpace(); 
-oInstallationSpace.Create(m_oTestProject, "Power supply unit installation space"); 
-Component oComponent = new Component(); 
-oComponent.Create(m_oTestProject, @"PXC.2938581", "1"); 
+InstallationSpace oInstallationSpace = new InstallationSpace();
+
+oInstallationSpace.Create(m_oTestProject, "Power supply unit installation space");
+
+Component oComponent = new Component();
+
+oComponent.Create(m_oTestProject, @"PXC.2938581", "1");
+
 oComponent.Parent = oInstallationSpace;
 ```
 

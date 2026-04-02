@@ -1,6 +1,6 @@
 # Connections overview
 
-The following image describes how to navigate between functions, their pins and the connections. 
+The following image describes how to navigate between functions, their pins and the connections.
 
 ![](images/DataModel_ConnectionFunction.PNG)
 

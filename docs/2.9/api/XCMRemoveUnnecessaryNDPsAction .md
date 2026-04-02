@@ -4,17 +4,27 @@
      equal to the connections that would be in the net without using net based wiring
      but using target based wiring. If necessary, connection definition points are placed on the connections
      of the net so that connection properties don't get lost.
-     
     
 
-  
-Parameter | Description  
----|---  
-Quiet | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+Quiet |
+
+   
+
+   
+
     suppresses message dialog if true
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks

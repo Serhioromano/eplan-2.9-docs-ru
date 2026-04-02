@@ -1,25 +1,40 @@
 # XEsUserPropertiesExportAction
 
      exports user properties to file
-     
     
 
-  
-Parameter | Description  
----|---  
-XMLFile | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+XMLFile |
+
+   
+
+   
+
     the full path of the xml-file
-      
-  
-Project | 
-    
-    
+     
+
+ 
+
+Project |
+
+   
+
+   
+
     full project name
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

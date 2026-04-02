@@ -1,18 +1,28 @@
 # XMIaInsertMacro
 
-imports a macro to the current project 
+imports a macro to the current project
 
-Parameter | Description  
----|---  
-filename | 
-    
-    
+Parameter | Description 
+
+---|--- 
+
+filename |
+
+   
+
+   
+
     filename of macro that should be inserted; if this parameter is empty, a FileSelect- Dialog opens
-      
-  
-variant | 
-    
-    
+     
+
+ 
+
+variant |
+
+   
+
+   
+
     variant of macro that should be inserted; value range [0-15];
                                             0  - variant A
                                             1  - variant B
@@ -30,11 +40,16 @@ variant |
                                             13 - variant N
                                             14 - variant O
                                             15 - variant P
-      
-  
-RepresentationType | 
-    
-    
+     
+
+ 
+
+RepresentationType |
+
+   
+
+   
+
     representation type of macro that should be inserted; value range [1-13]
                                             1 - MultiLine
                                             2 - SingleLine
@@ -49,9 +64,12 @@ RepresentationType |
                                             11 - Functional
                                             12 - Planning
                                             12 - FluidFunctionalOverview
-      
-  
-  
+     
+
+ 
+
+ 
+
 **Example**
 
 ```

@@ -1,8 +1,8 @@
 # Connection3D
 
-Connection3D represents 3D connection between two Placement3D objects. 
+Connection3D represents 3D connection between two Placement3D objects.
 
-It inherits from the "normal" Connection. 
+It inherits from the "normal" Connection.
 
 ```csharp
 //creating 3d connection which exists between two 3d functions

@@ -10,12 +10,13 @@ oStructureSegment.Name = "test1c";
 //prepare a page
 Page oNewPage = new Page(m_oTestProject, DocumentTypeManager.DocumentType.Planning, new PagePropertyList());
 oNewPage.Name = "SegmentPlacement_Test001c";
-          
+         
+
 //create SegmentPlacement
 SegmentPlacement oSegmentPlacement = new SegmentPlacement();
 oSegmentPlacement.Create(oStructureSegment, oNewPage);
 ```
 
-SegmentPlacements are visible in GED, for example :
+SegmentPlacements are visible in GED, for example:
 
 ![](images/segment_placement.jpg)

@@ -2,15 +2,17 @@
 
     This class is used to export and import PLC data to/from formats used in the Schneider's Unity Pro application.
     (supported file extensions are *.xef, *.xhw, *.xsy, *.zef)
-    
+   
 
-  
+ 
 
+ 
 
-  
 Remarks
-    
-    
+   
+
+   
+
     This converter supports the following formats used in the Schneider Unity Pro application
       - XEF (*.xef) - complete information, i.e. hardware and variables
       - XHW (*.xhw) - hardware configuration

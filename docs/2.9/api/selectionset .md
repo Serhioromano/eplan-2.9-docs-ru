@@ -1,47 +1,69 @@
 # selectionset
 
     Action class for selection set functions: get current project, get selected projects, get selected pages.
-    
+   
 
-  
-Parameter | Description  
----|---  
-TYPE | 
-    
-    
+ 
+
+Parameter | Description 
+
+---|--- 
+
+TYPE |
+
+   
+
+   
+
     Type of task to be performed:
     PROJECT: Return current project
     PROJECTS: Return selected projects
     PAGES: Return selected pages
-      
-  
-  
+     
+
+ 
+
+ 
+
 Remarks
-    
-    
+   
+
+   
+
     The results of the selection are returned in the CallingContext.
     Current project:
-    
-    Parameter name in calling context = PROJECT;
-    
-    Values from calling context = full project name with path and file extension (e.g. C:\MyProjects\ESS_Sample_Project.elk).
-    
-    
-    If projects are selected:
-    
-    Parameter name in calling context = PROJECTS;
-    
-    Values from calling context = full project names with path and file extension separated by ';' (e.g. C:\MyProjects\ESS_Sample_Project.elk;C:\Projects\EPLAN\ESS_Sample_Project2.elk).
-    
-    
-    If pages are selected:
-    
-    Parameter name in calling context = PAGES;
-    
-    Values from calling context = all page names separated by ';', e.g. 'Page1;Page2;Page3'
-    
+   
 
-  
+    Parameter name in calling context = PROJECT;
+   
+
+    Values from calling context = full project name with path and file extension (e.g. C:\MyProjects\ESS_Sample_Project.elk).
+   
+
+   
+
+    If projects are selected:
+   
+
+    Parameter name in calling context = PROJECTS;
+   
+
+    Values from calling context = full project names with path and file extension separated by ';' (e.g. C:\MyProjects\ESS_Sample_Project.elk;C:\Projects\EPLAN\ESS_Sample_Project2.elk).
+   
+
+   
+
+    If pages are selected:
+   
+
+    Parameter name in calling context = PAGES;
+   
+
+    Values from calling context = all page names separated by ';', e.g. 'Page1;Page2;Page3'
+   
+
+ 
+
 **Example**
 
 ```

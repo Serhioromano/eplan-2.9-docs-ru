@@ -3,53 +3,90 @@
      Standard action to find symbol references for inserting.
      This action works correctly only when gui is initialized. In case when symbol is not found window with symbols is opened.
      Can be used with all types of symbol variants, function definition tags, symbol data and symbol references.
-     
     
 
-  
-Parameter | Description  
----|---  
-SymbolLibName | 
-    
-    
+   
+
+ 
+
+Parameter | Description 
+
+---|--- 
+
+SymbolLibName |
+
+   
+
+   
+
     Name of the symbol library where the symbol is to find
-      
-  
-SymbolId | 
-    
-    
+     
+
+ 
+
+SymbolId |
+
+   
+
+   
+
     Number of the symbol that should be inserted
-      
-  
-VariantId | 
-    
-    
+     
+
+ 
+
+VariantId |
+
+   
+
+   
+
     Number of the variant if the symbol has some
-      
-  
-FctDefTag | 
-    
-    
+     
+
+ 
+
+FctDefTag |
+
+   
+
+   
+
     Identifier of the function definition tag to search the symbol that should be inserted
-      
-  
-Placementmode | 
-    
-    
+     
+
+ 
+
+Placementmode |
+
+   
+
+   
+
     Identifier of placement mode to search the symbol that should be inserted;
      string which defines the placement type of the symbol;
      the placement mode depends on the DocumentType
-      
-  
-SymbolType | 
-    
-    
+     
+
+ 
+
+SymbolType |
+
+   
+
+   
+
     Identifier of symbol type to search the symbol that should be inserted
-      
-  
-CustomSymbols | 
-    
-    
+     
+
+ 
+
+CustomSymbols |
+
+   
+
+   
+
     this parameter should be used if a user-created symbol should be inserted;
      the parameter is the name of the setting which contains the identifiers of the custom symbol;
      if this parameter is NOT empty, the custom symbol is used and not the symbol
@@ -58,21 +95,31 @@ CustomSymbols |
      XSbGui.CustomSymbols.CustomSymbols.lib
      XSbGui.CustomSymbols.CustomSymbols.id
      XSbGui.CustomSymbols.CustomSymbols.var
-      
-  
-  
-Remarks
-    
-    
-     The action can be used only interactively.
      
-    
-    
-    
-    used specialized calling context: DMBaseHandleContext
+
+ 
+
+ 
+
+Remarks
+   
+
+   
+
+     The action can be used only interactively.
     
 
-  
+   
+
+   
+
+   
+
+    used specialized calling context: DMBaseHandleContext
+   
+
+ 
+
 **Example**
 
 ```

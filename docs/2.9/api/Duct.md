@@ -1,6 +1,6 @@
 # Duct (wire duct in GUI)
 
-Duct class represents ducts that hold cables in an organized manner and route them to the connected components. 
+Duct class represents ducts that hold cables in an organized manner and route them to the connected components.
 
 ```csharp
 MountingPanel oMountingPanel = new MountingPanel();
