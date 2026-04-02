@@ -8,12 +8,9 @@ Most importantly, you can get any set of objects selected from any focused (non-
 
 The following example shows, how to access the selection. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     SelectionSet selectionSet = new SelectionSet();
     StorableObject[] storableObjects = selectionSet.Selection;
     if (storableObjects.Length == 0)
@@ -30,9 +27,11 @@ The following example shows, how to access the selection.
                 Console.WriteLine(" StorableObject: " + so.ToString());
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim selectionSet As New SelectionSet()
     Dim storableObjects As StorableObject() = selectionSet.Selection
     If storableObjects.Length = 0 Then
@@ -47,3 +46,5 @@ The following example shows, how to access the selection.
           End If
        Next so
     End If
+    ```
+

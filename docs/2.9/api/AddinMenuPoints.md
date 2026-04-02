@@ -2,12 +2,9 @@
 
 An add-in can add one or more menu points to the "Utilities" menu of EPLAN. There fore the class Eplan.EplApi.Gui.Menu provides a function addMenuItem which has to be called in the OnInitGui() function of the add-in module class: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     /// <summary>
     /// This function is called by the framework of EPLAN, when the framework already has initialized its
     /// graphical user interface (GUI) and the add-in can start to modify the GUI.
@@ -20,9 +17,11 @@ An add-in can add one or more menu points to the "Utilities" menu of EPLAN. Ther
        oMenu.AddMenuItem("CSharpAction", "CSharpAction");
        return true;
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     ''' <summary>
     ''' This function is called by the framework of EPLAN, when the framework already has initialized its
     ''' graphical user interface (GUI) and the add-in can start to modify the GUI.
@@ -34,7 +33,7 @@ An add-in can add one or more menu points to the "Utilities" menu of EPLAN. Ther
        oMenu.AddMenuItem("CSharpAction", "CSharpAction")
        Return True
     End Function 'OnInitGui
-    
+    ```
 
 The function AddMenuItem() adds a menu point with the text "CSharpAction" and assigns the action "CSharpAction" to this menu point. 
 

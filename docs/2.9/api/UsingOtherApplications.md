@@ -14,12 +14,9 @@ After you added the reference, the development environment creates an interop as
 
 In your application code, the use of Excel would look like in the following example: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     Excel.ApplicationClass oExcel= new Excel.ApplicationClass();
     oExcel.Visible=true;
     new Decider().Decide(EnumDecisionType.eOkDecision, "Now Excel should be visible!" ,"", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
@@ -43,12 +40,14 @@ In your application code, the use of Excel would look like in the following exam
            iSheet.Cells[nNr, 2] = oPrjMsg.GetText();
        }
     } while(itPrjMsg.MoveNext());
-    
+
     new Decider().Decide(EnumDecisionType.eOkDecision, "Action completed!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
     oExcel.Quit();
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oExcel As New Excel.ApplicationClass()
     oExcel.Visible = True
     Dim dec As Decider = New Decider
@@ -73,7 +72,7 @@ In your application code, the use of Excel would look like in the following exam
     Loop While itPrjMsg.MoveNext()
     dec.Decide(EnumDecisionType.eOkDecision, "Action completed!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
     oExcel.Quit()
-    
+    ```
 
 Excel is started as a separate process. The only object, you create with new is Excel.ApplicationClass. All other objects like Excel.Workbook, are created -- or queried from Excel -- through functions of the Application object. 
 

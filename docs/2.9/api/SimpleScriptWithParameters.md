@@ -10,12 +10,9 @@ When starting EPLAN via command line, in order to run a script, the first parame
 
 In the following example, the script (the script function) requires 3 string parameters Param1, Param2 and Param3: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class SimpleScriptWithParameters
      {
         [Start]
@@ -25,11 +22,13 @@ In the following example, the script (the script function) requires 3 string par
             return true;
         }
      }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class SimpleScriptWithParameters
-    
+
        <Start>  _
        Public Function FunctionWithParameters(ByVal Param1 As String, ByVal Param2 As String, _
                                                 ByVal Param3 As String) as Boolean
@@ -38,18 +37,15 @@ In the following example, the script (the script function) requires 3 string par
           Return True
        End Sub 'FunctionWithParameters
     End Class 'SimpleScriptWithParameters
-    
+    ```
 
 It is important, that the identifiers (Param1, Param2, Param3) are exactly matching in the command line and in the function! 
 
 It is possible to use script with ActionCallingContext as a parameter. To do that please look at the following example:
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class ScriptWithActionCallingContext
     {
         [Start]
@@ -68,11 +64,13 @@ It is possible to use script with ActionCallingContext as a parameter. To do tha
             }
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class ScriptWithActionCallingContext
-    
+
     <Start>  _
         Public Sub FunctionWithActionCallingContext (ByVal oActionCallingContext As ActionCallingContext)
             Dim strFirstParam As [String] = ""
@@ -87,6 +85,6 @@ It is possible to use script with ActionCallingContext as a parameter. To do tha
             End If
         End Sub 'FunctionWithActionCallingContext
     End Class 'ScriptWithActionCallingContext
-    
+    ```
 
 Using this feature, you can extend the scope of the EPLAN command line by your own parameters. If you need to call some API functionality via command line, just create a script. The start function of this script may take parameters and can call other functions with these parameters.

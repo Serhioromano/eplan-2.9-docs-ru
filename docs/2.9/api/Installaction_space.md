@@ -6,27 +6,17 @@ It is also a root node for other 3d-objects in the 'Layout spaces' navigator.
 
 Example below shows how to create an InstallationSpace: 
 
-C# |  Copy Code  
----|---  
-      
-    
-    InstallationSpace oInstallationSpace = new InstallationSpace();
-    oInstallationSpace.Create(oProject, "InstallationSpace test");
-      
-      
-    
-     
-    
+```csharp
+InstallationSpace oInstallationSpace = new InstallationSpace();
+oInstallationSpace.Create(oProject, "InstallationSpace test");
+```
 
 We can retrieve existing InstallationSpaces from a project this way: 
 
-C# |  Copy Code  
----|---  
-      
-    
-    InstallationSpace[] arrInstallationSpace = oProject.InstallationSpaces;
-      
-  
+```csharp
+InstallationSpace[] arrInstallationSpace = oProject.InstallationSpaces;
+```
+
 In GUI it is called 'Layout space'. It is independent on pages in a project. 
 
 ![](InstallationSpace.jpg)

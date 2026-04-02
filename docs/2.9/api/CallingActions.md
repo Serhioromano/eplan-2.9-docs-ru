@@ -6,12 +6,9 @@ In order to create an action object, you need to know the action by its name. Yo
 
 For passing and evaluating action parameters, you need the ActionCallingContext class: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     String strAction = "TestAction";
     ActionManager oAMnr= new ActionManager();
     Action oAction= oAMnr.FindAction(strAction);
@@ -28,9 +25,11 @@ For passing and evaluating action parameters, you need the ActionCallingContext 
         new Decider().Decide(EnumDecisionType.eOkDecision, "The Action " + strAction + " ended with errors!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim strAction As String = "TestAction"
     Dim oAMnr As New ActionManager()
     Dim oAction As Action = oAMnr.FindAction(strAction)
@@ -44,7 +43,7 @@ For passing and evaluating action parameters, you need the ActionCallingContext 
           dec.Decide(EnumDecisionType.eOkDecision, "The Action " + strAction + " ended with errors!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
        End If
     End If
-    
+    ```
 
 To find out, which action is connected to which menu item, you can evaluate the "onActionStart.String.*" event. Alternatively, after clicking the menu item, press [Ctrl]+[VK_OEM_5] to show the "Diagnose Dialog". [VK_OEM_5] corresponds to the [^] key on a German keyboard or to the [\\] on a United States 101 keyboard. 
 
@@ -93,12 +92,9 @@ Every command line parameter behind the name of the action thus is passed as par
 
 EPLAN.EXE /Variant:"Electric P8" action /Param1:value1 /Param2:value2 /Param3:value3 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public bool Execute(ActionCallingContext ctx )
     {
        String strParamValue1=null;
@@ -109,9 +105,11 @@ EPLAN.EXE /Variant:"Electric P8" action /Param1:value1 /Param2:value2 /Param3:va
        ctx.GetParameter("Param3", ref strParamValue3);
        return true;
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Function Execute(ctx As ActionCallingContext) As Boolean Implements IEplAction
        Dim strParamValue1 As String = Nothing
        ctx.GetParameter("Param1", strParamValue1)
@@ -121,7 +119,7 @@ EPLAN.EXE /Variant:"Electric P8" action /Param1:value1 /Param2:value2 /Param3:va
        ctx.GetParameter("Param3", strParamValue3)
        Return True
     End Function 'Execute
-    
+    ```
 
 Warning: when starting EPLAN from command line with an action, then no previously opened projects are opened at the beginning of the session.
 

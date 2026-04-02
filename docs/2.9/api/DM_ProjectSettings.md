@@ -4,47 +4,43 @@ Each project has its own set of settings. For getting and setting these settings
 
 Example for project related settings Projects->(project name)->Connections->General 
 
-Example Title |  Copy Code  
----|---  
-      
-    
-    <?xml version="1.0" encoding="utf-8" ?>
-    <Settings ver="2.4.1" format="2">
-     <CAT name="PROJECT">
-      <MOD name="EsConnection">
-       <Setting name="ManageConnectionsInNDPDialog" type="bool">
-        <Val>0</Val>
-       </Setting>
-       <Setting name="ManageSaddleJumperConnPointsInNDPDialog" type="bool">
-        <Val>0</Val>
-       </Setting>
-       <Setting name="SortConnectionsByPlacement" type="bool" desc="2058">
-        <Val>0</Val>
-       </Setting>
-      </MOD>
-     </CAT>
-    </Settings>
-      
-  
+```example title
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings ver="2.4.1" format="2">
+ <CAT name="PROJECT">
+<MOD name="EsConnection">
+   <Setting name="ManageConnectionsInNDPDialog" type="bool">
+    <Val>0</Val>
+   </Setting>
+   <Setting name="ManageSaddleJumperConnPointsInNDPDialog" type="bool">
+    <Val>0</Val>
+   </Setting>
+   <Setting name="SortConnectionsByPlacement" type="bool" desc="2058">
+    <Val>0</Val>
+   </Setting>
+</MOD>
+ </CAT>
+</Settings>
+```
+
 The following example shows, how to get the project setting for the project's display languages. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     Eplan.EplApi.DataModel.ProjectSettings projectSettings =
               new Eplan.EplApi.DataModel.ProjectSettings(oProject);
     string languages = projectSettings.GetExpandedStringSetting("TRANSLATEGUI.DISPLAYED_LANGUAGES", 0)
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim projectSettings As New Eplan.EplApi.DataModel.ProjectSettings(oProject)
     Dim languages As String
     languages = projectSettings.GetExpandedStringSetting("TRANSLATEGUI.DISPLAYED_LANGUAGES", _
                                                            System.Convert.ToUInt32(0))
-    
+    ```
 
 ![](sectionminus.png)See Also
 

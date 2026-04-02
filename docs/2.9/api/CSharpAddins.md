@@ -12,36 +12,33 @@ Now start your text-editor-of-choice, for instance notepad, and start writing th
 
 Every EPLAN add-in, this means also the C# add-in we are going to create, needs a certain class for managing the add-in. This class has to implement the functions, declared by the IEplAddIn interface: 
 
-C# |  Copy Code  
----|---  
-      
-    
-    public class AddInModule: Eplan.EplApi.ApplicationFramework.IEplAddIn
-           {
-                public bool OnRegister(ref System.Boolean bLoadOnStart)
-                {
-                      bLoadOnStart=true;
-                      return true;
-                 }
-                public bool OnUnregister()
-                {
-                      return true;
-                }
-                public bool OnInit()
-                {
-                      return true;
-                }
-                public bool OnInitGui()
-                {
-                      return true;
-                }
-                public bool OnExit()
-                {
-                      return true;
-                }
-          }
-      
-  
+```csharp
+public class AddInModule: Eplan.EplApi.ApplicationFramework.IEplAddIn
+       {
+            public bool OnRegister(ref System.Boolean bLoadOnStart)
+            {
+                  bLoadOnStart=true;
+                  return true;
+             }
+            public bool OnUnregister()
+            {
+                  return true;
+            }
+            public bool OnInit()
+            {
+                  return true;
+            }
+            public bool OnInitGui()
+            {
+                  return true;
+            }
+            public bool OnExit()
+            {
+                  return true;
+            }
+      }
+```
+
 Now save this source code in folder SimpleCSharpAddIn as a file named AddInModule.cs. 
 
 ### c) Compiling the assembly (dll) 
@@ -79,31 +76,28 @@ Our add-in now appears in the list of the API modules dialog and will be loaded,
 
 Therefore create a second source file and save it as SimpleCSharpAction.cs in your source directory. To create an action, we need a class, which implements the IEplAction interface. For a more detailed explanation, see the [Actions](Actions.html) topic. 
 
-C# |  Copy Code  
----|---  
-      
-    
-    using Eplan.EplApi.ApplicationFramework;
-    public class CSharpAction: IEplAction
-    {
-          public bool Execute(ActionCallingContext ctx )
-          {
-                new Decider().Decide(EnumDecisionType.eOkDecision, "CSharpAction was called!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
-                return true;
-          }
-          public bool OnRegister(ref string Name, ref int Ordinal)
-          {
-                Name  = "CSharpAction";
-                Ordinal     = 20;
-                return true;
-          }
-          public  void GetActionProperties(ref ActionProperties actionProperties)
-          {
-               actionProperties.Description= "Action test with parameters.";
-          }
-    }
-      
-  
+```csharp
+using Eplan.EplApi.ApplicationFramework;
+public class CSharpAction: IEplAction
+{
+      public bool Execute(ActionCallingContext ctx )
+      {
+            new Decider().Decide(EnumDecisionType.eOkDecision, "CSharpAction was called!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
+            return true;
+      }
+      public bool OnRegister(ref string Name, ref int Ordinal)
+      {
+            Name  = "CSharpAction";
+            Ordinal     = 20;
+            return true;
+      }
+      public  void GetActionProperties(ref ActionProperties actionProperties)
+      {
+           actionProperties.Description= "Action test with parameters.";
+      }
+}
+```
+
 Now the compiler call needs to be slightly extended: 
 
 csc /target:library /reference:..\\..\\..\\..\bin\Eplan.EplApi.AFu.dll /reference:..\\..\\..\\..\bin\Eplan.EplApi.Baseu.dll /out:SimpleCSharpAddIn.dll AddinModule.cs SimpleCSharpAction.cs 

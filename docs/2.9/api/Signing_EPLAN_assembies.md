@@ -42,18 +42,15 @@ a) Modify the AssemblyInfo.cs
 
 In your software projects, you need to add an additional attribute to your AssemblyInfo files of all the assemblies, which are referencing EPLAN API Assemblies. The EplanSignedAssemblyAttribute is implemented in the Eplan.EplApi.Starter.dll, which you always have to reference in your API application. The following example shows how to use the attribute in your AssemblyInfo file:
 
-C# |  Copy Code  
----|---  
-      
-    
-    using System.Reflection;
-    using System.Runtime.CompilerServices;
-    using System.Runtime.InteropServices;
-    using Eplan.EplApi.Starter;
-    //..
-    [assembly: EplanSignedAssemblyAttribute(true)]
-      
-  
+```csharp
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using Eplan.EplApi.Starter;
+//..
+[assembly: EplanSignedAssemblyAttribute(true)]
+```
+
 b) Delay sign the assemblies 
 
 The easiest way for delay signing your assemblies (dll or exe) is entering the public key file in the signing properties of your software projects in Visual Studio. Check "Sign the assembly" and activate the "Delay sign only" flag. See the following image: 

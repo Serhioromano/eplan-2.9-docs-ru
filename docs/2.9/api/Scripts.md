@@ -19,16 +19,25 @@ In a script following Microsoft .Net framework assemblies can be used :
 
 also these EPLAN assemblies are referenced by default : 
 
-  * Eplan.EplApi.Base 
+=== "Eplan.EplApi.Base"
+
+    ```
     * Namespace Eplan.EplApi.Base
-  * Eplan.EplApi.ApplicationFramework 
+    ```
+
+=== "Eplan.EplApi.ApplicationFramework"
+
+    ```
     * Namespace Eplan.EplApi.ApplicationFramework
     * Namespace Eplan.EplApi.Scripting
-  * Eplan.EplApi.Gui 
+    ```
+
+=== "Eplan.EplApi.Gui"
+
+    ```
     * Namespace Eplan.EplApi.Gui
     * NameSpace Eplan.EplApi.Scripting
-
-
+    ```
 
 **There is no way to reference additional assemblies (.Net framework, EPLAN or other providers)!**
 

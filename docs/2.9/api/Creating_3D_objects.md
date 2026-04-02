@@ -2,16 +2,15 @@
 
 Creating most 3D objects is done by using an article number and variant. The example below shows how to create and place a cabinet in InstallationSpace. 
 
-C# |  Copy Code  
----|---  
-      
-    
-    Cabinet oCabinet = new Cabinet();
-     oCabinet.Create(oProject, "TS 8886.500", "1");
-     //Parent will be set to installation space
-     oCabinet.Parent = oProject.InstallationSpaces[0];
-    //create identity matrix
-     System.Windows.Media.Media3D.Matrix3D oMatrix = new System.Windows.Media.Media3D.Matrix3D();
-    //change the location to (100, 150, 0)
-     oMatrix.Transform(new System.Windows.Media.Media3D.Point3D(100, 150, 0));
-     oCabinet.AbsoluteTransformation = oMatrix;
+```csharp
+Cabinet oCabinet = new Cabinet();
+ oCabinet.Create(oProject, "TS 8886.500", "1");
+ //Parent will be set to installation space
+ oCabinet.Parent = oProject.InstallationSpaces[0];
+//create identity matrix
+ System.Windows.Media.Media3D.Matrix3D oMatrix = new System.Windows.Media.Media3D.Matrix3D();
+//change the location to (100, 150, 0)
+ oMatrix.Transform(new System.Windows.Media.Media3D.Point3D(100, 150, 0));
+ oCabinet.AbsoluteTransformation = oMatrix;
+```
+

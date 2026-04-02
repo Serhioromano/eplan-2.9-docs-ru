@@ -6,12 +6,9 @@ The types of pages, which you can create are listed in the DocumentTypeManager.D
 
 The example below shows, how to create a schematic page: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     //create new Schematic page in current project
     PagePropertyList oPagePropList = new PagePropertyList();
     //set Plant
@@ -20,9 +17,11 @@ The example below shows, how to create a schematic page:
     oPagePropList[Properties.Page.DESIGNATION_LOCATION] = "L1";
     Page oNewPage = new Page();
     oNewPage.Create(m_oTestProject, DocumentTypeManager.DocumentType.Circuit, oPagePropList);
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     'create new Schematic page in current project
     Dim oPagePropList As New PagePropertyList()
     'set Plant
@@ -33,7 +32,7 @@ The example below shows, how to create a schematic page:
     oPagePropList(Properties.Page.PAGE_COUNTER) = PropertyValue.op_Implicit(4)
     Dim oNewPage As New Page()
     oNewPage.Create(m_oTestProject, DocumentTypeManager.DocumentType.Circuit, oPagePropList)
-    
+    ```
 
 Remarks
 

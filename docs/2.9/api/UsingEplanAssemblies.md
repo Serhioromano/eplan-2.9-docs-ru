@@ -6,12 +6,9 @@ The easiest way to use EPLAN API objects in your program is to directly use the 
 
 Then -- in the appropriate place (e.g. in the main form) -- you create an instance of class Eplan.EplApi.System.EplApplication and initialize it: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     private Eplan.EplApi.System.EplApplication m_oEplApp;
     public MainForm()
     {
@@ -23,9 +20,11 @@ Then -- in the appropriate place (e.g. in the main form) -- you create an instan
        System.String strAppModifier="";
        m_oEplApp.Init(strAppModifier);
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Private m_oEplApp As Eplan.EplApi.System.EplApplication
     Public Sub New()
        '
@@ -36,7 +35,7 @@ Then -- in the appropriate place (e.g. in the main form) -- you create an instan
        Dim strAppModifier As System.String = ""
        m_oEplApp.Init(strAppModifier)
     End Sub 'New MainForm
-    
+    ```
 
 The string parameter strAppModifier determines, which configuration file is used and thus which modules will be loaded. If you pass an empty string like in the above example, the eplset.xml of the standard version of the current user will be loaded. 
 
@@ -57,103 +56,94 @@ You can make sure, the API assemblies are loaded from the bin directory by diffe
 
 
 
-C# |  Copy Code  
----|---  
-      
-    
-    // Use the finder to find the correct eplan version if not yet known
-    EplanFinder oEplanFinder = new EplanFinder();
-    String strBinPath = oEplanFinder.SelectEplanVersion(true);
-    
-    // Check if user has selected any Eplan variant (Electric P8, etc)
-    if (String.IsNullOrEmpty(strBinPath))
-        return;
-    
-    //Use the AssemblyResolver to let the program know where all an Eplan variant can be found.
-    AssemblyResolver oResolver = new AssemblyResolver();
-    oResolver.SetEplanBinPath(strBinPath);
-    
-    //Now pin to Eplan. This way all referenced eplan assemblies are loaded from the platform bin path.
-    oResolver.PinToEplan();
-    
-    //Use separate class to initialize EplApplication. Pass path to Eplan variant bin in order to set EplApplication.EplanBinFolder property
-    Form1 oForm = new Form1();
-    oForm.EplanBinFolder = oResolver.GetEplanBinPath();
-    Application.Run(oForm);
-      
-  
+```csharp
+// Use the finder to find the correct eplan version if not yet known
+EplanFinder oEplanFinder = new EplanFinder();
+String strBinPath = oEplanFinder.SelectEplanVersion(true);
+
+// Check if user has selected any Eplan variant (Electric P8, etc)
+if (String.IsNullOrEmpty(strBinPath))
+    return;
+
+//Use the AssemblyResolver to let the program know where all an Eplan variant can be found.
+AssemblyResolver oResolver = new AssemblyResolver();
+oResolver.SetEplanBinPath(strBinPath);
+
+//Now pin to Eplan. This way all referenced eplan assemblies are loaded from the platform bin path.
+oResolver.PinToEplan();
+
+//Use separate class to initialize EplApplication. Pass path to Eplan variant bin in order to set EplApplication.EplanBinFolder property
+Form1 oForm = new Form1();
+oForm.EplanBinFolder = oResolver.GetEplanBinPath();
+Application.Run(oForm);
+```
+
 3\. Publish the codebases of all needed API assemblies in the application config file. (An XML file, which is named like your executable with an additional extension .config., e.g. MyApplication.exe.config). The following code shows an example for the contents of such a config file.
 
-XML |  Copy Code  
----|---  
-      
-    
-    <?xml version="1.0"?>
-    <configuration>
-      <runtime>
-        <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-          <dependentAssembly>
-            <assemblyIdentity name="Eplan.EplApi.Systemu" publicKeyToken="57aaa27e22f7b107" />
-            <publisherPolicy apply="yes" />
-            <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.Systemu.dll" />
-          </dependentAssembly>
-          <dependentAssembly>
-            <assemblyIdentity name="Eplan.EplApi.AFu" publicKeyToken="57aaa27e22f7b107" />
-            <publisherPolicy apply="yes" />
-            <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.AFu.dll" />
-          </dependentAssembly>
-          <dependentAssembly>
-            <assemblyIdentity name="Eplan.EplApi.Baseu" publicKeyToken="57aaa27e22f7b107" />
-            <publisherPolicy apply="yes" />
-            <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.Baseu.dll" />
-          </dependentAssembly>
-          <dependentAssembly>
-            <assemblyIdentity name="Eplan.EplApi.DataModelu" publicKeyToken="57aaa27e22f7b107" />
-            <publisherPolicy apply="yes" />
-            <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.DataModelu.dll" />
-          </dependentAssembly>
-          <dependentAssembly>
-            <assemblyIdentity name="Eplan.EplApi.HEServicesu" publicKeyToken="57aaa27e22f7b107" />
-            <publisherPolicy apply="yes" />
-            <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.HEServicesu.dll" />
-          </dependentAssembly>
-          <dependentAssembly>
-            <assemblyIdentity name="Eplan.EplApi.EServicesu" publicKeyToken="57aaa27e22f7b107" />
-            <publisherPolicy apply="yes" />
-            <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.EServicesu.dll" />
-          </dependentAssembly>
-        </assemblyBinding>
-      </runtime>
-    </configuration>
-      
-  
+```xml
+<?xml version="1.0"?>
+<configuration>
+<runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Eplan.EplApi.Systemu" publicKeyToken="57aaa27e22f7b107" />
+        <publisherPolicy apply="yes" />
+        <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.Systemu.dll" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Eplan.EplApi.AFu" publicKeyToken="57aaa27e22f7b107" />
+        <publisherPolicy apply="yes" />
+        <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.AFu.dll" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Eplan.EplApi.Baseu" publicKeyToken="57aaa27e22f7b107" />
+        <publisherPolicy apply="yes" />
+        <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.Baseu.dll" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Eplan.EplApi.DataModelu" publicKeyToken="57aaa27e22f7b107" />
+        <publisherPolicy apply="yes" />
+        <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.DataModelu.dll" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Eplan.EplApi.HEServicesu" publicKeyToken="57aaa27e22f7b107" />
+        <publisherPolicy apply="yes" />
+        <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.HEServicesu.dll" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Eplan.EplApi.EServicesu" publicKeyToken="57aaa27e22f7b107" />
+        <publisherPolicy apply="yes" />
+        <codeBase version="1.0.0.0" href="file:///C:\Program Files\EPLAN\Platform\2.2.0\Bin\Eplan.EplApi.EServicesu.dll" />
+      </dependentAssembly>
+    </assemblyBinding>
+</runtime>
+</configuration>
+```
+
 > 4\. Last but not least, you can implement an AssemblyResolve event handler in your offline application, where you load the looked-for assemblies explicitly. For this, also you need to set the current directory of the application to the respective bin directory. The following code shows an example for this:
 
-C# |  Copy Code  
----|---  
-      
-    
-            [STAThread]
-            static void Main()
-            {
-                Application.EnableVisualStyles();
-                Application.SetCompatibleTextRenderingDefault(false);
-                Environment.CurrentDirectory = @"C:\program files\EPLAN\platform\x.x.x\BIN\"; // x.x.x = your desired EPLAN version
-                AppDomain appDomain = AppDomain.CurrentDomain;
-                appDomain.AssemblyResolve += new ResolveEventHandler(MyResolveEventHandler);
-    
-                Application.Run(new Form1());
-            }
-            static Assembly MyResolveEventHandler(object sender, ResolveEventArgs args)
-            {
-                Console.WriteLine("Resolving...");
-                string sAssemblyName = args.Name.Split(',')[0];
-                Assembly ass = Assembly.LoadFile(@"C:\program files\EPLAN\platform\x.x.x\BIN\" + sAssemblyName + ".dll");
-                return ass ;
-            }
+```csharp
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Environment.CurrentDirectory = @"C:\program files\EPLAN\platform\x.x.x\BIN\"; // x.x.x = your desired EPLAN version
+            AppDomain appDomain = AppDomain.CurrentDomain;
+            appDomain.AssemblyResolve += new ResolveEventHandler(MyResolveEventHandler);
+
+            Application.Run(new Form1());
         }
-      
-  
+        static Assembly MyResolveEventHandler(object sender, ResolveEventArgs args)
+        {
+            Console.WriteLine("Resolving...");
+            string sAssemblyName = args.Name.Split(',')[0];
+            Assembly ass = Assembly.LoadFile(@"C:\program files\EPLAN\platform\x.x.x\BIN\" + sAssemblyName + ".dll");
+            return ass ;
+        }
+    }
+```
+
 In Visual Studio Tools for Office (**VSTO**) projects, the assembly resolver or the application config file is not working. Office still tries to copy the EPLAN API assemblies to a temporary folder before loading. VSTO applications will only work, if you set the codebases of the API assemblies in the machine.config file, which you usualy find in the directory C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\CONFIG.
 
 Remarks 

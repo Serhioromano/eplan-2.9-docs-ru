@@ -10,12 +10,9 @@ The script in the first example reacts the "onMainStart" event. The function MyE
 
 The second example shows an event handler script, which catches any "onActionStart.String" event. There is one event parameter for the action's name. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class SimpleEventHandler
     {
         [DeclareEventHandler("onMainStart")]
@@ -25,7 +22,7 @@ The second example shows an event handler script, which catches any "onActionSta
                return;
          }
     } 
-    
+
     public class SimpleEventHandler
     {
         [DeclareEventHandler("onActionStart.String.*")]
@@ -45,22 +42,22 @@ The second example shows an event handler script, which catches any "onActionSta
             return 0;
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class SimpleEventHandler
-    
+
        <DeclareEventHandler("onMainStart")>  _
        Public Sub MyEventHandlerFunction()
           Dim dec As Decider = New Decider
           dec.Decide(EnumDecisionType.eOkDecision, "MyEventHandlerFunction was called!", "SimpleEventHandler", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
        End Sub 'MyEventHandlerFunction
     End Class 'SimpleEventHandler
-    
-     
-    
+
     Public Class SimpleEventHandler
-    
+
        <DeclareEventHandler("onActionStart.String.*")>  _
        Public Function MyEventHandlerFunction2(iEventParameter As IEventParameter) As Long
        Dim dec As Decider = New Decider
@@ -68,16 +65,16 @@ The second example shows an event handler script, which catches any "onActionSta
              Dim oEventParameterString As New EventParameterString(iEventParameter)
              Dim strActionName As [String] = oEventParameterString.String
              dec.Decide(EnumDecisionType.eOkDecision, "Action " + strActionName + " was started!", "MyEventHandler", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
-    
+
           Catch exc As System.InvalidCastException
              Dim strExc As [String] = exc.Message
              dec.Decide(EnumDecisionType.eOkDecision, "Parameter error: " + strExc, "MyEventHandler", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
           End Try
-    
+
           Return 0
        End Function 'MyEventHandlerFunction2
     End Class 'SimpleEventHandler
-    
+    ```
 
 See Also
 

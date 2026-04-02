@@ -12,12 +12,9 @@ The IEplMessage interface declares 3 functions:
 
 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class Message: Eplan.EplApi.EServices.IMessage
     {
         public void OnRegister( ref IMessage.Region eRegionId, ref int iMessageId,
@@ -39,9 +36,11 @@ The IEplMessage interface declares 3 functions:
             // TODO: activate help for this message
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class Message
        Implements Eplan.EplApi.EServices.IMessage
        Public Sub OnRegister(ByRef eRegionId As IMessage.Region, ByRef iMessageId As Integer, _
@@ -53,27 +52,24 @@ The IEplMessage interface declares 3 functions:
           iOrdinal = 20
           Return
        End Sub 'OnRegister
-    
+
        Public Function GetMessageText() As System.String Implements Eplan.EplApi.EServices.IMessage.GetMessageText
           ' TODO: Provide text from resource in active GUI language
           Return "Message text for %1!s! from Eplan.EplAddIn.Demo.Messages"
        End Function 'GetMessageText
-    
+
        Public Sub DoHelp() Eplan.EplApi.EServices.IMessage.DoHelp
           Dim dec As Decider = New Decider
           dec.Decide(EnumDecisionType.eOkDecision, "DoHelp was called!", "Eplan.EplAddIn.Demo.Messages", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
        End Sub 'DoHelp ' TODO: activate help for this message
     End Class 'Message
-    
+    ```
 
 A registered message can be written to the message database with help of the MessageManager class. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     Eplan.EplApi.EServices.MessageManager oMessageMgr = new Eplan.EplApi.EServices.MessageManager();
     Eplan.EplApi.DataModel.ProjectManager oPM= new Eplan.EplApi.DataModel.ProjectManager();
     Eplan.EplApi.DataModel.Project oProject= oPM.CurrentProject;
@@ -86,9 +82,11 @@ A registered message can be written to the message database with help of the Mes
         oMessageMgr.AddMessage( oProject, Eplan.EplApi.EServices.IMessage.Region.Externals, 25,
          "XYZ", oObject1, false, oObject2, "Additional Text");
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oMessageMgr As New Eplan.EplApi.EServices.MessageManager()
     Dim oPM As Eplan.EplApi.DataModel.ProjectManager = New Eplan.EplApi.DataModel.ProjectManager()
     Dim oProject As Eplan.EplApi.DataModel.Project = oPM.CurrentProject
@@ -99,7 +97,7 @@ A registered message can be written to the message database with help of the Mes
        Dim oObject2 As Eplan.EplApi.DataModel.StorableObject = arrFunction(1)
        oMessageMgr.AddMessage(oProject, Eplan.EplApi.EServices.IMessage.Region.Externals, 25, "XYZ", oObject1, False, oObject2, "Additional Text")
     End If
-    
+    ```
 
 ### Overriding text of an existing message 
 
@@ -107,36 +105,33 @@ It is **not** possible to change an existing verification by overriding it via A
 
 The following example shows, how to override the existing 007005 "Device without main function." message: 
 
-C# |  Copy Code  
----|---  
-      
-    
-    ///
-    /// This function returns the message text.
-    /// One verification needs always exactly one message text.
-    ///
-    public string GetMessageText()
-    {
-       return "This device has absolutely no main function!!!!";
-    }
-    
-    ///
-    /// This is the registration function of the message belonging to the verification.
-    /// Parameters:
-    /// message region
-    /// message number
-    /// classification: error, message, or info.
-    /// overload priority
-    public void OnRegister(ref String strCreator, ref Eplan.EplApi.EServices.IMessage.Region eRegion, ref int iMessageId, ref Eplan.EplApi.EServices.IMessage.Classification eClassification, ref int iOrdinal)
-    {
-       strCreator = "de.Eplan.Demo";
-       eRegion = IMessage.Region.Devices;
-       iMessageId = 5;
-       eClassification = IMessage.Classification.Error;
-       iOrdinal = 50; // higher than 20
-    }
-      
-  
+```csharp
+///
+/// This function returns the message text.
+/// One verification needs always exactly one message text.
+///
+public string GetMessageText()
+{
+   return "This device has absolutely no main function!!!!";
+}
+
+///
+/// This is the registration function of the message belonging to the verification.
+/// Parameters:
+/// message region
+/// message number
+/// classification: error, message, or info.
+/// overload priority
+public void OnRegister(ref String strCreator, ref Eplan.EplApi.EServices.IMessage.Region eRegion, ref int iMessageId, ref Eplan.EplApi.EServices.IMessage.Classification eClassification, ref int iOrdinal)
+{
+   strCreator = "de.Eplan.Demo";
+   eRegion = IMessage.Region.Devices;
+   iMessageId = 5;
+   eClassification = IMessage.Classification.Error;
+   iOrdinal = 50; // higher than 20
+}
+```
+
 See Also
 
 #### Reference

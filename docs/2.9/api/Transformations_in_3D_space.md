@@ -18,33 +18,23 @@ OffsetX OffsetY OffsetZ M44
 
 Here is an example of setting transformation matrix to a 3D object:
 
-C# |  Copy Code  
----|---  
-      
-    
-    Vector3D oVector3D = new Vector3D();
-    oVector3D.X = 3.0;
-    oVector3D.Y = 4.0;
-    oVector3D.Z = 5.0;
-    Quaternion oQuaternion = new Quaternion(oVector3D, 2.0);
-    Matrix3D oMatrix3D = new Matrix3D();
-    oMatrix3D.Rotate(oQuaternion);
-    oMatrix3D.Translate(new Vector3D(1.0, 2.0, 3.0));
-    oComponent1.AbsoluteTransformation = oMatrix3D;
-      
-  
+```csharp
+Vector3D oVector3D = new Vector3D();
+oVector3D.X = 3.0;
+oVector3D.Y = 4.0;
+oVector3D.Z = 5.0;
+Quaternion oQuaternion = new Quaternion(oVector3D, 2.0);
+Matrix3D oMatrix3D = new Matrix3D();
+oMatrix3D.Rotate(oQuaternion);
+oMatrix3D.Translate(new Vector3D(1.0, 2.0, 3.0));
+oComponent1.AbsoluteTransformation = oMatrix3D;
+```
+
 It is also possible to move 3D object using Move() method :
 
-C# |  Copy Code  
----|---  
-      
-    
-    oComponent1.Move(1.0, 2.0, 3.0);
-      
-      
-    
-    
-    
+```csharp
+oComponent1.Move(1.0, 2.0, 3.0);
+```
 
 For more details about Matrix3D structure, please refer to [MSDN webpage](https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.media3d.matrix3d). 
 

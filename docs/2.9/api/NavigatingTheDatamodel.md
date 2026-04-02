@@ -23,12 +23,9 @@ There are also navigational properties with a one-to-one relationship, like Page
 
 The following code snippet shows, how to loop over the Functions on a page and get the name of the Function: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     // get an array with all functions on the page
     Function[] arrFuncs = oPage.Functions;
     // loop over the functions and get their names
@@ -37,9 +34,11 @@ The following code snippet shows, how to loop over the Functions on a page and g
         string sName = oF.Name;
         // Do something with the Name
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     ' get an array with all functions on the page
     Dim arrFuncs As Function() = oPage.Functions
     ' loop over the functions and get their names
@@ -48,20 +47,13 @@ The following code snippet shows, how to loop over the Functions on a page and g
        Dim sName As String = oF.Name
        ' Do something with the Name
     Next
-    
-    
-    
-     
-    
+    ```
 
 You even can filter these lists before getting them. The following example sets a filter to get only the functions, which have the function category PLUG. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     //set filter category to PLUG
     oPage.Filter.resetFilter();
     oPage.Filter.Category = Function.Enums.Category.PLUG;
@@ -72,9 +64,11 @@ You even can filter these lists before getting them. The following example sets 
         string sPlugName = oF.Name;
         // Do something with the Name
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     'set filter category to PLUG
     oPage.Filter.resetFilter()
     oPage.Filter.Category = Function.Enums.Category.PLUG
@@ -85,7 +79,7 @@ You even can filter these lists before getting them. The following example sets 
        Dim sPlugName As String = oF.Name
        ' Do something with the Name
     Next
-    
+    ```
 
 Please mind, that using navigation properties in order to set properties of an object in a nested way (e.g. oRectangle.Pen.ColorId = 5 ) will not work. In the example you need to first get the Pen object from the rectangle and then change the color id and afterwards set the changed Pen object back to the Rectangle class. 
 
@@ -93,12 +87,9 @@ Please mind, that using navigation properties in order to set properties of an o
 
 The DMObjectsFinder object is always initialized with a project. Starting with the project, it can get nearly any list of objects of a given type. Before getting the lists, they can be filtered by different means like a distinct set of properties. The following example gets all functions with a given device tag (name): 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     string strFuncName = "=AP+PT1-X4";
     // initialize the DMObjectsFinder with a project
     DMObjectsFinder oFinder = new DMObjectsFinder(m_oProject);
@@ -107,14 +98,16 @@ The DMObjectsFinder object is always initialized with a project. Starting with t
     oFunctionsFilter.Name = strFuncName;
     //get function with given name from project
     Function[] arrFuncs = oFinder.GetFunctions(oFunctionsFilter);
-    
+
     foreach(Function oF in arrFuncs)
     {
         Console.Out.WriteLine("Function name: '{0}'", oF.Name);
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim strFuncName As String = "=AP+PT1-X4"
     ' initialize the DMObjectsFinder with a project
     Dim oFinder As New DMObjectsFinder(m_oProject)
@@ -123,16 +116,12 @@ The DMObjectsFinder object is always initialized with a project. Starting with t
     oFunctionsFilter.Name = strFuncName
     'get function with given name from project
     Dim arrFuncs As Function() = oFinder.GetFunctions(oFunctionsFilter)
-    
+
     Dim oF As Function
     For Each oF In  arrFuncs
        Console.Out.WriteLine("Function name: '{0}'", oF.Name)
     Next oF
-    
-    
-    
-     
-    
+    ```
 
 ### Search class
 
@@ -140,12 +129,9 @@ The class Eplan.EplApi.HEServices.Search offers another way for finding objects 
 
 Using this class you can search for any string in a specified range of objects. The following example demonstrates the usage of the Search class. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     Search oSearch = new Search();
     // Set all needed settings
     oSearch[Search.Settings.CaseSensitive] = false;
@@ -171,9 +157,11 @@ Using this class you can search for any string in a specified range of objects. 
         oSearch.Project(oProject, Name);
     }
     StorableObject[] oResults = oSearch.GetAllSearchDBEntries(oProject, 0);
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oSearch As Search = New Search
     oSearch.SearchDatabaseNr = 0
     oSearch.ClearSearchDB(oProject, 0)
@@ -189,3 +177,5 @@ Using this class you can search for any string in a specified range of objects. 
     oSearch(Search.Settings.ProjectData) = True
     oSearch.Project(oProject, txtSearch.Text)
     Dim oFoundObjects As StorableObject() = oSearch.GetAllSearchDBEntries(oProject, 0)
+    ```
+

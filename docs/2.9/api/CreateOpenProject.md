@@ -8,22 +8,16 @@ To create a project, you use the CreateProject method. It takes two parameters, 
 
 The following example shows, how to create a project. 
 
-C# |  Copy Code  
----|---  
-      
-    
-    Project oProject = new ProjectManager().CreateProject("$(MD_PROJECTS)\Example_003.elk", "$(MD_TEMPLATES)\IEC_tpl001.ept");
-      
-  
+```csharp
+Project oProject = new ProjectManager().CreateProject("$(MD_PROJECTS)\Example_003.elk", "$(MD_TEMPLATES)\IEC_tpl001.ept");
+```
+
 To open a project, you use the OpenProject method. Its only parameter is the full name and path of the project's link file. 
 
-C# |  Copy Code  
----|---  
-      
-    
-    Project oProject = new ProjectManager().OpenProject("$(MD_PROJECTS)\ESS_Sample_Project.elk");
-      
-  
+```csharp
+Project oProject = new ProjectManager().OpenProject("$(MD_PROJECTS)\ESS_Sample_Project.elk");
+```
+
 ### Remarks
 
 In offline programs, you need to open a LockingStep, before you open or create an EPLAN project or use any other DataModel object.

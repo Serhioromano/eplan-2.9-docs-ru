@@ -4,33 +4,29 @@ Error handling in EPLAN is done preferentially by using exceptions. The API fram
 
 If an Exception object of this type is thrown, the EPLAN framework catches the exception and writes the data into the systems error management or shows the error message in the EPLAN error dialog. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     Eplan.EplApi.Base.BaseException exc2= new Eplan.EplApi.Base.BaseException(
                                                     "Error from CSharpAction thrown as exception",
                                                     Eplan.EplApi.Base.MessageLevel.Error);
-    
+
     throw exc2;
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim exc2 As New Eplan.EplApi.Base.BaseException("Error from VBAction thrown as exception", _
                                                       Eplan.EplApi.Base.MessageLevel.Error)
     Throw exc2
-    
+    ```
 
 Of course you can also catch exceptions in your API application and evaluate them, to e.g. display your own error message. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
                // Test wrong settings name (throws BaseException, which is handled here)
                 try
                 {
@@ -42,9 +38,11 @@ Of course you can also catch exceptions in your API application and evaluate the
                     String strMessage= exc.Message;
                     new Decider().Decide(EnumDecisionType.eOkDecision, "Exception: " + strMessage, "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
                 }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     ' Test wrong settings name (throws BaseException, which is handled here)
     Dim dec As Decider = New Decider
     Try
@@ -54,3 +52,5 @@ Of course you can also catch exceptions in your API application and evaluate the
        Dim strMessage As String = exc.Message
        dec.Decide(EnumDecisionType.eOkDecision, "Exception: " + strMessage, "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
     End Try
+    ```
+

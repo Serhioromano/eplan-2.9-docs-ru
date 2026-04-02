@@ -8,12 +8,9 @@ An add-in can add new actions to EPLAN. Actions can be called by the command lin
 
 An action is implemented by a class, which inherits the interface IEplAction. You need to add an implementation of all the functions of the interface. An add-in can contain an arbitrary number of actions. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class CSharpAction: Eplan.EplApi.ApplicationFramework.IEplAction
     {
         ///<summary>
@@ -24,7 +21,7 @@ An action is implemented by a class, which inherits the interface IEplAction. Yo
         {
              new Decider().Decide(EnumDecisionType.eOkDecision, "CSharpAction was called!", "Eplan.EplAddIn.Demo1", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
              // TODO: Add your Code here
-    
+
              return true;
         }
         ///<summary>
@@ -59,12 +56,14 @@ An action is implemented by a class, which inherits the interface IEplAction. Yo
             // actionProperties.AddParameter(secondParam);
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class VBAction
        Implements Eplan.EplApi.ApplicationFramework.IEplAction
-    
+
        '''<summary>
        '''This function is called when executing the action.
        '''</summary>
@@ -76,7 +75,7 @@ An action is implemented by a class, which inherits the interface IEplAction. Yo
           ' TODO: Add your Code here
           Return True
        End Function 'Execute
-    
+
        '''<summary>
        '''This function is called by the application framework, when registering the add-in.
        '''</summary>
@@ -89,7 +88,7 @@ An action is implemented by a class, which inherits the interface IEplAction. Yo
           Ordinal = 20
           Return True
        End Function 'OnRegister
-    
+
        '''<summary>
        ''' Documentation function for the action, which is called by EPLAN on demand
        ''' returns the descriptive text for the action itself and if the action takes string parameters
@@ -106,20 +105,13 @@ An action is implemented by a class, which inherits the interface IEplAction. Yo
           actionProperties.AddParameter(firstParam)
        End Sub 'getActionProperties
     End Class 'VBAction ' description of second parameter
-    
-    
-    
-    [C#]
-    
+    ```
 
 By the parameter of type ActionCallingContext parameters can be passed to the action. For extracting the parameter values and for setting parameters (as return parameters!) the class ActionCallingContext provides a set of functions: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public bool Execute(Eplan.EplApi.ApplicationFramework.ActionCallingContext ctx )
     {
        String strParamValue=null;
@@ -131,9 +123,11 @@ By the parameter of type ActionCallingContext parameters can be passed to the ac
        ctx.AddParameter("ReturnParam", strReturnValue);
        return true;
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Function Execute(ctx As Eplan.EplApi.ApplicationFramework.ActionCallingContext) As Boolean _
           Implements Eplan.EplApi.ApplicationFramework.IEplAction.Execute
        Dim strParamValue As String = String.Empty
@@ -145,16 +139,13 @@ By the parameter of type ActionCallingContext parameters can be passed to the ac
        ctx.AddParameter("ReturnParam", strReturnValue)
        Return True
     End Function 'Execute
-    
+    ```
 
 If an action is assigned to a menu item or a tool bar button, these items are only enabled if the action is registered and enabled. You can enable/disable a registered action via the IEplActionEnable interface. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class TestAction : Eplan.EplApi.ApplicationFramework.IEplAction, Eplan.EplApi.ApplicationFramework.IEplActionEnable
         {
             //IEplAction Members
@@ -172,9 +163,11 @@ If an action is assigned to a menu item or a tool bar button, these items are on
             }
             #endregion
         }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class TestAction
        Implements Eplan.EplApi.ApplicationFramework.IEplAction
        Implements Eplan.EplApi.ApplicationFramework.IEplActionEnable
@@ -188,7 +181,7 @@ If an action is assigned to a menu item or a tool bar button, these items are on
           End If
        End Function 'Enabled
     End Class 'TestAction
-    
+    ```
 
 See Also
 

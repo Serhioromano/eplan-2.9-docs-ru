@@ -6,34 +6,30 @@ For placing macros, the EPLAN API provides the class Eplan.EplApi.HEServices.Ins
 
 The following example shows how to place a macro on page at a given position: 
 
-C# |  Copy Code  
----|---  
-      
-    
-    Insert oInsert = new Insert();
-    oInsert.WindowMacro("$(MD_MACROS)\BECK.KL1012.ema", 0, m_oTestProject.Pages[9], new PointD(70.0, 0.0), Insert.MoveKind.Relative);
-      
-  
+```csharp
+Insert oInsert = new Insert();
+oInsert.WindowMacro("$(MD_MACROS)\BECK.KL1012.ema", 0, m_oTestProject.Pages[9], new PointD(70.0, 0.0), Insert.MoveKind.Relative);
+```
+
 ### Placing macros and assigning value sets
 
 If there are PlaceHolders objects in a macro, you can assign value sets by using result from Insert.WindoMacro function : 
 
-C# |  Copy Code  
----|---  
-      
-    
-            Insert oInsert = new Insert();
-            StorableObject[] oInsertedObjects = oInsert.WindowMacro(@"$(MD_MACROS)MacroWithPlaceholder.ema", 0, m_oTestProject.Pages[9], new PointD(70.0, 0.0), Insert.MoveKind.Relative);
-    
-            foreach (StorableObject oSOTemp in oInsertedObjects)
-            {
-                //we are searching for PlaceHolder 'Three-Phase' in the results
-                 PlaceHolder oPlaceHoldeThreePhase = oSOTemp  as Eplan.EplApi.DataModel.Graphics.PlaceHolder;
-                if((oPlaceHoldeThreePhase != null)
-                    &&
-                    (oPlaceHoldeThreePhase.Name == "Three-Phase")
-                    )
-                 {
-                     oPlaceHoldeThreePhase.ApplyRecord("Motor 0,75 KW");
-                 }
-            }
+```csharp
+        Insert oInsert = new Insert();
+        StorableObject[] oInsertedObjects = oInsert.WindowMacro(@"$(MD_MACROS)MacroWithPlaceholder.ema", 0, m_oTestProject.Pages[9], new PointD(70.0, 0.0), Insert.MoveKind.Relative);
+
+        foreach (StorableObject oSOTemp in oInsertedObjects)
+        {
+            //we are searching for PlaceHolder 'Three-Phase' in the results
+             PlaceHolder oPlaceHoldeThreePhase = oSOTemp  as Eplan.EplApi.DataModel.Graphics.PlaceHolder;
+            if((oPlaceHoldeThreePhase != null)
+                &&
+                (oPlaceHoldeThreePhase.Name == "Three-Phase")
+                )
+             {
+                 oPlaceHoldeThreePhase.ApplyRecord("Motor 0,75 KW");
+             }
+        }
+```
+

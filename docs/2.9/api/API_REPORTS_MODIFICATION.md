@@ -134,23 +134,22 @@ Example
 
 Here is an example of creating an embedded report with report processing action : 
 
-C# |  Copy Code  
----|---  
-      
-    
-    //copy a form with placeholder texts processing action to the master data directory
-    File.Copy("c:\\temp\\PlugDiagramReportActionFormular.f22", new ProjectManager().Paths.Forms + "\\PlugDiagramReportActionFormular.f22", true);
-    //... and add it to project master data
-    StringCollection oProjectNewEntries = new StringCollection();
-    oProjectNewEntries.Add(@"PlugDiagramReportActionFormular.f22");
-    System.Collections.Hashtable oResult = new Masterdata().AddToProjectEx(m_oReportActionProject, oProjectNewEntries);
-    //prepare ReportBlock object
-    ReportBlock oReportBlock = new ReportBlock();
-    oReportBlock.Create(m_oReportActionProject);
-    //set a form with a placeholder texts processing action
-    oReportBlock.FormName = "PlugDiagramReportActionFormular";
-    oReportBlock.Type = DocumentTypeManager.DocumentType.PlugDiagram;
-    //set report processing action
-    oReportBlock.Action = "PlugDiagramReportAction";
-    //generate embedded report
-    ReportBlockReference oReportBlockReference = new Reports().CreateEmbeddedReport(oReportBlock, oPage, new PointD(10.0, 300.0));
+```csharp
+//copy a form with placeholder texts processing action to the master data directory
+File.Copy("c:\\temp\\PlugDiagramReportActionFormular.f22", new ProjectManager().Paths.Forms + "\\PlugDiagramReportActionFormular.f22", true);
+//... and add it to project master data
+StringCollection oProjectNewEntries = new StringCollection();
+oProjectNewEntries.Add(@"PlugDiagramReportActionFormular.f22");
+System.Collections.Hashtable oResult = new Masterdata().AddToProjectEx(m_oReportActionProject, oProjectNewEntries);
+//prepare ReportBlock object
+ReportBlock oReportBlock = new ReportBlock();
+oReportBlock.Create(m_oReportActionProject);
+//set a form with a placeholder texts processing action
+oReportBlock.FormName = "PlugDiagramReportActionFormular";
+oReportBlock.Type = DocumentTypeManager.DocumentType.PlugDiagram;
+//set report processing action
+oReportBlock.Action = "PlugDiagramReportAction";
+//generate embedded report
+ReportBlockReference oReportBlockReference = new Reports().CreateEmbeddedReport(oReportBlock, oPage, new PointD(10.0, 300.0));
+```
+

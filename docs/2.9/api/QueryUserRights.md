@@ -6,12 +6,9 @@ EPLAN can combine user interactions with certain rights. This is done by the EPL
 
 In your API application, you can find out, whether the rights management module is active and you can query the status of a given user right. The following example checks the user right for "XPLEditorStart", using the checkUserRights and the checkRightFor method. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     UserRights oUserRights = new UserRights();
     bool bRights = oUserRights.CheckUserRights();
     if (bRights)
@@ -30,9 +27,11 @@ In your API application, you can find out, whether the rights management module 
     {
         new Decider().Decide(EnumDecisionType.eOkDecision, "This application works without rights management!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oUserRights As New UserRights()
     Dim bRights As Boolean = oUserRights.CheckUserRights()
     Dim dec As Decider = New Decider
@@ -46,6 +45,6 @@ In your API application, you can find out, whether the rights management module 
     Else
        dec.Decide(EnumDecisionType.eOkDecision, "This application works without rights management!", "", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
     End If
-    
+    ```
 
 For information about the rights available in EPLAN and about their assignment to the users, please refer to the rights management dialog. You cannot add new user rights via API.

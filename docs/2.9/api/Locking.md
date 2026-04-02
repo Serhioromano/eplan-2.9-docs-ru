@@ -18,27 +18,24 @@ Please take into account that API locking only wraps P8 locking techniques. For 
 
 SafetyPoint class provides automatic locking of DataModel objects. The mechanism is enabled since creation and until disposal of a SafetyPoint object, so the recommended way is to use it with using keyword:
 
-C# |  Copy Code  
----|---  
-      
-    
-    var project = new ProjectManager {LockProjectByDefault = false}.OpenProject(@"$(MD_PROJECTS)\EPLAN-DEMO.elk");
-    //view placement '8' (on page =EB3+ETM/4)
-    ViewPlacement viewPlacement8 = project
-    .Pages[42]
-    .AllFirstLevelPlacements
-    .OfType<ViewPlacement>()
-    .FirstOrDefault(item => item.Properties.DMG_VIEWPLACEMENT_DESIGNATION.ToString() == "8");
-    using (SafetyPoint safetyPoint = SafetyPoint.Create())
-    {               
-        Console.WriteLine(viewPlacement8.IsLocked);     //false
-        viewPlacement8.Scale = 44.44;                   //set another scale
-        Console.WriteLine(viewPlacement8.IsLocked);     //true                  
-        safetyPoint.Commit();                           //necessary, otherwise changes are rolled-back
-    }
-    Console.WriteLine(viewPlacement8.IsLocked);         //again false
-      
-  
+```csharp
+var project = new ProjectManager {LockProjectByDefault = false}.OpenProject(@"$(MD_PROJECTS)\EPLAN-DEMO.elk");
+//view placement '8' (on page =EB3+ETM/4)
+ViewPlacement viewPlacement8 = project
+.Pages[42]
+.AllFirstLevelPlacements
+.OfType<ViewPlacement>()
+.FirstOrDefault(item => item.Properties.DMG_VIEWPLACEMENT_DESIGNATION.ToString() == "8");
+using (SafetyPoint safetyPoint = SafetyPoint.Create())
+{               
+    Console.WriteLine(viewPlacement8.IsLocked);     //false
+    viewPlacement8.Scale = 44.44;                   //set another scale
+    Console.WriteLine(viewPlacement8.IsLocked);     //true                  
+    safetyPoint.Commit();                           //necessary, otherwise changes are rolled-back
+}
+Console.WriteLine(viewPlacement8.IsLocked);         //again false
+```
+
 Automatic means that they are locked internally before any change and unlocked after disposing SafetyPoint. This way is recommended in case of necessity to lock as little as possible and is not clear which objects need to be locked to perform a change. After the SafetyPoint block, please call Commit method, otherwise the changes are rolled-back.
 
 ### What is a LockingStep?
@@ -49,16 +46,13 @@ LockingStep is an object for automatically unlocking API resources (as Projects,
 
 
 
-C# |  Copy Code  
----|---  
-      
-    
-    using(LockingStep oLockingStep = new LockingStep())
-    {
-       ....
-    }
-      
-  
+```csharp
+using(LockingStep oLockingStep = new LockingStep())
+{
+   ....
+}
+```
+
 When there is necessary access to some resources and the LockingStep is not created, an exception will be thrown (NoLockingStepException)
 
   * Actions and scripts by the P8 framework

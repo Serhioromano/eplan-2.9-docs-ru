@@ -18,8 +18,7 @@ The item data must be available in the common international STEP format (Standar
 
 A new layout space is generated for each import, and is given the name of the imported STEP file 
 
-C# |  Copy Code  
----|---  
-      
-    
-    InstallationSpace oInstallationSpace = new Import().Graphics3D(oProject, "c:\\temp\\BK3100\\BK3xxx.stp");
+```csharp
+InstallationSpace oInstallationSpace = new Import().Graphics3D(oProject, "c:\\temp\\BK3100\\BK3xxx.stp");
+```
+

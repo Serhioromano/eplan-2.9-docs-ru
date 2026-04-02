@@ -4,12 +4,9 @@ A script consists of a at least one public class with at least one public functi
 
 The following example shows a very simple script.
 
-  * CS
-  * VB
+=== "CS"
 
-
-    
-    
+    ```
     public class VerySimpleScript
     {
          [Start]
@@ -19,9 +16,11 @@ The following example shows a very simple script.
                return;
          }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
      Public Class VerySimpleScript
        <Start> _
         Public Sub MyFunction()
@@ -30,7 +29,7 @@ The following example shows a very simple script.
           Return
        End Sub 'MyFunction
      End Class 'VerySimpleScript
-    
+    ```
 
 In this example the class "VerySimpleScript" with a function "MyFunction" was created. The function was marked by the attribute "[Start]". 
 

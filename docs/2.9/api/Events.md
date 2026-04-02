@@ -10,12 +10,9 @@ For a list of EPLAN events, please refer to this link [Eplan.EplApi.ApplicationF
 
 To react on an event, just implement an event handler function and register it with the EPLAN EventHandler object. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     class MyEventListener
     {
         // create an EventHandler object
@@ -29,15 +26,17 @@ To react on an event, just implement an event handler function and register it w
             // the function myHandler_EplanEvent should be called
             myHandler.EplanEvent +=  myHandler_EplanEvent;
         }
-    
+
         private void myHandler_EplanEvent(IEventParameter iEventParameter)
         {
             // TODO: do something, when the event is caught
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Class MyEventListener
           ' create an EventHandler object
           Dim myHandler As New Eplan.EplApi.ApplicationFramework.EventHandler()
@@ -53,16 +52,13 @@ To react on an event, just implement an event handler function and register it w
           ' TODO: do something, when the event is caught
        End Sub 'myHandler_EplanEvent
     End Class 'MyEventListener
-    
+    ```
 
 Now you need to create an instance of your event listener class. During the lifetime of this object the event is handled. You can for instance instantiate the object in the API module class of your add-in: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class AddInModule: IEplAddIn
     {
         private MyEventListener m_EventHandler;
@@ -79,13 +75,15 @@ Now you need to create an instance of your event listener class. During the life
         }
     //...
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class AddInModule
        Implements IEplAddIn
        Private m_EventHandler As MyEventListener
-    
+
        '''<summary>
        ''' This function is called, when starting EPLAN,
        ''' if the add-in is loaded on system startup.
@@ -98,7 +96,7 @@ Now you need to create an instance of your event listener class. During the life
        End Function 'OnInit
     '...
     End Class 'AddInModule
-    
+    ```
 
 ### 
 
@@ -110,12 +108,9 @@ The "OnEvent()" function has a generic interface as parameter. It takes the spec
 
 So if you handle a specific event, you need to know in advance the type of the event parameter in order to create the correct parameter from the interface. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     private void myHandler_EplanEvent(IEventParameter iEventParameter)
     {
     try
@@ -128,9 +123,11 @@ So if you handle a specific event, you need to know in advance the type of the e
     String strexc= exc.Message;
     }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Private Sub myHandler_EplanEvent(iEventParameter As IEventParameter)
     TryDim oEventParameterString As New EventParameterString(iEventParameter)
     Dim strActionName As String = oEventParameterString.String 
@@ -138,29 +135,25 @@ So if you handle a specific event, you need to know in advance the type of the e
     Dim strexc As String = exc.Message
     End Try
     End Sub 'myHandler_EplanEvent
-    
-    
-    
-    
-    
-    
+    ```
 
 ###  Raising events 
 
 You can create and send your own events with arbitrary names. However you have no influence on whether your event is handled somewhere.In the following example an event named "EventFromCSharpAddIn" is raised. The event has a parameter of type EventParameterString. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     EventParameterString oEventParamString = new EventParameterString();
     oEventParamString.String="ParameterAusCSharpAddIn";
     long lRetVal= new EventManager.Send("EventFromCSharpAddIn", oEventParamString);
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oEventParamString As New EventParameterString()
     oEventParamString.String = "ParameterAusCSharpAddIn"
     Dim lRetVal As Long = New EventManager.Send("EventFromCSharpAddIn", oEventParamString)
+    ```
+

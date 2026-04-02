@@ -12,12 +12,9 @@ The DrawingService class also provides the possibility to influence the look of 
 
 In the following example a preview of a macro is created. The first code snippet shows creating the display list: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     Eplan.EplApi.HEServices.DrawingService oDs = new DrawingService();
     //...
     if(oDs == null)
@@ -39,9 +36,11 @@ In the following example a preview of a macro is created. The first code snippet
         //raise the Paint event
         oForm.Picture1.Invalidate();
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     If oDs Is Nothing Then
        oDs = New Eplan.EplApi.HEServices.DrawingService
     End If
@@ -57,16 +56,13 @@ In the following example a preview of a macro is created. The first code snippet
        'raise the Paint event
        oForm.Picture1.Invalidate()
     End If
-    
+    ```
 
 The next piece of source code shows drawing the display list in the Paint method of a picture box: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     private void Picture1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
     {
      if (!(m_DS == null)) {
@@ -77,9 +73,11 @@ The next piece of source code shows drawing the display list in the Paint method
        }
      }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Private Sub Picture1_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Picture1.Paint
         If Not m_DS Is Nothing Then
             Try
@@ -90,7 +88,7 @@ The next piece of source code shows drawing the display list in the Paint method
             End Try
         End If
     End Sub
-    
+    ```
 
 ### 
 
@@ -106,19 +104,17 @@ This can be done by means of SetViewport method. Coordinates should be passed in
 
 If the passed dimensions are not proportional to the dawning area, they are adjusted automatically in a way that aspect ratio is kept:
 
-  * C#
+=== "C#"
 
-
-    
-    
+    ```csharp
      m_Ds.SetViewport(10.0, 200.0, 300.0, 20.0);
-    
+    ```
 
 In case of 3D drawings, it is also necessary to set image size, otherwise its quality can be worse than in Eplan GED:
 
-  * C#
+=== "C#"
 
-
-    
-    
+    ```csharp
      m_Ds.SetWindow(0, 600, 1200, 0);
+    ```
+

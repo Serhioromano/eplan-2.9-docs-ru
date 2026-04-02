@@ -10,12 +10,9 @@ Please mind, that users may start EPLAN in QUIET mode using W3u.exe /Quiet or th
 
 The following example shows a script, which registers an action and a menu point. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public class RegisterScriptMenu
     {
         [DeclareAction("MyScriptActionWithMenu")]
@@ -24,7 +21,7 @@ The following example shows a script, which registers an action and a menu point
            new Decider().Decide(EnumDecisionType.eOkDecision, "MyFunctionAsAction was called!", "RegisterScriptMenu", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
            return;
         }
-    
+
         [DeclareMenu]
         public void MenuFunction()
         {
@@ -32,24 +29,26 @@ The following example shows a script, which registers an action and a menu point
             oMenu.AddMenuItem("MyMenuText", "MyScriptActionWithMenu");
         }
     }
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Public Class RegisterScriptMenu
-    
+
        <DeclareAction("MyScriptActionWithMenu")>  _
        Public Sub MyFunctionAsAction()
           Dim dec As Decider = New Decider
           dec.Decide(EnumDecisionType.eOkDecision, "MyFunctionAsAction was called!", "RegisterScriptMenu", EnumDecisionReturn.eOK, EnumDecisionReturn.eOK)
           Return
        End Sub 'MyFunctionAsAction
-    
+
        <DeclareMenu()>  _
        Public Sub MenuFunction()
           Dim oMenu As New Eplan.EplApi.Gui.Menu()
           oMenu.AddMenuItem("MyMenuText", "MyScriptActionWithMenu")
        End Sub 'MenuFunction
     End Class 'RegisterScriptMenu
-    
+    ```
 
 By the [DeclareMenu] attribute the function MenuFunction() will be called, when new menu points are to be registered in EPLAN. The function AddMenuItem() from the class Eplan.EplApi.Gui.Menu creates a new menu point "MyMenuText" and connects it to the action "MyScriptActionWithMenu".

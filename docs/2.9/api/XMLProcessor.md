@@ -40,155 +40,152 @@ API conversion modules can be created by implementing the interface IXMLProcesso
 
 The following example shows the usage of the interface, with only the export implemented:
 
-C# |  Copy Code  
----|---  
-      
-    
-    public class MySimpleXMLConverter : Eplan.EplApi.ApplicationFramework.IXMLProcessor
+```csharp
+public class MySimpleXMLConverter : Eplan.EplApi.ApplicationFramework.IXMLProcessor
+{
+    public MySimpleXMLConverter()
     {
-        public MySimpleXMLConverter()
-        {
-            //
-            // TODO: Add constructor logic here
-            //
-        }
-        string m_sError = string.Empty;
-        Options m_optionsXMLProcessor = new Options();
-        #region IXMLProcessor Members
-        /// <summary>
-        ///Returns a settings dialog for this processor.
-        ///Dialog is only created, but not displayed!
-        /// </summary>
-        ///<returns>Interface of the created dialog.</returns>
-        public Eplan.EplApi.ApplicationFramework.IOptions GetOption()
-        {
-            return m_optionsXMLProcessor;
-        }
-        /// <summary>
-        /// Returns the name of the converter, as it will appear in the selection list.
-        /// </summary>
-        ///<returns>Name of converter, is shown in selection list.</returns>
-        public string GetName()
-        {
-            String strName = "SimpleXMLProcessor";
-            strName += " (";
-            strName += GetFileFilter();
-            strName += ")";
-            return strName;
-        }
-        /// <summary>
-        ///Returns an error message if an error occurred during export/import.
-        /// </summary>
-        ///<returns>Error message</returns>
-        public string GetErrorMessage()
-        {
-            // TODO:  Add XMLProcessor.getErrorMessage implementation
-            return m_sError;
-        }
-        /// <summary>
-        /// Is called after import has been completed.
-        /// </summary>
-        ///<returns>If true, an Information dialog box is displayed.</returns>
-        public bool PostImport()
-        {
-            // TODO:  Add XMLProcessor.postImport implementation
-            return false;
-        }
-        /// <summary>
-        /// Is called after export has been completed.
-        /// </summary>
-        ///<returns>If true, an Information dialog box is displayed.</returns>
-        public bool PostExport()
-        {
-            // TODO:  Add XMLProcessor.postExport implementation
-            return false;
-        }
-        /// <summary>
-        /// Indicates whether the converter provides an export option.
-        /// </summary>
-        /// <param name="oContext">Context with parameters</param>
-        /// <param name="bSupportsProgress">Indicates whether the converter supports a progress bar.</param>
-        ///<returns>true: export is possible; false: export is not possible</returns>
-        public bool CanExport(Eplan.EplApi.Base.Context oContext, ref bool bSupportsProgress)
-        {
-            bSupportsProgress = false;
-            return true;
-        }
-        /// <summary>
-        /// Converts the XML file to a special file.
-        /// </summary>
-        /// <param name="strXmlFile">Input file</param>
-        /// <param name="strOutputFile">Output file</param>
-        /// <param name="oContext">Context with parameters</param>
-        /// <returns> Returns true if successful.</returns>
-        public bool Export(string strXmlFile, string strOutputFile, Eplan.EplApi.Base.Context oContext)
-        {
-            bool bRet = false;
-            try
-            {
-                // short example for a simple export conversion
-                System.Xml.XmlTextReader xRead = new System.Xml.XmlTextReader(strXmlFile);
-                System.IO.StreamWriter swOut = new System.IO.StreamWriter(strOutputFile);
-                xRead.WhitespaceHandling = System.Xml.WhitespaceHandling.None;
-                string sFirstLang = string.Empty;
-                while (xRead.Read())
-                {
-                    if ((xRead.XmlLang.CompareTo(String.Empty) != 0) && (xRead.Value.CompareTo(String.Empty) != 0))
-                    {
-                        if (sFirstLang.CompareTo(String.Empty) == 0) sFirstLang = xRead.XmlLang;
-                        if (xRead.XmlLang.CompareTo(sFirstLang) == 0) swOut.WriteLine();
-                        swOut.Write(xRead.XmlLang + ":" + xRead.Value + ";");
-                    }
-                }
-                swOut.Close();
-                xRead.Close();
-                bRet = true;
-            }
-            catch (Exception e)
-            {
-                m_sError = string.Format("Exception: {0}", e.ToString());
-            }
-    
-            return bRet;
-        }
-        /// <summary>
-        ///Returns the filter string for the file selection box.
-        /// e.g. "Access *.mdb|*.mdb"
-        /// </summary>
-        ///<returns>Filter string</returns>
-        public string GetFileFilter()
-        {
-            string strFilter = "*.*";
-            return strFilter;
-        }
-        /// <summary>
-        /// Indicates whether the converter can convert external formats to XML.
-        /// </summary>
-        /// <param name="oContext">Context with parameters</param>
-        /// <param name="bSupportsProgress">Indicates whether the converter supports a progress bar.</param>
-        ///<returns>true: conversion is possible; false: conversion is not possible</returns>
-        public bool CanImport(Eplan.EplApi.Base.Context oContext, ref bool bSupportsProgress)
-        {
-            bSupportsProgress = false;
-            return false;
-        }
-        /// <summary>
-        /// Conversion from sImportFile to sXmlFile.
-        /// sXmlFile might be passed as "". In this case, the converter must set a file name.
-        /// EContext may point to an EProgress object to support a progress bar.
-        /// Returns true if successful.
-        /// </summary>
-        /// <param name="strInputFile">Input file</param>
-        /// <param name="strXmlFile">Output file</param>
-        /// <param name="oContext">Context with parameters</param>
-        public bool Import(string strInputFile, string strXmlFile, Eplan.EplApi.Base.Context oContext)
-        {
-            // TODO:  Add XMLProcessor.import implementation
-            return false;
-        }
+        //
+        // TODO: Add constructor logic here
+        //
     }
-      
-  
+    string m_sError = string.Empty;
+    Options m_optionsXMLProcessor = new Options();
+    #region IXMLProcessor Members
+    /// <summary>
+    ///Returns a settings dialog for this processor.
+    ///Dialog is only created, but not displayed!
+    /// </summary>
+    ///<returns>Interface of the created dialog.</returns>
+    public Eplan.EplApi.ApplicationFramework.IOptions GetOption()
+    {
+        return m_optionsXMLProcessor;
+    }
+    /// <summary>
+    /// Returns the name of the converter, as it will appear in the selection list.
+    /// </summary>
+    ///<returns>Name of converter, is shown in selection list.</returns>
+    public string GetName()
+    {
+        String strName = "SimpleXMLProcessor";
+        strName += " (";
+        strName += GetFileFilter();
+        strName += ")";
+        return strName;
+    }
+    /// <summary>
+    ///Returns an error message if an error occurred during export/import.
+    /// </summary>
+    ///<returns>Error message</returns>
+    public string GetErrorMessage()
+    {
+        // TODO:  Add XMLProcessor.getErrorMessage implementation
+        return m_sError;
+    }
+    /// <summary>
+    /// Is called after import has been completed.
+    /// </summary>
+    ///<returns>If true, an Information dialog box is displayed.</returns>
+    public bool PostImport()
+    {
+        // TODO:  Add XMLProcessor.postImport implementation
+        return false;
+    }
+    /// <summary>
+    /// Is called after export has been completed.
+    /// </summary>
+    ///<returns>If true, an Information dialog box is displayed.</returns>
+    public bool PostExport()
+    {
+        // TODO:  Add XMLProcessor.postExport implementation
+        return false;
+    }
+    /// <summary>
+    /// Indicates whether the converter provides an export option.
+    /// </summary>
+    /// <param name="oContext">Context with parameters</param>
+    /// <param name="bSupportsProgress">Indicates whether the converter supports a progress bar.</param>
+    ///<returns>true: export is possible; false: export is not possible</returns>
+    public bool CanExport(Eplan.EplApi.Base.Context oContext, ref bool bSupportsProgress)
+    {
+        bSupportsProgress = false;
+        return true;
+    }
+    /// <summary>
+    /// Converts the XML file to a special file.
+    /// </summary>
+    /// <param name="strXmlFile">Input file</param>
+    /// <param name="strOutputFile">Output file</param>
+    /// <param name="oContext">Context with parameters</param>
+    /// <returns> Returns true if successful.</returns>
+    public bool Export(string strXmlFile, string strOutputFile, Eplan.EplApi.Base.Context oContext)
+    {
+        bool bRet = false;
+        try
+        {
+            // short example for a simple export conversion
+            System.Xml.XmlTextReader xRead = new System.Xml.XmlTextReader(strXmlFile);
+            System.IO.StreamWriter swOut = new System.IO.StreamWriter(strOutputFile);
+            xRead.WhitespaceHandling = System.Xml.WhitespaceHandling.None;
+            string sFirstLang = string.Empty;
+            while (xRead.Read())
+            {
+                if ((xRead.XmlLang.CompareTo(String.Empty) != 0) && (xRead.Value.CompareTo(String.Empty) != 0))
+                {
+                    if (sFirstLang.CompareTo(String.Empty) == 0) sFirstLang = xRead.XmlLang;
+                    if (xRead.XmlLang.CompareTo(sFirstLang) == 0) swOut.WriteLine();
+                    swOut.Write(xRead.XmlLang + ":" + xRead.Value + ";");
+                }
+            }
+            swOut.Close();
+            xRead.Close();
+            bRet = true;
+        }
+        catch (Exception e)
+        {
+            m_sError = string.Format("Exception: {0}", e.ToString());
+        }
+
+        return bRet;
+    }
+    /// <summary>
+    ///Returns the filter string for the file selection box.
+    /// e.g. "Access *.mdb|*.mdb"
+    /// </summary>
+    ///<returns>Filter string</returns>
+    public string GetFileFilter()
+    {
+        string strFilter = "*.*";
+        return strFilter;
+    }
+    /// <summary>
+    /// Indicates whether the converter can convert external formats to XML.
+    /// </summary>
+    /// <param name="oContext">Context with parameters</param>
+    /// <param name="bSupportsProgress">Indicates whether the converter supports a progress bar.</param>
+    ///<returns>true: conversion is possible; false: conversion is not possible</returns>
+    public bool CanImport(Eplan.EplApi.Base.Context oContext, ref bool bSupportsProgress)
+    {
+        bSupportsProgress = false;
+        return false;
+    }
+    /// <summary>
+    /// Conversion from sImportFile to sXmlFile.
+    /// sXmlFile might be passed as "". In this case, the converter must set a file name.
+    /// EContext may point to an EProgress object to support a progress bar.
+    /// Returns true if successful.
+    /// </summary>
+    /// <param name="strInputFile">Input file</param>
+    /// <param name="strXmlFile">Output file</param>
+    /// <param name="oContext">Context with parameters</param>
+    public bool Import(string strInputFile, string strXmlFile, Eplan.EplApi.Base.Context oContext)
+    {
+        // TODO:  Add XMLProcessor.import implementation
+        return false;
+    }
+}
+```
+
 Registering a conversion module 
 
 Each conversion module needs to register itself with EPLAN so it will be available during import or export. Because a conversion is only meant for a special task, the scope of functions of the converter needs to be set during registering. This is done via the IInterface interface as it is shown at the end of the above example. 

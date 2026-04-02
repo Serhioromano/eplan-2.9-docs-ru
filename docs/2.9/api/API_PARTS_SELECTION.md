@@ -58,37 +58,27 @@ Please create an action with a name that was set in Settings dialog. The best wa
 
 The part data is transmitted through the ActionCallingContext of the action. The objects contains a set of input and output parameters passed as strings 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
     public bool Execute(ActionCallingContext oActionCallingContext)
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
         Public Function Execute(oActionCallingContext As Eplan.EplApi.ApplicationFramework.ActionCallingContext) As Boolean _
             Implements Eplan.EplApi.ApplicationFramework.IEplAction.Execute
-    
-    
-    
-    
+    ```
 
 This way it is possible to have an access to properties of a selected part, for example : 
 
-C# |  Copy Code  
----|---  
-      
-    
-    string sMode = "";
-    ctx.GetParameter("Modus", ref sMode);
-    string sProp00 = "(int)Properties.Article.ARTICLE_DEPTH + sSeparator + "1";
-    ctx.AddParameter(sProp00, "44.0");
-      
-      
-    
-    
+```csharp
+string sMode = "";
+ctx.GetParameter("Modus", ref sMode);
+string sProp00 = "(int)Properties.Article.ARTICLE_DEPTH + sSeparator + "1";
+ctx.AddParameter(sProp00, "44.0");
+```
 
 The parameter "Modus" is used to identify the mode in which parts selection is called. It can have one of the following values:
 
@@ -142,81 +132,80 @@ Important input parameter is the object ID ("objectid"). With help of the object
 
 The following example shows an API parts selection action in which a user dialog "FormPartSelection" is shown and the fields Partnumber, Typenumber, and Description1 are transmitted. 
 
-C# |  Copy Code  
----|---  
-      
-    
-    public class MyPartSelectionAction : IEplAction
+```csharp
+public class MyPartSelectionAction : IEplAction
+{
+    public bool Execute(ActionCallingContext oActionCallingContext)
     {
-        public bool Execute(ActionCallingContext oActionCallingContext)
+        // objectId, where part selection is started from
+        string sObjectId = "";
+        oActionCallingContext.GetParameter("ObjectId", ref sObjectId);
+        // get Function object
+        Function oFunction = getFunction(sObjectId);
+        FormPartSelection frm = new FormPartSelection();
+        frm.Description = "";
+        frm.Typenumber = "";
+        frm.Partnumber = "new part";
+        // start part selection dialog
+        if (frm.ShowDialog() == DialogResult.OK)
         {
-            // objectId, where part selection is started from
-            string sObjectId = "";
-            oActionCallingContext.GetParameter("ObjectId", ref sObjectId);
-            // get Function object
-            Function oFunction = getFunction(sObjectId);
-            FormPartSelection frm = new FormPartSelection();
-            frm.Description = "";
-            frm.Typenumber = "";
-            frm.Partnumber = "new part";
-            // start part selection dialog
-            if (frm.ShowDialog() == DialogResult.OK)
+            string sTypenumber = frm.Typenumber;
+            string sPartnumber = frm.Partnumber;
+            string sDescription = frm.Description;
+            // count of parts
+            oActionCallingContext.addParameter("count", "1");
+            // get separator between property and index
+            string sSeparator = "";
+            oActionCallingContext.GetParameter("Separator", ref sSeparator);
+            int prop;
+            int idx = 1;
+            string sProp;
+            // set part number
+            prop = (int)Properties.Article.ARTICLE_PARTNR;
+            sProp = prop.ToString() + sSeparator + idx.ToString();
+            oActionCallingContext.AddParameter(sProp, sPartnumber);
+            // set type number
+            prop = (int)Properties.Article.ARTICLE_TYPENR;
+            sProp = prop.ToString() + sSeparator + idx.ToString();
+            oActionCallingContext.AddParameter(sProp, sTypenumber);
+            // set description 1
+            prop = (int)Properties.Article.ARTICLE_DESCR1;
+            sProp = prop.ToString() + sSeparator + idx.ToString();
+            oActionCallingContext.AddParameter(sProp, sDescription);
+            if ((oFunction != null))
             {
-                string sTypenumber = frm.Typenumber;
-                string sPartnumber = frm.Partnumber;
-                string sDescription = frm.Description;
-                // count of parts
-                oActionCallingContext.addParameter("count", "1");
-                // get separator between property and index
-                string sSeparator = "";
-                oActionCallingContext.GetParameter("Separator", ref sSeparator);
-                int prop;
-                int idx = 1;
-                string sProp;
-                // set part number
-                prop = (int)Properties.Article.ARTICLE_PARTNR;
-                sProp = prop.ToString() + sSeparator + idx.ToString();
-                oActionCallingContext.AddParameter(sProp, sPartnumber);
-                // set type number
-                prop = (int)Properties.Article.ARTICLE_TYPENR;
-                sProp = prop.ToString() + sSeparator + idx.ToString();
-                oActionCallingContext.AddParameter(sProp, sTypenumber);
-                // set description 1
-                prop = (int)Properties.Article.ARTICLE_DESCR1;
-                sProp = prop.ToString() + sSeparator + idx.ToString();
-                oActionCallingContext.AddParameter(sProp, sDescription);
-                if ((oFunction != null))
-                {
-                   string strArticleCharacteristics = (int)Properties.Article.ARTICLE_CHARACTERISTICS + sSeparator + "1";
-                   ctx.AddParameter(strArticleCharacteristics, "5,5kW");      //set characteristics to 5,5 kW
-                }
+               string strArticleCharacteristics = (int)Properties.Article.ARTICLE_CHARACTERISTICS + sSeparator + "1";
+               ctx.AddParameter(strArticleCharacteristics, "5,5kW");      //set characteristics to 5,5 kW
             }
-            return true;
         }
-        // locate the function by its object id
-            private Function getFunction(string sObjectId)
-            {
-                ProjectManager projectManager = new ProjectManager();
-                Project project = projectManager.CurrentProject;
-                DMObjectsFinder objectFinder = new DMObjectsFinder(project);
-                FunctionPropertyList functionPropertyList = new FunctionPropertyList();
-                functionPropertyList[Properties.StorableObject.PROPUSER_DBOBJECTID] = sObjectId;
-                FunctionsFilter functionsFilter = new FunctionsFilter();
-                functionsFilter.SetFilteredPropertyList(functionPropertyList);
-                Function[] aFunction = objectFinder.GetFunctions(functionsFilter);
-                if (aFunction.Length > 0)
-                {
-                    return aFunction[0];
-                }
-                return null;
-            }
-    
-        public bool OnRegister(ref string Name, ref int Ordinal)
-        {
-            Name = "MyPartSelectionAction";
-            Ordinal = 20;
-            return true;
-        }
-        public MyPartSelectionAction()
-        {}
+        return true;
     }
+    // locate the function by its object id
+        private Function getFunction(string sObjectId)
+        {
+            ProjectManager projectManager = new ProjectManager();
+            Project project = projectManager.CurrentProject;
+            DMObjectsFinder objectFinder = new DMObjectsFinder(project);
+            FunctionPropertyList functionPropertyList = new FunctionPropertyList();
+            functionPropertyList[Properties.StorableObject.PROPUSER_DBOBJECTID] = sObjectId;
+            FunctionsFilter functionsFilter = new FunctionsFilter();
+            functionsFilter.SetFilteredPropertyList(functionPropertyList);
+            Function[] aFunction = objectFinder.GetFunctions(functionsFilter);
+            if (aFunction.Length > 0)
+            {
+                return aFunction[0];
+            }
+            return null;
+        }
+
+    public bool OnRegister(ref string Name, ref int Ordinal)
+    {
+        Name = "MyPartSelectionAction";
+        Ordinal = 20;
+        return true;
+    }
+    public MyPartSelectionAction()
+    {}
+}
+```
+

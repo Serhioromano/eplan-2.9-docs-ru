@@ -16,66 +16,59 @@ There are 2 general types of API Interactions usage : creating custom ones and o
 
 EPLAN API enables programmers to create their own custom interactions. 
 
-C# |  Copy Code  
----|---  
-      
-    
-    public class DeleteTerminalsInteraction : Interaction
-    {
-       public override RequestCode OnStart(InteractionContext pContext)
-       {
-          // interaction has been stated.
-          // set initial state
-          m_state = State.Start;
-          //
-          // activate placement filter
-          //
-          IsPlacementFilterActive = true;
-          //
-          // request point and set prompt for user
-          //
-          this.PromptForStatusLine = "select Terminals";
-          return  RequestCode.Select;
-      }
-    //can be used to filter for selection or for highlight
-      public override bool OnFilterElement(StorableObject placement)
+```csharp
+public class DeleteTerminalsInteraction : Interaction
+{
+   public override RequestCode OnStart(InteractionContext pContext)
+   {
+      // interaction has been stated.
+      // set initial state
+      m_state = State.Start;
+      //
+      // activate placement filter
+      //
+      IsPlacementFilterActive = true;
+      //
+      // request point and set prompt for user
+      //
+      this.PromptForStatusLine = "select Terminals";
+      return  RequestCode.Select;
+}
+//can be used to filter for selection or for highlight
+public override bool OnFilterElement(StorableObject placement)
+{
+     if (placement is Terminal)
+     {
+        return true;
+     }
+     return false;
+   }
+   public override RequestCode OnSelect(StorableObject[] placements, SelectionContext context)
+   {
+      m_Terminals = placements.Cast<Terminal>().ToArray();
+      m_state = State.Select;
+      return RequestCode.Success;
+   }
+   public override void OnSuccess(InteractionContext result)
+   {
+      if (m_state == State.Select)
       {
-         if (placement is Terminal)
+         for (int i = 0; i < m_Terminals.Length; i++)
          {
-            return true;
+            m_Terminals[i].Remove();
          }
-         return false;
-       }
-       public override RequestCode OnSelect(StorableObject[] placements, SelectionContext context)
-       {
-          m_Terminals = placements.Cast<Terminal>().ToArray();
-          m_state = State.Select;
-          return RequestCode.Success;
-       }
-       public override void OnSuccess(InteractionContext result)
-       {
-          if (m_state == State.Select)
-          {
-             for (int i = 0; i < m_Terminals.Length; i++)
-             {
-                m_Terminals[i].Remove();
-             }
-          }
-       }
-       enum State
-       {
-          Start = 0,
-          Select,
-       };
-    
-       State m_state;
-       Terminal[] m_Terminals;
-    }
-      
-      
-    
-        
-    
+      }
+   }
+   enum State
+   {
+      Start = 0,
+      Select,
+   };
+
+   State m_state;
+   Terminal[] m_Terminals;
+}
+```
 
 To add interaction to EPLAN , it must be included in an API add-in or addon. Interaction is registered under name of its class while loading an API add-in containing it. 
 
@@ -85,38 +78,35 @@ There is also special class Eplan::EplApi::EServices::Ged::InsertInteraction for
 
 Programmer can decorate interaction class with Eplan::EplApi::EServices::Ged::InteractionAttribute to customize name of interaction, set name of interaction to override (see paragraph bellow), ordinal number and priority: 
 
-C# |  Copy Code  
----|---  
-      
-    
-    //example of interaction attributes
-        [InteractionAttribute(Name = "DerivedSymbolInsertInteraction", NameOfBaseInteraction = "XEGedIaInsertSymRef", Ordinal = 50, Prio = 20)]
-        class DerivedSymbolInsertInteraction : InsertInteraction
+```csharp
+//example of interaction attributes
+    [InteractionAttribute(Name = "DerivedSymbolInsertInteraction", NameOfBaseInteraction = "XEGedIaInsertSymRef", Ordinal = 50, Prio = 20)]
+    class DerivedSymbolInsertInteraction : InsertInteraction
+    {
+        public override RequestCode OnStart(InteractionContext pContext)
         {
-            public override RequestCode OnStart(InteractionContext pContext)
+            return base.OnStart(pContext);
+        }
+        public override void OnSuccess(InteractionContext result)
+        {
+            // execute standard operation of symbol insert interaction
+            //
+            base.OnSuccess(result);
+            //
+            // set property of inserted function
+            Placement[] placements = InsertedPlacements;
+            for (int i = 0; i < placements.Length; i++)
             {
-                return base.OnStart(pContext);
-            }
-            public override void OnSuccess(InteractionContext result)
-            {
-                // execute standard operation of symbol insert interaction
-                //
-                base.OnSuccess(result);
-                //
-                // set property of inserted function
-                Placement[] placements = InsertedPlacements;
-                for (int i = 0; i < placements.Length; i++)
+                Function f = (Function)placements[i];
+                if (f != null)
                 {
-                    Function f = (Function)placements[i];
-                    if (f != null)
-                    {
-                        f.Properties[Properties.Function.FUNC_TEXT] = "API_Demos : DerivedSymbolInsertInteraction";
-                    }
+                    f.Properties[Properties.Function.FUNC_TEXT] = "API_Demos : DerivedSymbolInsertInteraction";
                 }
             }
         }
-      
-  
+    }
+```
+
 For more details see [Eplan::EplApi::EServices::Ged::InteractionAttribute](Eplan.EplApi.EServicesu~Eplan.EplApi.EServices.Ged.InteractionAttribute.html). 
 
 ### Overriding default interactions 

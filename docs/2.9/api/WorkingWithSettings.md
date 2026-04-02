@@ -23,194 +23,187 @@ The settings database is organized in a tree tree structure : particular branche
 
 Using export functionality we can access their values, also these which are not visible in Options->Settings dialog. The format of the file is XML and here is its XML Schema Definition : 
 
-|  Copy Code  
----|---  
-      
-    
-    <?xml version="1.0" encoding="utf-8"?>
-    <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-      <xs:group name="levlSettingGroup">
-        <xs:sequence>
-          <xs:element name="Setting">
-            <xs:complexType>
-              <xs:sequence>
-                <xs:element minOccurs="0" maxOccurs="unbounded" name="Val" type="xs:anyType" />
-              </xs:sequence>
-              <xs:attribute name="name" use="required">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:pattern value="[a-zA-ZäöüÄÖÜ0-9_\s\+\-#\[\]]*"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:attribute>
-              <xs:attribute name="type" use="required">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:enumeration value="bool"/>
-                    <xs:enumeration value="int"/>
-                    <xs:enumeration value="unsigned int"/>
-                    <xs:enumeration value="long"/>
-                    <xs:enumeration value="unsigned long"/>
-                    <xs:enumeration value="double"/>
-                    <xs:enumeration value="string"/>
-                    <xs:enumeration value="mlstring"/>
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:attribute>
-              <xs:attribute name="info" type="xs:string" use="optional" />
-              <xs:attribute name="desc" type="xs:string" use="optional" />
-              <xs:attribute name="range" type="xs:string" use="optional" />
-            </xs:complexType>
-          </xs:element>
-        </xs:sequence>   
-      </xs:group>
-      <xs:attributeGroup name="levlAttrGroup">
-        <xs:attribute name="name" use="required">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:pattern value="[a-zA-ZäöüÄÖÜß0-9_\s\+\-#\[\](),\/@:;\*&amp;]*"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:attribute>
-        <xs:attribute name="info" type="xs:string" use="optional" />
-        <xs:attribute name="nodekind" type="xs:string" use="optional" />
-      </xs:attributeGroup> 
-      <xs:element name="Settings">
+```
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:group name="levlSettingGroup">
+    <xs:sequence>
+      <xs:element name="Setting">
         <xs:complexType>
           <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="5" name="CAT">                           
-              <xs:complexType>               
-                <xs:sequence>
-                  <xs:element minOccurs="0" maxOccurs="unbounded" name="MOD">
-                    <xs:complexType>
-                      <xs:sequence>
-                        <xs:choice minOccurs="0" maxOccurs="unbounded">
-                          <xs:element name="LEV1">
-                              <xs:complexType mixed="true">
-                                <xs:sequence>
-                                  <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                    <xs:element name="LEV2">
-                                      <xs:complexType>
-                                        <xs:sequence>
-                                          <xs:choice minOccurs="0" maxOccurs="unbounded">                                       
-                                            <xs:element name="LEV3">
-                                              <xs:complexType>
-                                                <xs:sequence>
-                                                  <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                    <xs:element name="LEV4">
-                                                      <xs:complexType>
-                                                        <xs:sequence>
-                                                          <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                            <xs:element name="LEV5">
-                                                              <xs:complexType>
-                                                                <xs:sequence>
-                                                                  <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                                    <xs:element name="LEV6">
-                                                                      <xs:complexType>
-                                                                        <xs:sequence>
-                                                                          <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                                            <xs:element name="LEV7">
-                                                                              <xs:complexType>
-                                                                                <xs:sequence>
-                                                                                  <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                                                    <xs:element name="LEV8">
-                                                                                      <xs:complexType>
-                                                                                        <xs:sequence>
-                                                                                          <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                                                            <xs:element name="LEV9">
-                                                                                              <xs:complexType>
-                                                                                                <xs:sequence>
-                                                                                                  <xs:choice minOccurs="0" maxOccurs="unbounded">
-                                                                                                    <xs:element name="LEV10">
-                                                                                                      <xs:complexType>
-                                                                                                        <xs:group ref="levlSettingGroup"/>
-                                                                                                        <xs:attributeGroup ref="levlAttrGroup"/>                                                                                                  
-                                                                                                      </xs:complexType>
-                                                                                                    </xs:element>
-                                                                                                    <xs:group ref="levlSettingGroup"/>
-                                                                                                  </xs:choice>
-                                                                                                </xs:sequence>                                                                                           
-                                                                                                <xs:attributeGroup ref="levlAttrGroup"/>
-                                                                                              </xs:complexType>
-                                                                                            </xs:element>
-                                                                                            <xs:group ref="levlSettingGroup"/>
-                                                                                          </xs:choice>
-                                                                                        </xs:sequence>
-                                                                                        <xs:attributeGroup ref="levlAttrGroup"/>                                                                                
-                                                                                      </xs:complexType>
-                                                                                    </xs:element>
-                                                                                    <xs:group ref="levlSettingGroup"/>
-                                                                                  </xs:choice>
-                                                                                </xs:sequence>
-                                                                                <xs:attributeGroup ref="levlAttrGroup"/>
-                                                                              </xs:complexType>
-                                                                            </xs:element>
-                                                                            <xs:group ref="levlSettingGroup"/>
-                                                                          </xs:choice>
-                                                                        </xs:sequence>
-                                                                        <xs:attributeGroup ref="levlAttrGroup"/>
-                                                                      </xs:complexType>
-                                                                    </xs:element>
-                                                                    <xs:group ref="levlSettingGroup"/>
-                                                                  </xs:choice>
-                                                                </xs:sequence>
-                                                                <xs:attributeGroup ref="levlAttrGroup"/>
-                                                              </xs:complexType>
-                                                            </xs:element>
-                                                            <xs:group ref="levlSettingGroup"/>
-                                                          </xs:choice>
-                                                        </xs:sequence>
-                                                        <xs:attributeGroup ref="levlAttrGroup"/>
-                                                      </xs:complexType>
-                                                    </xs:element>
-                                                    <xs:group ref="levlSettingGroup"/>
-                                                  </xs:choice>
-                                                </xs:sequence>
-                                                <xs:attributeGroup ref="levlAttrGroup"/>
-                                              </xs:complexType>
-                                            </xs:element>
-                                            <xs:group ref="levlSettingGroup"/>
-                                          </xs:choice>
-                                        </xs:sequence>
-                                        <xs:attributeGroup ref="levlAttrGroup"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:group ref="levlSettingGroup"/>
-                                  </xs:choice>
-                                </xs:sequence>
-                                <xs:attributeGroup ref="levlAttrGroup"/>                          
-                              </xs:complexType>
-                            </xs:element>
-                          <xs:group ref="levlSettingGroup"/>                               
-                        </xs:choice>
-                      </xs:sequence>
-                      <xs:attributeGroup ref="levlAttrGroup"/>
-                    </xs:complexType>
-                  </xs:element>                 
-                </xs:sequence>                 
-                <xs:attribute name="name" use="required">               
-                  <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                      <xs:enumeration value="COMPANY"/>
-                      <xs:enumeration value="INSTALL"/>
-                      <xs:enumeration value="PROJECT"/>
-                      <xs:enumeration value="STATION"/>
-                      <xs:enumeration value="USER"/>
-                    </xs:restriction>
-                  </xs:simpleType>
-                </xs:attribute>
-              </xs:complexType>
-            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Val" type="xs:anyType" />
           </xs:sequence>
-          <xs:attribute name="format" type="xs:unsignedByte" use="required" />
+          <xs:attribute name="name" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:pattern value="[a-zA-ZäöüÄÖÜ0-9_\s\+\-#\[\]]*"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="type" use="required">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="bool"/>
+                <xs:enumeration value="int"/>
+                <xs:enumeration value="unsigned int"/>
+                <xs:enumeration value="long"/>
+                <xs:enumeration value="unsigned long"/>
+                <xs:enumeration value="double"/>
+                <xs:enumeration value="string"/>
+                <xs:enumeration value="mlstring"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="info" type="xs:string" use="optional" />
+          <xs:attribute name="desc" type="xs:string" use="optional" />
+          <xs:attribute name="range" type="xs:string" use="optional" />
         </xs:complexType>
       </xs:element>
-    </xs:schema>
-      
-      
-    
-     
-    
+    </xs:sequence>   
+</xs:group>
+<xs:attributeGroup name="levlAttrGroup">
+    <xs:attribute name="name" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[a-zA-ZäöüÄÖÜß0-9_\s\+\-#\[\](),\/@:;\*&amp;]*"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="info" type="xs:string" use="optional" />
+    <xs:attribute name="nodekind" type="xs:string" use="optional" />
+</xs:attributeGroup> 
+<xs:element name="Settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="5" name="CAT">                           
+          <xs:complexType>               
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="MOD">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                      <xs:element name="LEV1">
+                          <xs:complexType mixed="true">
+                            <xs:sequence>
+                              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                <xs:element name="LEV2">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:choice minOccurs="0" maxOccurs="unbounded">                                       
+                                        <xs:element name="LEV3">
+                                          <xs:complexType>
+                                            <xs:sequence>
+                                              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                <xs:element name="LEV4">
+                                                  <xs:complexType>
+                                                    <xs:sequence>
+                                                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:element name="LEV5">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                <xs:element name="LEV6">
+                                                                  <xs:complexType>
+                                                                    <xs:sequence>
+                                                                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                        <xs:element name="LEV7">
+                                                                          <xs:complexType>
+                                                                            <xs:sequence>
+                                                                              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                                <xs:element name="LEV8">
+                                                                                  <xs:complexType>
+                                                                                    <xs:sequence>
+                                                                                      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                                        <xs:element name="LEV9">
+                                                                                          <xs:complexType>
+                                                                                            <xs:sequence>
+                                                                                              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                                                                                <xs:element name="LEV10">
+                                                                                                  <xs:complexType>
+                                                                                                    <xs:group ref="levlSettingGroup"/>
+                                                                                                    <xs:attributeGroup ref="levlAttrGroup"/>                                                                                                  
+                                                                                                  </xs:complexType>
+                                                                                                </xs:element>
+                                                                                                <xs:group ref="levlSettingGroup"/>
+                                                                                              </xs:choice>
+                                                                                            </xs:sequence>                                                                                           
+                                                                                            <xs:attributeGroup ref="levlAttrGroup"/>
+                                                                                          </xs:complexType>
+                                                                                        </xs:element>
+                                                                                        <xs:group ref="levlSettingGroup"/>
+                                                                                      </xs:choice>
+                                                                                    </xs:sequence>
+                                                                                    <xs:attributeGroup ref="levlAttrGroup"/>                                                                                
+                                                                                  </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:group ref="levlSettingGroup"/>
+                                                                              </xs:choice>
+                                                                            </xs:sequence>
+                                                                            <xs:attributeGroup ref="levlAttrGroup"/>
+                                                                          </xs:complexType>
+                                                                        </xs:element>
+                                                                        <xs:group ref="levlSettingGroup"/>
+                                                                      </xs:choice>
+                                                                    </xs:sequence>
+                                                                    <xs:attributeGroup ref="levlAttrGroup"/>
+                                                                  </xs:complexType>
+                                                                </xs:element>
+                                                                <xs:group ref="levlSettingGroup"/>
+                                                              </xs:choice>
+                                                            </xs:sequence>
+                                                            <xs:attributeGroup ref="levlAttrGroup"/>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                        <xs:group ref="levlSettingGroup"/>
+                                                      </xs:choice>
+                                                    </xs:sequence>
+                                                    <xs:attributeGroup ref="levlAttrGroup"/>
+                                                  </xs:complexType>
+                                                </xs:element>
+                                                <xs:group ref="levlSettingGroup"/>
+                                              </xs:choice>
+                                            </xs:sequence>
+                                            <xs:attributeGroup ref="levlAttrGroup"/>
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:group ref="levlSettingGroup"/>
+                                      </xs:choice>
+                                    </xs:sequence>
+                                    <xs:attributeGroup ref="levlAttrGroup"/>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:group ref="levlSettingGroup"/>
+                              </xs:choice>
+                            </xs:sequence>
+                            <xs:attributeGroup ref="levlAttrGroup"/>                          
+                          </xs:complexType>
+                        </xs:element>
+                      <xs:group ref="levlSettingGroup"/>                               
+                    </xs:choice>
+                  </xs:sequence>
+                  <xs:attributeGroup ref="levlAttrGroup"/>
+                </xs:complexType>
+              </xs:element>                 
+            </xs:sequence>                 
+            <xs:attribute name="name" use="required">               
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="COMPANY"/>
+                  <xs:enumeration value="INSTALL"/>
+                  <xs:enumeration value="PROJECT"/>
+                  <xs:enumeration value="STATION"/>
+                  <xs:enumeration value="USER"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="format" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+</xs:element>
+</xs:schema>
+```
 
 Here is a simplified description of the setting file :
 
@@ -235,97 +228,88 @@ Here is a simplified description of the setting file :
 
 Here is an example of simple user setting from User->Display->Identifier branch 
 
-|  Copy Code  
----|---  
-      
-    
-    <?xml version="1.0" encoding="utf-8" ?>
-    <Settings ver="2.4.1" format="2">
-     <CAT name="USER">
-      <MOD name="PLEditorGui">
-       <Setting name="SortMode" type="int">
-        <Val>1</Val>
-       </Setting>
-      </MOD>
-     </CAT>
-    </Settings>
-      
-  
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings ver="2.4.1" format="2">
+ <CAT name="USER">
+<MOD name="PLEditorGui">
+   <Setting name="SortMode" type="int">
+    <Val>1</Val>
+   </Setting>
+</MOD>
+ </CAT>
+</Settings>
+```
+
 Bellow is another example of workstation settings (Workstation->Graphical editing->Print) 
 
-|  Copy Code  
----|---  
-      
-    
-    <?xml version="1.0" encoding="utf-8" ?>
-    <Settings ver="2.4.1" format="2">
-     <CAT name="STATION">
-      <MOD name="Print">
-       <Setting name="BlackWhite" type="bool">
-        <Val>1</Val>
-       </Setting>
-       <Setting name="BottomMargin" type="double" range="0/1000">
-        <Val>0</Val>
-       </Setting>
-       <Setting name="ConsiderPageScale" type="bool">
-        <Val>1</Val>
-       </Setting>
-       <Setting name="FitToPage" type="bool">
-        <Val>1</Val>
-       </Setting>
-       <Setting name="KeepAspectRatio" type="bool">
-        <Val>1</Val>
-       </Setting>
-       <Setting name="LeftMargin" type="double" range="0/1000">
-        <Val>0</Val>
-       </Setting>
-       <Setting name="Position" type="unsigned long" range="0/8">
-        <Val>0</Val>
-       </Setting>
-       <Setting name="RightMargin" type="double" range="0/1000">
-        <Val>0</Val>
-       </Setting>
-       <Setting name="ScaleHorizontal" type="double" range="0.001/1000">
-        <Val>1.0</Val>
-       </Setting>
-       <Setting name="ScaleVertical" type="double" range="0.001/1000">
-        <Val>1.0</Val>
-       </Setting>
-       <Setting name="TopMargin" type="double" range="0/1000">
-        <Val>0</Val>
-       </Setting>
-      </MOD>
-     </CAT>
-    </Settings>
-      
-  
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings ver="2.4.1" format="2">
+ <CAT name="STATION">
+<MOD name="Print">
+   <Setting name="BlackWhite" type="bool">
+    <Val>1</Val>
+   </Setting>
+   <Setting name="BottomMargin" type="double" range="0/1000">
+    <Val>0</Val>
+   </Setting>
+   <Setting name="ConsiderPageScale" type="bool">
+    <Val>1</Val>
+   </Setting>
+   <Setting name="FitToPage" type="bool">
+    <Val>1</Val>
+   </Setting>
+   <Setting name="KeepAspectRatio" type="bool">
+    <Val>1</Val>
+   </Setting>
+   <Setting name="LeftMargin" type="double" range="0/1000">
+    <Val>0</Val>
+   </Setting>
+   <Setting name="Position" type="unsigned long" range="0/8">
+    <Val>0</Val>
+   </Setting>
+   <Setting name="RightMargin" type="double" range="0/1000">
+    <Val>0</Val>
+   </Setting>
+   <Setting name="ScaleHorizontal" type="double" range="0.001/1000">
+    <Val>1.0</Val>
+   </Setting>
+   <Setting name="ScaleVertical" type="double" range="0.001/1000">
+    <Val>1.0</Val>
+   </Setting>
+   <Setting name="TopMargin" type="double" range="0/1000">
+    <Val>0</Val>
+   </Setting>
+</MOD>
+ </CAT>
+</Settings>
+```
+
 Here is example of indexed settings from Company->Graphical editing->Fonts. 
 
-|  Copy Code  
----|---  
-      
-    
-    <?xml version="1.0" encoding="utf-8" ?>
-    <Settings ver="2.4.3" format="2">
-     <CAT name="COMPANY">
-      <MOD name="GedViewer">
-       <Setting name="Fonts" type="mlstring">
-        <Val>??_??@Arial;</Val>
-        <Val>??_??@Verdana;</Val>
-        <Val>??_??@Georgia;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-        <Val>??_??@Tahoma;zh_CN@??;</Val>
-       </Setting>
-      </MOD>
-     </CAT>
-    </Settings>
-      
-  
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings ver="2.4.3" format="2">
+ <CAT name="COMPANY">
+<MOD name="GedViewer">
+   <Setting name="Fonts" type="mlstring">
+    <Val>??_??@Arial;</Val>
+    <Val>??_??@Verdana;</Val>
+    <Val>??_??@Georgia;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+    <Val>??_??@Tahoma;zh_CN@??;</Val>
+   </Setting>
+</MOD>
+ </CAT>
+</Settings>
+```
+
 ### API classes for working with settings:
 
 Settings - functions for reading, writing and creating User, Company or Workstation settings
@@ -344,12 +328,9 @@ ProjectSettingNode - the same as SettingNode but for project settings
 
 Adding, setting and getting settings: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
         Eplan.EplApi.Base.Settings oSettings = new Eplan.EplApi.Base.Settings();
         oSettings.AddStringSetting("USER.DEMOSETTINGS.TEST1", new string[] { },
         new string[] { }, ISettings.CreationFlag.Insert);
@@ -359,9 +340,11 @@ Adding, setting and getting settings:
              Console.Out.WriteLine("SetGetAddSetting OK!");
         else
              Console.Out.WriteLine("SetGetAddSetting not OK!");
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oSettings As New Settings()
     oSettings.AddStringSetting("USER.DEMOSETTINGS.TEST1", New String() {}, New String() {}, ISettings.CreationFlag.Insert)
     oSettings.SetStringSetting("USER.DEMOSETTINGS.TEST1", "Testwert1", 0)
@@ -372,16 +355,13 @@ Adding, setting and getting settings:
     Else
         dec.Decide(EnumDecisionType.eOkDecision,"SetGetAddSetting not OK!","",EnumDecisionReturn.eOK, EnumDecisionReturn.eOK);
     End If
-    
+    ```
 
 Example of merging nodes by SettingNode: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
             Eplan.EplApi.Base.SettingNode oSettingNode = new Eplan.EplApi.Base.SettingNode("STATION.AF.Interfaces");
             uint uiCountOfSettings = oSettingNode.GetCountOfSettings();
             uint uiCountOfNodes = oSettingNode.GetCountOfNodes();
@@ -403,9 +383,11 @@ Example of merging nodes by SettingNode:
             oNew.SetStringSetting("ModuleName", "Test1Value1", 0);
             oNew.SetBoolSetting("IsAddIn", true, 0);
             oNew.SetStringSetting("ActionName", "TestAction1", 0);
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oSettingNode As New SettingNode("STATION.AF.Interfaces")
     Dim uiCountOfSettings As UInteger = oSettingNode.GetCountOfSettings()
     Dim uiCountOfNodes As UInteger = oSettingNode.GetCountOfNodes()
@@ -422,53 +404,51 @@ Example of merging nodes by SettingNode:
     oNew.SetStringSetting("ModuleName", "Test1Value1", 0)
     oNew.SetBoolSetting("IsAddIn", True, 0)
     oNew.SetStringSetting("ActionName", "TestAction1", 0)
-    
+    ```
 
 You can also combine settings to a group under a certain name - it is called "schema" . It is possible to have multiple groups under different names but with the same settings structure. One of the groups is an active scheme. 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
         SchemeSetting oSchemeSetting = new SchemeSetting();
         oSchemeSetting.Init("USER.DXF.SCHEMES");
         int iCount = oSchemeSetting.GetCount();
         String strName = oSchemeSetting.GetName();
         int iExportFormatVersion = oSchemeSetting.GetNumericSetting("EXPORT.FORMAT_VERSION", 0);
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oSchemeSetting As New SchemeSetting()
     oSchemeSetting.Init("USER.DXF.SCHEMES")
     Dim iCount As Integer = oSchemeSetting.GetCount()
     Dim strName As [String] = oSchemeSetting.GetName()
     Dim iExportFormatVersion As Integer = oSchemeSetting.GetNumericSetting("EXPORT.FORMAT_VERSION", 0)
-    
+    ```
 
 As mentioned above, each setting has its default value. In order to set a setting back to default, you have to get the setting's default value and set it on the setting: 
 
-  * C#
-  * VB
+=== "C#"
 
-
-    
-    
+    ```csharp
         Eplan.EplApi.Base.Settings oSettings = new Eplan.EplApi.Base.Settings();
         // set the path for projects back to its default
         string sProjectsPath = "";
         sProjectsPath = oSettings.GetStringDefault("USER.TrDMProject.Masterdata.Pathnames.Projects", 0);
         oSettings.SetStringSetting("USER.TrDMProject.Masterdata.Pathnames.Projects", sProjectsPath, 0);
-    
-    
-    
+    ```
+
+=== "VB"
+
+    ```vb
     Dim oSettings As New Settings()
     ' set the path for projects back to its default
     Dim sProjectsPath As String = ""
     sProjectsPath = oSettings.GetStringDefault("USER.TrDMProject.Masterdata.Pathnames.Projects", 0)
     oSettings.SetStringSetting("USER.TrDMProject.Masterdata.Pathnames.Projects", sProjectsPath, 0)
-    
+    ```
 
 In order to make it easier for the API user to find a certain settings key, the settings dialog provides a hidden feature. If you set the Boolean setting "USER.EnfMVC.ContextMenuSetting.ShowExtended" to true, you will get an additional context menu point in the settings dialog, which shows you the path of the selected setting.
 

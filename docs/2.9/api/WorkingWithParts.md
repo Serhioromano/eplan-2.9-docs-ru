@@ -20,14 +20,13 @@ To fill an Article with properties of the master data please use the explicit fu
 
 Following example shows how to add and reference Article in Project, Function and Connection: 
 
-C# |  Copy Code  
----|---  
-      
-    
-        Article oArticle = new Article();
-        oArticle.Create(oProject, "KUKA.KR30-3", "1");            //empty Article is created in a Project
-        bool bResult = oArticle.LoadFromMasterdata();             //Article is filled with data from system parts database
-    
-        oProject.AddArticleReference("KUKA.KR30-3", "1", 1);      //reference to the Article is created on a Project
-        oFunction.AddArticleReference("KUKA.KR30-3", "1", 1);     //reference to the Article is created on a Function
-        oConnection.AddArticleReference("KUKA.KR30-3", "1", 1);   //reference to the Article is created on a Connection
+```csharp
+    Article oArticle = new Article();
+    oArticle.Create(oProject, "KUKA.KR30-3", "1");            //empty Article is created in a Project
+    bool bResult = oArticle.LoadFromMasterdata();             //Article is filled with data from system parts database
+
+    oProject.AddArticleReference("KUKA.KR30-3", "1", 1);      //reference to the Article is created on a Project
+    oFunction.AddArticleReference("KUKA.KR30-3", "1", 1);     //reference to the Article is created on a Function
+    oConnection.AddArticleReference("KUKA.KR30-3", "1", 1);   //reference to the Article is created on a Connection
+```
+
